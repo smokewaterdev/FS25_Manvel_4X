@@ -31733,8 +31733,13 @@
     <nd ref='-54217' />
     <nd ref='-54218' />
     <nd ref='-54219' />
-    <tag k='highway' v='motorway_link' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='motorway' />
+    <tag k='lanes' v='2' />
     <tag k='oneway' v='yes' />
+    <tag k='ref' v='I 29' />
+    <tag k='source:hgv:national_network' v='https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore' />
   </way>
   <way id='-29784' action='modify' visible='true'>
     <nd ref='-54229' />
@@ -31756,8 +31761,13 @@
     <nd ref='-54245' />
     <nd ref='-54246' />
     <nd ref='-54247' />
-    <tag k='highway' v='motorway_link' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='motorway' />
+    <tag k='lanes' v='2' />
     <tag k='oneway' v='yes' />
+    <tag k='ref' v='I 29' />
+    <tag k='source:hgv:national_network' v='https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore' />
   </way>
   <way id='-29807' action='modify' visible='true'>
     <nd ref='-54268' />
@@ -31771,8 +31781,13 @@
     <nd ref='-54276' />
     <nd ref='-54277' />
     <nd ref='-54278' />
-    <tag k='highway' v='motorway_link' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='motorway' />
+    <tag k='lanes' v='2' />
     <tag k='oneway' v='yes' />
+    <tag k='ref' v='I 29' />
+    <tag k='source:hgv:national_network' v='https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore' />
   </way>
   <way id='-29821' action='modify' visible='true'>
     <nd ref='-54279' />
@@ -31793,8 +31808,13 @@
     <nd ref='-54294' />
     <nd ref='-54295' />
     <nd ref='-54296' />
-    <tag k='highway' v='motorway_link' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='motorway' />
+    <tag k='lanes' v='2' />
     <tag k='oneway' v='yes' />
+    <tag k='ref' v='I 29' />
+    <tag k='source:hgv:national_network' v='https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore' />
   </way>
   <way id='-29843' action='modify' visible='true'>
     <nd ref='-54297' />
@@ -31814,8 +31834,13 @@
     <nd ref='-54311' />
     <nd ref='-54312' />
     <nd ref='-54313' />
-    <tag k='highway' v='motorway_link' />
+    <tag k='hgv' v='designated' />
+    <tag k='hgv:national_network' v='yes' />
+    <tag k='highway' v='motorway' />
+    <tag k='lanes' v='2' />
     <tag k='oneway' v='yes' />
+    <tag k='ref' v='I 29' />
+    <tag k='source:hgv:national_network' v='https://hepgis-usdot.hub.arcgis.com/apps/usdot::national-network-conventional-combination-trucks-map/explore' />
   </way>
   <way id='9667700' timestamp='2020-08-20T19:18:12Z' uid='214969' user='AndrewBuck' visible='true' version='6' changeset='89708593'>
     <nd ref='75861549' />
