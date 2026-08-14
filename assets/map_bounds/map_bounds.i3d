@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="map_bounds_raw" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0" />
+  </Asset>
+  <Files>
+  </Files>
+  <Materials>
+    <Material name="map_bounds_material" materialId="1" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="map_bounds.i3d.shapes">
+  </Shapes>
+  <Scene>
+    <TransformGroup name="map_bounds" nodeId="4">
+      <Shape name="map_bounds_walls" shapeId="1" static="true" collisionFilterGroup="0xfffbffff" collisionFilterMask="0xfffbffff" nodeId="5" castsShadows="false" receiveShadows="false" nonRenderable="true" renderedInViewports="false" materialIds="1" />
+    </TransformGroup>
+  </Scene>
+</i3D>
