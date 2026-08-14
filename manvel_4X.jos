@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <josm-session version="0.1">
     <viewport>
-        <center lat="48.1284748281387" lon="-97.11808924198151"/>
-        <scale meter-per-pixel="3.188678"/>
+        <center lat="48.07801444470791" lon="-97.17899682283402"/>
+        <scale meter-per-pixel="1.595905"/>
     </viewport>
     <projection>
         <projection-choice>
@@ -35,6 +35,15 @@
             <show-errors>true</show-errors>
             <automatic-downloading>true</automatic-downloading>
             <automatically-change-resolution>true</automatically-change-resolution>
+            <offset>
+                <projection-code>EPSG:3857</projection-code>
+                <imagery-id>Bing</imagery-id>
+                <imagery-name>Bing aerial imagery</imagery-name>
+                <dx>1.79</dx>
+                <dy>-0.3</dy>
+                <center-lon>-97.16768593132495</center-lon>
+                <center-lat>48.077156043261816</center-lat>
+            </offset>
         </layer>
     </layers>
 </josm-session>
