@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="92" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
-    <author>GIANTS Software</author>
+    <author>Smokewater</author>
     <version>1.0.0.0</version>
     <title>
-        <en>Generated in MapToPlay</en>
+        <en>Manvel 4X</en>
     </title>
 
     <description>
@@ -26,10 +26,10 @@ Shopkategorie: Maps
             defaultHandToolsXMLFilename="map/config/handTools.xml"
             defaultItemsXMLFilename="map/config/items.xml">
             <title>
-                <en>Generated in MapToPlay</en>
+                <en>Manvel 4X</en>
             </title>
             <description>
-                <en>Website: maptoplay.com</en>
+                <en>Website: manvel.github.io</en>
             </description>
             <iconFilename>preview.png</iconFilename>
         </map>

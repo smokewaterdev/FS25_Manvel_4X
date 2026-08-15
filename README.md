@@ -27,13 +27,13 @@ Do not zip the parent folder itself. The zip root must contain files like `modDe
 
 ## Export Info
 
-Map name: FS25 export 5041
+Map name: FS25 export 5074
 Map center: 48.09429, -97.11109399999998
 Selected size: 8192 x 8192 meters
 Playable size: 4096 x 4096 meters
 Map size: 4096 x 4096.
 Rotation: 0 degrees
-Generated at: 2026-08-14T18:45:59.532Z.
+Generated at: 2026-08-15T02:02:28.824Z.
 
 ## Attribution
 
