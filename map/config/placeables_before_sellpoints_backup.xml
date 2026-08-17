@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+    <placeable modName="FS25_USAFlag" filename="$moddir$FS25_USAFlag/flag2.xml" uniqueId="placeable3e07ca174e084d20be14573a2ec8c438" position="-96.1536 2.98772 -63.0521" rotation="-180.00 89.0198 180.00" age="0.000000" price="500.000000" farmId="1" />
+    <placeable modName="FS25_US_Mailboxes" filename="$moddir$FS25_US_Mailboxes/MailboxSmallFour.xml" uniqueId="placeable76151f3d76c24fb1802b68d4dfdd174e" position="-69.2879 0.774919 -106.866" rotation="180.00 1.92182 180.00" age="0.000000" price="250.000000" farmId="1">
+        <configuration name="color" id="SHARED_WHITE2" isActive="true" />
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeable9c09120fc09f49efabca566cf5d4e023" position="-173.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeableb0841995e0ff4070b632f10ddd766533" position="-160.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeablee5bca542b6014b66affb9713deb63502" position="-147.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeable101b81a5521e4134b3776a2015ecae18" position="-134.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeable785392dbfad84bf782b74c0861870509" position="-121.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/agi/flatBottomBin3605/flatBottomBin3605.xml" uniqueId="placeable09ce6bfaa8894422b768ee201210ec25" position="-108.871 -0.122882 69.9769" rotation="0.00 0.00 0.00" age="0.000000" price="42000.000000" farmId="1">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0" />
+        </animatedObjects>
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/meridian/fuelTank25000L/fuelTank25000L.xml" uniqueId="placeableb0c17632ecc84d3688e938e97b53fc03" position="-92.8706 0.877118 2.97687" rotation="-180.00 -88.9998 -180.00" age="0.000000" price="26500.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/meridian/liquidFlatBottomTank1630/liquidFlatBottomTank1630.xml" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb" position="-84.8706 0.877118 -17.0231" rotation="0.00 0.00 0.00" age="0.000000" price="46500.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable filename="data/placeables/meridian/liquidFlatBottomTank1630/liquidFlatBottomTank1630.xml" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3" position="-78.8706 0.877118 -17.0231" rotation="0.00 0.00 0.00" age="0.000000" price="46500.000000" farmId="1">
+        <silo>
+            <storage index="1" farmId="1" />
+        </silo>
+    </placeable>
+    <placeable modName="FS25_66x96Shop" filename="$moddir$FS25_66x96Shop/Shop.xml" uniqueId="placeable497225d879484379b4d14efe186bf3ba" position="-95.8706 0.877118 14.9769" rotation="0.00 90.00 0.00" age="0.000000" price="40000.000000" farmId="1">
+        <configuration name="mainColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="roofColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="TrimColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="trimColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="MainColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="RoofColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="bottomTinColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="doorTrimColor" id="SHARED_WHITE2" isActive="true" />
+    </placeable>
+    <placeable modName="FS25_SmallBarndominium" filename="$moddir$FS25_SmallBarndominium/MultiGarage.xml" uniqueId="placeablea5d2e996d13e4a059a1696db08c16262" position="-110.871 1.21292 -62.0231" rotation="0.00 0.00 0.00" age="0.000000" price="100000.000000" farmId="1">
+        <configuration name="color" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="solarPanels" id="1" isActive="true" />
+        <farmhouse isFreeForAll="false" />
+        <wardrobe isFreeForAll="false" />
+    </placeable>
+</placeables>
