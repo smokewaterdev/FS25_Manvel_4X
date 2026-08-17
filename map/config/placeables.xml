@@ -69,11 +69,11 @@
     </placeable>
     <placeable modName="FS25_66x96Shop" filename="$moddir$FS25_66x96Shop/Shop.xml" uniqueId="placeable497225d879484379b4d14efe186bf3ba" position="-74.0 33.000018 402.0" rotation="0.00 90.00 0.00" age="0.000000" price="40000.000000" farmId="1">
         <configuration name="mainColor" id="SHARED_WHITE2" isActive="true" />
-        <configuration name="roofColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="roofColor" id="SHARED_DA_METAL_BLACK" isActive="true" />
         <configuration name="TrimColor" id="SHARED_WHITE2" isActive="true" />
         <configuration name="trimColor" id="SHARED_WHITE2" isActive="true" />
         <configuration name="MainColor" id="SHARED_WHITE2" isActive="true" />
-        <configuration name="RoofColor" id="SHARED_WHITE2" isActive="true" />
+        <configuration name="RoofColor" id="SHARED_DA_METAL_BLACK" isActive="true" />
         <configuration name="bottomTinColor" id="SHARED_WHITE2" isActive="true" />
         <configuration name="doorTrimColor" id="SHARED_WHITE2" isActive="true" />
     </placeable>
