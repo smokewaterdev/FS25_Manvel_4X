@@ -1,0 +1,11 @@
+# GIANTS Editor terrain caches (regenerate automatically on load/save)
+*.i3d.terrain.lod.type.cache
+*.i3d.terrain.nmap.cache
+*.i3d.terrain.occluders.cache
+
+# Manual backup copies made during editing (git history is the real backup)
+*_backup.*
+
+# OS junk
+Thumbs.db
+desktop.ini
