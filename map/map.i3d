@@ -721,7 +721,7 @@
 
   <Scene>
     <Light name="sun" translation="0 400 0" rotation="-39.5664 39.1063 0" objectMask="0x83ff0000" nodeId="195" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-2048,-128,-2048" lastShadowMapSplitBboxMax="2048,148,2048" range="10000" scattering="true"/>
-    <Camera name="persp" translation="-2052.85 73.9726 -505.451" rotation="-68.8819 -89.7684 0.00113367" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
+    <Camera name="persp" translation="-848.813 80.8781 194.245" rotation="-35.6525 80.7372 1.87309e-05" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="198" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="7" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
@@ -3526,8 +3526,8 @@
         <TransformGroup name="field34" translation="-1786.92 0 -121.168" nodeId="2470">
           <TransformGroup name="polygonPoints" nodeId="2471">
             <TransformGroup name="point1" translation="218.35 0 389.603" nodeId="2472"/>
-            <TransformGroup name="point2" translation="-198.224 0 399.94" nodeId="2473"/>
-            <TransformGroup name="point3" translation="-218.304 0 -391.715" nodeId="2474"/>
+            <TransformGroup name="point2" translation="-231.08 0 399.94" nodeId="2473"/>
+            <TransformGroup name="point3" translation="-231.08 0 -391.715" nodeId="2474"/>
             <TransformGroup name="point4" translation="198.178 0 -397.829" nodeId="2475"/>
             <TransformGroup name="point5" translation="218.35 0 389.603" nodeId="2476"/>
           </TransformGroup>
@@ -3598,8 +3598,8 @@
             <TransformGroup name="point4" translation="156.196 0 -77.7969" nodeId="2536"/>
             <TransformGroup name="point5" translation="156.561 0 -75.3809" nodeId="2537"/>
             <TransformGroup name="point6" translation="163.625 0 324.739" nodeId="2538"/>
-            <TransformGroup name="point7" translation="-631.992 0 348.474" nodeId="2539"/>
-            <TransformGroup name="point8" translation="-640.179 0 -62.6689" nodeId="2540"/>
+            <TransformGroup name="point7" translation="-678.14 0 348.474" nodeId="2539"/>
+            <TransformGroup name="point8" translation="-678.14 0 -62.6689" nodeId="2540"/>
             <TransformGroup name="point9" translation="-61.5822 0 -76.1648" nodeId="2541"/>
             <TransformGroup name="point10" translation="-59.8652 0 -5.49185" nodeId="2542"/>
             <TransformGroup name="point11" translation="-59.1062 0 -0.641852" nodeId="2543"/>
@@ -4269,8 +4269,8 @@
           <TransformGroup name="polygonPoints" nodeId="3192">
             <TransformGroup name="point1" translation="422.751 0 133.492" nodeId="3193"/>
             <TransformGroup name="point2" translation="-83.3056 0 145.888" nodeId="3194"/>
-            <TransformGroup name="point3" translation="-372.647 0 152.955" nodeId="3195"/>
-            <TransformGroup name="point4" translation="-381.202 0 -204.301" nodeId="3196"/>
+            <TransformGroup name="point3" translation="-427.57 0 152.955" nodeId="3195"/>
+            <TransformGroup name="point4" translation="-427.57 0 -204.301" nodeId="3196"/>
             <TransformGroup name="point5" translation="414.402 0 -228.035" nodeId="3197"/>
             <TransformGroup name="point6" translation="422.751 0 133.492" nodeId="3198"/>
           </TransformGroup>
@@ -4571,13 +4571,13 @@
       </TransformGroup>
       <TransformGroup name="vehicleShop" translation="0 20 -339.361" nodeId="3473">
         <Shape name="vehicleShopTrigger" translation="-921.442 12.284 551.957" rotation="0 60 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="3474" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
-          <ReferenceNode name="markerIconShopping" referenceId="644" nodeId="3478"/>
+          <ReferenceNode name="markerIconShopping" translation="-1.58325e-08 0 27.8497" referenceId="644" nodeId="3478"/>
           <TransformGroup name="vehicleShopPlayerSpawn" translation="-1.74017 0 19.3159" rotation="0 172 0" nodeId="3481"/>
         </Shape>
-        <TransformGroup name="storeSpawnPlace1Start" translation="-894.016 12 526.347" nodeId="3482">
+        <TransformGroup name="storeSpawnPlace1Start" translation="-890.114 12 526.347" nodeId="3482">
           <TransformGroup name="storeSpawnPlace1End" translation="29.338 0 0" nodeId="3483"/>
         </TransformGroup>
-        <TransformGroup name="storeSpawnPlace2Start" translation="-892.764 12.2062 476.538" nodeId="3484">
+        <TransformGroup name="storeSpawnPlace2Start" translation="-883.513 12.2062 493.402" nodeId="3484">
           <TransformGroup name="storeSpawnPlace2End" translation="42.8742 0 0" nodeId="3485"/>
         </TransformGroup>
       </TransformGroup>
@@ -60127,7 +60127,6 @@
       <ReferenceNode name="oak_stage01" translation="-997.967 11.9144 242.128" rotation="0 297.831 0" scale="0.9982 0.9982 0.9982" referenceId="663" nodeId="238814"/>
       <ReferenceNode name="americanElm_stage04" translation="-997.557 11.9144 247.49" rotation="0 253.87 0" scale="0.983 0.983 0.983" referenceId="668" nodeId="238818"/>
       <ReferenceNode name="americanElm_stage01" translation="-932.483 12.5564 247.364" rotation="0 157.908 0" scale="0.9416 0.9416 0.9416" referenceId="679" nodeId="238822"/>
-      <ReferenceNode name="boxelder_stage01" translation="-907.508 12.2568 252.928" rotation="0 324.374 0" scale="1.1055 1.1055 1.1055" referenceId="690" nodeId="238826"/>
       <ReferenceNode name="boxelder_stage03" translation="-1192.46 12.3346 1647.95" rotation="0 302.632 0" scale="1.0984 1.0984 1.0984" referenceId="656" nodeId="238830"/>
       <ReferenceNode name="americanElm_stage02" translation="-1187.7 12.3424 1647.94" rotation="0 134.767 0" scale="1.0785 1.0785 1.0785" referenceId="686" nodeId="238834"/>
       <ReferenceNode name="tiliaAmurensis_stage03" translation="-1182.14 12.3813 1647.74" rotation="0 173.834 0" scale="0.9937 0.9937 0.9937" referenceId="693" nodeId="238838"/>

@@ -1,0 +1,16 @@
+{
+  "lat0": 48.09429,
+  "lon0": -97.11109399999998,
+  "deg_per_m_lon": 1.3465112304688817e-05,
+  "deg_per_m_lat": 8.993212890624942e-06,
+  "lat_sign": -1,
+  "source_bounds": {
+    "minlat": 48.0588228,
+    "minlon": -97.1662471,
+    "maxlat": 48.1324952,
+    "maxlon": -97.0559409
+  },
+  "formula": "x = (lon-lon0)/deg_per_m_lon ; z = lat_sign*(lat-lat0)/deg_per_m_lat",
+  "validated_against": "map/_tmp_fields_geometry.json landuse=farmland ways \u2014 near-perfect overlay, see /pda/sources/calibration_check.png",
+  "notes": "manvel.osm bounds span the full 8192m MapToPlay DTM export box (not just the 4096m playable area); world coords use the playable area's -2048..2048 convention (pixel = world+2048 on the 4096x4096 map rasters)."
+}
