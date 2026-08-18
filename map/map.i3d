@@ -63,6 +63,7 @@
     <File fileId="429" filename="$data/maps/mapAS/textures/terrain/sand02_normal.png"/>
     <File fileId="697" filename="$data/maps/mapUS/textures/buildings/bridgeRiver/bridgeRiver.i3d"/>
     <File fileId="699" filename="$data/maps/mapUS/textures/buildings/grainBargeTerminal02/grainBargeTerminal02.i3d"/>
+    <File fileId="700" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader.i3d"/>
     <File fileId="698" filename="$data/maps/mapUS/textures/props/gameplay/vehicleBarge.i3d"/>
     <File fileId="5" filename="$data/maps/mapUS/textures/terrain/asphalt01_diffuse.png"/>
     <File fileId="8" filename="$data/maps/mapUS/textures/terrain/asphalt01_displacement.png"/>
@@ -721,7 +722,7 @@
 
   <Scene>
     <Light name="sun" translation="0 400 0" rotation="-39.5664 39.1063 0" objectMask="0x83ff0000" nodeId="195" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-2048,-128,-2048" lastShadowMapSplitBboxMax="2048,148,2048" range="10000" scattering="true"/>
-    <Camera name="persp" translation="-848.813 80.8781 194.245" rotation="-35.6525 80.7372 1.87309e-05" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
+    <Camera name="persp" translation="-806.47 107.759 241.614" rotation="-33.591 57.684 -2.74496e-07" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="198" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="7" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
@@ -9905,99 +9906,49 @@
       <ReferenceNode name="americanElm_stage04" translation="-962.738 12.0817 147.846" rotation="0 324.38 0" scale="1.0614 1.0614 1.0614" referenceId="668" nodeId="24789"/>
       <ReferenceNode name="goldenRain_stage02" translation="-957.041 11.9844 147.258" rotation="0 140.344 0" scale="1.1192 1.1192 1.1192" referenceId="666" nodeId="24793"/>
       <ReferenceNode name="goldenRain_stage04" translation="-952.124 11.9494 147.058" rotation="0 39.93 0" scale="1.0569 1.0569 1.0569" referenceId="655" nodeId="24797"/>
-      <ReferenceNode name="pinusSylvestris_stage03" translation="-947.207 11.9844 147.969" rotation="0 189.733 0" scale="1.061 1.061 1.061" referenceId="659" nodeId="24801"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-942.919 12 147.889" rotation="0 63.8538 0" scale="1.0358 1.0358 1.0358" referenceId="655" nodeId="24805"/>
-      <ReferenceNode name="beech_stage05" translation="-937.554 12 147.205" rotation="0 162.267 0" scale="0.9586 0.9586 0.9586" referenceId="657" nodeId="24809"/>
       <ReferenceNode name="northernCatalpa_stage04" translation="-982.961 12.2879 152.6" rotation="0 276.841 0" scale="1.0352 1.0352 1.0352" referenceId="652" nodeId="24813"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="-977.391 12.1984 152.915" rotation="0 348.651 0" scale="1.0105 1.0105 1.0105" referenceId="662" nodeId="24817"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="-972.11 12.0934 152.273" rotation="0 330.15 0" scale="0.929 0.929 0.929" referenceId="662" nodeId="24821"/>
       <ReferenceNode name="beech_stage06_var02" translation="-967.41 12.1051 152.173" rotation="0 129.937 0" scale="0.9368 0.9368 0.9368" referenceId="647" nodeId="24825"/>
       <ReferenceNode name="beech_stage03" translation="-962.57 12.0895 152.157" rotation="0 333.154 0" scale="1.0855 1.0855 1.0855" referenceId="649" nodeId="24829"/>
-      <ReferenceNode name="northernCatalpa_stage04" translation="-957.208 12.0389 152.652" rotation="0 230.75 0" scale="0.9403 0.9403 0.9403" referenceId="652" nodeId="24833"/>
-      <ReferenceNode name="oak_stage02" translation="-952.433 12.035 152.79" rotation="0 122.81 0" scale="1.1104 1.1104 1.1104" referenceId="670" nodeId="24837"/>
-      <ReferenceNode name="pinusSylvestris_stage05" translation="-947.637 12.0545 152.966" rotation="0 163.417 0" scale="1.0094 1.0094 1.0094" referenceId="665" nodeId="24843"/>
-      <ReferenceNode name="americanElm_stage04" translation="-942.099 12.0661 152.588" rotation="0 292.838 0" scale="1.0104 1.0104 1.0104" referenceId="668" nodeId="24847"/>
-      <ReferenceNode name="oak_stage05" translation="-937.759 12.0623 152.256" rotation="0 130.465 0" scale="0.8865 0.8865 0.8865" referenceId="650" nodeId="24851"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-932.746 12.0817 152.678" rotation="0 50.8601 0" scale="0.884 0.884 0.884" referenceId="666" nodeId="24857"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-982.798 12.2724 157.736" rotation="0 257.356 0" scale="1.0126 1.0126 1.0126" referenceId="667" nodeId="24861"/>
       <ReferenceNode name="goldenRain_stage02" translation="-977.552 12.1907 157.969" rotation="0 163.525 0" scale="1.0916 1.0916 1.0916" referenceId="666" nodeId="24865"/>
       <ReferenceNode name="goldenRain_stage04" translation="-972.138 12.0661 157.357" rotation="0 65.4564 0" scale="0.9188 0.9188 0.9188" referenceId="655" nodeId="24869"/>
       <ReferenceNode name="goldenRain_stage04" translation="-967.517 12.0739 157.38" rotation="0 54.6114 0" scale="0.9446 0.9446 0.9446" referenceId="655" nodeId="24873"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-962.292 12.0817 157.501" rotation="0 331.315 0" scale="0.9319 0.9319 0.9319" referenceId="651" nodeId="24877"/>
-      <ReferenceNode name="pinusSylvestris_stage03" translation="-957.672 12.0661 157.37" rotation="0 188.495 0" scale="1.1159 1.1159 1.1159" referenceId="659" nodeId="24881"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-952.476 12.0778 157.015" rotation="0 339.068 0" scale="1.0136 1.0136 1.0136" referenceId="666" nodeId="24885"/>
-      <ReferenceNode name="americanElm_stage03" translation="-947.796 12.0934 157.236" rotation="0 104.422 0" scale="0.8954 0.8954 0.8954" referenceId="669" nodeId="24889"/>
-      <ReferenceNode name="beech_stage05" translation="-942.494 12.1167 157.574" rotation="0 8.3849 0" scale="1.1049 1.1049 1.1049" referenceId="657" nodeId="24893"/>
-      <ReferenceNode name="pinusSylvestris_stage05" translation="-937.578 12.1401 157.725" rotation="0 322.981 0" scale="0.9556 0.9556 0.9556" referenceId="665" nodeId="24897"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="-932.536 12.1167 157.199" rotation="0 30.1327 0" scale="1.0758 1.0758 1.0758" referenceId="662" nodeId="24901"/>
       <ReferenceNode name="americanElm_stage04" translation="-987.081 12.2062 162.703" rotation="0 253.266 0" scale="0.984 0.984 0.984" referenceId="668" nodeId="24905"/>
       <ReferenceNode name="americanElm_stage05" translation="-982.377 12.2412 162.13" rotation="0 136.656 0" scale="0.9124 0.9124 0.9124" referenceId="672" nodeId="24909"/>
       <ReferenceNode name="oak_stage05" translation="-977.095 12.1479 162.377" rotation="0 62.2133 0" scale="0.9972 0.9972 0.9972" referenceId="650" nodeId="24913"/>
       <ReferenceNode name="americanElm_stage05" translation="-972.538 12.0584 162.9" rotation="0 190.81 0" scale="1.1031 1.1031 1.1031" referenceId="672" nodeId="24919"/>
       <ReferenceNode name="americanElm_stage03" translation="-967.131 12.07 162.391" rotation="0 261.4 0" scale="0.9745 0.9745 0.9745" referenceId="669" nodeId="24923"/>
-      <ReferenceNode name="northernCatalpa_stage04" translation="-962.14 12.1089 162.171" rotation="0 227.853 0" scale="0.9556 0.9556 0.9556" referenceId="652" nodeId="24927"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-957.796 12.1245 162.949" rotation="0 61.7144 0" scale="1.0407 1.0407 1.0407" referenceId="666" nodeId="24931"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-952.351 12.1206 162.111" rotation="0 127.315 0" scale="1.0588 1.0588 1.0588" referenceId="666" nodeId="24935"/>
-      <ReferenceNode name="beech_stage05" translation="-947.874 12.1556 162.756" rotation="0 131.789 0" scale="0.8871 0.8871 0.8871" referenceId="657" nodeId="24939"/>
-      <ReferenceNode name="pinusSylvestris_stage05" translation="-942.384 12.1829 162.674" rotation="0 347.595 0" scale="1.0631 1.0631 1.0631" referenceId="665" nodeId="24943"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-937.014 12.1712 162.009" rotation="0 130.848 0" scale="1.0945 1.0945 1.0945" referenceId="655" nodeId="24947"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="-932.993 12.1128 162.998" rotation="0 109.334 0" scale="0.8851 0.8851 0.8851" referenceId="662" nodeId="24951"/>
       <ReferenceNode name="northernCatalpa_stage04" translation="-987.606 12.1401 167.79" rotation="0 259.399 0" scale="1.1168 1.1168 1.1168" referenceId="652" nodeId="24955"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-982.826 12.1829 167.522" rotation="0 128.449 0" scale="1.0666 1.0666 1.0666" referenceId="667" nodeId="24959"/>
       <ReferenceNode name="beech_stage05" translation="-977.921 12.1206 167.219" rotation="0 222.492 0" scale="1.0516 1.0516 1.0516" referenceId="657" nodeId="24963"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-972.606 12.0272 167.861" rotation="0 102.032 0" scale="0.9448 0.9448 0.9448" referenceId="651" nodeId="24967"/>
-      <ReferenceNode name="oak_stage05" translation="-967.927 12.0661 167.734" rotation="0 301.269 0" scale="1.0102 1.0102 1.0102" referenceId="650" nodeId="24971"/>
-      <ReferenceNode name="northernCatalpa_stage02" translation="-962.629 12.1634 167.812" rotation="0 330.163 0" scale="0.9648 0.9648 0.9648" referenceId="651" nodeId="24977"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-957.262 12.1946 167.007" rotation="0 298.955 0" scale="0.9916 0.9916 0.9916" referenceId="655" nodeId="24981"/>
-      <ReferenceNode name="americanElm_stage04" translation="-952.75 12.2179 167.372" rotation="0 92.3797 0" scale="0.9554 0.9554 0.9554" referenceId="668" nodeId="24985"/>
-      <ReferenceNode name="beech_stage03" translation="-947.743 12.2646 167.536" rotation="0 176.587 0" scale="1.0609 1.0609 1.0609" referenceId="649" nodeId="24989"/>
-      <ReferenceNode name="oak_stage02" translation="-942.811 12.2451 167.416" rotation="0 266.208 0" scale="1.0257 1.0257 1.0257" referenceId="670" nodeId="24993"/>
-      <ReferenceNode name="oak_stage05" translation="-937.718 12.1984 167.948" rotation="0 164.117 0" scale="1.0359 1.0359 1.0359" referenceId="650" nodeId="24999"/>
       <ReferenceNode name="americanElm_stage04" translation="-987.617 12.1051 172.037" rotation="0 90.7222 0" scale="0.9102 0.9102 0.9102" referenceId="668" nodeId="25005"/>
       <ReferenceNode name="pinusSylvestris_stage03" translation="-982.425 12.1051 172.919" rotation="0 189.894 0" scale="0.9687 0.9687 0.9687" referenceId="659" nodeId="25009"/>
       <ReferenceNode name="goldenRain_stage04" translation="-977.414 12.0428 172.186" rotation="0 295.184 0" scale="0.885 0.885 0.885" referenceId="655" nodeId="25013"/>
       <ReferenceNode name="americanElm_stage04" translation="-972.919 11.9922 172.785" rotation="0 42.0565 0" scale="0.9711 0.9711 0.9711" referenceId="668" nodeId="25017"/>
-      <ReferenceNode name="northernCatalpa_stage02" translation="-967.17 12.0817 172.66" rotation="0 257.169 0" scale="0.9596 0.9596 0.9596" referenceId="651" nodeId="25021"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-962.605 12.1751 172.3" rotation="0 210.301 0" scale="0.941 0.941 0.941" referenceId="666" nodeId="25025"/>
-      <ReferenceNode name="pinusSylvestris_stage05" translation="-957.509 12.2335 172.15" rotation="0 79.2033 0" scale="0.8942 0.8942 0.8942" referenceId="665" nodeId="25029"/>
-      <ReferenceNode name="beech_stage06_var02" translation="-952.091 12.2918 172.523" rotation="0 286.453 0" scale="1.0862 1.0862 1.0862" referenceId="647" nodeId="25033"/>
-      <ReferenceNode name="beech_stage02" translation="-947.944 12.3074 172.549" rotation="0 127.506 0" scale="0.9395 0.9395 0.9395" referenceId="671" nodeId="25037"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-942.326 12.2335 172.552" rotation="0 290.893 0" scale="1.1057 1.1057 1.1057" referenceId="666" nodeId="25041"/>
       <ReferenceNode name="beech_stage03" translation="-987.33 12.0895 177.827" rotation="0 226.015 0" scale="0.9485 0.9485 0.9485" referenceId="649" nodeId="25045"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-982.942 12.0739 177.982" rotation="0 110.273 0" scale="0.8926 0.8926 0.8926" referenceId="651" nodeId="25049"/>
       <ReferenceNode name="americanElm_stage05" translation="-977.559 11.9961 177.743" rotation="0 211.073 0" scale="0.8959 0.8959 0.8959" referenceId="672" nodeId="25053"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-972.777 11.9611 177.812" rotation="0 260.122 0" scale="1.086 1.086 1.086" referenceId="648" nodeId="25057"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-967.318 12.0661 177.224" rotation="0 252.163 0" scale="0.9624 0.9624 0.9624" referenceId="666" nodeId="25061"/>
-      <ReferenceNode name="northernCatalpa_stage04" translation="-962.023 12.1946 177.423" rotation="0 251.848 0" scale="0.8822 0.8822 0.8822" referenceId="652" nodeId="25065"/>
-      <ReferenceNode name="oak_stage02" translation="-957.743 12.2374 177.736" rotation="0 281.412 0" scale="0.8931 0.8931 0.8931" referenceId="670" nodeId="25069"/>
-      <ReferenceNode name="americanElm_stage04" translation="-952.624 12.2802 177.295" rotation="0 234.622 0" scale="1.0623 1.0623 1.0623" referenceId="668" nodeId="25075"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-947.579 12.249 177.894" rotation="0 179.29 0" scale="0.9647 0.9647 0.9647" referenceId="666" nodeId="25079"/>
       <ReferenceNode name="beech_stage05" translation="-987.041 12.0739 182.3" rotation="0 108.437 0" scale="1.07 1.07 1.07" referenceId="657" nodeId="25083"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-982.794 12.0506 182.054" rotation="0 125.763 0" scale="0.8953 0.8953 0.8953" referenceId="651" nodeId="25087"/>
       <ReferenceNode name="beech_stage06_var02" translation="-977.402 11.965 182.303" rotation="0 327.097 0" scale="0.9226 0.9226 0.9226" referenceId="647" nodeId="25091"/>
       <ReferenceNode name="pinusSylvestris_stage05" translation="-972.38 11.93 182.04" rotation="0 206.183 0" scale="0.9766 0.9766 0.9766" referenceId="665" nodeId="25095"/>
-      <ReferenceNode name="oak_stage02" translation="-967.838 11.9961 182.885" rotation="0 59.6296 0" scale="1.1086 1.1086 1.1086" referenceId="670" nodeId="25099"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="-962.826 12.1751 182.57" rotation="0 18.2899 0" scale="1.0691 1.0691 1.0691" referenceId="662" nodeId="25105"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-957.242 12.2451 182.178" rotation="0 32.7808 0" scale="0.9584 0.9584 0.9584" referenceId="655" nodeId="25109"/>
-      <ReferenceNode name="shagbarkHickory_stage02" translation="-952.417 12.2451 182.785" rotation="0 231.669 0" scale="0.9384 0.9384 0.9384" referenceId="648" nodeId="25113"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-987.185 12.0506 187.092" rotation="0 125.456 0" scale="1.0017 1.0017 1.0017" referenceId="651" nodeId="25117"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-982.041 12.0272 187.2" rotation="0 253.753 0" scale="1.0987 1.0987 1.0987" referenceId="651" nodeId="25121"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-977.088 11.9455 187.361" rotation="0 156.155 0" scale="0.9509 0.9509 0.9509" referenceId="667" nodeId="25125"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-972.674 11.9027 187.678" rotation="0 17.7108 0" scale="0.8878 0.8878 0.8878" referenceId="648" nodeId="25129"/>
-      <ReferenceNode name="beech_stage05" translation="-967.746 11.9805 187.721" rotation="0 76.4299 0" scale="1.0834 1.0834 1.0834" referenceId="657" nodeId="25133"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-962.363 12.1946 187.506" rotation="0 32.2629 0" scale="0.9214 0.9214 0.9214" referenceId="666" nodeId="25137"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-957.047 12.2374 187.376" rotation="0 57.3997 0" scale="1.1082 1.1082 1.1082" referenceId="655" nodeId="25141"/>
       <ReferenceNode name="goldenRain_stage02" translation="-987.271 12.0272 192.854" rotation="0 102.889 0" scale="0.997 0.997 0.997" referenceId="666" nodeId="25145"/>
       <ReferenceNode name="goldenRain_stage02" translation="-982.677 12.0233 192.96" rotation="0 72.5861 0" scale="0.8901 0.8901 0.8901" referenceId="666" nodeId="25149"/>
       <ReferenceNode name="northernCatalpa_stage04" translation="-977.621 11.9339 192.367" rotation="0 337.685 0" scale="0.9165 0.9165 0.9165" referenceId="652" nodeId="25153"/>
       <ReferenceNode name="oak_stage05" translation="-972.222 11.9183 192.52" rotation="0 272.587 0" scale="0.8939 0.8939 0.8939" referenceId="650" nodeId="25157"/>
-      <ReferenceNode name="beech_stage05" translation="-967.379 12.035 192.915" rotation="0 50.8596 0" scale="0.934 0.934 0.934" referenceId="657" nodeId="25163"/>
-      <ReferenceNode name="beech_stage06_var02" translation="-962.613 12.1673 192.021" rotation="0 239.285 0" scale="1.0671 1.0671 1.0671" referenceId="647" nodeId="25167"/>
       <ReferenceNode name="beech_stage02" translation="-987.086 12.0156 197.661" rotation="0 346.886 0" scale="0.9766 0.9766 0.9766" referenceId="671" nodeId="25171"/>
       <ReferenceNode name="beech_stage05" translation="-982.48 11.9922 197.104" rotation="0 145.765 0" scale="1.1143 1.1143 1.1143" referenceId="657" nodeId="25175"/>
       <ReferenceNode name="americanElm_stage05" translation="-977.208 11.9144 197.282" rotation="0 291.924 0" scale="0.9541 0.9541 0.9541" referenceId="672" nodeId="25179"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-972.007 11.93 197.853" rotation="0 188.995 0" scale="0.9815 0.9815 0.9815" referenceId="648" nodeId="25183"/>
-      <ReferenceNode name="goldenRain_stage02" translation="-967.231 12.0311 197.259" rotation="0 203.656 0" scale="1.1051 1.1051 1.1051" referenceId="666" nodeId="25187"/>
       <ReferenceNode name="beech_stage02" translation="-987.006 12.0039 202.316" rotation="0 352.288 0" scale="0.982 0.982 0.982" referenceId="671" nodeId="25191"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-982.095 11.9961 202.341" rotation="0 25.9799 0" scale="1.0608 1.0608 1.0608" referenceId="667" nodeId="25195"/>
       <ReferenceNode name="oak_stage02" translation="-977.088 11.9222 202.6" rotation="0 158.934 0" scale="0.9023 0.9023 0.9023" referenceId="670" nodeId="25199"/>
@@ -10041,8 +9992,6 @@
       <ReferenceNode name="beech_stage06_var02" translation="-962.276 12.0934 237.032" rotation="0 211.727 0" scale="0.8964 0.8964 0.8964" referenceId="647" nodeId="25369"/>
       <ReferenceNode name="pinusSylvestris_stage03" translation="-957.341 12.2529 237.705" rotation="0 38.9955 0" scale="1.0295 1.0295 1.0295" referenceId="659" nodeId="25373"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="-952.258 12.3152 237.791" rotation="0 110.711 0" scale="0.9874 0.9874 0.9874" referenceId="662" nodeId="25377"/>
-      <ReferenceNode name="beech_stage03" translation="-947.194 12.3424 237.767" rotation="0 247.614 0" scale="1.0291 1.0291 1.0291" referenceId="649" nodeId="25381"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="-942.883 12.428 237.314" rotation="0 305.373 0" scale="0.8986 0.8986 0.8986" referenceId="662" nodeId="25385"/>
       <ReferenceNode name="northernCatalpa_stage02" translation="-992.989 11.9767 242.159" rotation="0 78.0595 0" scale="0.8806 0.8806 0.8806" referenceId="651" nodeId="25389"/>
       <ReferenceNode name="americanElm_stage04" translation="-987.357 12.0389 242.315" rotation="0 70.7637 0" scale="1.0736 1.0736 1.0736" referenceId="668" nodeId="25393"/>
       <ReferenceNode name="americanElm_stage04" translation="-982.602 12.1051 242.841" rotation="0 82.7936 0" scale="1.0575 1.0575 1.0575" referenceId="668" nodeId="25397"/>
@@ -10053,7 +10002,6 @@
       <ReferenceNode name="beech_stage03" translation="-957.97 12.2218 242.964" rotation="0 255.273 0" scale="0.9652 0.9652 0.9652" referenceId="649" nodeId="25419"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-952.419 12.323 242.095" rotation="0 168.887 0" scale="1.0095 1.0095 1.0095" referenceId="667" nodeId="25423"/>
       <ReferenceNode name="goldenRain_stage02" translation="-947.53 12.3541 242.065" rotation="0 27.2874 0" scale="0.8947 0.8947 0.8947" referenceId="666" nodeId="25427"/>
-      <ReferenceNode name="northernCatalpa_stage04" translation="-942.528 12.393 242.594" rotation="0 62.4332 0" scale="0.9485 0.9485 0.9485" referenceId="652" nodeId="25431"/>
       <ReferenceNode name="beech_stage02" translation="-992.997 11.965 247.721" rotation="0 266.991 0" scale="0.9045 0.9045 0.9045" referenceId="671" nodeId="25435"/>
       <ReferenceNode name="beech_stage03" translation="-987.157 12.0039 247.546" rotation="0 126.118 0" scale="0.9232 0.9232 0.9232" referenceId="649" nodeId="25439"/>
       <ReferenceNode name="oak_stage02" translation="-982.198 12.0817 247.799" rotation="0 18.8037 0" scale="0.9463 0.9463 0.9463" referenceId="670" nodeId="25443"/>
@@ -10399,7 +10347,6 @@
       <ReferenceNode name="oak_stage05" translation="-902.333 12.5136 102.934" rotation="0 135.746 0" scale="0.9598 0.9598 0.9598" referenceId="650" nodeId="26903"/>
       <ReferenceNode name="northernCatalpa_stage01" translation="-957.849 12.0778 117.013" rotation="0 146.474 0" scale="1.0475 1.0475 1.0475" referenceId="677" nodeId="26909"/>
       <ReferenceNode name="northernCatalpa_stage04" translation="-992.037 12.0039 222.362" rotation="0 190 0" scale="0.995 0.995 0.995" referenceId="652" nodeId="26913"/>
-      <ReferenceNode name="goldenRain_stage04" translation="-952.08 12.2996 232.397" rotation="0 156.143 0" scale="0.9252 0.9252 0.9252" referenceId="655" nodeId="26917"/>
       <ReferenceNode name="goldenRain_stage04" translation="-982.188 12.0623 257.259" rotation="0 287.727 0" scale="0.9912 0.9912 0.9912" referenceId="655" nodeId="26921"/>
       <ReferenceNode name="oak_stage03" translation="-962.659 12.0233 257.072" rotation="0 88.4915 0" scale="0.902 0.902 0.902" referenceId="664" nodeId="26925"/>
       <ReferenceNode name="beech_stage04" translation="-1202.78 12.3346 1652.63" rotation="0 36.3274 0" scale="0.974 0.974 0.974" referenceId="673" nodeId="26931"/>
@@ -25022,20 +24969,15 @@
       <ReferenceNode name="tiliaAmurensis_stage01" translation="-972.759 12.214 132.53" rotation="0 259.689 0" scale="1.0691 1.0691 1.0691" referenceId="685" nodeId="88514"/>
       <ReferenceNode name="americanElm_stage01" translation="-967.735 12.0389 137.425" rotation="0 112.313 0" scale="1.0324 1.0324 1.0324" referenceId="679" nodeId="88518"/>
       <ReferenceNode name="oak_stage01" translation="-947.178 11.9261 142.528" rotation="0 208.251 0" scale="1.0207 1.0207 1.0207" referenceId="663" nodeId="88522"/>
-      <ReferenceNode name="boxelder_stage02" translation="-942.484 11.9494 142.992" rotation="0 4.9263 0" scale="0.9328 0.9328 0.9328" referenceId="660" nodeId="88526"/>
       <ReferenceNode name="aspen_stage04" translation="-987.052 12.284 147.548" rotation="0 278.713 0" scale="0.8933 0.8933 0.8933" referenceId="682" nodeId="88530"/>
       <ReferenceNode name="americanElm_stage03" translation="-987.727 12.2451 152.054" rotation="0 341.651 0" scale="0.9904 0.9904 0.9904" referenceId="669" nodeId="88534"/>
       <ReferenceNode name="americanElm_stage05" translation="-987.307 12.249 157.257" rotation="0 170.858 0" scale="1.0279 1.0279 1.0279" referenceId="672" nodeId="88538"/>
-      <ReferenceNode name="aspen_stage01" translation="-932.941 12.0973 167.005" rotation="0 125.094 0" scale="0.9431 0.9431 0.9431" referenceId="692" nodeId="88542"/>
       <ReferenceNode name="tiliaAmurensis_stage01" translation="-992.075 11.9922 192.515" rotation="0 171.728 0" scale="1.0709 1.0709 1.0709" referenceId="685" nodeId="88546"/>
       <ReferenceNode name="aspen_stage06_var02" translation="-992.177 11.9767 202.821" rotation="0 12.6798 0" scale="0.979 0.979 0.979" referenceId="684" nodeId="88550"/>
-      <ReferenceNode name="boxelder_stage01" translation="-967.427 12.0078 202.651" rotation="0 342.264 0" scale="0.8894 0.8894 0.8894" referenceId="690" nodeId="88554"/>
       <ReferenceNode name="boxelder_stage01" translation="-992.563 11.9805 207.382" rotation="0 248.803 0" scale="0.9065 0.9065 0.9065" referenceId="690" nodeId="88558"/>
       <ReferenceNode name="oak_stage05" translation="-992.813 11.9961 212.622" rotation="0 50.9196 0" scale="0.9378 0.9378 0.9378" referenceId="650" nodeId="88562"/>
       <ReferenceNode name="americanElm_stage02" translation="-992.473 12.0039 217.481" rotation="0 295.427 0" scale="0.9508 0.9508 0.9508" referenceId="686" nodeId="88568"/>
       <ReferenceNode name="aspen_stage02" translation="-962.266 12.0739 227.414" rotation="0 154.806 0" scale="1.0871 1.0871 1.0871" referenceId="680" nodeId="88572"/>
-      <ReferenceNode name="shagbarkHickory_stage03" translation="-947.105 12.3152 232.337" rotation="0 160.535 0" scale="0.9459 0.9459 0.9459" referenceId="675" nodeId="88576"/>
-      <ReferenceNode name="oak_stage04" translation="-937.702 12.5292 237.899" rotation="0 165.723 0" scale="0.9115 0.9115 0.9115" referenceId="687" nodeId="88580"/>
       <ReferenceNode name="boxelder_stage02" translation="-937.824 12.4514 242.89" rotation="0 152.788 0" scale="1.054 1.054 1.054" referenceId="660" nodeId="88586"/>
       <ReferenceNode name="aspen_stage01" translation="-997.382 11.9222 252.163" rotation="0 145.541 0" scale="0.9548 0.9548 0.9548" referenceId="692" nodeId="88590"/>
       <ReferenceNode name="boxelder_stage03" translation="-917.808 12.428 252.348" rotation="0 156.514 0" scale="0.9901 0.9901 0.9901" referenceId="656" nodeId="88594"/>
@@ -60103,26 +60045,12 @@
       <ReferenceNode name="americanElm_stage05" translation="-962.139 11.9183 137.376" rotation="0 16.196 0" scale="0.8897 0.8897 0.8897" referenceId="672" nodeId="238710"/>
       <ReferenceNode name="aspen_stage01" translation="-957.932 11.8677 137.832" rotation="0 158.661 0" scale="0.9138 0.9138 0.9138" referenceId="692" nodeId="238714"/>
       <ReferenceNode name="boxelder_stage01" translation="-987.566 12.284 142.044" rotation="0 94.8965 0" scale="1.0963 1.0963 1.0963" referenceId="690" nodeId="238718"/>
-      <ReferenceNode name="oak_stage04" translation="-937.183 11.9805 142.896" rotation="0 358.195 0" scale="0.9095 0.9095 0.9095" referenceId="687" nodeId="238722"/>
-      <ReferenceNode name="oak_stage03" translation="-932.749 12.0233 147.599" rotation="0 128.159 0" scale="0.9509 0.9509 0.9509" referenceId="664" nodeId="238728"/>
-      <ReferenceNode name="americanElm_stage03" translation="-927.744 12.035 157.648" rotation="0 214.985 0" scale="0.9921 0.9921 0.9921" referenceId="669" nodeId="238734"/>
-      <ReferenceNode name="aspen_stage04" translation="-927.619 12.0156 162.474" rotation="0 315.653 0" scale="0.9175 0.9175 0.9175" referenceId="682" nodeId="238738"/>
-      <ReferenceNode name="tiliaAmurensis_stage03" translation="-937.261 12.1051 172.682" rotation="0 153.704 0" scale="0.9062 0.9062 0.9062" referenceId="693" nodeId="238742"/>
       <ReferenceNode name="americanElm_stage02" translation="-992.687 12.035 177.826" rotation="0 164.366 0" scale="0.9823 0.9823 0.9823" referenceId="686" nodeId="238746"/>
-      <ReferenceNode name="shagbarkHickory_stage03" translation="-942.955 12.1907 177.311" rotation="0 309.52 0" scale="1.0344 1.0344 1.0344" referenceId="675" nodeId="238750"/>
       <ReferenceNode name="boxelder_stage03" translation="-992.285 12.0272 182.849" rotation="0 350.697 0" scale="1.0002 1.0002 1.0002" referenceId="656" nodeId="238754"/>
-      <ReferenceNode name="aspen_stage06_var02" translation="-947.375 12.2023 182.201" rotation="0 2.7193 0" scale="1.0577 1.0577 1.0577" referenceId="684" nodeId="238758"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="-992.938 12.0117 187.978" rotation="0 268.157 0" scale="1.0104 1.0104 1.0104" referenceId="662" nodeId="238762"/>
-      <ReferenceNode name="aspen_stage06_var01" translation="-952.957 12.2218 187.932" rotation="0 86.1544 0" scale="1.0295 1.0295 1.0295" referenceId="691" nodeId="238766"/>
-      <ReferenceNode name="boxelder_stage01" translation="-957.434 12.2296 192.213" rotation="0 161.623 0" scale="1.0288 1.0288 1.0288" referenceId="690" nodeId="238770"/>
       <ReferenceNode name="tiliaAmurensis_stage02" translation="-992.143 11.9844 197.512" rotation="0 24.2002 0" scale="0.9618 0.9618 0.9618" referenceId="688" nodeId="238774"/>
-      <ReferenceNode name="boxelder_stage03" translation="-962.75 12.1206 197.557" rotation="0 301.365 0" scale="0.9364 0.9364 0.9364" referenceId="656" nodeId="238778"/>
-      <ReferenceNode name="shagbarkHickory_stage01" translation="-967.028 12.0117 207.55" rotation="0 217.905 0" scale="0.9605 0.9605 0.9605" referenceId="689" nodeId="238782"/>
-      <ReferenceNode name="oak_stage05" translation="-967.699 11.9767 212.968" rotation="0 250.961 0" scale="1.0732 1.0732 1.0732" referenceId="650" nodeId="238786"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="-967.166 11.9533 222.891" rotation="0 91.3741 0" scale="0.9628 0.9628 0.9628" referenceId="662" nodeId="238792"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-957.572 12.2101 227.584" rotation="0 117.33 0" scale="1.0629 1.0629 1.0629" referenceId="648" nodeId="238796"/>
       <ReferenceNode name="oak_stage01" translation="-997.696 11.9455 232.222" rotation="0 275.934 0" scale="0.9093 0.9093 0.9093" referenceId="663" nodeId="238800"/>
-      <ReferenceNode name="tiliaAmurensis_stage01" translation="-942.327 12.463 232.754" rotation="0 311.84 0" scale="0.9522 0.9522 0.9522" referenceId="685" nodeId="238804"/>
       <ReferenceNode name="oak_stage02" translation="-997.554 11.93 237.878" rotation="0 47.7155 0" scale="1.0314 1.0314 1.0314" referenceId="670" nodeId="238808"/>
       <ReferenceNode name="oak_stage01" translation="-997.967 11.9144 242.128" rotation="0 297.831 0" scale="0.9982 0.9982 0.9982" referenceId="663" nodeId="238814"/>
       <ReferenceNode name="americanElm_stage04" translation="-997.557 11.9144 247.49" rotation="0 253.87 0" scale="0.983 0.983 0.983" referenceId="668" nodeId="238818"/>
@@ -68438,33 +68366,18 @@
       <ReferenceNode name="aspen_stage01" translation="-974.18 12.1673 145.543" rotation="0 124.813 0" scale="1.0207 1.0207 1.0207" referenceId="692" nodeId="274556"/>
       <ReferenceNode name="shagbarkHickory_stage01" translation="-964.762 12.07 144.852" rotation="0 166.844 0" scale="0.8811 0.8811 0.8811" referenceId="689" nodeId="274560"/>
       <ReferenceNode name="americanElm_stage03" translation="-955.111 11.9339 145.234" rotation="0 351.573 0" scale="1.0712 1.0712 1.0712" referenceId="669" nodeId="274564"/>
-      <ReferenceNode name="boxelder_stage02" translation="-945.072 11.9494 144.108" rotation="0 55.4827 0" scale="0.9755 0.9755 0.9755" referenceId="660" nodeId="274568"/>
-      <ReferenceNode name="aspen_stage06_var02" translation="-934.144 12 144.669" rotation="0 126.972 0" scale="1.0291 1.0291 1.0291" referenceId="684" nodeId="274572"/>
       <ReferenceNode name="oak_stage05" translation="-985.983 12.2685 155.195" rotation="0 303.936 0" scale="0.9815 0.9815 0.9815" referenceId="650" nodeId="274576"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-974.975 12.1323 154.622" rotation="0 77.9979 0" scale="1.0897 1.0897 1.0897" referenceId="648" nodeId="274582"/>
       <ReferenceNode name="tiliaAmurensis_stage02" translation="-965.971 12.0973 154.378" rotation="0 9.7837 0" scale="0.8916 0.8916 0.8916" referenceId="688" nodeId="274586"/>
-      <ReferenceNode name="boxelder_stage03" translation="-954.167 12.0545 154.842" rotation="0 143.646 0" scale="1.1175 1.1175 1.1175" referenceId="656" nodeId="274590"/>
-      <ReferenceNode name="aspen_stage06_var01" translation="-944.293 12.0895 154.626" rotation="0 196.355 0" scale="1.01 1.01 1.01" referenceId="691" nodeId="274594"/>
-      <ReferenceNode name="aspen_stage01" translation="-934.127 12.0973 154.189" rotation="0 275.141 0" scale="1.1018 1.1018 1.1018" referenceId="692" nodeId="274598"/>
       <ReferenceNode name="aspen_stage01" translation="-985.156 12.2257 164.354" rotation="0 177.117 0" scale="1.035 1.035 1.035" referenceId="692" nodeId="274602"/>
       <ReferenceNode name="boxelder_stage03" translation="-975.033 12.0817 164.719" rotation="0 84.1642 0" scale="0.9682 0.9682 0.9682" referenceId="656" nodeId="274606"/>
-      <ReferenceNode name="boxelder_stage02" translation="-964.584 12.1051 164.311" rotation="0 238.164 0" scale="1.0196 1.0196 1.0196" referenceId="660" nodeId="274610"/>
-      <ReferenceNode name="aspen_stage06_var01" translation="-955.45 12.1868 165.565" rotation="0 133.522 0" scale="0.8964 0.8964 0.8964" referenceId="691" nodeId="274614"/>
-      <ReferenceNode name="shagbarkHickory_stage03" translation="-944.466 12.2062 165.051" rotation="0 106.768 0" scale="1.0567 1.0567 1.0567" referenceId="675" nodeId="274618"/>
-      <ReferenceNode name="americanElm_stage01" translation="-934.823 12.144 165.113" rotation="0 273.142 0" scale="1.0513 1.0513 1.0513" referenceId="679" nodeId="274622"/>
       <ReferenceNode name="americanElm_stage02" translation="-985.633 12.1128 174.683" rotation="0 31.7931 0" scale="1.0939 1.0939 1.0939" referenceId="686" nodeId="274626"/>
       <ReferenceNode name="aspen_stage03" translation="-975.475 11.9961 175.358" rotation="0 266.543 0" scale="1.0049 1.0049 1.0049" referenceId="683" nodeId="274630"/>
-      <ReferenceNode name="americanElm_stage02" translation="-965.291 12.1323 175.702" rotation="0 311.004 0" scale="0.9687 0.9687 0.9687" referenceId="686" nodeId="274634"/>
-      <ReferenceNode name="boxelder_stage03" translation="-954.839 12.2685 174.532" rotation="0 331.259 0" scale="0.9078 0.9078 0.9078" referenceId="656" nodeId="274638"/>
-      <ReferenceNode name="americanElm_stage01" translation="-944.419 12.2374 175.408" rotation="0 102.224 0" scale="0.9962 0.9962 0.9962" referenceId="679" nodeId="274642"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-984.146 12.0545 185.99" rotation="0 205.129 0" scale="0.9613 0.9613 0.9613" referenceId="667" nodeId="274646"/>
       <ReferenceNode name="shagbarkHickory_stage01" translation="-974.172 11.9222 184.518" rotation="0 254.646 0" scale="1.0055 1.0055 1.0055" referenceId="689" nodeId="274650"/>
-      <ReferenceNode name="americanElm_stage04" translation="-964.725 12.1051 184.74" rotation="0 225.886 0" scale="0.9326 0.9326 0.9326" referenceId="668" nodeId="274654"/>
-      <ReferenceNode name="aspen_stage04" translation="-955.302 12.2412 184.579" rotation="0 353.371 0" scale="1.0918 1.0918 1.0918" referenceId="682" nodeId="274658"/>
       <ReferenceNode name="tiliaAmurensis_stage03" translation="-994.054 11.9922 195.171" rotation="0 224.441 0" scale="0.902 0.902 0.902" referenceId="693" nodeId="274662"/>
       <ReferenceNode name="aspen_stage06_var02" translation="-984.964 12.0311 195.65" rotation="0 113.823 0" scale="0.8803 0.8803 0.8803" referenceId="684" nodeId="274666"/>
       <ReferenceNode name="aspen_stage06_var02" translation="-975.762 11.9144 194.136" rotation="0 11.5692 0" scale="0.8968 0.8968 0.8968" referenceId="684" nodeId="274670"/>
-      <ReferenceNode name="boxelder_stage02" translation="-965.524 12.07 194.084" rotation="0 292.374 0" scale="1.0251 1.0251 1.0251" referenceId="660" nodeId="274674"/>
       <ReferenceNode name="aspen_stage06_var01" translation="-994.237 11.9805 205.059" rotation="0 155.993 0" scale="0.9198 0.9198 0.9198" referenceId="691" nodeId="274678"/>
       <ReferenceNode name="oak_stage03" translation="-984.217 12.0233 204.568" rotation="0 162.866 0" scale="0.8899 0.8899 0.8899" referenceId="664" nodeId="274682"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-974.389 11.9144 204.606" rotation="0 62.6842 0" scale="0.9509 0.9509 0.9509" referenceId="648" nodeId="274688"/>
@@ -68480,7 +68393,6 @@
       <ReferenceNode name="aspen_stage04" translation="-974.86 11.9961 235.01" rotation="0 42.5742 0" scale="1.0998 1.0998 1.0998" referenceId="682" nodeId="274730"/>
       <ReferenceNode name="boxelder_stage03" translation="-965.549 11.9844 234.721" rotation="0 135.946 0" scale="1.0847 1.0847 1.0847" referenceId="656" nodeId="274734"/>
       <ReferenceNode name="aspen_stage01" translation="-954.893 12.284 234.099" rotation="0 252.54 0" scale="1.1077 1.1077 1.1077" referenceId="692" nodeId="274738"/>
-      <ReferenceNode name="aspen_stage06_var01" translation="-944.589 12.3735 235.376" rotation="0 40.4747 0" scale="0.9706 0.9706 0.9706" referenceId="691" nodeId="274742"/>
       <ReferenceNode name="oak_stage01" translation="-994.238 11.965 244.231" rotation="0 317.935 0" scale="1.0004 1.0004 1.0004" referenceId="663" nodeId="274746"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="-984.243 12.0739 245.445" rotation="0 249.032 0" scale="0.9383 0.9383 0.9383" referenceId="675" nodeId="274750"/>
       <ReferenceNode name="tiliaAmurensis_stage02" translation="-974.352 11.9961 245.301" rotation="0 61.7165 0" scale="0.9841 0.9841 0.9841" referenceId="688" nodeId="274754"/>
@@ -82511,12 +82423,15 @@
     <TransformGroup name="maptoplayWater" translation="0 12.9582 0" static="true" collisionFilterGroup="0x80000000" collisionFilterMask="0x1" nodeId="334829">
       <ReferenceNode name="maptoplayWater" translation="0 2.6 0" referenceId="696" nodeId="334864"/>
     </TransformGroup>
-    <ReferenceNode name="bridgeRiver_lod" translation="605.046 31.8987 502.466" rotation="0.0197823 58.0396 0" referenceId="697" nodeId="334912"/>
-    <ReferenceNode name="vehicleBarge" translation="748.131 20.2558 615.941" rotation="180 -36.5048 180" referenceId="698" nodeId="334957"/>
-    <ReferenceNode name="grainBargeTerminal02" translation="741.003 25.6694 550.715" rotation="-180 53.2292 -180" referenceId="699" nodeId="335026"/>
-    <Shape name="ShipMover_bargeRiverManvel" translation="-841.783 19.8525 -1947.08" shapeId="186" nodeId="335058" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" renderedInViewports="false">
-      <ReferenceNode name="ShipStatic_vehicleBargeManvel" translation="23.6913 0.100819 -47.4309" rotation="0 -27.5461 0" referenceId="698" nodeId="335059"/>
-    </Shape>
+    <TransformGroup name="riverSystem" translation="313.099 24.4191 -69.4895" nodeId="356692">
+      <ReferenceNode name="bridgeRiver_lod" translation="291.947 7.4796 571.955" rotation="0.0197823 58.0396 0" referenceId="697" nodeId="334912"/>
+      <ReferenceNode name="vehicleBarge" translation="435.032 -4.1633 685.43" rotation="-180 -36.5048 -180" referenceId="698" nodeId="334957"/>
+      <ReferenceNode name="grainBargeTerminal02" translation="427.904 1.2503 620.204" rotation="180 53.2292 180" referenceId="699" nodeId="335026"/>
+      <Shape name="ShipMover_bargeRiverManvel" translation="-1154.88 -4.5666 -1877.59" shapeId="186" nodeId="335058" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" renderedInViewports="false">
+        <ReferenceNode name="ShipStatic_vehicleBargeManvel" translation="23.6913 0.100819 -47.4309" rotation="0 -27.5461 0" referenceId="698" nodeId="335059"/>
+      </Shape>
+    </TransformGroup>
+    <ReferenceNode name="vehicleDealer" translation="-933.189 32.3674 214.108" rotation="-1.17454e-05 87.8976 -2.53953e-05" referenceId="700" nodeId="357021"/>
   </Scene>
 
   <UserAttributes>
