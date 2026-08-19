@@ -62,9 +62,13 @@
     <File fileId="430" filename="$data/maps/mapAS/textures/terrain/sand02_height.png"/>
     <File fileId="429" filename="$data/maps/mapAS/textures/terrain/sand02_normal.png"/>
     <File fileId="697" filename="$data/maps/mapUS/textures/buildings/bridgeRiver/bridgeRiver.i3d"/>
+    <File fileId="709" filename="$data/maps/mapUS/textures/buildings/drainageTunnel03/drainageTunnel03.i3d"/>
     <File fileId="699" filename="$data/maps/mapUS/textures/buildings/grainBargeTerminal02/grainBargeTerminal02.i3d"/>
-    <File fileId="700" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader.i3d"/>
+    <File fileId="701" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader.i3d"/>
     <File fileId="698" filename="$data/maps/mapUS/textures/props/gameplay/vehicleBarge.i3d"/>
+    <File fileId="702" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_diffuse.png"/>
+    <File fileId="703" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_normal.png"/>
+    <File fileId="704" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_specular.png"/>
     <File fileId="5" filename="$data/maps/mapUS/textures/terrain/asphalt01_diffuse.png"/>
     <File fileId="8" filename="$data/maps/mapUS/textures/terrain/asphalt01_displacement.png"/>
     <File fileId="7" filename="$data/maps/mapUS/textures/terrain/asphalt01_height.png"/>
@@ -592,7 +596,9 @@
     <File fileId="688" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage02.i3d"/>
     <File fileId="693" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03.i3d"/>
     <File fileId="667" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage04.i3d"/>
+    <File fileId="700" filename="$data/placeables/mapUS/sellingPoints/grainBargeTerminal02Triggers/grainBargeTerminal02Triggers.i3d"/>
     <File fileId="637" filename="$data/shaders/groundHeightShader.xml"/>
+    <File fileId="705" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="2" filename="$data/shaders/terrainShader.xml"/>
     <File fileId="644" filename="$data/shared/assets/marker/markerIconShopping.i3d"/>
     <File fileId="638" filename="$data/shared/groundHeightNoise.dds"/>
@@ -712,6 +718,13 @@
     </Material>
     <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
+    <Material name="map_bounds_material" materialId="3493" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="smallBridgesConcrete_mat" materialId="357242" customShaderId="705">
+      <Texture fileId="702"/>
+      <Normalmap fileId="703"/>
+      <Glossmap fileId="704"/>
+    </Material>
     <Material name="terrainMaterial_mat" materialId="7" customShaderId="2">
     </Material>
   </Materials>
@@ -722,7 +735,7 @@
 
   <Scene>
     <Light name="sun" translation="0 400 0" rotation="-39.5664 39.1063 0" objectMask="0x83ff0000" nodeId="195" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-2048,-128,-2048" lastShadowMapSplitBboxMax="2048,148,2048" range="10000" scattering="true"/>
-    <Camera name="persp" translation="-806.47 107.759 241.614" rotation="-33.591 57.684 -2.74496e-07" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
+    <Camera name="persp" translation="747.321 50.2342 586.229" rotation="-33.8242 -39.7642 -3.33209e-06" visibility="false" nodeId="196" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="198" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="7" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
@@ -4571,14 +4584,14 @@
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="vehicleShop" translation="0 20 -339.361" nodeId="3473">
-        <Shape name="vehicleShopTrigger" translation="-921.442 12.284 551.957" rotation="0 60 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="3474" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+        <Shape name="vehicleShopTrigger" translation="-929.408 12.284 561.633" rotation="0 60 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="3474" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
           <ReferenceNode name="markerIconShopping" translation="-1.58325e-08 0 27.8497" referenceId="644" nodeId="3478"/>
           <TransformGroup name="vehicleShopPlayerSpawn" translation="-1.74017 0 19.3159" rotation="0 172 0" nodeId="3481"/>
         </Shape>
-        <TransformGroup name="storeSpawnPlace1Start" translation="-890.114 12 526.347" nodeId="3482">
+        <TransformGroup name="storeSpawnPlace1Start" translation="-922.795 12 528.823" nodeId="3482">
           <TransformGroup name="storeSpawnPlace1End" translation="29.338 0 0" nodeId="3483"/>
         </TransformGroup>
-        <TransformGroup name="storeSpawnPlace2Start" translation="-883.513 12.2062 493.402" nodeId="3484">
+        <TransformGroup name="storeSpawnPlace2Start" translation="-903.511 12.2062 502.106" nodeId="3484">
           <TransformGroup name="storeSpawnPlace2End" translation="42.8742 0 0" nodeId="3485"/>
         </TransformGroup>
       </TransformGroup>
@@ -82430,8 +82443,24 @@
       <Shape name="ShipMover_bargeRiverManvel" translation="-1154.88 -4.5666 -1877.59" shapeId="186" nodeId="335058" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" renderedInViewports="false">
         <ReferenceNode name="ShipStatic_vehicleBargeManvel" translation="23.6913 0.100819 -47.4309" rotation="0 -27.5461 0" referenceId="698" nodeId="335059"/>
       </Shape>
+      <ReferenceNode name="grainBargeTerminal02Triggers" translation="467.039 1.61645 634.561" rotation="0 -52.2238 0" referenceId="700" nodeId="357492"/>
     </TransformGroup>
-    <ReferenceNode name="vehicleDealer" translation="-933.189 32.3674 214.108" rotation="-1.17454e-05 87.8976 -2.53953e-05" referenceId="700" nodeId="357021"/>
+    <TransformGroup name="vehicleDealer" translation="-933.189 32.3674 214.108" rotation="-1.17454e-05 87.8977 -2.53953e-05" nodeId="357389">
+      <ReferenceNode name="vehicleDealer" rotation="-3.73715e-13 -0 0" referenceId="701" nodeId="357021"/>
+    </TransformGroup>
+    <TransformGroup name="roadSystem" translation="1583.12 30.0141 -224.05" nodeId="357475">
+      <TransformGroup name="bridgeRoad14x40m" lockedgroup="true" translation="322.484 1.88438 -1322.68" clipDistance="200" nodeId="357247">
+        <TransformGroup name="visual_lod" lodDistance="0 60" lodBlending="false" nodeId="357248">
+          <Shape name="LOD0" shapeId="187" nodeId="357249" castsShadows="true" receiveShadows="true" materialIds="357242"/>
+          <Shape name="LOD1" shapeId="188" nodeId="357250" castsShadows="true" receiveShadows="true" materialIds="357242"/>
+        </TransformGroup>
+        <Shape name="col" shapeId="189" static="true" collisionFilterGroup="0x207c" collisionFilterMask="0xfffffbff" nodeId="357251" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="3493"/>
+      </TransformGroup>
+      <ReferenceNode name="drainageTunnel03" translation="379.017 -0.0652752 313.539" rotation="-0 -90 0" referenceId="709" nodeId="357303"/>
+      <ReferenceNode name="drainageTunnel03" translation="391.625 -0.0652752 313.539" rotation="-0 -90 0" referenceId="709" nodeId="357372"/>
+      <ReferenceNode name="drainageTunnel03" translation="-550.579 -0.876917 348.784" rotation="-0 -90 0" referenceId="709" nodeId="357390"/>
+      <ReferenceNode name="drainageTunnel03" translation="-542.547 -0.876917 346.823" rotation="-0 -90 0" referenceId="709" nodeId="357407"/>
+    </TransformGroup>
   </Scene>
 
   <UserAttributes>
