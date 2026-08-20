@@ -10,6 +10,7 @@
     <storeItem xmlFilename="assets/manvelCoop/propaneBuyPoint.xml"/>
     <storeItem xmlFilename="assets/limeStationTrigger/limeStationTrigger.xml"/>
 
+    <storeItem xmlFilename="assets/vehicleDealer/workshopTrigger.xml"/>
 <!-- PRODUCTION POINTS -->
     <storeItem xmlFilename="$data/placeables/mapUS/bakeryUS/bakeryUS.xml"/>
     <storeItem xmlFilename="$data/placeables/mapUS/cannedPackagedFactoryUS/cannedPackagedFactoryUS.xml"/>

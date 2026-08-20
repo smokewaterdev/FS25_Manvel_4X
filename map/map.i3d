@@ -615,6 +615,7 @@
     <File fileId="695" filename="../assets/electricity/maptoplay_powerlines.i3d"/>
     <File fileId="646" filename="../assets/map_bounds/map_bounds.i3d"/>
     <File fileId="705" filename="../assets/vehicleDealer/vehicleTrader.i3d"/>
+    <File fileId="724" filename="../assets/vehicleDealer/workshopTrigger.i3d"/>
     <File fileId="696" filename="../assets/water/maptoplay_water.i3d"/>
     <File fileId="4" filename="data/asphalt01_weight.png"/>
     <File fileId="9" filename="data/asphalt02_weight.png"/>
@@ -82514,6 +82515,13 @@
       <TransformGroup name="vehicleDealer" translation="-933.189 32.3674 214.108" rotation="-1.17454e-05 87.8977 -2.53953e-05" nodeId="336194">
         <ReferenceNode name="vehicleDealer" rotation="-3.73715e-13 -0 0" referenceId="705" nodeId="336276"/>
       </TransformGroup>
+      <TransformGroup name="preplaced_vehicleDealerWorkshop" lockedgroup="true" translation="-902.5 32.3674 166.5" nodeId="339076">
+        <TransformGroup name="placeable" nodeId="339077">
+          <ReferenceNode name="sellingStationVehicles" referenceId="724" nodeId="339078"/>
+        </TransformGroup>
+        <TransformGroup name="props" nodeId="339079"/>
+        <TransformGroup name="aiSplines" nodeId="339080"/>
+      </TransformGroup>
       <TransformGroup name="mainFarm" translation="-91.9828 32.5727 400.242" nodeId="336469">
         <TransformGroup name="preplaced_liquidFlatBottomTank1630" lockedgroup="true" translation="34.9828 0.427292 -30.2416" nodeId="336470">
           <TransformGroup name="placeable" nodeId="336471">
@@ -84082,6 +84090,13 @@
       <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
       <Attribute name="uniqueId" type="string" value="preplaced_grainBargeTerminal02Triggers_15d79aa4f1d8f319650a9629a36cc443f"/>
       <Attribute name="xmlFilename" type="string" value="$data/placeables/mapUS/sellingPoints/grainBargeTerminal02Triggers/grainBargeTerminal02Triggers.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="339076">
+      <Attribute name="aiSplines" type="string" value="2"/>
+      <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
+      <Attribute name="uniqueId" type="string" value="preplaced_vehicleDealerWorkshop_8c9e4d2f1a6b47c093e5d8a2f4b7610c"/>
+      <Attribute name="xmlFilename" type="string" value="assets/vehicleDealer/workshopTrigger.xml"/>
     </UserAttribute>
   </UserAttributes>
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationVehicles" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/shared/warningStripes_diffuse.png" />
+    <File fileId="2" filename="$data/shared/warningStripes_normal.png" />
+    <File fileId="3" filename="$data/shared/warningStripes_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="warningStripes_mat1" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshopTrigger.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="sellingStationVehicles" collision="false" trigger="true" clipDistance="150" nodeId="1">
+      <Shape name="vehicleTrigger" translation="-0.4572 0 -1" rotation="0 90 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="warningStripes01" translation="-5.215069 0 -1" shapeId="2" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="2,3" clipDistance="200" nodeId="3"/>
+      <Shape name="playerInteractionTrigger" translation="6.0428 0 -6.5" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="4">
+        <TransformGroup name="workshopMarker" collision="false" nodeId="5">
+          <TransformGroup name="playerTriggerMarker" collision="false" nodeId="6"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="hotspotNode" translation="11.5 0 74.5" nodeId="7"/>
+      <TransformGroup name="teleportNode" translation="11.5 0 74.5" rotation="0 318 0" nodeId="8"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="9">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-6.656807 0 -7.152405" nodeId="10">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="11.225135 0 14.32745" nodeId="11"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="12">
+        <Shape name="tipCollision" translation="0 0 1.31023" rotation="0 90 0" shapeId="4" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="13"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
