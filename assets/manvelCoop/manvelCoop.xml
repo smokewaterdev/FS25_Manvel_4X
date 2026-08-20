@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$data/shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Manvel Cooperative</name>
+        <image>$data/store/store_empty.png</image>
+        <price>0</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>../FS25_GrainSiloSystem/grainSilo.i3d</filename>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <deletedNodes>
+        <deletedNode node="loadingStation"/>
+    </deletedNodes>
+
+    <placement useRandomYRotation="false" useManualYRotation="true"/>
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+
+    <infoTrigger triggerNode="infoTrigger" showAllPlayers="true"/>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="markerUnloading" teleportNode="markerUnloading"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="SELLINGSTATION_FIELDFRUITS" priceScale="1" aiNode="aiUnloadingNode"/>
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="mapPosition" node="0>4|0"/>
+        <i3dMapping id="loadingStation" node="0>4|2"/>
+        <i3dMapping id="exactFillRootNode" node="0>4|3|0"/>
+        <i3dMapping id="aiUnloadingNode" node="0>4|3|1"/>
+        <i3dMapping id="infoTrigger" node="0>4|4"/>
+        <i3dMapping id="markerUnloading" node="0>5|1"/>
+    </i3dMappings>
+</placeable>

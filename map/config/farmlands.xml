@@ -64,7 +64,7 @@
     <farmland id="61" priceScale="1" npcName="FORESTER" />
     <farmland id="62" priceScale="1" npcName="FORESTER" />
     <farmland id="63" priceScale="1" npcName="FORESTER" />
-    <farmland id="64" priceScale="1" npcName="FORESTER" />
+    <farmland id="64" priceScale="1" npcName="FORESTER" showOnFarmlandsScreen="false" />
     <farmland id="65" priceScale="1" npcName="FORESTER" />
   </farmlands>
 </map>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<i3D name="markerIconLoadOffset.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset><Export program="GIANTS Editor" version="10.0.11"/></Asset>
+  <Files><File fileId="1" filename="$data/shared/assets/marker/markerIconLoad.i3d"/></Files>
+  <Materials/>
+  <Shapes/>
+  <Scene>
+    <TransformGroup name="markerIconLoadOffset" nodeId="1">
+      <ReferenceNode name="markerIconLoad" translation="0 0 1.1" referenceId="1" nodeId="2"/>
+    </TransformGroup>
+  </Scene>
+</i3D>

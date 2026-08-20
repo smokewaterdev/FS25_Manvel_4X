@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <storeItems>
+<!-- MAP-SPECIFIC PREPLACED PLACEABLES -->
+    <storeItem xmlFilename="assets/manvelCoop/manvelCoop.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/herbicideBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/liquidLimeBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/liquidFertilizerBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/dieselBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/propaneBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/limeStationTrigger/limeStationTrigger.xml"/>
+
 <!-- PRODUCTION POINTS -->
     <storeItem xmlFilename="$data/placeables/mapUS/bakeryUS/bakeryUS.xml"/>
     <storeItem xmlFilename="$data/placeables/mapUS/cannedPackagedFactoryUS/cannedPackagedFactoryUS.xml"/>

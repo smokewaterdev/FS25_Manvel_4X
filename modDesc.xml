@@ -19,6 +19,19 @@ Shopkategorie: Maps
     <iconFilename>preview.png</iconFilename>
 
     <multiplayer supported="true" />
+
+    <dependencies>
+        <dependency>FS25_US_Mailboxes</dependency>
+        <dependency>FS25_66x96Shop</dependency>
+        <dependency>FS25_SmallBarndominium</dependency>
+        <dependency>FS25_GrainSiloSystem</dependency>
+        <dependency>FS25_WesteelSiloSystem</dependency>
+        <dependency>FS25_Liquid_Lime</dependency>
+        <dependency>FS25_Liquidstorage</dependency>
+        <dependency>FS25_MixShed</dependency>
+        <dependency>FS25_USAFlag</dependency>
+    </dependencies>
+
     <maps>
         <map id="MapToPlay" configFilename="map/map.xml"
             defaultVehiclesXMLFilename="map/config/vehicles.xml"

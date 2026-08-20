@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
-    <placeable modName="FS25_US_Mailboxes" filename="$moddir$FS25_US_Mailboxes/MailboxSmallFour.xml" uniqueId="placeable76151f3d76c24fb1802b68d4dfdd174e" position="-47.4173 32.897819 280.157" rotation="180.00 1.92182 180.00" age="0.000000" price="250.000000" farmId="1">
-        <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_mailbox_four_2d9d7d6b195cbafed944f7520e2067907" farmId="1">
+        <configuration name="color" id="SHARED_RED1" isActive="true"/>
     </placeable>
-    <placeable modName="FS25_66x96Shop" filename="$moddir$FS25_66x96Shop/Shop.xml" uniqueId="placeable497225d879484379b4d14efe186bf3ba" position="-74.0 33.000018 402.0" rotation="0.00 90.00 0.00" age="0.000000" price="40000.000000" farmId="1">
+    <placeable isPreplaced="true" uniqueId="preplaced_Shop_0de71c12727d8409400320dc0c0729ad0" farmId="1">
         <configuration name="mainColor" id="SHARED_WHITE2" isActive="true"/>
         <configuration name="roofColor" id="SHARED_GREYDARK" isActive="true"/>
         <configuration name="TrimColor" id="SHARED_WHITE2" isActive="true"/>
@@ -13,21 +13,29 @@
         <configuration name="bottomTinColor" id="SHARED_WHITE2" isActive="true"/>
         <configuration name="doorTrimColor" id="SHARED_WHITE2" isActive="true"/>
     </placeable>
-    <placeable modName="FS25_SmallBarndominium" filename="$moddir$FS25_SmallBarndominium/MultiGarage.xml" uniqueId="placeablea5d2e996d13e4a059a1696db08c16262" position="-89.0004 33.33582 325.0" rotation="0.00 0.00 0.00" age="0.000000" price="100000.000000" farmId="1">
+    <placeable isPreplaced="true" uniqueId="preplaced_Barndo_08e6c4db8033f2b4f7836efa61605711a" farmId="1">
         <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
         <configuration name="solarPanels" id="1" isActive="true"/>
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>
-    <placeable modName="FS25_GrainSiloSystem" filename="$moddir$FS25_GrainSiloSystem/grainSilo.xml" uniqueId="placeable774dcb54b98b4a1eb07e5b937935ea8e" position="-1185.344 32.353 1769.718" rotation="-0.00 90.00 0.00" age="0.000000" price="600000.000000" farmId="1" boughtWithFarmlandOverwrite="true">
-        <configuration name="solarPanels" id="1" isActive="true"/>
-        <silo>
-            <storage index="1" farmId="1"/>
-        </silo>
+    <placeable isPreplaced="true" uniqueId="preplaced_grainSilo_0425d39260120da99d5eff7e6b6f84441"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmersMarketUS_07fb6668108bab15be4fd552e16031554">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+        </animatedObjects>
     </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_limeStation_0447dc7b7511f55272aed7883c0c73502"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_grainBargeTerminal02Triggers_15d79aa4f1d8f319650a9629a36cc443f"/>
+    <placeable isPreplaced="true" uniqueId="placeable5f3c8a1b9d2e4c6fa08b1e7c9d4f2a6e"/>
+    <placeable isPreplaced="true" uniqueId="placeablec2a250706c484ac18a97300b5ab273b9"/>
+    <placeable isPreplaced="true" uniqueId="placeable37dc8de1658b467ead6cfaa2a2fe0c95"/>
     <placeable isPreplaced="true" uniqueId="placeabled65347dfc4af47b0be1ef49dcab0366d"/>
     <placeable isPreplaced="true" uniqueId="placeableeda59e2dad8a44da9cb84cc262021389"/>
-    <placeable isPreplaced="true" uniqueId="placeable26dfccec40544ca397f954cfaa4f822f"/>
+    <placeable isPreplaced="true" uniqueId="placeable1d99d8b6940640ecb807f584fe74e551"/>
     <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3"/>
     <placeable isPreplaced="true" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb"/>
     <placeable isPreplaced="true" uniqueId="placeableb0c17632ecc84d3688e938e97b53fc03"/>
@@ -37,4 +45,5 @@
     <placeable isPreplaced="true" uniqueId="placeablee5bca542b6014b66affb9713deb63502"/>
     <placeable isPreplaced="true" uniqueId="placeableb0841995e0ff4070b632f10ddd766533"/>
     <placeable isPreplaced="true" uniqueId="placeable9c09120fc09f49efabca566cf5d4e023"/>
+    <placeable isPreplaced="true" uniqueId="placeable3e07ca174e084d20be14573a2ec8c438"/>
 </placeables>

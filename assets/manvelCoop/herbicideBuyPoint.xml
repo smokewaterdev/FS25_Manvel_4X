@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData><name>Manvel Cooperative - Herbicide</name><image>$moddir$FS25_Liquidstorage/store_liquidstorage.png</image><price>0</price><canBeSold>false</canBeSold><showInStore>false</showInStore><lifetime>1000</lifetime><rotation>0</rotation><brand>MERIDIAN</brand><species>PLACEABLE</species><category>placeableMisc</category></storeData>
+    <base><filename>$moddir$FS25_Liquidstorage/Herbizid.i3d</filename><boughtWithFarmland>false</boughtWithFarmland><canBeRenamed>false</canBeRenamed></base>
+    <deletedNodes><deletedNode node="unloadingStation"/><deletedNode node="refillPlayerTrigger"/><deletedNode node="refillMarker"/><deletedNode node="storage"/><deletedNode node="infoTrigger"/></deletedNodes>
+    <buyingStation node="buyingStation" supportsExtension="false"><loadTrigger triggerNode="loadingTrigger" aiNode="loadingTriggerAINode" fillTypes="HERBICIDE" fillLitersPerSecond="500" infiniteCapacity="true"/><fillType name="HERBICIDE" priceScale="1"/></buyingStation>
+    <hotspots><hotspot type="LOADING" linkNode="mapPosition" teleportNode="markerLoading"/></hotspots>
+    <triggerMarkers><triggerMarker node="markerLoading" filename="assets/manvelCoop/markerIconLoadOffset.i3d"/></triggerMarkers>
+    <i3dMappings>
+        <i3dMapping id="buyingStation" node="0>4|1"/><i3dMapping id="unloadingStation" node="0>4|0"/><i3dMapping id="loadingTrigger" node="0>4|1|0"/><i3dMapping id="loadingTriggerAINode" node="0>4|1|1"/>
+        <i3dMapping id="refillPlayerTrigger" node="0>4|2"/><i3dMapping id="refillMarker" node="0>4|3"/><i3dMapping id="storage" node="0>4|4"/><i3dMapping id="mapPosition" node="0>4|5"/><i3dMapping id="markerLoading" node="0>4|6"/><i3dMapping id="infoTrigger" node="0>4|7"/>
+    </i3dMappings>
+</placeable>

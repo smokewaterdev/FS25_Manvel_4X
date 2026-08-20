@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="vehicleTrader.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+    <File fileId="54" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderInterior_diffuse.png"/>
+    <File fileId="55" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderInterior_normal.png"/>
+    <File fileId="56" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderInterior_specular.png"/>
+    <File fileId="60" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderLogo_diffuse.png"/>
+    <File fileId="61" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderLogo_normal.png"/>
+    <File fileId="62" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTraderLogo_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_diffuse.png"/>
+    <File fileId="58" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_emissive.png"/>
+    <File fileId="10" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_height.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_mask.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/buildings/vehicleTrader/vehicleTrader_specular.png"/>
+    <File fileId="77" filename="$data/maps/mapUS/textures/curtainsSet_diffuse.png"/>
+    <File fileId="78" filename="$data/maps/mapUS/textures/curtainsSet_normal.png"/>
+    <File fileId="79" filename="$data/maps/mapUS/textures/curtainsSet_specular.png"/>
+    <File fileId="71" filename="$data/maps/mapUS/textures/props/publicLighSet_diffuse.png"/>
+    <File fileId="72" filename="$data/maps/mapUS/textures/props/publicLighSet_normal.png"/>
+    <File fileId="73" filename="$data/maps/mapUS/textures/props/publicLighSet_specular.png"/>
+    <File fileId="68" filename="$data/maps/mapUS/textures/props/vehicleTraderLobby_diffuse.png"/>
+    <File fileId="69" filename="$data/maps/mapUS/textures/props/vehicleTraderLobby_normal.png"/>
+    <File fileId="70" filename="$data/maps/mapUS/textures/props/vehicleTraderLobby_specular.png"/>
+    <File fileId="36" filename="$data/maps/textures/shared/concreteDamagedDecals_diffuse.png"/>
+    <File fileId="37" filename="$data/maps/textures/shared/concreteDamagedDecals_normal.png"/>
+    <File fileId="38" filename="$data/maps/textures/shared/concreteDamagedDecals_specular.png"/>
+    <File fileId="30" filename="$data/maps/textures/shared/cracks_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/textures/shared/cracks_normal.png"/>
+    <File fileId="26" filename="$data/maps/textures/shared/decalSet_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/decalSet_normal.png"/>
+    <File fileId="28" filename="$data/maps/textures/shared/decalSet_specular.png"/>
+    <File fileId="59" filename="$data/maps/textures/shared/mapLeaksFR_diffuse.png"/>
+    <File fileId="39" filename="$data/maps/textures/shared/plasterDamagedDecals_diffuse.png"/>
+    <File fileId="40" filename="$data/maps/textures/shared/plasterDamagedDecals_normal.png"/>
+    <File fileId="47" filename="$data/maps/textures/shared/plasterDecalSet_diffuse.png"/>
+    <File fileId="48" filename="$data/maps/textures/shared/plasterDecalSet_normal.png"/>
+    <File fileId="49" filename="$data/maps/textures/shared/plasterDecalSet_specular.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="65" filename="$data/maps/textures/shared/props/motorex/motorexDecal_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/textures/shared/rustLeaksDecals_diffuse.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/rustLeaksDecals_normal.png"/>
+    <File fileId="35" filename="$data/maps/textures/shared/rustLeaksDecals_specular.png"/>
+    <File fileId="52" filename="$data/maps/textures/shared/signageUSDecals_diffuse.png"/>
+    <File fileId="53" filename="$data/maps/textures/shared/signageUSDecals_specular.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="74" filename="$data/maps/textures/shared/windowsGlass_diffuse.png"/>
+    <File fileId="75" filename="$data/maps/textures/shared/windowsGlass_normal.png"/>
+    <File fileId="76" filename="$data/maps/textures/shared/windowsGlass_specular.png"/>
+    <File fileId="81" filename="$data/maps/textures/shared/windowsIndustrial04_diffuse.png"/>
+    <File fileId="82" filename="$data/maps/textures/shared/windowsIndustrial04_normal.png"/>
+    <File fileId="83" filename="$data/maps/textures/shared/windowsIndustrial04_specular.png"/>
+    <File fileId="67" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialDay_diffuse.png"/>
+    <File fileId="66" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialNight_diffuse.png"/>
+    <File fileId="41" filename="$data/placeables/mapAS/grainElevatorHarborAS/grainElevatorHarborAS_specular.png"/>
+    <File fileId="11" filename="$data/placeables/mapUS/shared/detailSetUSDoors_diffuse.png"/>
+    <File fileId="15" filename="$data/placeables/mapUS/shared/detailSetUSDoors_mask.png"/>
+    <File fileId="12" filename="$data/placeables/mapUS/shared/detailSetUSDoors_normal.png"/>
+    <File fileId="13" filename="$data/placeables/mapUS/shared/detailSetUSDoors_specular.png"/>
+    <File fileId="16" filename="$data/placeables/mapUS/shared/detailSetUSFrames_diffuse.png"/>
+    <File fileId="17" filename="$data/placeables/mapUS/shared/detailSetUSFrames_normal.png"/>
+    <File fileId="18" filename="$data/placeables/mapUS/shared/detailSetUSFrames_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="14" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="29" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="57" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="84" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="22" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="80" filename="$data/shaders/translucencyShader.xml"/>
+    <File fileId="42" filename="$data/shaders/vertexPaintShader.xml"/>
+    <File fileId="44" filename="$data/shared/default_normal.png"/>
+    <File fileId="45" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="colorStripes_mat" materialId="1073330" diffuseColor="0.0509804 0.0392157 0.290196 1" specularColor="0.74902 1 0">
+      <Normalmap fileId="44"/>
+    </Material>
+    <Material name="concreteDamagedDecals_mat" materialId="1073331">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+    </Material>
+    <Material name="cracks_mat" materialId="1073332" specularColor="0.501961 1 0.501961">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+    </Material>
+    <Material name="curtainsSet_mat" materialId="1073333" customShaderId="80">
+      <Texture fileId="77"/>
+      <Normalmap fileId="78"/>
+      <Glossmap fileId="79"/>
+      <CustomParameter name="translucencyAmount" value="0.7"/>
+    </Material>
+    <Material name="decalSet_mat" materialId="1073334" alphaBlending="true" customShaderId="29">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="detailSetUSDoors_mat" materialId="1073335" customShaderId="14" customShaderVariation="colorScale_customMask">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="mCustomMask" fileId="15"/>
+      <CustomParameter name="contrastLuminiosity" value="-0.88 0.9"/>
+      <CustomParameter name="colorScale0" value="0.0001 0.0001 0.0001 0.8"/>
+      <CustomParameter name="colorScale1" value="0.0001 0.2 0.1 0.88"/>
+    </Material>
+    <Material name="detailSetUSFrames_mat" materialId="1073336" customShaderId="14" customShaderVariation="colorScale_customMask">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mCustomMask" fileId="15"/>
+      <CustomParameter name="contrastLuminiosity" value="1 0.52"/>
+      <CustomParameter name="colorScale0" value="0.0001 0.0001 0.0001 0.8"/>
+      <CustomParameter name="colorScale1" value="0.0001 0.2 0.1 0.88"/>
+    </Material>
+    <Material name="icicles_mat" materialId="1073337" alphaBlending="true" customShaderId="22" customShaderVariation="icicle">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="lambert1" materialId="1073338" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="motorexDecal_01_mat" materialId="1073339" specularColor="0.501961 1 0">
+      <Texture fileId="65"/>
+      <Normalmap fileId="44"/>
+    </Material>
+    <Material name="motorexDecal_02_mat" materialId="1073340" specularColor="0.74902 1 0">
+      <Texture fileId="65"/>
+      <Normalmap fileId="44"/>
+    </Material>
+    <Material name="paintBarrel_mat" materialId="1073341" diffuseColor="0 0.396078 0.305882 1" specularColor="0.74902 1 0">
+      <Normalmap fileId="44"/>
+    </Material>
+    <Material name="plasterDamagedDecals_mat" materialId="1073342" customShaderId="42" customShaderVariation="alphaNoise_customParallax_uv2">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+    </Material>
+    <Material name="plasterDecalSet_mat" materialId="1073343">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="49"/>
+    </Material>
+    <Material name="publicLighSet_mat" materialId="1073344" customShaderId="57" customShaderVariation="customEmissiveMap_secondUV">
+      <Texture fileId="71"/>
+      <Normalmap fileId="72"/>
+      <Glossmap fileId="73"/>
+      <Custommap name="mEmissiveMap" fileId="58"/>
+    </Material>
+    <Material name="rustLeaksDecals_mat" materialId="1073345" alphaBlending="true">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="signageUSDecals_mat" materialId="1073346" customShaderId="29">
+      <Texture fileId="52"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="53"/>
+    </Material>
+    <Material name="snow_mat" materialId="1073347" customShaderId="22">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25" bumpDepth="0.5"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="vehicleTrader_01_mat" materialId="1073348" customShaderId="4" customShaderVariation="colorScale_customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+      <CustomParameter name="colorScale0" value="0 0.632 0.375 0.8"/>
+      <CustomParameter name="colorScale2" value="0.0001 0.3 0.2 0.88"/>
+    </Material>
+    <Material name="vehicleTrader_02_mat" materialId="1073349" customShaderId="4" customShaderVariation="heightBlend">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mMossDiffuse" fileId="59"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+      <CustomParameter name="dirtMossMix" value="-0.04 0.15"/>
+      <CustomParameter name="dirtMossTint" value="0 0 0"/>
+      <CustomParameter name="sharpness_gradientPosition_heightIntensity" value="0.56 0.2 0.57"/>
+    </Material>
+    <Material name="vehicleTraderInterior_mat" materialId="1073350" customShaderId="57" customShaderVariation="customEmissiveMap_secondUV">
+      <Texture fileId="54"/>
+      <Normalmap fileId="55"/>
+      <Glossmap fileId="56"/>
+      <Custommap name="mEmissiveMap" fileId="58"/>
+    </Material>
+    <Material name="vehicleTraderLobby_mat" materialId="1073351">
+      <Texture fileId="68"/>
+      <Normalmap fileId="69"/>
+      <Glossmap fileId="70"/>
+    </Material>
+    <Material name="vehicleTraderLogo_alphaBlended_mat" materialId="1073352" alphaBlending="true" customShaderId="29">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
+    </Material>
+    <Material name="vehicleTraderLogo_opaque_mat" materialId="1073353" customShaderId="57">
+      <Texture fileId="60"/>
+      <Normalmap fileId="61"/>
+      <Glossmap fileId="62"/>
+      <CustomParameter name="lightControl" value="0.6"/>
+    </Material>
+    <Material name="windowsGlass_mat" materialId="1073354" alphaBlending="true">
+      <Texture fileId="74"/>
+      <Normalmap fileId="75"/>
+      <Glossmap fileId="76"/>
+    </Material>
+    <Material name="windowsIndustrial04_mat" materialId="1073355" alphaBlending="true" customShaderId="84" customShaderVariation="alphaMap">
+      <Texture fileId="81"/>
+      <Normalmap fileId="82"/>
+      <Glossmap fileId="83"/>
+    </Material>
+    <Material name="windowsRoomInteriorsIndustrialNight_mat" materialId="1073356" customShaderId="57" customShaderVariation="alphaTestDisable_extraBaseMap">
+      <Texture fileId="66"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+      <Custommap name="mExtraBaseMap" fileId="67"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="vehicleTrader.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="vehicleDealer" lockedgroup="true" clipDistance="500" nodeId="1073413">
+      <TransformGroup name="visual_lod" lodDistance="0 120" nodeId="1073414">
+        <TransformGroup name="LOD0" lockedgroup="true" translation="119 -0.75 17.75" nodeId="1073415">
+          <Shape name="vis01" translation="-119 0.75 -17.75" shapeId="1" clipDistance="500" nodeId="1073416" castsShadows="true" receiveShadows="true" materialIds="1073348"/>
+          <Shape name="eaves" translation="-119 0.75 -17.75" shapeId="2" nodeId="1073417" castsShadows="true" receiveShadows="true" materialIds="1073335"/>
+          <Shape name="frames" translation="-119 0.75 -17.75" shapeId="3" nodeId="1073418" castsShadows="true" receiveShadows="true" materialIds="1073336,1073335"/>
+          <TransformGroup name="seasons" translation="-119 0.75 -17.75" nodeId="1073419">
+            <TransformGroup name="winter" nodeId="1073420">
+              <Shape name="icicles01" shapeId="4" clipDistance="75" nodeId="1073421" castsShadows="true" receiveShadows="true" materialIds="1073337" weatherRequiredMask="0x400"/>
+              <Shape name="snow01" shapeId="5" nodeId="1073422" castsShadows="true" receiveShadows="true" materialIds="1073347" weatherRequiredMask="0x400"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="decals" translation="-119 0.75 -17.75" nodeId="1073423">
+            <Shape name="leaksDecal01" shapeId="6" clipDistance="75" nodeId="1073424" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073334"/>
+            <Shape name="crackDecal" shapeId="7" clipDistance="75" nodeId="1073425" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073332"/>
+            <Shape name="rustDecal" shapeId="8" clipDistance="75" nodeId="1073426" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073345"/>
+            <Shape name="plasterBorderDecal" shapeId="9" clipDistance="75" nodeId="1073427" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073331"/>
+            <Shape name="plasterDamagedDecal" shapeId="10" clipDistance="75" nodeId="1073428" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073342"/>
+            <Shape name="plasterDecal" shapeId="11" clipDistance="75" nodeId="1073429" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073343"/>
+            <Shape name="glassDecal" shapeId="12" clipDistance="65" nodeId="1073430" castsShadows="false" receiveShadows="true" doubleSided="true" decalLayer="1" materialIds="1073330"/>
+            <Shape name="signsDecal" translation="0.029997 0.085955 0.064705" shapeId="13" clipDistance="75" nodeId="1073431" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073346"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="1073432">
+          <Shape name="interior_LOD" shapeId="14" nodeId="1073433" castsShadows="true" receiveShadows="true" materialIds="1073350" weatherRequiredMask="0x40" renderInvisible="true"/>
+          <Shape name="frames_LOD" shapeId="15" nodeId="1073434" castsShadows="true" receiveShadows="true" materialIds="1073336,1073335"/>
+          <Shape name="vis01_LOD" shapeId="16" nodeId="1073435" castsShadows="true" receiveShadows="true" materialIds="1073348"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visual_office_lod" translation="65.9532 -0.941518 30.896" lodDistance="0 110" nodeId="1073436">
+        <TransformGroup name="LOD0" lockedgroup="true" translation="0 0.941518 2.25" static="true" collisionFilterMask="0xfffffbff" clipDistance="500" nodeId="1073437">
+          <TransformGroup name="seasons" nodeId="1073438">
+            <TransformGroup name="winter" nodeId="1073439">
+              <Shape name="icicles02" shapeId="17" clipDistance="75" nodeId="1073440" castsShadows="true" receiveShadows="true" materialIds="1073337" weatherRequiredMask="0x400"/>
+              <Shape name="snow02" shapeId="18" nodeId="1073441" castsShadows="true" receiveShadows="true" materialIds="1073347" weatherRequiredMask="0x400"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="decals" clipDistance="75" nodeId="1073442">
+            <Shape name="leaksDecal02" shapeId="19" clipDistance="75" nodeId="1073443" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073334"/>
+            <Shape name="plasterDecal" shapeId="20" clipDistance="75" nodeId="1073444" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073343"/>
+            <Shape name="signsDecal" translation="-120 0 -20" shapeId="21" clipDistance="75" nodeId="1073445" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073346"/>
+          </TransformGroup>
+          <Shape name="vis02" shapeId="22" nodeId="1073446" castsShadows="true" receiveShadows="true" materialIds="1073348"/>
+          <Shape name="bricksDetails" shapeId="23" clipDistance="75" nodeId="1073447" castsShadows="true" receiveShadows="true" materialIds="1073348"/>
+          <Shape name="vertexPaintWalls" shapeId="24" clipDistance="300" nodeId="1073448" castsShadows="true" receiveShadows="true" materialIds="1073349"/>
+          <Shape name="eaves" translation="0 -0.75 0" shapeId="25" clipDistance="500" nodeId="1073449" castsShadows="true" receiveShadows="true" materialIds="1073335"/>
+          <Shape name="frames" translation="-120 0 -20" shapeId="26" nodeId="1073450" castsShadows="true" receiveShadows="true" materialIds="1073336,1073335"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" translation="0 0 0.06699" nodeId="1073451">
+          <Shape name="vis02_LOD" translation="0 0.941517 2.18301" shapeId="27" nodeId="1073452" castsShadows="true" receiveShadows="true" materialIds="1073348"/>
+          <Shape name="frames_LOD1" translation="-120 0.94152 -17.817" shapeId="28" nodeId="1073453" castsShadows="true" receiveShadows="true" materialIds="1073336,1073335"/>
+          <Shape name="vertexPaintWalls" translation="0 0.941518 2.18301" shapeId="24" nodeId="1073454" castsShadows="true" receiveShadows="true" materialIds="1073349"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="logo_lod" translation="-11.7714 5.73921 4.00235" lodDistance="0 50" static="true" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="1073455">
+        <Shape name="LOD0" translation="11.7714 -5.73921 -4.00235" shapeId="29" nodeId="1073456" castsShadows="true" receiveShadows="true" materialIds="1073353" weatherRequiredMask="0x40" renderInvisible="true"/>
+        <Shape name="LOD1" translation="11.7714 -5.73921 -4.00235" shapeId="30" nodeId="1073457" castsShadows="true" receiveShadows="true" materialIds="1073353" weatherRequiredMask="0x40" renderInvisible="true"/>
+      </TransformGroup>
+      <TransformGroup name="barrels" translation="-54.0468 0 13.146" nodeId="1073458">
+        <Shape name="motorexOilBarrel" lockedgroup="true" translation="111.644 -0.076671 12.2681" rotation="0 90 0" shapeId="31" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1073459" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338">
+          <Shape name="vis" shapeId="32" clipDistance="150" nodeId="1073460" castsShadows="true" receiveShadows="true" materialIds="1073341"/>
+          <Shape name="decal" shapeId="33" clipDistance="65" nodeId="1073461" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073340"/>
+        </Shape>
+        <Shape name="motorexOilBarrel1" lockedgroup="true" translation="111.644 -0.076671 16.4177" rotation="0 90 0" shapeId="31" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1073462" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338">
+          <Shape name="vis" shapeId="32" clipDistance="150" nodeId="1073463" castsShadows="true" receiveShadows="true" materialIds="1073341"/>
+          <Shape name="decal" shapeId="33" clipDistance="65" nodeId="1073464" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073340"/>
+        </Shape>
+        <Shape name="motorexOilBarrel2" lockedgroup="true" translation="111.644 -0.076671 28.5478" rotation="0 83.169 0" shapeId="31" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1073465" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338">
+          <Shape name="vis" shapeId="32" clipDistance="150" nodeId="1073466" castsShadows="true" receiveShadows="true" materialIds="1073341"/>
+          <Shape name="decal" shapeId="33" clipDistance="65" nodeId="1073467" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073340"/>
+        </Shape>
+        <Shape name="motorexOilBarrel3" lockedgroup="true" translation="128.375 -0.076671 20.5239" rotation="0 83.169 0" shapeId="31" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1073468" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338">
+          <Shape name="vis" shapeId="32" clipDistance="150" nodeId="1073469" castsShadows="true" receiveShadows="true" materialIds="1073341"/>
+          <Shape name="decal" shapeId="33" clipDistance="65" nodeId="1073470" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073340"/>
+        </Shape>
+        <Shape name="motorexOilBarrel4" lockedgroup="true" translation="128.375 -0.076671 12.3352" rotation="0 94.1395 0" shapeId="31" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="1073471" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338">
+          <Shape name="vis" shapeId="32" clipDistance="150" nodeId="1073472" castsShadows="true" receiveShadows="true" materialIds="1073341"/>
+          <Shape name="decal" shapeId="33" clipDistance="65" nodeId="1073473" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073340"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="interior" translation="120 0 20" nodeId="1073474">
+        <TransformGroup name="main" translation="-120 0 -20" nodeId="1073475">
+          <TransformGroup name="selfIllum" nodeId="1073476">
+            <Shape name="fakeInterior01" shapeId="34" clipDistance="75" nodeId="1073477" castsShadows="true" receiveShadows="true" materialIds="1073356" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="realLights" nodeId="1073478">
+            <Light name="pointLight06" translation="0.451171 6.90406 4.88777" rotation="0 -89.9965 0" nodeId="1073479" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight08" translation="-3.03912 6.90406 -16.4512" rotation="0 0.001786 0" nodeId="1073480" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight09" translation="-24.4512 6.90406 14.8999" rotation="0 90.0035 0" nodeId="1073481" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight10" translation="0.443945 1.19642 2.48482" rotation="0 -90 0" nodeId="1073482" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight11" translation="-24.4512 6.90406 20.3044" rotation="0 90.0035 0" nodeId="1073483" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight13" translation="-18.9268 1.00319 -16.4751" rotation="-9e-06 -3e-05 0" nodeId="1073484" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight14" translation="37.702 1.19642 -11.1454" rotation="0 -89.9933 0" nodeId="1073485" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight15" translation="37.7211 1.5094 -13.1061" rotation="0 -90 0" nodeId="1073486" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight22" translation="0.875947 4.00797 22.8685" rotation="0 -90 0" nodeId="1073487" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight23" translation="0.875947 4.00797 20.4484" rotation="0 -90 0" nodeId="1073488" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight24" translation="0.875947 4.00797 17.624" rotation="0 -90 0" nodeId="1073489" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight25" translation="-17.3628 7.38266 24.7574" rotation="0 -90 0" nodeId="1073490" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight26" translation="-19.6266 7.38266 24.7574" rotation="0 -90 0" nodeId="1073491" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight27" translation="-22.3778 7.38266 24.7574" rotation="0 -90 0" nodeId="1073492" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight28" translation="-22.8819 7.38266 -16.8348" rotation="0 -90 0" nodeId="1073493" type="point" color="0.05049 0.0668116 0.09" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="interior" nodeId="1073494">
+            <Shape name="interior" shapeId="35" clipDistance="300" nodeId="1073495" castsShadows="true" receiveShadows="true" materialIds="1073350" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <TransformGroup name="furniture" clipDistance="150" nodeId="1073496">
+              <TransformGroup name="lobbyFileCabinet" clipDistance="75" nodeId="1073497">
+                <Shape name="lobbyFileCabinet" translation="-11.5731 0 8.60889" shapeId="36" clipDistance="75" nodeId="1073498" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet1" translation="-11.1152 0 8.60889" shapeId="36" clipDistance="75" nodeId="1073499" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet2" translation="-10.6417 0 8.60889" shapeId="36" clipDistance="75" nodeId="1073500" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet3" translation="-12.0456 0 8.60889" shapeId="36" clipDistance="75" nodeId="1073501" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet4" translation="-23 0 22.5994" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073502" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet5" translation="-23 0 22.1514" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073503" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet6" translation="-18 0 17.0388" shapeId="36" clipDistance="75" nodeId="1073504" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet7" translation="-17.5574 0 17.0388" shapeId="36" clipDistance="75" nodeId="1073505" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet8" translation="-17.1073 0 17.0388" shapeId="36" clipDistance="75" nodeId="1073506" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet9" translation="-7.10337 0 22" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073507" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet10" translation="-7.10337 0 21.5753" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073508" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet11" translation="-7.10337 0 21.1461" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073509" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet12" translation="-7.10337 0 20.7129" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073510" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet13" translation="-7.10337 0 -10.9036" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073511" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet14" translation="-7.10337 0 -10.4678" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073512" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet15" translation="-7.10337 0 -10.0325" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073513" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet16" translation="-3 0 -9.06917" rotation="0 180 0" shapeId="36" clipDistance="75" nodeId="1073514" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet17" translation="-3.44072 0 -9.06917" rotation="0 180 0" shapeId="36" clipDistance="75" nodeId="1073515" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet18" translation="-3.87685 0 -9.06917" rotation="0 180 0" shapeId="36" clipDistance="75" nodeId="1073516" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet19" translation="-4.32262 0 -9.06917" rotation="0 180 0" shapeId="36" clipDistance="75" nodeId="1073517" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet20" translation="-4.76653 0 -9.06917" rotation="0 180 0" shapeId="36" clipDistance="75" nodeId="1073518" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet21" translation="-23.0907 0 -12.3408" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073519" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet22" translation="-23.0907 0 -11.9123" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073520" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyFileCabinet23" translation="-23.0907 0 -11.4817" rotation="0 90 0" shapeId="36" clipDistance="75" nodeId="1073521" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyDesk" clipDistance="75" nodeId="1073522">
+                <Shape name="lobbyDesk" translation="-14.3749 0 13.2973" shapeId="37" clipDistance="75" nodeId="1073523" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyDesk1" translation="-20.8873 0 -10.483" rotation="0 90 0" shapeId="37" clipDistance="75" nodeId="1073524" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyDecoTable" clipDistance="75" nodeId="1073525">
+                <Shape name="lobbyDecoTable" translation="-15.0482 0 16.3013" shapeId="38" clipDistance="75" nodeId="1073526" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyDecoTable2" translation="-8.75688 0 15.1296" shapeId="38" clipDistance="75" nodeId="1073527" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyChair" clipDistance="75" nodeId="1073528">
+                <Shape name="lobbyChair" translation="-19.6623 0 18" shapeId="39" clipDistance="75" nodeId="1073529" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair1" translation="-20.4692 0 18" rotation="0 -15.2694 0" shapeId="39" clipDistance="75" nodeId="1073530" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair2" translation="-17.8039 0 20.4304" rotation="0 259.249 0" shapeId="39" clipDistance="75" nodeId="1073531" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair3" translation="-22.4503 0 19.5549" rotation="0 75 0" shapeId="39" clipDistance="75" nodeId="1073532" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair4" translation="-22.4613 0 20.4905" rotation="0 63.0055 0" shapeId="39" clipDistance="75" nodeId="1073533" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair5" translation="-14.873 0 11.9339" rotation="0 255 0" shapeId="39" clipDistance="75" nodeId="1073534" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair6" translation="-14.8892 0 14.4813" rotation="0 249.54 0" shapeId="39" clipDistance="75" nodeId="1073535" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair7" translation="-18 0 -14" rotation="0 249.54 0" shapeId="39" clipDistance="75" nodeId="1073536" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyChair8" translation="-22.2052 0 -14.2346" rotation="0 70.6902 0" shapeId="39" clipDistance="75" nodeId="1073537" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyTableSmall" clipDistance="75" nodeId="1073538">
+                <Shape name="lobbyTable" translation="-6 0 9" shapeId="40" clipDistance="75" nodeId="1073539" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable15" translation="-3.23804 0 17.3826" shapeId="40" clipDistance="75" nodeId="1073540" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable16" translation="-9 0 18" rotation="0 -90 0" shapeId="40" clipDistance="75" nodeId="1073541" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyTableBig" clipDistance="75" nodeId="1073542">
+                <Shape name="lobbyTable" translation="-20 0 17.3126" shapeId="41" clipDistance="75" nodeId="1073543" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable17" translation="-22.8871 0 19.978" rotation="0 -90 0" shapeId="41" clipDistance="75" nodeId="1073544" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable18" translation="-17.13 0 20.1159" rotation="0 -90 0" shapeId="41" clipDistance="75" nodeId="1073545" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable19" translation="-17.1545 0 -13.8202" rotation="0 -90 0" shapeId="41" clipDistance="75" nodeId="1073546" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyTable20" translation="-22.8867 0 -14.117" rotation="0 -90 0" shapeId="41" clipDistance="75" nodeId="1073547" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyMeeting" clipDistance="75" nodeId="1073548">
+                <Shape name="lobbyMeeting" translation="-5.31673 0.481584 -12.9517" shapeId="42" clipDistance="75" nodeId="1073549" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyMeeting1" translation="-2.46715 0.481584 21.5413" rotation="0 42.7293 0" shapeId="42" clipDistance="75" nodeId="1073550" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+              <TransformGroup name="lobbyArmchair" clipDistance="75" nodeId="1073551">
+                <Shape name="lobbyArmchair" translation="-9 0 19.6851" shapeId="43" clipDistance="75" nodeId="1073552" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyArmchair1" translation="-9 0 16.4849" shapeId="43" clipDistance="75" nodeId="1073553" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyArmchair2" translation="-4.45414 0 8.88545" rotation="0 90 0" shapeId="43" clipDistance="75" nodeId="1073554" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyArmchair3" translation="-7.525 0 8.88545" rotation="0 90 0" shapeId="43" clipDistance="75" nodeId="1073555" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyArmchair4" translation="-1.71351 0 17.276" rotation="0 90 0" shapeId="43" clipDistance="75" nodeId="1073556" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+                <Shape name="lobbyArmchair5" translation="-4.73506 0 17.276" rotation="0 90 0" shapeId="43" clipDistance="75" nodeId="1073557" castsShadows="true" receiveShadows="true" materialIds="1073351"/>
+              </TransformGroup>
+            </TransformGroup>
+            <Shape name="lamps" shapeId="44" clipDistance="75" nodeId="1073558" castsShadows="true" receiveShadows="true" materialIds="1073344" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Shape name="framesInterior" shapeId="45" clipDistance="75" nodeId="1073559" castsShadows="true" receiveShadows="true" materialIds="1073335,1073336" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <TransformGroup name="realLights" nodeId="1073560" weatherRequiredMask="0x40" renderInvisible="true">
+              <Light name="lightTOP33" translation="-5.84833 2.76476 -10.5385" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073561" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP32" translation="-2.51778 2.76476 -10.5692" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073562" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP31" translation="-2.51778 2.76476 -13.4286" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073563" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP30" translation="-5.84833 2.76476 -13.4286" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073564" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP29" translation="-18.3472 2.76476 -13.5557" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073565" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP28" translation="-21.7029 2.76476 -13.5557" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073566" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP27" translation="-21.7029 2.76476 -10.6801" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073567" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP26" translation="-18.3472 2.76476 -10.6801" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073568" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP25" translation="-5.67783 2.76476 18.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073569" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP24" translation="-5.67783 2.76476 21.4378" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073570" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP23" translation="-2.32217 2.76476 21.4378" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073571" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP22" translation="-2.32217 2.76476 18.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073572" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP21" translation="-4.32217 2.76476 13.4233" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073573" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP20" translation="-4.32217 2.76476 10.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073574" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP19" translation="-7.67783 2.76476 13.4233" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073575" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP18" translation="-7.67783 2.76476 10.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073576" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP17" translation="-13.6778 2.76476 10.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073577" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP16" translation="-10.3222 2.76476 10.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073578" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP15" translation="-13.6778 2.76476 13.4233" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073579" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP14" translation="-10.3222 2.76476 13.4233" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073580" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP13" translation="-10.3222 2.76476 18.9771" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073581" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP12" translation="-10.3222 2.76476 16.1016" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073582" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP11" translation="-13.6778 2.76476 16.1016" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073583" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP10" translation="-13.6778 2.76476 18.9771" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073584" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP9" translation="-18.3472 2.76476 18.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073585" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP8" translation="-18.3472 2.76476 21.4378" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073586" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP7" translation="-21.7029 2.76476 21.4378" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073587" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+              <Light name="lightTOP6" translation="-21.7029 2.76476 18.5622" rotation="-90 -4e-06 9e-06" clipDistance="100" nodeId="1073588" type="spot" color="0.212 0.268 0.308" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="100" dropOff="5" weatherRequiredMask="0x40"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape name="glass" shapeId="46" nodeId="1073589" castsShadows="true" receiveShadows="true" materialIds="1073354"/>
+          <Shape name="curtains" shapeId="47" clipDistance="100" nodeId="1073590" castsShadows="true" receiveShadows="true" materialIds="1073333"/>
+          <Shape name="logoDecal" shapeId="48" clipDistance="120" nodeId="1073591" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073352"/>
+        </TransformGroup>
+        <TransformGroup name="garage" translation="-54.0468 0 13.146" nodeId="1073592">
+          <TransformGroup name="selfIllum" nodeId="1073593">
+            <Shape name="fakeInterior02" shapeId="49" clipDistance="180" nodeId="1073594" castsShadows="true" receiveShadows="true" materialIds="1073356" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <TransformGroup name="realLights" nodeId="1073595">
+            <Light name="pointLight19" translation="2.84578 1.47193 -18.4044" rotation="0 -5.4e-05 0" nodeId="1073596" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight20" translation="-0.283589 1.47193 -18.4044" nodeId="1073597" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+            <Light name="pointLight21" translation="5.60238 1.15895 -18.3854" rotation="0 0.000866 0" nodeId="1073598" type="point" color="0.08 0.08 0.045" emitDiffuse="true" emitSpecular="true" range="5" weatherRequiredMask="0x40" renderInvisible="true"/>
+          </TransformGroup>
+          <Shape name="glass" shapeId="50" nodeId="1073599" castsShadows="true" receiveShadows="true" materialIds="1073354"/>
+          <Shape name="glassIndustry" translation="-120 0 -20" shapeId="51" nodeId="1073600" castsShadows="true" receiveShadows="true" materialIds="1073355"/>
+          <Shape name="motorexDecal" translation="0.000195 3.14626 0.087568" shapeId="52" clipDistance="200" nodeId="1073601" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="1073339"/>
+          <Shape name="curtains" shapeId="53" clipDistance="100" nodeId="1073602" castsShadows="true" receiveShadows="true" materialIds="1073333"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="1073603">
+        <Shape name="col1" translation="65.9492 -0.941517 30.8831" shapeId="54" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="1073604" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338"/>
+        <Shape name="col2" shapeId="55" static="true" collisionFilterGroup="0x103c" collisionFilterMask="0xfffffbff" nodeId="1073605" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1073338"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
