@@ -30,11 +30,26 @@
     </placeable>
     <placeable isPreplaced="true" uniqueId="preplaced_limeStation_0447dc7b7511f55272aed7883c0c73502"/>
     <placeable isPreplaced="true" uniqueId="preplaced_grainBargeTerminal02Triggers_15d79aa4f1d8f319650a9629a36cc443f"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_weighingStationSmall_0ef0c848e84d0f69447fb649a9726b579"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_1be7cf98b14002e15de6b57efa4834704"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_59e4801f2cb04dfc8f618c6f1eeaa1a2"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_a91c73bd304f4ed98f9a0c5e1d77b6c3"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_d42f8a6e51bc4970a3379e2c8fb05d14"/>
     <placeable isPreplaced="true" uniqueId="placeable5f3c8a1b9d2e4c6fa08b1e7c9d4f2a6e"/>
     <placeable isPreplaced="true" uniqueId="placeablec2a250706c484ac18a97300b5ab273b9"/>
     <placeable isPreplaced="true" uniqueId="placeable37dc8de1658b467ead6cfaa2a2fe0c95"/>
     <placeable isPreplaced="true" uniqueId="placeabled65347dfc4af47b0be1ef49dcab0366d"/>
     <placeable isPreplaced="true" uniqueId="placeableeda59e2dad8a44da9cb84cc262021389"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_weighingStationLarge_0718864837630934df024e8396815f1a6"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_palletTruck_019151c3ee2f198d38c12469a7dd7bc5b"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_6f2a1c8d4b9e47a0b3d65172e8c904fa"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_82d4f6a1c9e34b70a5f218dc67390be4"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_a73e159c4d824fb6910c7e2a5d38b046"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_c18b4f7e2a934d60b5e7913c8f02a64d"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_e5290a7d3c164f8b91d642be750ca389"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_f64c2e918b3a47d5a0e7391c6d8254bf"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_3b91d6f4a8274ce0b5a163e98d72f04c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_warehouseSeedBuyPoint_7d5ac149e8b34f60a291c763be05482f"/>
     <placeable isPreplaced="true" uniqueId="placeable1d99d8b6940640ecb807f584fe74e551"/>
     <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3"/>
     <placeable isPreplaced="true" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb"/>

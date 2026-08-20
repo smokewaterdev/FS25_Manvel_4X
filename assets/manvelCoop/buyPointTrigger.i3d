@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<i3D name="buyPointTrigger" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor" version="10.0.11"/>
+  </Asset>
+  <Files/>
+  <Materials>
+    <Material name="triggerMaterial" materialId="1" diffuseColor="0.5 0.5 0.5 1"/>
+  </Materials>
+  <Shapes externalShapesFile="buyPointTrigger.i3d.shapes"/>
+  <Scene>
+    <TransformGroup name="buyPointTrigger" nodeId="1">
+      <TransformGroup name="buyingStation" nodeId="2">
+        <Shape name="loadingTrigger" translation="0 2.061231 0" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="1" nodeId="3"/>
+        <TransformGroup name="loadingTriggerAINode" rotation="0 90 0" nodeId="4"/>
+      </TransformGroup>
+      <TransformGroup name="mapPosition" nodeId="5"/>
+      <TransformGroup name="markerLoading" nodeId="6"/>
+    </TransformGroup>
+  </Scene>
+</i3D>
