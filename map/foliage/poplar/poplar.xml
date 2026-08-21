@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="poplar" shownOnMap="true" useForFieldMissions="false">
+        <mapColors default="0.1384 0.2051 0.1590 1" colorBlind="0.2462 0.2346 0.1746 1" />
+        <harvest litersPerSqm="6.627" cutHeight="0.075" />
+        <growth resetsSpray="true" growthRequiresLime="true" />
+        <soil lowDensityRequired="false" increasesDensity="true" consumesLime="true" startSprayLevel="0" />
+        <seeding directionSnapAngle="0" litersPerSqm="0.15" isAvailable="true" plantsWeed="false" />
+        <cultivation isAllowed="true" />
+    </fruitType>
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" plantSeparation="0.5 0.7" plantOffset="0 0" plantLayoutRotation="true" shapeSource="$data/foliage/poplar/poplar.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.15" />
+        <foliageLodDefaults lod="0" viewDistance="14" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageState name="invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true" regrowthStart="true" />
+        <foliageState name="greenSmall" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance2_diffuse.png" isGrowing="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|0" />
+                <foliageLod blockShape="0&gt;1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenSmall2" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance2_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|0" />
+                <foliageLod blockShape="0&gt;1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenSmall3" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance2_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|0" />
+                <foliageLod blockShape="0&gt;1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenSmall4" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance2_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|0" />
+                <foliageLod blockShape="0&gt;1|0" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddle" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|1" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddle2" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|1" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddle3" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true" groundType="HARVEST_READY_OTHER">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|1" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddle4" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|1" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBig" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|2" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBig2" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|2" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBig3" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|2" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBig4" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|2" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReady" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true" isHarvestReady="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|3" />
+                <foliageLod blockShape="0&gt;1|3" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="cut" distanceMap="$data/foliage/poplar/distance/foliage_poplar_distance6_diffuse.png" isCut="true" isDestructedByWheel="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|4" />
+                <foliageLod blockShape="0&gt;1|4" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+    <growth>
+        <seasonal initialState="greenMiddle2">
+            <period name="EARLY_SPRING">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenMiddle4" endState="greenBig" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenMiddle4" endState="greenBig" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="LATE_SPRING" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenMiddle4" endState="greenBig" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenMiddle4" endState="greenBig" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="greenBig4" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="MID_SUMMER">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle4" endState="greenBig" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="greenBig4" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="LATE_SUMMER">
+                <update startState="invisible" endState="greenSmall" />
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenBig" endState="greenBig2" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="greenBig4" endState="harvestReady" />
+                <update startState="cut" endState="greenSmall" />
+            </period>
+            <period name="EARLY_AUTUMN">
+                <update startState="greenSmall" endState="greenSmall2" />
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenBig2" endState="greenBig3" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="greenBig4" endState="harvestReady" />
+            </period>
+            <period name="MID_AUTUMN">
+                <update startState="greenSmall2" endState="greenSmall3" />
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenBig3" endState="greenBig4" />
+                <update startState="greenBig4" endState="harvestReady" />
+            </period>
+            <period name="LATE_AUTUMN">
+                <update startState="greenBig4" endState="harvestReady" />
+            </period>
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER">
+                <update startState="greenSmall3" endState="greenSmall4" />
+                <update startState="greenSmall4" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenMiddle2" />
+                <update startState="greenMiddle2" endState="greenMiddle3" />
+                <update startState="greenMiddle3" endState="greenMiddle4" />
+                <update startState="greenMiddle4" endState="greenBig" />
+            </period>
+        </seasonal>
+    </growth>
+</foliageType>

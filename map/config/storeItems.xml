@@ -10,6 +10,11 @@
     <storeItem xmlFilename="assets/manvelCoop/propaneBuyPoint.xml"/>
     <storeItem xmlFilename="assets/limeStationTrigger/limeStationTrigger.xml"/>
 
+    <storeItem xmlFilename="assets/mainFarm/shopWrapper.xml"/>
+    <storeItem xmlFilename="assets/mainFarm/mailboxWrapper.xml"/>
+    <storeItem xmlFilename="assets/mainFarm/barndominiumWrapper.xml"/>
+    <storeItem xmlFilename="assets/mainFarm/usaFlagWrapper.xml"/>
+
     <storeItem xmlFilename="assets/vehicleDealer/workshopTrigger.xml"/>
 <!-- PRODUCTION POINTS -->
     <storeItem xmlFilename="$data/placeables/mapUS/bakeryUS/bakeryUS.xml"/>

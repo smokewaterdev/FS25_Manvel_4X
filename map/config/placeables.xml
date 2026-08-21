@@ -1,24 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
-    <placeable isPreplaced="true" uniqueId="preplaced_mailbox_four_2d9d7d6b195cbafed944f7520e2067907" farmId="1">
-        <configuration name="color" id="SHARED_RED1" isActive="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_mailbox_four_9643fdc95a3d4740bf84a04812445426" boughtWithFarmlandOverwrite="true">
+        <configuration name="color" id="SHARED_WHITE2" isActive="false"/>
+        <configuration name="color" id="27" isActive="true"/>
     </placeable>
-    <placeable isPreplaced="true" uniqueId="preplaced_Shop_0de71c12727d8409400320dc0c0729ad0" farmId="1">
-        <configuration name="mainColor" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="roofColor" id="SHARED_GREYDARK" isActive="true"/>
-        <configuration name="TrimColor" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="trimColor" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="MainColor" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="RoofColor" id="SHARED_GREYDARK" isActive="true"/>
-        <configuration name="bottomTinColor" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="doorTrimColor" id="SHARED_WHITE2" isActive="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_Shop_28a8976b234a41219fab73fdccbc6ee8" boughtWithFarmlandOverwrite="true">
+        <configuration name="mainColor" id="22" isActive="true"/>
+        <configuration name="roofColor" id="5" isActive="true"/>
+        <configuration name="trimColor" id="22" isActive="true"/>
+        <configuration name="bottomTinColor" id="22" isActive="true"/>
+        <configuration name="doorTrimColor" id="22" isActive="true"/>
     </placeable>
-    <placeable isPreplaced="true" uniqueId="preplaced_Barndo_08e6c4db8033f2b4f7836efa61605711a" farmId="1">
+    <placeable isPreplaced="true" uniqueId="preplaced_Barndo_490abb4a001d4607824ed554568dc655" boughtWithFarmlandOverwrite="true">
         <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
         <configuration name="solarPanels" id="1" isActive="true"/>
         <farmhouse isFreeForAll="false"/>
         <wardrobe isFreeForAll="false"/>
     </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_commBin48_0a895ab47ebf822e9e36e8f1d55e85a13" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_54a7d2c91e8b4f60a3c5d7192b46e08f" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_8e31b6f04c7942d5a7f098c1e63b542d" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_c4729a5e16d84b30f6917c25a8e043bd" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_grainSilo_0425d39260120da99d5eff7e6b6f84441"/>
     <placeable isPreplaced="true" uniqueId="preplaced_farmersMarketUS_07fb6668108bab15be4fd552e16031554">
         <animatedObjects>
@@ -50,15 +52,16 @@
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_3b91d6f4a8274ce0b5a163e98d72f04c"/>
     <placeable isPreplaced="true" uniqueId="preplaced_warehouseSeedBuyPoint_7d5ac149e8b34f60a291c763be05482f"/>
     <placeable isPreplaced="true" uniqueId="placeable1d99d8b6940640ecb807f584fe74e551"/>
-    <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3"/>
-    <placeable isPreplaced="true" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb"/>
-    <placeable isPreplaced="true" uniqueId="placeableb0c17632ecc84d3688e938e97b53fc03"/>
-    <placeable isPreplaced="true" uniqueId="placeable09ce6bfaa8894422b768ee201210ec25"/>
-    <placeable isPreplaced="true" uniqueId="placeable785392dbfad84bf782b74c0861870509"/>
-    <placeable isPreplaced="true" uniqueId="placeable101b81a5521e4134b3776a2015ecae18"/>
-    <placeable isPreplaced="true" uniqueId="placeablee5bca542b6014b66affb9713deb63502"/>
-    <placeable isPreplaced="true" uniqueId="placeableb0841995e0ff4070b632f10ddd766533"/>
-    <placeable isPreplaced="true" uniqueId="placeable9c09120fc09f49efabca566cf5d4e023"/>
-    <placeable isPreplaced="true" uniqueId="placeable3e07ca174e084d20be14573a2ec8c438"/>
+    <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="placeableb0c17632ecc84d3688e938e97b53fc03" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_flagPole01_7c5fa44b98a94b1aa27c36feaea798f2" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_d6ff5f05530a48d09e0202b6b62f6532" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_08b2112fc7c24570a564f42199485aef" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_99ec706a3f0a47c8965afe11a82668d4" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_chargingStation_b45bb8c431644e21b18825107abbb843" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_easyShed01_cc711b795fc54bb1a1c0b18244b16191" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_garbageContainer01_6f26dbbc6c4a4186bcfcf8ebe75b8269" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_vehicleDealerWorkshop_8c9e4d2f1a6b47c093e5d8a2f4b7610c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_hds9184M_placeable_ac403edfc9054c8a9374d6f793e67545" farmId="0"/>
 </placeables>

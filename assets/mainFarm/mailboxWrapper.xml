@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+	<storeData>
+		<name>
+			<en>Mailbox - Small 4</en>
+			<de>Briefkasten - Klein 4</de>
+		</name>
+		<functions>
+			<function>$l10n_function_letterbox</function>
+		</functions>
+		<specs>
+		</specs>
+		<image>$moddir$FS25_US_Mailboxes/store_MailboxSmallFour.dds</image>
+		<price>250</price>
+		<dailyUpkeep>0</dailyUpkeep>
+		<lifetime>1000</lifetime>
+		<rotation>0</rotation>
+		<brand>NONE</brand>
+		<species>placeable</species>
+		<category>decoration</category>
+		<brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <vertexBufferMemoryUsage>6400</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1536</indexBufferMemoryUsage>
+        <textureMemoryUsage>1572864</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+	</storeData>
+	
+	<base>
+        <filename>$moddir$FS25_US_Mailboxes/MailboxSmallFour.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>false</boughtWithFarmland>
+    </base>
+
+	<placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+	
+	<clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="false" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+	<colorConfigurations defaultColorIndex="1" postObjectChange="false" price="0" useDefaultColors="true">
+		<node node="mailbox_vis" />
+		
+		<colorConfiguration name="Black" color="0 0 0" />              	            <!--Black-->
+		<colorConfiguration name="Iron Grey" color="0.02 0.02 0.02" />              <!--TPF Main Color Dark Grey-->
+		<colorConfiguration name="Bedrock Grey" color="0.05 0.05 0.05" />           <!--LAC Iron Grey-->
+		<colorConfiguration name="Wrough Iron Gate" color="0.063 0.063 0.067"/>     <!--OK Used-->
+		<colorConfiguration name="Charcoal Gray" color="0.084 0.084 0.078"/>        <!--OK Used-->
+		<colorConfiguration name="Fog Grey" color="0.184 0.192 0.192" />  	        <!--TPF Grey-->
+		<colorConfiguration name="Slate Gray" color="0.198 0.198 0.191"/>           <!--OK Used-->
+		<colorConfiguration name="Light Grey" color="0.305 0.305 0.305" />          <!--TPF Grey2-->
+		<colorConfiguration name="Girgitta" color="0.301 0.283 0.287"/>             <!--OK Used-->
+		<colorConfiguration name="Burnished Slate" color="0.054 0.048 0.038"/>      <!--OK Used-->
+		<colorConfiguration name="Dark Clove Brown" color="0.07 0.045 0.020" />  	<!--LAC Dark Clove Brown-->
+		<colorConfiguration name="Brown" color="0.11 0.063 0.031" />                <!--TPF Main Color Brown-->
+		<colorConfiguration name="Chocolate Brown" color="0.114 0.063 0.043" />  	<!--Brown2 Smeby-->
+		<colorConfiguration name="Caramel Brown" color="0.156 0.078 0" />      	    <!--Brown 1-->
+		<colorConfiguration name="Beige" color="0.341 0.282 0.204" />  	            <!--TPF Main Color Beige-->
+		<colorConfiguration name="Sand Beige" color="0.35 0.294 0.208" />   	    <!--Beige2 Smeby-->
+		<colorConfiguration name="City Loft" color="0.386 0.332 0.254"/>            <!--OK Used-->
+		<colorConfiguration name="Malibu Beige" color="0.584 0.527 0.440" />        <!--OK Used-->
+		<colorConfiguration name="Light Beige" color="0.803 0.682 0.427" />  	    <!--Beige1-->
+		<colorConfiguration name="Hawthorn Yellow" color="0.716 0.644 0.462"/>      <!--OK Used-->
+		<colorConfiguration name="Soft White" color="0.761 0.716 0.617" />          <!--OK Used-->
+		<colorConfiguration name="White" color="1 1 1" />              	            <!--White-->
+		<colorConfiguration name="Burgundy" color="0.11 0 0" />                     <!--TPF Burgundy-->
+		<colorConfiguration name="Barn Red" color="0.16 0 0" />                     <!--LAC Barn Red-->
+		<colorConfiguration name="Burnt Copper" color="0.150 0.030 0" />            <!--LAC Burnt Copper Red-->
+		<colorConfiguration name="Rustic Red" color="0.181 0.040 0.030" />          <!--OK Used-->
+		<colorConfiguration name="Red" color=".35 0 0" />              	            <!--TPF Main Color Red-->
+		<colorConfiguration name="Fern Green" color="0.024 0.050 0.040"/>           <!--OK Used-->
+		<colorConfiguration name="Green" color="0 0.05 0" />           	            <!--TPF Green-->
+		<colorConfiguration name="Rocky Creek" color="0.048 0.074 0.080"/>          <!--OK Used-->
+		<colorConfiguration name="Inverness Green" color="0.1 0.1 0.03" />          <!--LAC Inverness Green-->
+		<colorConfiguration name="Forest Green" color="0.1 0.12 0.1" />             <!--LAC Forest Green-->
+		<colorConfiguration name="Mississippi River" color="0.136 0.162 0.153"/>    <!--OK Used-->
+		<colorConfiguration name="Glen Green" color="0.188 0.231 0.212"/>           <!--OK Used-->
+		<colorConfiguration name="Cypress Green" color="0.22 0.25 0.17" />          <!--LAC Cypress-->
+		<colorConfiguration name="Denim Blue" color="0.0385 0.0430 0.060" />	    <!--LAC Denim Blue-->
+		<colorConfiguration name="Blue Shadow" color="0.050 0.099 0.130" />         <!--OK Used-->
+		<colorConfiguration name="Cobalt Blue " color="0 0.071 0.204" />            <!--TPF Main Color Blue-->
+		<colorConfiguration name="Blue" color="0 0.09 0.21" />                      <!--TPF Blue-->
+		<colorConfiguration name="Malta Blue" color="0.067 0.125 0.171" />          <!--Monaco Blue-->
+		<colorConfiguration name="Slate Blue" color="0.11 0.2 0.29" />              <!--Cheesy Slate Blue-->
+		<colorConfiguration name="Pools of Blue" color="0.287 0.332 0.328"/>        <!--OK Used-->
+	</colorConfigurations>
+	
+	<i3dMappings>
+        <i3dMapping id="clearArea1Start" node="0>0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|1" />
+        <i3dMapping id="clearArea1Height" node="0>0|2" />
+        <i3dMapping id="levelArea1Start" node="0>1|0" />
+        <i3dMapping id="levelArea1Width" node="0>1|1" />
+        <i3dMapping id="levelArea1Height" node="0>1|2" />
+        <i3dMapping id="testArea1Start" node="0>2|0" />
+        <i3dMapping id="testArea1End" node="0>2|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>3|1" />
+		<i3dMapping id="mailboxFlagTrigger" node="0>4" />
+		<i3dMapping id="mailbox_vis" node="0>5|0" />
+	</i3dMappings>
+	
+</placeable>

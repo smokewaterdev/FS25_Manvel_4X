@@ -38,7 +38,7 @@
     <treeTypes maxNumTrees="14000"/>
     <bales filename="$data/maps/maps_bales.xml"/>
     <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
-    <fruitTypes>
+    <fruitTypes filename="map/config/fruitTypes.xml">
         <fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml"/>
     </fruitTypes>
     <fruitTypeCategories>

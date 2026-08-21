@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<i3D name="rim001_23x34_right" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset><Export program="Codex static dealer display assembly" version="1.0" /></Asset>
+  <Files>
+    <File fileId="1" filename="$data/shared/white_diffuse.png"/><File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="3" filename="$data/shared/wheels/rims/rim001_vmask.png"/><File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="5" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/><File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/metallic/rough_specular.png"/>
+  </Files>
+  <Materials>
+    <Material name="rim_outer_mat" materialId="1" customShaderId="4" customShaderVariation="rim"><CustomParameter name="colorScale" value="0.6456 0.6456 0.6456"/><CustomParameter name="widthAndDiam" value="23 34 1"/><Custommap name="detailDiffuse" fileId="5"/><Custommap name="detailNormal" fileId="6"/><Custommap name="detailSpecular" fileId="7"/><Texture fileId="1"/><Normalmap fileId="2"/><Glossmap fileId="3"/></Material>
+    <Material name="rim_inner_mat" materialId="2" customShaderId="4" customShaderVariation="rim"><CustomParameter name="colorScale" value="0.6456 0.6456 0.6456"/><CustomParameter name="widthAndDiam" value="23 34 1"/><Custommap name="detailDiffuse" fileId="5"/><Custommap name="detailNormal" fileId="6"/><Custommap name="detailSpecular" fileId="7"/><Texture fileId="1"/><Normalmap fileId="2"/><Glossmap fileId="3"/></Material>
+  </Materials>
+  <Shapes externalShapesFile="$data/shared/wheels/rims/rim001.i3d.shapes" />
+  <Scene><TransformGroup name="rim" nodeId="1"><Shape name="outer" shapeId="2" nodeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300"/><Shape name="innerRight" shapeId="6" nodeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300"/></TransformGroup></Scene>
+</i3D>

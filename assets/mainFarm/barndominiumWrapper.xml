@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>          
+            <en>Small Barndominium</en>
+			<de>Kleines Barndominium</de>
+			<pl>Małe Barndominium</pl>
+			<fr>Petit Barndominium</fr>
+		</name>
+        <functions>
+            <function>$l10n_function_farmHouse</function>
+        </functions>
+        <image>$moddir$FS25_SmallBarndominium/store_MultiGarage.dds</image>
+        <price>100000</price>
+        <dailyUpkeep>1</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush> 
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <vertexBufferMemoryUsage>2601472</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>585984</indexBufferMemoryUsage>
+        <textureMemoryUsage>26279936</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <filename>$moddir$FS25_SmallBarndominium/MultiGarage.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+        <buysFarmland priceScale="1">false</buysFarmland>
+        <canBeDeleted>true</canBeDeleted>
+        <canBeRenamed>false</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+	
+     <hotspots>
+        <hotspot type="FARM" linkNode="0>" teleportNode="0>13|0|3" />
+    </hotspots>
+	
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea1Start1" widthNode="clearArea1Width1" heightNode="clearArea1Height1"/>
+        <clearArea startNode="clearArea1Start2" widthNode="clearArea1Width2" heightNode="clearArea1Height2"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea1Start1" widthNode="indoorArea1Width1" heightNode="indoorArea1Height1"/>
+        <indoorArea startNode="indoorArea1Start2" widthNode="indoorArea1Width2" heightNode="indoorArea1Height2"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+	<triggerMarkers>
+        <triggerMarker node="sleepTriggerMarker"    filename="$data/shared/assets/marker/markerIconSleep.i3d"/>
+        <triggerMarker node="wardrobeTriggerMarker" filename="$data/shared/assets/marker/markerIconWardrobe.i3d"/>
+    </triggerMarkers>
+
+	<wardrobe triggerNode="0>13|1|0"/>
+
+    <farmhouse spawnNode="0>13|0|3">
+        <sleeping triggerNode="0>13|0|2" cameraNode="0>13|0|0"/>
+    </farmhouse>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"  node="0" linkNode="smoke01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" /> 
+    </dynamicallyLoadedParts>
+
+<animatedObjects>	
+		<animatedObject saveId="Doors12" >
+            <animation duration="2">
+                <part node="Door1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 -110 0"/>
+                </part>                
+				<part node="Door2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 110 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger12" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger12" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger12" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger12" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>			
+		<animatedObject saveId="Doors3" >
+            <animation duration="2">
+                <part node="Door3">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 -110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger3" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger3" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger3" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger3" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>		
+		<animatedObject saveId="Doors4" >
+            <animation duration="2">
+                <part node="Door4">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 -110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger4" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger4" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger4" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger4" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>		
+		<animatedObject saveId="Doors5" >
+            <animation duration="2">
+                <part node="Door5">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 -110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger5" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger5" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger5" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger5" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>		
+		<animatedObject saveId="Doors6" >
+            <animation duration="2">
+                <part node="Door6">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger6" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger6" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger6" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger6" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>			
+		<animatedObject saveId="Doors7" >
+            <animation duration="2">
+                <part node="Door7">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger7" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger7" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger7" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger7" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>			
+		<animatedObject saveId="Doors8" >
+            <animation duration="2">
+                <part node="Door8">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 110 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="DoorsSmallTrigger8" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+			<sounds>
+                <moving linkNode="DoorsSmallTrigger8" template="glassDoorLoop" />
+                <posEnd linkNode="DoorsSmallTrigger8" template="woodDoorOpen" />
+                <negEnd linkNode="DoorsSmallTrigger8" template="woodDoorClose" />          
+			</sounds>
+        </animatedObject>		
+        <animatedObject saveId="rollingDoor1" >
+            <animation duration="5">
+                <part node="rollingDoor1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.416 0"/>
+                </part>                             
+                <part node="rollingDoor1ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.456 0"/>
+                </part>
+                <part node="rollingDoor1ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.037 0"/>
+                </part>
+                <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - -" />
+                    <keyFrame time="1.0" values="0.94 - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor1Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>  
+		<animatedObject saveId="Lights" >
+            <animation duration="0.1">
+                <part node="light1">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light2">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light3">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light4">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>    
+                <part node="light5">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>    
+                <part node="light6">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>    
+                <part node="light7">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>    
+                <part node="light8">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>      
+                <part node="light9">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>                                           			
+                <part node="switch1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 -10"/>
+                </part>
+            </animation>
+            <controls triggerNode="lightTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+            <sounds>
+                 <moving linkNode="switch1" template="lizardFloodLight" />
+            </sounds>
+        </animatedObject>		  
+		<animatedObject saveId="Lights2Bed" >
+            <animation duration="0.1">
+                <part node="light1a">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light2a">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>                     			
+                <part node="switch1a">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 -10"/>
+                </part>
+            </animation>
+            <controls triggerNode="lightTriggera" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+            <sounds>
+                 <moving linkNode="switch1a" template="lizardFloodLight" />
+            </sounds>
+        </animatedObject>			  
+		<animatedObject saveId="LightsBath" >
+            <animation duration="0.1">
+                <part node="light1b">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light2b">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>                     			
+                <part node="switch1b">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 -10"/>
+                </part>
+            </animation>
+            <controls triggerNode="lightTriggerb" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+            <sounds>
+                 <moving linkNode="switch1b" template="lizardFloodLight" />
+            </sounds>
+        </animatedObject>			  
+		<animatedObject saveId="LightsMaster" >
+            <animation duration="0.1">
+                <part node="light1c">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>  
+                <part node="light2c">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>                     			
+                <part node="switch1c">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 -10"/>
+                </part>
+            </animation>
+            <controls triggerNode="lightTriggerc" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+            <sounds>
+                 <moving linkNode="switch1c" template="lizardFloodLight" />
+            </sounds>
+        </animatedObject>		
+		<animatedObject saveId="LightsGarage" >
+            <animation duration="0.1">
+                <part node="light1g">
+                    <keyFrame time="0.0" visibility="false" />
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>                                           			
+                <part node="switch1g">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 -10"/>
+                </part>
+            </animation>
+            <controls triggerNode="lightTriggerg" posAction="ACTIVATE_HANDTOOL" posText="action_lightSwitchON" negText="action_lightSwitchOFF" />
+            <sounds>
+                 <moving linkNode="switch1g" template="lizardFloodLight" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="fanAnim" >
+            <animation duration="6000">
+                <part node="fan">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 4320000 0"/>
+                    <keyFrame time="2.0" rotation="0 0 0"/>
+                </part>
+			</animation>
+            <controls triggerNode="fanTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_OnFan" negText="action_Offfan" />
+            <sounds> 
+				<moving template="fanLoop" linknode="rotor" />
+			</sounds>
+        </animatedObject>
+	</animatedObjects>
+	
+	<colorConfigurations defaultColorIndex="1" postLoadObjectChange="false" price="0" useDefaultColors="true">
+		<node node="wall1" /> 
+		<node node="wall2" /> 
+	</colorConfigurations>	
+	
+	<solarPanels>
+        <solarPanelsConfigurations title="$l10n_Walls">
+			<solarPanelsConfiguration name="$l10n_Wall1" isActive="true" price="0" incomePerHour="0">
+				<objectChange node="wall1" visibilityActive="true"/>
+			</solarPanelsConfiguration>		
+			<solarPanelsConfiguration name="$l10n_Wall2" isActive="false" price="0" incomePerHour="0">
+				<objectChange node="wall2" visibilityActive="true"/>
+			</solarPanelsConfiguration>			
+			<solarPanelsConfiguration name="$l10n_Wall3" isActive="false" price="0" incomePerHour="0">
+				<objectChange node="wall3" visibilityActive="true"/>
+			</solarPanelsConfiguration>			
+			<solarPanelsConfiguration name="$l10n_Wall4" isActive="false" price="0" incomePerHour="0">
+				<objectChange node="wall4" visibilityActive="true"/>
+			</solarPanelsConfiguration>			
+		</solarPanelsConfigurations>
+    </solarPanels>
+	
+    <i3dMappings>
+        <i3dMapping id="wall1" node="0>6|0|2" />
+        <i3dMapping id="wall2" node="0>6|0|30" />
+        <i3dMapping id="wall3" node="0>6|0|35" />
+        <i3dMapping id="wall4" node="0>6|0|36" />
+        <i3dMapping id="sleepTriggerMarker" node="0>13|0|1" />
+        <i3dMapping id="wardrobeTriggerMarker" node="0>13|1|1" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="clearArea1Start1" node="0>1|1" />
+        <i3dMapping id="clearArea1Width1" node="0>1|1|0" />
+        <i3dMapping id="clearArea1Height1" node="0>1|1|1" />
+        <i3dMapping id="clearArea1Start2" node="0>1|2" />
+        <i3dMapping id="clearArea1Width2" node="0>1|2|0" />
+        <i3dMapping id="clearArea1Height2" node="0>1|2|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start1" node="0>3|1" />
+        <i3dMapping id="indoorArea1Width1" node="0>3|1|0" />
+        <i3dMapping id="indoorArea1Height1" node="0>3|1|1" />
+        <i3dMapping id="indoorArea1Start2" node="0>3|2" />
+        <i3dMapping id="indoorArea1Width2" node="0>3|2|0" />
+        <i3dMapping id="indoorArea1Height2" node="0>3|2|1" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+		<i3dMapping id="Door1" node="0>6|0|0|0" />
+		<i3dMapping id="Door2" node="0>6|0|0|1" />
+		<i3dMapping id="Door3" node="0>6|0|0|2" />
+		<i3dMapping id="Door4" node="0>6|0|0|3" />
+		<i3dMapping id="Door5" node="0>6|0|0|4" />
+		<i3dMapping id="Door6" node="0>6|0|0|5" />
+		<i3dMapping id="Door7" node="0>6|0|0|6" />
+		<i3dMapping id="Door8" node="0>6|0|0|7" />
+		<i3dMapping id="DoorsSmallTrigger12" node="0>6|0|0|8" />
+		<i3dMapping id="DoorsSmallTrigger3" node="0>6|0|0|9" />
+		<i3dMapping id="DoorsSmallTrigger4" node="0>6|0|0|10" />
+		<i3dMapping id="DoorsSmallTrigger5" node="0>6|0|0|11" />
+		<i3dMapping id="DoorsSmallTrigger6" node="0>6|0|0|12" />
+		<i3dMapping id="DoorsSmallTrigger7" node="0>6|0|0|13" />
+		<i3dMapping id="DoorsSmallTrigger8" node="0>6|0|0|14" />
+		<i3dMapping id="rollingDoor1Base" node="0>6|0|1" />
+        <i3dMapping id="rollingDoor1" node="0>6|0|1|0" />
+        <i3dMapping id="rollingDoor1ColPartBottom" node="0>6|0|1|1" />
+        <i3dMapping id="rollingDoor1ColPartTop" node="0>6|0|1|2" />
+        <i3dMapping id="rollingDoor1Trigger" node="0>6|0|1|3" />	
+		<i3dMapping id="switch1" node="0>7|0|0" />
+		<i3dMapping id="lightTrigger" node="0>7|1" />
+		<i3dMapping id="light1" node="0>7|2|0" />
+		<i3dMapping id="light2" node="0>7|3|1" />
+		<i3dMapping id="light3" node="0>7|4|1" />
+		<i3dMapping id="light4" node="0>7|5|1" />
+		<i3dMapping id="light5" node="0>7|6|1" />
+		<i3dMapping id="light6" node="0>7|7|1" />
+		<i3dMapping id="light7" node="0>7|8|1" />
+		<i3dMapping id="light8" node="0>7|9|1" />
+		<i3dMapping id="light9" node="0>7|10|1" />
+		<i3dMapping id="switch1g" node="0>6|1|59|0|0" />
+		<i3dMapping id="lightTriggerg" node="0>6|1|59|1" />
+		<i3dMapping id="light1g" node="0>6|1|59|2" />
+		<i3dMapping id="switch1a" node="0>10|0|0" />
+		<i3dMapping id="lightTriggera" node="0>10|1" />
+		<i3dMapping id="light1a" node="0>10|2|1" />
+		<i3dMapping id="light2a" node="0>10|3|1" />	
+		<i3dMapping id="switch1b" node="0>11|0|0" />
+		<i3dMapping id="lightTriggerb" node="0>11|1" />
+		<i3dMapping id="light1b" node="0>11|2|1" />
+		<i3dMapping id="light2b" node="0>11|3|1" />	
+		<i3dMapping id="switch1c" node="0>12|0|0" />
+		<i3dMapping id="lightTriggerc" node="0>12|1" />
+		<i3dMapping id="light1c" node="0>12|2|1" />
+		<i3dMapping id="light2c" node="0>12|3|1" />
+		<i3dMapping id="fan" node="0>6|1|24|1" />
+		<i3dMapping id="fanTrigger" node="0>9|1" />
+		<i3dMapping id="smoke01" node="0>6|1|63" />
+    </i3dMappings>
+</placeable>
