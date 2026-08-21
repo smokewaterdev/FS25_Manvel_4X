@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <map width="4096" height="4096" imageFilename="map/overview.png" mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mission00.xsd" playableWidth="4096.0" playableHeight="4096.0" rotation="0.0">
     <filename>map/map.i3d</filename>
     <vertexBufferMemoryUsage>226187776</vertexBufferMemoryUsage>
@@ -84,4 +84,11 @@
         <groundTypeMapping type="tiles01" title="$l10n_groundType_cobblestones" layer="ROCK_FLOOR_TILES"/>
         <groundTypeMapping type="tiles02" title="$l10n_groundType_flagstones" layer="ROCK_FLOOR_TILES_PATTERN"/>
     </groundTypeMappings>
+    <thPFConfig disableTramlines="true">
+        <soilMap id="mapUS" size="2048"/>
+    </thPFConfig>
+
+    <precisionFarming>
+        <soilMap filename="map/data/soilMap.png"/>
+    </precisionFarming>
 </map>

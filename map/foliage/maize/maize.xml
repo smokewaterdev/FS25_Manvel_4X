@@ -13,12 +13,33 @@
         <cultivation isAllowed="true" />
         <mulcher chopperType="CHOPPER_MAIZE" />
     </fruitType>
-    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" plantSeparation="0.75 0.68" plantOffset="0 0" plantLayoutRotation="true" shapeSource="$data/foliage/maize/maize.i3d">
-        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.2" />
+    <thRowCropSystem spacingWidth="0.750" />
+    <thFoliageDestruction>
+        <wheelConversions>
+            <convert minState="greenMiddle" maxState="greenMiddle" toState="greenMiddleTracks" />
+            <convert minState="greenBig" maxState="greenBig" toState="greenBigTracks" />
+            <convert minState="harvestReadyGreen" maxState="harvestReadyGreen2" toState="harvestReadyGreenTracks" />
+            <convert minState="harvestReady3" maxState="harvestReady3" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="deadTracks" />
+            <convert minState="harvestedGreen" maxState="harvestedGreen" toState="cutGreenTracks" />
+            <convert minState="harvested" maxState="harvested" toState="cutTracks" />
+        </wheelConversions>
+        <disasterConversions>
+            <convert minState="greenMiddle" maxState="greenMiddle" toState="greenMiddleTracks" />
+            <convert minState="greenBig" maxState="greenBig" toState="greenBigTracks" />
+            <convert minState="harvestReadyGreen" maxState="harvestReadyGreen2" toState="harvestReadyGreenTracks" />
+            <convert minState="harvestReady3" maxState="harvestReady3" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="deadTracks" />
+            <convert minState="harvestedGreen" maxState="harvestedGreen" toState="cutGreenTracks" />
+            <convert minState="harvested" maxState="harvested" toState="cutTracks" />
+        </disasterConversions>
+    </thFoliageDestruction>
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="5" plantSeparation="0.250 0.250" plantOffset="0.125 0.125" plantLayoutRotation="false" shapeSource="maize.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="0.9" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0" />
         <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageState name="invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true" />
-        <foliageState name="greenSmall" distanceMap="$data/foliage/maize/distance/foliage_maize_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
+        <foliageState name="greenSmall" distanceMap="distance/foliage_maize_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|0" />
                 <foliageLod blockShape="0&gt;1|0" />
@@ -32,7 +53,7 @@
                 <foliageLod blockShape="0&gt;1|0" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenMiddle" width="1.2" distanceMap="$data/foliage/maize/distance/foliage_maize_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenMiddle" distanceMap="distance/foliage_maize_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|3" />
                 <foliageLod blockShape="0&gt;1|1" />
@@ -46,7 +67,7 @@
                 <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenBig" width="1.3" distanceMap="$data/foliage/maize/distance/foliage_maize_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenBig" distanceMap="distance/foliage_maize_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|6" />
                 <foliageLod blockShape="0&gt;1|2" />
@@ -60,7 +81,7 @@
                 <foliageLod blockShape="0&gt;1|2" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestReadyGreen" distanceMap="$data/foliage/maize/distance/foliage_maize_distance5_diffuse.png" isGrowing="true" isForageReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" groundType="HARVEST_READY_OTHER">
+        <foliageState name="harvestReadyGreen" distanceMap="distance/foliage_maize_distance5_diffuse.png" isGrowing="true" isForageReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" groundType="HARVEST_READY_OTHER">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|9" />
                 <foliageLod blockShape="0&gt;1|3" />
@@ -74,7 +95,7 @@
                 <foliageLod blockShape="0&gt;1|3" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestReadyGreen2" distanceMap="$data/foliage/maize/distance/foliage_maize_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="harvestReadyGreen2" distanceMap="distance/foliage_maize_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|9" />
                 <foliageLod blockShape="0&gt;1|3" />
@@ -88,7 +109,7 @@
                 <foliageLod blockShape="0&gt;1|3" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestReady3" distanceMap="$data/foliage/maize/distance/foliage_maize_distance6_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isHarvestReady="true">
+        <foliageState name="harvestReady3" distanceMap="distance/foliage_maize_distance6_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isHarvestReady="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|12" />
                 <foliageLod blockShape="0&gt;1|4" />
@@ -102,7 +123,7 @@
                 <foliageLod blockShape="0&gt;1|4" />
             </foliageShape>
         </foliageState>
-        <foliageState name="dead" distanceMap="$data/foliage/maize/distance/foliage_maize_distance7_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="dead" distanceMap="distance/foliage_maize_distance7_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|15" />
                 <foliageLod blockShape="0&gt;1|5" />
@@ -116,7 +137,7 @@
                 <foliageLod blockShape="0&gt;1|5" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestedGreen" distanceMap="$data/foliage/maize/distance/foliage_maize_distance8_diffuse.png" isCut="true" isDestructedByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="harvestedGreen" distanceMap="distance/foliage_maize_distance8_diffuse.png" isCut="true" isDestructibleByDisaster="true">
             <foliageShape probability="3">
                 <foliageLod blockShape="0&gt;0|18" />
                 <foliageLod blockShape="0&gt;1|6" />
@@ -134,7 +155,7 @@
                 <foliageLod blockShape="0&gt;1|7" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvested" distanceMap="$data/foliage/maize/distance/foliage_maize_distance9_diffuse.png" isCut="true" isDestructibleByDisaster="true">
+        <foliageState name="harvested" height="1.8" distanceMap="distance/foliage_maize_distance9_diffuse.png" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape probability="3">
                 <foliageLod blockShape="0&gt;0|22" />
                 <foliageLod blockShape="0&gt;1|8" />
@@ -145,9 +166,135 @@
             </foliageShape>
             <foliageShape probability="2">
                 <foliageLod blockShape="0&gt;0|24" />
+                <foliageLod blockShape="0&gt;1|9" />
+            </foliageShape>
+            <foliageShape probability="2">
+                <foliageLod blockShape="0&gt;0|25" />
+                <foliageLod blockShape="0&gt;1|9" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddleTracks" distanceMap="distance/foliage_maize_distance3_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|26" />
+                <foliageLod blockShape="0&gt;1|10" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|27" />
+                <foliageLod blockShape="0&gt;1|11" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|28" />
+                <foliageLod blockShape="0&gt;1|12" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|29" />
+                <foliageLod blockShape="0&gt;1|13" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBigTracks" distanceMap="distance/foliage_maize_distance4_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|30" />
+                <foliageLod blockShape="0&gt;1|14" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|31" />
+                <foliageLod blockShape="0&gt;1|15" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|32" />
+                <foliageLod blockShape="0&gt;1|16" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|33" />
+                <foliageLod blockShape="0&gt;1|17" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReadyGreenTracks" distanceMap="distance/foliage_maize_distance5_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|34" />
+                <foliageLod blockShape="0&gt;1|18" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|35" />
+                <foliageLod blockShape="0&gt;1|19" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|36" />
+                <foliageLod blockShape="0&gt;1|20" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|37" />
+                <foliageLod blockShape="0&gt;1|21" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReadyTracks" distanceMap="distance/foliage_maize_distance6_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|38" />
+                <foliageLod blockShape="0&gt;1|22" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|39" />
+                <foliageLod blockShape="0&gt;1|23" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|40" />
+                <foliageLod blockShape="0&gt;1|24" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|41" />
+                <foliageLod blockShape="0&gt;1|25" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="deadTracks" distanceMap="distance/foliage_maize_distance7_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|42" />
+                <foliageLod blockShape="0&gt;1|26" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|43" />
+                <foliageLod blockShape="0&gt;1|27" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|44" />
+                <foliageLod blockShape="0&gt;1|28" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|45" />
+                <foliageLod blockShape="0&gt;1|29" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="cutGreenTracks" height="0.2" distanceMap="distance/foliage_maize_distance8_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape probability="3">
+                <foliageLod blockShape="0&gt;0|18" />
+                <foliageLod blockShape="0&gt;1|6" />
+            </foliageShape>
+            <foliageShape probability="3">
+                <foliageLod blockShape="0&gt;0|19" />
+                <foliageLod blockShape="0&gt;1|6" />
+            </foliageShape>
+            <foliageShape probability="2">
+                <foliageLod blockShape="0&gt;0|20" />
+                <foliageLod blockShape="0&gt;1|7" />
+            </foliageShape>
+            <foliageShape probability="2">
+                <foliageLod blockShape="0&gt;0|21" />
+                <foliageLod blockShape="0&gt;1|7" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="cutTracks" height="0.35" distanceMap="distance/foliage_maize_distance9_diffuse.png" isDestructedByWheel="true" isDestructedByDisaster="true">
+            <foliageShape probability="3">
+                <foliageLod blockShape="0&gt;0|22" />
                 <foliageLod blockShape="0&gt;1|8" />
             </foliageShape>
             <foliageShape probability="3">
+                <foliageLod blockShape="0&gt;0|23" />
+                <foliageLod blockShape="0&gt;1|8" />
+            </foliageShape>
+            <foliageShape probability="2">
+                <foliageLod blockShape="0&gt;0|24" />
+                <foliageLod blockShape="0&gt;1|9" />
+            </foliageShape>
+            <foliageShape probability="2">
                 <foliageLod blockShape="0&gt;0|25" />
                 <foliageLod blockShape="0&gt;1|9" />
             </foliageShape>

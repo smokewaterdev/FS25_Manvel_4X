@@ -110,7 +110,19 @@ def save_tree(tree: ET.ElementTree, path: Path) -> None:
 
 
 for crop_name, rule in CROPS.items():
+    target = REPO_ROOT / "map" / "foliage" / rule["folder"] / rule["file"]
     source = GAME_DATA / "foliage" / rule["folder"] / rule["file"]
+
+    # Preserve ThundRFS RCS definitions after the official prefab has been
+    # installed. Rebuilding from $data would silently discard row spacing,
+    # destruction states, and the map-local foliage asset paths.
+    preserve_local_assets = False
+    if target.exists():
+        existing_root = ET.parse(target).getroot()
+        if existing_root.find("thRowCropSystem") is not None:
+            source = target
+            preserve_local_assets = True
+
     tree = ET.parse(source)
     root = tree.getroot()
     fruit_type = root.find("fruitType")
@@ -118,10 +130,11 @@ for crop_name, rule in CROPS.items():
         raise ValueError(f"{crop_name}: missing fruitType")
     fruit_type.set("useForFieldMissions", str(rule["missions"]).lower())
 
-    for element in root.iter():
-        for attribute, value in list(element.attrib.items()):
-            if not value.startswith("$") and value.lower().endswith((".i3d", ".png", ".dds", ".ogg", ".wav")):
-                element.set(attribute, f"$data/foliage/{rule['folder']}/{value.replace(chr(92), '/')}")
+    if not preserve_local_assets:
+        for element in root.iter():
+            for attribute, value in list(element.attrib.items()):
+                if not value.startswith("$") and value.lower().endswith((".i3d", ".png", ".dds", ".ogg", ".wav")):
+                    element.set(attribute, f"$data/foliage/{rule['folder']}/{value.replace(chr(92), '/')}")
 
     if "annual" in rule:
         set_annual(root, rule["annual"])
@@ -132,7 +145,7 @@ for crop_name, rule in CROPS.items():
     elif "oilseed" in rule:
         set_oilseed(root)
 
-    save_tree(tree, REPO_ROOT / "map" / "foliage" / rule["folder"] / rule["file"])
+    save_tree(tree, target)
 
 fruit_types_tree = ET.parse(GAME_DATA / "maps" / "maps_fruitTypes.xml")
 for entry in fruit_types_tree.findall("./fruitTypes/fruitType"):

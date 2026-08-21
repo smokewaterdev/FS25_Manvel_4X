@@ -9,12 +9,27 @@
         <cultivation isAllowed="true" />
         <haulm layerName="sugarBeet_haulm" />
     </fruitType>
-    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" plantSeparation="0.5 0.55" plantOffset="0 0" plantLayoutRotation="true" shapeSource="$data/foliage/sugarbeet/sugarbeet.i3d" alignsToSun="false">
-        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0" heightVariance="0.07" horizontalPositionVariance="0.15" />
-        <foliageLodDefaults lod="0" viewDistance="14" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+    <thRowCropSystem spacingWidth="0.75" />
+    <thFoliageDestruction>
+        <wheelConversions>
+            <convert minState="greenMiddle" maxState="greenMiddle2" toState="greenMiddleTracks" />
+            <convert minState="greenBig" maxState="greenBig2" toState="greenBigTracks" />
+            <convert minState="harvestReady" maxState="harvestReady" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="deadTracks" />
+        </wheelConversions>
+        <disasterConversions>
+            <convert minState="greenMiddle" maxState="greenMiddle2" toState="greenMiddleTracks" />
+            <convert minState="greenBig" maxState="greenBig2" toState="greenBigTracks" />
+            <convert minState="harvestReady" maxState="harvestReady" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="deadTracks" />
+        </disasterConversions>
+    </thFoliageDestruction>
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="5" plantSeparation="0.250 0.250" plantOffset="0.125 0.125" plantLayoutRotation="false" shapeSource="sugarbeet.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0" heightVariance="0.07" horizontalPositionVariance="0" />
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageState name="invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true" />
-        <foliageState name="greenSmall" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
+        <foliageState name="greenSmall" width="0.8" height="0.8" distanceMap="distance/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|0" />
                 <foliageLod blockShape="0&gt;1|0" />
@@ -24,7 +39,7 @@
                 <foliageLod blockShape="0&gt;1|0" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenSmall2" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
+        <foliageState name="greenSmall2" width="1.1" distanceMap="distance/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|0" />
                 <foliageLod blockShape="0&gt;1|0" />
@@ -34,7 +49,7 @@
                 <foliageLod blockShape="0&gt;1|0" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenMiddle" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByDisaster="true">
+        <foliageState name="greenMiddle" width="0.9" height="0.8" distanceMap="distance/foliage_sugarBeet_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|2" />
                 <foliageLod blockShape="0&gt;1|1" />
@@ -44,7 +59,7 @@
                 <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenMiddle2" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByDisaster="true">
+        <foliageState name="greenMiddle2" distanceMap="distance/foliage_sugarBeet_distance3_diffuse.png" isGrowing="true" allowsHoeing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|2" />
                 <foliageLod blockShape="0&gt;1|1" />
@@ -54,7 +69,7 @@
                 <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenBig" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance4_diffuse.png" isGrowing="true" isDestructibleByDisaster="true">
+        <foliageState name="greenBig" width="0.9" height="0.8" distanceMap="distance/foliage_sugarBeet_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|4" />
                 <foliageLod blockShape="0&gt;1|2" />
@@ -64,7 +79,7 @@
                 <foliageLod blockShape="0&gt;1|2" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenBig2" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance4_diffuse.png" isGrowing="true" isDestructibleByDisaster="true">
+        <foliageState name="greenBig2" distanceMap="distance/foliage_sugarBeet_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|4" />
                 <foliageLod blockShape="0&gt;1|2" />
@@ -74,7 +89,7 @@
                 <foliageLod blockShape="0&gt;1|2" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestReady" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance5_diffuse.png" isGrowing="true" isDestructibleByDisaster="true" isPreparable="true" groundType="HARVEST_READY_OTHER">
+        <foliageState name="harvestReady" distanceMap="distance/foliage_sugarBeet_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isPreparable="true" groundType="HARVEST_READY_OTHER">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|6" />
                 <foliageLod blockShape="0&gt;1|3" />
@@ -83,49 +98,73 @@
                 <foliageLod blockShape="0&gt;0|7" />
                 <foliageLod blockShape="0&gt;1|3" />
             </foliageShape>
+        </foliageState>
+        <foliageState name="dead" distanceMap="distance/foliage_sugarBeet_distance6_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|8" />
-                <foliageLod blockShape="0&gt;1|3" />
+                <foliageLod blockShape="0&gt;1|4" />
             </foliageShape>
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|9" />
-                <foliageLod blockShape="0&gt;1|3" />
+                <foliageLod blockShape="0&gt;1|4" />
             </foliageShape>
         </foliageState>
-        <foliageState name="dead" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance6_diffuse.png" isWithered="true" isDestructibleByDisaster="true">
+        <foliageState name="harvested" isCut="true" isDestructedByWheel="true" isDestructibleByDisaster="true" />
+        <foliageState name="cutHaulm" width="1.2" isDestructibleByDisaster="true" isHarvestReady="true" isPrepared="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|10" />
-                <foliageLod blockShape="0&gt;1|4" />
+                <foliageLod blockShape="0&gt;1|5" />
             </foliageShape>
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|11" />
-                <foliageLod blockShape="0&gt;1|4" />
-            </foliageShape>
-            <foliageShape>
-                <foliageLod blockShape="0&gt;0|12" />
-                <foliageLod blockShape="0&gt;1|4" />
-            </foliageShape>
-            <foliageShape>
-                <foliageLod blockShape="0&gt;0|13" />
-                <foliageLod blockShape="0&gt;1|4" />
+                <foliageLod blockShape="0&gt;1|5" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvested" isCut="true" isDestructibleByDisaster="true" isDestructedByWheel="true" />
-        <foliageState name="cutHaulm" isDestructibleByDisaster="true" isHarvestReady="true" isPrepared="true">
+        <foliageState name="greenMiddleTracks" width="1.5" height="0.3" distanceMap="distance/foliage_sugarBeet_distance3_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
-                <foliageLod blockShape="0&gt;0|14" />
-                <foliageLod blockShape="0&gt;1|5" />
+                <foliageLod blockShape="0&gt;0|2" />
+                <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
             <foliageShape>
-                <foliageLod blockShape="0&gt;0|15" />
-                <foliageLod blockShape="0&gt;1|5" />
+                <foliageLod blockShape="0&gt;0|3" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenBigTracks" width="1.5" height="0.3" distanceMap="distance/foliage_sugarBeet_distance4_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|4" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|5" />
+                <foliageLod blockShape="0&gt;1|2" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReadyTracks" width="1.5" height="0.3" distanceMap="distance/foliage_sugarBeet_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|6" />
+                <foliageLod blockShape="0&gt;1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|7" />
+                <foliageLod blockShape="0&gt;1|3" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="deadTracks" width="1.5" height="0.3" distanceMap="distance/foliage_sugarBeet_distance6_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|8" />
+                <foliageLod blockShape="0&gt;1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|9" />
+                <foliageLod blockShape="0&gt;1|4" />
             </foliageShape>
         </foliageState>
     </foliageLayer>
-    <foliageLayer name="haulm" densityMapChannelOffset="4" numDensityMapChannels="1" numBlocksPerUnit="1.6" shapeSource="$data/foliage/sugarbeet/sugarbeetHaulm.i3d">
+    <foliageLayer name="haulm" densityMapChannelOffset="5" numDensityMapChannels="1" numBlocksPerUnit="1.6" shapeSource="sugarbeetHaulm.i3d">
         <foliageStateDefaults width="0.85" height="1" widthVariance="0.2" heightVariance="0" horizontalPositionVariance="0.1" />
         <foliageLodDefaults lod="0" viewDistance="80" />
-        <foliageState distanceMapLayer="2" distanceMap="$data/foliage/sugarbeet/distance/foliage_sugarBeet_distance7_diffuse.png">
+        <foliageState distanceMapLayer="2" distanceMap="distance/foliage_sugarBeet_distance7_diffuse.png">
             <foliageShape>
                 <foliageLod blockShape="0" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
             </foliageShape>

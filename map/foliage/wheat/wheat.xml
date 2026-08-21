@@ -3,67 +3,117 @@
     <fruitType name="wheat" shownOnMap="true" useForFieldMissions="true">
         <mapColors default="0.6172 0.4072 0.0782 1" colorBlind="0.2918 0.3564 0.7011 1" />
         <windrow fillType="straw" litersPerSqm="3.68" cutFillType="WHEAT_CUT" windrowCutFactor="1.25" />
-        <harvest litersPerSqm="0.89" cutHeight="0.15" chopperType="CHOPPER_STRAW" />
+        <harvest litersPerSqm="0.89" cutHeight="0.15" chopperType="CHOPPER_STRAW">
+            <transition src="greenBig2" target="harvestedGreen" />
+            <transition src="harvestReady" target="harvested" />
+        </harvest>
         <growth resetsSpray="true" growthRequiresLime="true" />
         <soil lowDensityRequired="true" increasesDensity="false" consumesLime="true" startSprayLevel="0" />
         <seeding directionSnapAngle="0" needsRolling="true" litersPerSqm="0.0308" isAvailable="true" />
         <cultivation isAllowed="true" />
         <mulcher chopperType="CHOPPER_STRAW" />
     </fruitType>
-    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.8" shapeSource="$data/foliage/wheat/wheat.i3d" alignsToSun="false">
-        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5" />
+    <thRowCropSystem spacingWidth="0.5" />
+    <thFoliageDestruction>
+        <wheelConversions>
+            <convert minState="greenMiddle" maxState="greenBig2" toState="greenMiddleTracks" />
+            <convert minState="harvestReady" maxState="harvestReady" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="cutTracks" />
+            <convert minState="harvestedGreen" maxState="harvestedGreen" toState="cutGreenTracks" />
+            <convert minState="harvested" maxState="harvested" toState="cutTracks" />
+        </wheelConversions>
+        <disasterConversions>
+            <convert minState="greenMiddle" maxState="greenBig2" toState="greenMiddleTracks" />
+            <convert minState="harvestReady" maxState="harvestReady" toState="harvestReadyTracks" />
+            <convert minState="dead" maxState="dead" toState="cutTracks" />
+            <convert minState="harvestedGreen" maxState="harvestedGreen" toState="cutGreenTracks" />
+            <convert minState="harvested" maxState="harvested" toState="cutTracks" />
+        </disasterConversions>
+    </thFoliageDestruction>
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="5" plantSeparation="0.250 0.250" plantOffset="0.125 0.125" plantLayoutRotation="false" shapeSource="wheat.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="0.8" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0" />
         <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
         <foliageState name="invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true" />
-        <foliageState name="greenSmall" numBlocksPerUnit="3.2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
+        <foliageState name="greenSmall" width="0.5" height="0.6" distanceMap="distance/foliage_wheat_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|0" />
                 <foliageLod blockShape="0&gt;1|0" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenSmall2" numBlocksPerUnit="3.2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
+        <foliageState name="greenSmall2" width="0.6" height="0.8" distanceMap="distance/foliage_wheat_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|0" />
                 <foliageLod blockShape="0&gt;1|0" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenMiddle" numBlocksPerUnit="2.2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance3_diffuse.png" isGrowing="true" allowsWeeding="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenMiddle" width="0.6" height="0.7" distanceMap="distance/foliage_wheat_distance3_diffuse.png" isGrowing="true" allowsWeeding="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|1" />
                 <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenMiddle2" numBlocksPerUnit="2.2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance3_diffuse.png" isGrowing="true" allowsWeeding="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenMiddle2" width="0.7" height="0.9" distanceMap="distance/foliage_wheat_distance3_diffuse.png" isGrowing="true" allowsWeeding="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|1" />
                 <foliageLod blockShape="0&gt;1|1" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenBig" numBlocksPerUnit="2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenBig" width="0.6" height="0.8" distanceMap="distance/foliage_wheat_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|2" />
                 <foliageLod blockShape="0&gt;1|2" />
             </foliageShape>
         </foliageState>
-        <foliageState name="greenBig2" numBlocksPerUnit="2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance4_diffuse.png" isGrowing="true" isForageReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="greenBig2" distanceMap="distance/foliage_wheat_distance4_diffuse.png" isGrowing="true" isForageReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|2" />
                 <foliageLod blockShape="0&gt;1|2" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvestReady" numBlocksPerUnit="2.2" width="1.3" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isHarvestReady="true" groundType="HARVEST_READY">
+        <foliageState name="harvestReady" width="0.9" distanceMap="distance/foliage_wheat_distance5_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isHarvestReady="true" groundType="HARVEST_READY">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|3" />
                 <foliageLod blockShape="0&gt;1|3" />
             </foliageShape>
         </foliageState>
-        <foliageState name="dead" numBlocksPerUnit="1.4" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance6_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+        <foliageState name="dead" distanceMap="distance/foliage_wheat_distance6_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|4" />
                 <foliageLod blockShape="0&gt;1|4" />
             </foliageShape>
         </foliageState>
-        <foliageState name="harvested" numBlocksPerUnit="2.2" distanceMap="$data/foliage/wheat/distance/foliage_wheat_distance7_diffuse.png" isCut="true" isDestructedByWheel="true" isDestructibleByDisaster="true" cullCropsBelowFillHeight="true">
+        <foliageState name="harvestedGreen" width="0.5" height="3.2" distanceMap="distance/foliage_wheat_distance2_diffuse.png" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" cullCropsBelowFillHeight="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|6" />
+                <foliageLod blockShape="0&gt;1|6" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvested" width="0.5" height="3.2" distanceMap="distance/foliage_wheat_distance7_diffuse.png" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" cullCropsBelowFillHeight="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|5" />
+                <foliageLod blockShape="0&gt;1|5" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="greenMiddleTracks" width="1.2" height="0.4" distanceMap="distance/foliage_wheat_distance3_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|1" />
+                <foliageLod blockShape="0&gt;1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvestReadyTracks" width="1.1" height="0.5" distanceMap="distance/foliage_wheat_distance5_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|3" />
+                <foliageLod blockShape="0&gt;1|3" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="cutGreenTracks" width="0.8" height="0.8" distanceMap="distance/foliage_wheat_distance2_diffuse.png" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0&gt;0|6" />
+                <foliageLod blockShape="0&gt;1|6" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="cutTracks" width="0.8" height="0.8" distanceMap="distance/foliage_wheat_distance7_diffuse.png" isDestructedByWheel="true" isDestructibleByDisaster="true">
             <foliageShape>
                 <foliageLod blockShape="0&gt;0|5" />
                 <foliageLod blockShape="0&gt;1|5" />

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="soybean.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.10"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/foliage/soybean/soybeanStage01_alpha.png"/>
+    <File fileId="1" filename="$data/foliage/soybean/soybeanStage01_diffuse.png"/>
+    <File fileId="3" filename="$data/foliage/soybean/soybeanStage01_fmask.png"/>
+    <File fileId="2" filename="$data/foliage/soybean/soybeanStage01_normal.png"/>
+    <File fileId="10" filename="$data/foliage/soybean/soybeanStage02_alpha.png"/>
+    <File fileId="7" filename="$data/foliage/soybean/soybeanStage02_diffuse.png"/>
+    <File fileId="9" filename="$data/foliage/soybean/soybeanStage02_fmask.png"/>
+    <File fileId="8" filename="$data/foliage/soybean/soybeanStage02_normal.png"/>
+    <File fileId="14" filename="$data/foliage/soybean/soybeanStage03_alpha.png"/>
+    <File fileId="11" filename="$data/foliage/soybean/soybeanStage03_diffuse.png"/>
+    <File fileId="13" filename="$data/foliage/soybean/soybeanStage03_fmask.png"/>
+    <File fileId="12" filename="$data/foliage/soybean/soybeanStage03_normal.png"/>
+    <File fileId="22" filename="$data/foliage/soybean/soybeanStage05_alpha.png"/>
+    <File fileId="19" filename="$data/foliage/soybean/soybeanStage05_diffuse.png"/>
+    <File fileId="21" filename="$data/foliage/soybean/soybeanStage05_fmask.png"/>
+    <File fileId="20" filename="$data/foliage/soybean/soybeanStage05_normal.png"/>
+    <File fileId="26" filename="$data/foliage/soybean/soybeanStage06_alpha.png"/>
+    <File fileId="23" filename="$data/foliage/soybean/soybeanStage06_diffuse.png"/>
+    <File fileId="25" filename="$data/foliage/soybean/soybeanStage06_fmask.png"/>
+    <File fileId="24" filename="$data/foliage/soybean/soybeanStage06_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="18" filename="soybeanStage04_alpha.png"/>
+    <File fileId="15" filename="soybeanStage04_diffuse.png"/>
+    <File fileId="17" filename="soybeanStage04_fmask.png"/>
+    <File fileId="16" filename="soybeanStage04_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="soybeanStage01_mat" materialId="5" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+    <Material name="soybeanStage02_mat" materialId="7" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+    <Material name="soybeanStage03_mat" materialId="9" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="alphaMap" fileId="14"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+    <Material name="soybeanStage05_mat" materialId="12" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+    <Material name="soybeanStage06_mat" materialId="14" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+    <Material name="soybeanStage07_mat" materialId="16" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="26"/>
+      <CustomParameter name="snowScale" value="0.35"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="soybean.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="soybean" static="true" clipDistance="500" nodeId="36">
+      <TransformGroup name="LOD0" static="true" clipDistance="500" nodeId="37">
+        <Shape name="greenSmall01" shapeId="1" clipDistance="500" nodeId="38" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="greenSmall02" shapeId="2" clipDistance="500" nodeId="39" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="greenMiddle01" shapeId="3" clipDistance="500" nodeId="40" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="7"/>
+        <Shape name="greenMiddle02" shapeId="4" clipDistance="500" nodeId="41" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="7"/>
+        <Shape name="greenBig01" shapeId="5" clipDistance="500" nodeId="42" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="greenBig02" shapeId="6" clipDistance="500" nodeId="43" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="harvestReady01" shapeId="7" clipDistance="500" nodeId="44" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="12"/>
+        <Shape name="harvestReady02" shapeId="8" clipDistance="500" nodeId="45" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="12"/>
+        <Shape name="dead01" shapeId="9" clipDistance="500" nodeId="46" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="14"/>
+        <Shape name="dead02" shapeId="10" clipDistance="500" nodeId="47" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="14"/>
+        <Shape name="cut01" shapeId="11" clipDistance="500" nodeId="48" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+        <Shape name="cut02" shapeId="12" clipDistance="500" nodeId="49" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="50">
+        <Shape name="greenSmallLOD1" shapeId="1" clipDistance="500" nodeId="70" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="greenMiddleLOD1" shapeId="3" clipDistance="500" nodeId="71" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="7"/>
+        <Shape name="greenBigLOD1" shapeId="5" clipDistance="500" nodeId="72" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="harvestReadyLOD1" shapeId="7" clipDistance="500" nodeId="73" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="12"/>
+        <Shape name="deadLOD1" shapeId="9" clipDistance="500" nodeId="74" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="14"/>
+        <Shape name="cutLOD1" shapeId="11" clipDistance="500" nodeId="75" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="16"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>
