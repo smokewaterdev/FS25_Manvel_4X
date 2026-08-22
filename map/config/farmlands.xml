@@ -21,17 +21,17 @@
     <farmland id="18" priceScale="1" npcName="FORESTER" />
     <farmland id="19" priceScale="1" npcName="FORESTER" />
     <farmland id="20" priceScale="1" npcName="FORESTER" />
-    <farmland id="21" priceScale="1" npcName="FORESTER" />
+    <farmland id="21" priceScale="1" npcName="FORESTER" defaultFarmProperty="true" />
     <farmland id="22" priceScale="1" npcName="FORESTER" />
     <farmland id="23" priceScale="1" npcName="FORESTER" />
     <farmland id="24" priceScale="1" npcName="FORESTER" />
-    <farmland id="25" priceScale="1" npcName="FORESTER" />
+    <farmland id="25" priceScale="1" npcName="FORESTER" defaultFarmProperty="true" />
     <farmland id="26" priceScale="1" npcName="FORESTER" />
     <farmland id="27" priceScale="1" npcName="FORESTER" />
     <farmland id="28" priceScale="1" npcName="FORESTER" />
     <farmland id="29" priceScale="1" npcName="FORESTER" />
     <farmland id="30" priceScale="1" npcName="FORESTER" />
-    <farmland id="31" priceScale="1" npcName="FORESTER" defaultFarmProperty="true" />
+    <farmland id="31" priceScale="1" npcName="FORESTER" />
     <farmland id="32" priceScale="1" npcName="FORESTER" defaultFarmProperty="true" />
     <farmland id="33" priceScale="1" npcName="FORESTER" />
     <farmland id="34" priceScale="1" npcName="FORESTER" />

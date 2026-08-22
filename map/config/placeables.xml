@@ -50,6 +50,8 @@
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_e5290a7d3c164f8b91d642be750ca389"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_f64c2e918b3a47d5a0e7391c6d8254bf"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_3b91d6f4a8274ce0b5a163e98d72f04c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_5851b5bc852a44e8aa2b3ba1070d40ae"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_ecb3cbd529354feab7ef3021395d5123"/>
     <placeable isPreplaced="true" uniqueId="preplaced_warehouseSeedBuyPoint_7d5ac149e8b34f60a291c763be05482f"/>
     <placeable isPreplaced="true" uniqueId="placeable1d99d8b6940640ecb807f584fe74e551"/>
     <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3" boughtWithFarmlandOverwrite="true"/>
