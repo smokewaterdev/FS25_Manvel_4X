@@ -10,6 +10,7 @@
         </specs>
         <functions>
             <function>$l10n_function_sowingMachine</function>
+            <function>$l10n_function_sowingMachineDirect</function>
         </functions>
         <image>$data/vehicles/greatPlains/seeder1500/store_seeder1500.png</image>
         <price>64500</price>

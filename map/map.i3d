@@ -1094,7 +1094,7 @@
 
   <Scene>
     <Light name="sun" translation="0 400 0" rotation="-39.5664 39.1063 0" objectMask="0x83ff0000" nodeId="353" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-2048,-128,-2048" lastShadowMapSplitBboxMax="2048,148,2048" range="10000" scattering="true"/>
-    <Camera name="persp" translation="-166.836 39.7191 375.809" rotation="-35.3632 -89.3116 0.000940816" visibility="false" nodeId="354" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
+    <Camera name="persp" translation="626.481 38.0075 463.738" rotation="-30.7791 -33.6656 1.93944e-06" visibility="false" nodeId="354" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="356" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="40" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
@@ -25577,7 +25577,7 @@
       <ReferenceNode name="shagbarkHickory_stage03" translation="823 12.2374 438" rotation="0 -86.1789 0" referenceId="674" nodeId="89199"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="108 10.1362 454" rotation="180 -33.6772 180" referenceId="661" nodeId="89203"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="89 10.4397 410" rotation="0 -3.27804 0" referenceId="661" nodeId="89207"/>
-      <ReferenceNode name="americanElm_stage05" translation="227 11.2879 513" rotation="180 28.5011 -180" referenceId="669" nodeId="89211"/>
+      <ReferenceNode name="americanElm_stage05" translation="227.134 11.2879 515.268" rotation="180 28.5011 -180" referenceId="669" nodeId="89211"/>
       <ReferenceNode name="aspen_stage03" translation="280 9.94942 506" rotation="180 30.5532 -180" referenceId="682" nodeId="89215"/>
       <ReferenceNode name="aspen_stage05" translation="268 9.04669 502" rotation="0 74.642 0" referenceId="680" nodeId="89219"/>
       <ReferenceNode name="aspen_stage03" translation="285 8.31128 498" rotation="0 -17.704 0" referenceId="682" nodeId="89223"/>
@@ -25587,7 +25587,7 @@
       <ReferenceNode name="shagbarkHickory_stage04" translation="769 12.4008 433" rotation="0 33.1375 0" referenceId="661" nodeId="89241"/>
       <ReferenceNode name="boxelder_stage02" translation="694 11.4825 426" rotation="0 5.94903 0" referenceId="657" nodeId="89245"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="86 10.5759 402" rotation="0 -50.5825 0" referenceId="674" nodeId="89249"/>
-      <ReferenceNode name="boxelder_stage03" translation="214 11.3735 511" rotation="180 35.7055 -180" referenceId="656" nodeId="89253"/>
+      <ReferenceNode name="boxelder_stage03" translation="213.668 11.3735 512.917" rotation="180 35.7055 -180" referenceId="656" nodeId="89253"/>
       <ReferenceNode name="americanElm_stage05" translation="207 11.1829 496" rotation="180 -47.9075 180" referenceId="669" nodeId="89257"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="204 8.8716 488" rotation="180 10.4817 -180" referenceId="661" nodeId="89261"/>
       <ReferenceNode name="americanElm_stage05" translation="216 11.3541 499" rotation="0 47.2865 0" referenceId="669" nodeId="89265"/>
@@ -25600,7 +25600,7 @@
       <ReferenceNode name="oak_stage04" translation="749 12.3658 440" rotation="180 -88.7614 180" referenceId="689" nodeId="89295"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="734 12.3307 442" rotation="180 -1.84207 180" referenceId="674" nodeId="89301"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-870 12.3074 106" rotation="180 -12.2068 180" referenceId="648" nodeId="89305"/>
-      <ReferenceNode name="shagbarkHickory_stage02" translation="206 11.4319 508" rotation="0 -27.9226 0" referenceId="648" nodeId="89309"/>
+      <ReferenceNode name="shagbarkHickory_stage02" translation="204.725 10.967 510.405" rotation="0 -27.9226 0" referenceId="648" nodeId="89309"/>
       <ReferenceNode name="oak_stage04" translation="192 11.5331 494" rotation="0 81.7353 0" referenceId="689" nodeId="89313"/>
       <ReferenceNode name="americanElm_stage03" translation="834 12.0389 414" rotation="180 -67.7749 180" referenceId="670" nodeId="89319"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="1852 11.537 29" rotation="180 -74.3187 180" referenceId="648" nodeId="89323"/>
@@ -25659,7 +25659,7 @@
       <ReferenceNode name="boxelder_stage01" translation="-952 12 112" rotation="0 84.9912 0" referenceId="691" nodeId="89547"/>
       <ReferenceNode name="aspen_stage05" translation="-964 12.2412 116" rotation="0 -88.778 0" referenceId="680" nodeId="89551"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="345 8.56809 498" rotation="0 8.6303 0" referenceId="674" nodeId="89555"/>
-      <ReferenceNode name="oak_stage03" translation="124 11.7549 482" rotation="0 72.0222 0" referenceId="662" nodeId="89559"/>
+      <ReferenceNode name="oak_stage03" translation="123.649 11.7549 483.081" rotation="0 72.0222 0" referenceId="662" nodeId="89559"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="625 10.8249 422" rotation="0 69.7592 0" referenceId="674" nodeId="89565"/>
       <ReferenceNode name="aspen_stage04" translation="642 11.3424 423" rotation="180 44.2079 -180" referenceId="681" nodeId="89569"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="618 9.88716 414" rotation="0 22.8807 0" referenceId="674" nodeId="89573"/>
@@ -25846,7 +25846,7 @@
       <ReferenceNode name="americanElm_stage02" translation="665 9.44747 482" rotation="0 -34.606 0" referenceId="685" nodeId="90343"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="665 8.94942 490" rotation="180 32.1153 -180" referenceId="661" nodeId="90347"/>
       <ReferenceNode name="americanElm_stage02" translation="842 12.0506 441" rotation="180 -58.7729 180" referenceId="685" nodeId="90351"/>
-      <ReferenceNode name="shagbarkHickory_stage03" translation="321 11.5214 525" rotation="0 3.03354 0" referenceId="674" nodeId="90355"/>
+      <ReferenceNode name="shagbarkHickory_stage03" translation="321.071 11.5214 526.344" rotation="0 3.03354 0" referenceId="674" nodeId="90355"/>
       <ReferenceNode name="aspen_stage05" translation="-891 12.5136 108" rotation="0 -81.4849 0" referenceId="680" nodeId="90359"/>
       <ReferenceNode name="aspen_stage04" translation="-969 12.0428 192" rotation="0 75.602 0" referenceId="681" nodeId="90363"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="609 6.51362 457" rotation="0 38.3483 0" referenceId="661" nodeId="90367"/>
@@ -25870,8 +25870,8 @@
       <ReferenceNode name="americanElm_stage04" translation="418 8.92996 504" rotation="180 -37.5531 180" referenceId="668" nodeId="90443"/>
       <ReferenceNode name="boxelder_stage03" translation="426 9.04669 499" rotation="0 -1.71079 0" referenceId="656" nodeId="90447"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="-817 11.965 296" rotation="180 -84.9017 180" referenceId="661" nodeId="90451"/>
-      <ReferenceNode name="shagbarkHickory_stage03" translation="370 11.7821 530" rotation="0 35.5878 0" referenceId="674" nodeId="90455"/>
-      <ReferenceNode name="americanElm_stage04" translation="379 11.8444 531" rotation="0 -46.3366 0" referenceId="668" nodeId="90459"/>
+      <ReferenceNode name="shagbarkHickory_stage03" translation="369.754 11.7821 531.267" rotation="0 35.5878 0" referenceId="674" nodeId="90455"/>
+      <ReferenceNode name="americanElm_stage04" translation="378.642 11.8444 531.958" rotation="0 -46.3366 0" referenceId="668" nodeId="90459"/>
       <ReferenceNode name="aspen_stage05" translation="427 9.01556 507" rotation="0 -18.7556 0" referenceId="680" nodeId="90463"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="422 9.29183 519" rotation="180 -73.8016 180" referenceId="676" nodeId="90467"/>
       <ReferenceNode name="americanElm_stage04" translation="409 9.35798 515" rotation="0 -19.1769 0" referenceId="668" nodeId="90471"/>
@@ -25972,7 +25972,7 @@
       <ReferenceNode name="shagbarkHickory_stage03" translation="-907 12.0739 327" rotation="0 -59.847 0" referenceId="674" nodeId="90871"/>
       <ReferenceNode name="tiliaAmurensis_stage04" translation="-909 12.0311 314" rotation="0 62.628 0" referenceId="676" nodeId="90875"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="-908 12.0428 336" rotation="0 -79.0471 0" referenceId="674" nodeId="90879"/>
-      <ReferenceNode name="tiliaAmurensis_stage03" translation="470 10.9105 569" rotation="180 83.9847 -180" referenceId="692" nodeId="90883"/>
+      <ReferenceNode name="tiliaAmurensis_stage03" translation="468.967 10.9105 571.84" rotation="180 83.9847 -180" referenceId="692" nodeId="90883"/>
       <ReferenceNode name="aspen_stage05" translation="486 9.44358 525" rotation="0 -69.4017 0" referenceId="680" nodeId="90887"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="741 4.59533 532" rotation="180 -31.0158 180" referenceId="674" nodeId="90891"/>
       <ReferenceNode name="americanElm_stage03" translation="733 5.77043 530" rotation="0 54.1875 0" referenceId="670" nodeId="90895"/>
@@ -31067,7 +31067,7 @@
           <Shape name="barbedWire" shapeId="280" clipDistance="65" nodeId="113622" castsShadows="true" receiveShadows="true" materialIds="14"/>
           <Shape name="col" shapeId="281" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="113623" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="31"/>
         </TransformGroup>
-        <ReferenceNode name="bridgeRiver_lod" translation="291.947 7.4796 571.955" rotation="0.0197823 58.0396 0" referenceId="838" nodeId="113638"/>
+        <ReferenceNode name="bridgeRiver_lod" translation="291.947 7.4 571.955" rotation="0.0197823 58.0396 0" referenceId="838" nodeId="113638"/>
         <ReferenceNode name="vehicleBarge" translation="435.032 -4.1633 685.43" rotation="-180 -36.5048 -180" referenceId="839" nodeId="113682"/>
         <ReferenceNode name="grainBargeTerminal02" translation="427.904 1.2503 620.204" rotation="180 53.2292 180" referenceId="840" nodeId="113747"/>
         <Shape name="ShipMover_bargeRiverManvel" translation="-1154.88 -4.5666 -1877.59" shapeId="282" nodeId="113779" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" renderedInViewports="false">
