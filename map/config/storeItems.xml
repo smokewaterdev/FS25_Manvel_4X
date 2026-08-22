@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <storeItems>
+<!-- CUSTOM VEHICLES/IMPLEMENTS -->
+    <storeItem xmlFilename="vehicles/greatPlains/seeder1500NT/seeder1500NT.xml"/>
+
 <!-- MAP-SPECIFIC PREPLACED PLACEABLES -->
     <storeItem xmlFilename="assets/manvelCoop/manvelCoop.xml"/>
     <storeItem xmlFilename="assets/manvelCoop/herbicideBuyPoint.xml"/>
