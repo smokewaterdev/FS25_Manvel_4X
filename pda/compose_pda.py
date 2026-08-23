@@ -3,11 +3,19 @@
 Regenerate the Manvel 4X sample PDA image from cached sources.
 
 Sources (in ./sources/):
-  - osm_features.json : real-world roads/forest/water traced from manvel.osm,
-                         pre-projected into map-local meters. Static; does not
-                         need to be regenerated unless manvel.osm changes.
-  - calibration.json   : records exactly how the projection was derived and
-                          validated, for reference/reproducibility.
+  - osm_features.json  : real-world roads/forest/water traced from manvel.osm,
+                          pre-projected into map-local meters. Static; does not
+                          need to be regenerated unless manvel.osm changes.
+                          Covers motorway/tertiary/unclassified/residential/
+                          service/track -- OSM has no primary/secondary-tagged
+                          roads in this area.
+  - ingame_roads.json  : the REAL built primary/secondary road splines from
+                          map.i3d's roadSystem group, exported from GE via the
+                          "Spline CSV Creator Panel OBJ_25" script and parsed
+                          by build_ingame_roads.py. Regenerate that if the
+                          roadSystem splines change.
+  - calibration.json   : records exactly how the OSM projection was derived
+                          and validated, for reference/reproducibility.
 
 Live input (re-read every run, since it changes as you edit the map):
   - map/data/infoLayer_farmlands.png : current farmland footprints.
@@ -32,6 +40,12 @@ def main():
 
     with open(os.path.join(HERE, "sources", "osm_features.json")) as f:
         feats = json.load(f)
+
+    ingame_roads_path = os.path.join(HERE, "sources", "ingame_roads.json")
+    ingame_roads = {"primary": [], "secondary": []}
+    if os.path.exists(ingame_roads_path):
+        with open(ingame_roads_path) as f:
+            ingame_roads = json.load(f)
 
     def to_px(pt):
         # world meters -> pixel (pixel = world + 2048), no scaling needed at 4096 native res
@@ -66,6 +80,18 @@ def main():
             continue
         w = ROAD_WIDTH.get(road.get("sub"), 5)
         draw.line(pts, fill=ROAD_COLOR, width=w, joint="curve")
+
+    # ---- roads: real in-game primary/secondary splines (roadSystem group) ----
+    # Drawn on top of the OSM layer since these are the actual built roads,
+    # not traced approximations. OSM has nothing tagged primary/secondary
+    # here, so this doesn't replace OSM data -- it adds the layer OSM lacked.
+    INGAME_ROAD_WIDTH = {"primary": 11, "secondary": 10}
+    for cls in ("primary", "secondary"):
+        for seg in ingame_roads.get(cls, []):
+            pts = [to_px(p) for p in seg["pts"]]
+            if len(pts) < 2:
+                continue
+            draw.line(pts, fill=ROAD_COLOR, width=INGAME_ROAD_WIDTH[cls], joint="curve")
 
     # ---- forest: real OSM polygons ----
     FOREST_COLOR = (58, 92, 46)

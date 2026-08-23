@@ -24,16 +24,28 @@ the cached OSM data.
 - **`sources/osm_features.json`** — every relevant feature from `manvel.osm`
   (roads, forest polygons, tree rows/shelterbelts, water polygons, streams
   and ditches), already projected into local meters. This is the cache —
-  `compose_pda.py` never re-parses the raw `.osm` file.
+  `compose_pda.py` never re-parses the raw `.osm` file. Covers
+  motorway/tertiary/unclassified/residential/service/track — OSM has nothing
+  tagged primary/secondary in this area.
 - **`extract_osm_sources.py`** — the script that builds
   `sources/osm_features.json` and `sources/calibration.json` from
   `../manvel.osm`. Only needs to be re-run if you edit/re-trace
   `manvel.osm` in JOSM (add a road, fix the river course, etc.). Real-world
   geography doesn't change, so this should rarely need to run again.
+- **`sources/ingame_roads.json`** — the real built primary/secondary road
+  splines from `map.i3d`'s `roadSystem` group (10 primary + 3 secondary
+  segments), not OSM-traced. This is the cache — `compose_pda.py` never
+  re-parses the raw CSVs.
+- **`build_ingame_roads.py`** — the script that builds
+  `sources/ingame_roads.json` from `../map/CSVdata3/*_CSVdata.txt`. Those
+  CSVs come from GE: select each `roadSystem` spline and run the "Spline CSV
+  Creator Panel OBJ_25" script (Scripts menu) to export it. Re-run this (and
+  re-export the CSVs in GE first) whenever the road splines change shape.
 - **`compose_pda.py`** — regenerates `pda_output.png`. Reads the cached OSM
-  sources (static) plus `../map/data/infoLayer_farmlands.png` (live — this is
-  what changes every time you edit fields/farmlands in GE). Takes a few
-  seconds; no network access needed.
+  sources and in-game road sources (static) plus
+  `../map/data/infoLayer_farmlands.png` (live — this is what changes every
+  time you edit fields/farmlands in GE). Takes a few seconds; no network
+  access needed.
 - **`pda_output.png`** — the current rendered sample, at native 4096×4096.
 
 ## Regenerating after a field/farmland edit
@@ -54,6 +66,19 @@ python3 compose_pda.py "C:\path\to\FS25_Manvel_4X" pda_output.png
 ```
 cd pda
 python3 extract_osm_sources.py   # rebuilds sources/osm_features.json
+python3 compose_pda.py           # re-renders the image
+```
+
+## Regenerating after changing the primary/secondary road splines
+
+1. In GE, select each `roadSystem` spline (primaryRoadNN / secondaryRoadNN)
+   and run the "Spline CSV Creator Panel OBJ_25" script to (re-)export its
+   CSV into `map/CSVdata3/`.
+2. Then:
+
+```
+cd pda
+python3 build_ingame_roads.py    # rebuilds sources/ingame_roads.json
 python3 compose_pda.py           # re-renders the image
 ```
 
