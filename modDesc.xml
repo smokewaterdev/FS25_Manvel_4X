@@ -2,9 +2,9 @@
 <modDesc descVersion="92" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>Smokewater</author>
-    <version>1.0.0.0</version>
+    <version>0.8.0.0</version>
     <title>
-        <en>Manvel 4X</en>
+        <en>Manvel 4X RCS</en>
     </title>
 
     <description>
@@ -22,8 +22,6 @@ Shopkategorie: Maps
 
     <dependencies>
         <dependency>FS25_US_Mailboxes</dependency>
-        <dependency>FS25_66x96Shop</dependency>
-        <dependency>FS25_SmallBarndominium</dependency>
         <dependency>FS25_GrainSiloSystem</dependency>
         <dependency>FS25_WesteelSiloSystem</dependency>
         <dependency>FS25_Liquid_Lime</dependency>
@@ -39,7 +37,7 @@ Shopkategorie: Maps
             defaultHandToolsXMLFilename="map/config/handTools.xml"
             defaultItemsXMLFilename="map/config/items.xml">
             <title>
-                <en>Manvel 4X</en>
+                <en>Manvel 4X RCS</en>
             </title>
             <description>
                 <en>Website: manvel.github.io</en>

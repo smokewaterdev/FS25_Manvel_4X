@@ -4,23 +4,13 @@
         <configuration name="color" id="SHARED_WHITE2" isActive="false"/>
         <configuration name="color" id="27" isActive="true"/>
     </placeable>
-    <placeable isPreplaced="true" uniqueId="preplaced_Shop_28a8976b234a41219fab73fdccbc6ee8" boughtWithFarmlandOverwrite="true">
-        <configuration name="mainColor" id="22" isActive="true"/>
-        <configuration name="roofColor" id="5" isActive="true"/>
-        <configuration name="trimColor" id="22" isActive="true"/>
-        <configuration name="bottomTinColor" id="22" isActive="true"/>
-        <configuration name="doorTrimColor" id="22" isActive="true"/>
-    </placeable>
-    <placeable isPreplaced="true" uniqueId="preplaced_Barndo_490abb4a001d4607824ed554568dc655" boughtWithFarmlandOverwrite="true">
-        <configuration name="color" id="SHARED_WHITE2" isActive="true"/>
-        <configuration name="solarPanels" id="1" isActive="true"/>
-        <farmhouse isFreeForAll="false"/>
-        <wardrobe isFreeForAll="false"/>
-    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_garage01_043144f7db581ea5f0d744c10b8f6499e" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse04_205689fe4164f5a651c4444666d13e8da" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_commBin48_0a895ab47ebf822e9e36e8f1d55e85a13" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_54a7d2c91e8b4f60a3c5d7192b46e08f" boughtWithFarmlandOverwrite="true"/>
-    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_8e31b6f04c7942d5a7f098c1e63b542d" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_c4729a5e16d84b30f6917c25a8e043bd" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_dieselTanks02_1dd8843cc673ffc62027ecce2b93790c2" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_f14d0977841d4498962b7ec0b5b29c0a" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_grainSilo_0425d39260120da99d5eff7e6b6f84441"/>
     <placeable isPreplaced="true" uniqueId="preplaced_farmersMarketUS_07fb6668108bab15be4fd552e16031554">
         <animatedObjects>
@@ -56,14 +46,13 @@
     <placeable isPreplaced="true" uniqueId="placeable1d99d8b6940640ecb807f584fe74e551"/>
     <placeable isPreplaced="true" uniqueId="placeable0ba5a64df3654d3096951f90e5c5acb3" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="placeable6a5165d409b54e43855fed91d51f40eb" boughtWithFarmlandOverwrite="true"/>
-    <placeable isPreplaced="true" uniqueId="placeableb0c17632ecc84d3688e938e97b53fc03" boughtWithFarmlandOverwrite="true"/>
-    <placeable isPreplaced="true" uniqueId="preplaced_flagPole01_7c5fa44b98a94b1aa27c36feaea798f2" boughtWithFarmlandOverwrite="true"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_d6ff5f05530a48d09e0202b6b62f6532" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_08b2112fc7c24570a564f42199485aef" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_floodLight1_99ec706a3f0a47c8965afe11a82668d4" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_chargingStation_b45bb8c431644e21b18825107abbb843" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_easyShed01_cc711b795fc54bb1a1c0b18244b16191" farmId="0"/>
     <placeable isPreplaced="true" uniqueId="preplaced_garbageContainer01_6f26dbbc6c4a4186bcfcf8ebe75b8269" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_sellingStationVehicles_089bd9cf9e4987062d6d929a1facbfcbc"/>
     <placeable isPreplaced="true" uniqueId="preplaced_vehicleDealerWorkshop_8c9e4d2f1a6b47c093e5d8a2f4b7610c"/>
     <placeable isPreplaced="true" uniqueId="preplaced_hds9184M_placeable_ac403edfc9054c8a9374d6f793e67545" farmId="0"/>
 </placeables>
