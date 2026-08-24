@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="powerline.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="maptoplay_powerline_material" materialId="5" diffuseColor="0.0313726 0.0313726 0.0313726 1" specularColor="0.0196078 1 0.0196078">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="powerline.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="powerline_1_v2-carrier-8996531_v2-placement-543502_v2-placement-501764_0_0" shapeId="1" static="true" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="5"/>
+  </Scene>
+
+</i3D>

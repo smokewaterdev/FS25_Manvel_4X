@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>RowCropSpecial</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>American Powerpole and Line Pack</en>
+    </title>
+	
+	<iconFilename>icon.dds</iconFilename>
+	
+	<description>
+        <en>
+            <![CDATA[This pack is designed for map makers. It contains several options of power poles and lengths of powerlines. Additionally, this pack is designed to work with the various fence/powerline scripts available.]]>
+        </en>	
+    </description>
+	
+	<categories>
+        <category>others</category>
+    </categories>
+	
+	<prefabs>
+		<prefab name="polePack" i3dFilename="polePack.i3d" />		
+    </prefabs>
+</prefabDesc>
