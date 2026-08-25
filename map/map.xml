@@ -86,6 +86,14 @@
     </groundTypeMappings>
     <thPFConfig disableTramlines="true">
         <soilMap id="mapUS" size="2048"/>
+
+        <!-- Registers non-vanilla spray types with the PF Configurator's spray-type groups
+        so ThundR's Precision Farming lime/nitrogen tracking recognizes them.
+        FS25_Liquid_Lime registers its own sprayType named LIQUIDLIME (see its xml/sprayTypes.xml);
+        without this mapping the PF Configurator has no way to know it should be treated as lime. -->
+        <sprayTypeMapping>
+            <sprayType name="LIQUIDLIME" group="LIME" isLiquid="true"/>
+        </sprayTypeMapping>
     </thPFConfig>
 
     <precisionFarming>
