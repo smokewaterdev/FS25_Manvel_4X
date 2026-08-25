@@ -37,13 +37,13 @@
             <spray type="NONE" level="0" />
         </field>
         <field fieldId="8" weedState="0">
-            <fruit type="SOYBEAN" growthState="GREENMIDDLE2" />
-            <ground type="SOWN" angle="0" />
+            <fruit type="GRASS" growthState="HARVESTREADY" />
+            <ground type="GRASS" angle="0" />
             <spray type="NONE" level="0" />
         </field>
         <field fieldId="9" weedState="0">
-            <fruit type="MAIZE" growthState="HARVESTREADYGREEN" />
-            <ground type="SOWN" angle="0" />
+            <fruit type="GRASS" growthState="HARVESTREADY" />
+            <ground type="GRASS" angle="0" />
             <spray type="NONE" level="0" />
         </field>
         <field fieldId="10" weedState="0">
@@ -67,8 +67,8 @@
             <spray type="NONE" level="0" />
         </field>
         <field fieldId="14" weedState="0">
-            <fruit type="BARLEY" growthState="HARVESTREADY" />
-            <ground type="HARVEST_READY" angle="0" />
+            <fruit type="GRASS" growthState="HARVESTREADY" />
+            <ground type="GRASS" angle="0" />
             <spray type="NONE" level="0" />
         </field>
         <field fieldId="15" weedState="0">

@@ -215,9 +215,13 @@
                 <update startState="greenBig" endState="harvestReady" />
             </period>
             <period name="LATE_AUTUMN">
+                <update startState="greenSmall" endState="greenMiddle" />
+                <update startState="greenMiddle" endState="greenBig" />
+                <update startState="greenBig" endState="harvestReady" />
+            </period>
+            <period name="EARLY_WINTER">
                 <update startState="harvestReady" endState="dead" />
             </period>
-            <period name="EARLY_WINTER" />
             <period name="MID_WINTER" />
             <period name="LATE_WINTER" />
         </seasonal>
