@@ -31,12 +31,12 @@
     <File fileId="599" filename="$data/foliage/sugarcane/sugarcane.xml"/>
     <File fileId="586" filename="$data/foliage/waterPlants/waterPlants.xml"/>
     <File fileId="612" filename="$data/foliage/weed/weed.xml"/>
-    <File fileId="871" filename="$data/maps/mapAS/textures/props/antenna_diffuse.png"/>
-    <File fileId="778" filename="$data/maps/mapAS/textures/props/barrels_diffuse.png"/>
-    <File fileId="779" filename="$data/maps/mapAS/textures/props/barrels_normal.png"/>
-    <File fileId="780" filename="$data/maps/mapAS/textures/props/barrels_specular.png"/>
-    <File fileId="776" filename="$data/maps/mapAS/textures/props/pipes/pipes06.i3d"/>
-    <File fileId="777" filename="$data/maps/mapAS/textures/props/pipes/pipes07.i3d"/>
+    <File fileId="875" filename="$data/maps/mapAS/textures/props/antenna_diffuse.png"/>
+    <File fileId="782" filename="$data/maps/mapAS/textures/props/barrels_diffuse.png"/>
+    <File fileId="783" filename="$data/maps/mapAS/textures/props/barrels_normal.png"/>
+    <File fileId="784" filename="$data/maps/mapAS/textures/props/barrels_specular.png"/>
+    <File fileId="780" filename="$data/maps/mapAS/textures/props/pipes/pipes06.i3d"/>
+    <File fileId="781" filename="$data/maps/mapAS/textures/props/pipes/pipes07.i3d"/>
     <File fileId="395" filename="$data/maps/mapAS/textures/terrain/rockFloorTiles01_diffuse.png"/>
     <File fileId="398" filename="$data/maps/mapAS/textures/terrain/rockFloorTiles01_displacement.png"/>
     <File fileId="397" filename="$data/maps/mapAS/textures/terrain/rockFloorTiles01_height.png"/>
@@ -59,60 +59,60 @@
     <File fileId="431" filename="$data/maps/mapAS/textures/terrain/sand02_displacement.png"/>
     <File fileId="430" filename="$data/maps/mapAS/textures/terrain/sand02_height.png"/>
     <File fileId="429" filename="$data/maps/mapAS/textures/terrain/sand02_normal.png"/>
-    <File fileId="766" filename="$data/maps/mapEU/textures/props/accessPointFence_diffuse.png"/>
-    <File fileId="767" filename="$data/maps/mapEU/textures/props/accessPointFence_normal.png"/>
-    <File fileId="768" filename="$data/maps/mapEU/textures/props/accessPointFence_specular.png"/>
-    <File fileId="762" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_diffuse.png"/>
-    <File fileId="763" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_normal.png"/>
-    <File fileId="764" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_specular.png"/>
-    <File fileId="769" filename="$data/maps/mapEU/textures/props/industrialLight03_diffuse.png"/>
-    <File fileId="770" filename="$data/maps/mapEU/textures/props/industrialLight03_normal.png"/>
-    <File fileId="771" filename="$data/maps/mapEU/textures/props/industrialLight03_specular.png"/>
-    <File fileId="772" filename="$data/maps/mapEU/textures/windowsGlass_diffuse.png"/>
-    <File fileId="773" filename="$data/maps/mapEU/textures/windowsGlass_normal.png"/>
-    <File fileId="774" filename="$data/maps/mapEU/textures/windowsGlass_specular.png"/>
-    <File fileId="846" filename="$data/maps/mapUS/textures/buildings/bridgeRiver/bridgeRiver.i3d"/>
-    <File fileId="867" filename="$data/maps/mapUS/textures/buildings/drainageTunnel03/drainageTunnel03.i3d"/>
-    <File fileId="848" filename="$data/maps/mapUS/textures/buildings/grainBargeTerminal02/grainBargeTerminal02.i3d"/>
-    <File fileId="738" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_diffuse.png"/>
-    <File fileId="739" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_normal.png"/>
-    <File fileId="740" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_specular.png"/>
-    <File fileId="731" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_diffuse.png"/>
-    <File fileId="732" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_normal.png"/>
-    <File fileId="733" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_specular.png"/>
-    <File fileId="720" filename="$data/maps/mapUS/textures/buildings/warehouse02/warehouse02_mask.png"/>
-    <File fileId="856" filename="$data/maps/mapUS/textures/concreteDark_diffuse.png"/>
-    <File fileId="857" filename="$data/maps/mapUS/textures/concreteDark_normal.png"/>
-    <File fileId="858" filename="$data/maps/mapUS/textures/concreteDark_specular.png"/>
-    <File fileId="840" filename="$data/maps/mapUS/textures/props/accessPointFence_diffuse.png"/>
-    <File fileId="841" filename="$data/maps/mapUS/textures/props/accessPointFence_normal.png"/>
-    <File fileId="842" filename="$data/maps/mapUS/textures/props/accessPointFence_specular.png"/>
-    <File fileId="785" filename="$data/maps/mapUS/textures/props/connectedPylons_diffuse.png"/>
-    <File fileId="786" filename="$data/maps/mapUS/textures/props/connectedPylons_normal.png"/>
-    <File fileId="787" filename="$data/maps/mapUS/textures/props/connectedPylons_specular.png"/>
-    <File fileId="852" filename="$data/maps/mapUS/textures/props/electricConnetionDecals_diffuse.png"/>
-    <File fileId="843" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_diffuse.png"/>
-    <File fileId="844" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_normal.png"/>
-    <File fileId="845" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_specular.png"/>
-    <File fileId="837" filename="$data/maps/mapUS/textures/props/electricalBoxSet_diffuse.png"/>
-    <File fileId="838" filename="$data/maps/mapUS/textures/props/electricalBoxSet_normal.png"/>
-    <File fileId="839" filename="$data/maps/mapUS/textures/props/electricalBoxSet_specular.png"/>
-    <File fileId="847" filename="$data/maps/mapUS/textures/props/gameplay/vehicleBarge.i3d"/>
-    <File fileId="862" filename="$data/maps/mapUS/textures/props/propsSet01Decals_diffuse.png"/>
-    <File fileId="859" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_diffuse.png"/>
-    <File fileId="860" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_normal.png"/>
-    <File fileId="861" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_specular.png"/>
-    <File fileId="811" filename="$data/maps/mapUS/textures/props/signs/farmHouse01Logo_diffuse.png"/>
-    <File fileId="864" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_diffuse.png"/>
-    <File fileId="865" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_normal.png"/>
-    <File fileId="866" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_specular.png"/>
+    <File fileId="770" filename="$data/maps/mapEU/textures/props/accessPointFence_diffuse.png"/>
+    <File fileId="771" filename="$data/maps/mapEU/textures/props/accessPointFence_normal.png"/>
+    <File fileId="772" filename="$data/maps/mapEU/textures/props/accessPointFence_specular.png"/>
+    <File fileId="766" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_diffuse.png"/>
+    <File fileId="767" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_normal.png"/>
+    <File fileId="768" filename="$data/maps/mapEU/textures/props/industrialBuildingAttachments_specular.png"/>
+    <File fileId="773" filename="$data/maps/mapEU/textures/props/industrialLight03_diffuse.png"/>
+    <File fileId="774" filename="$data/maps/mapEU/textures/props/industrialLight03_normal.png"/>
+    <File fileId="775" filename="$data/maps/mapEU/textures/props/industrialLight03_specular.png"/>
+    <File fileId="776" filename="$data/maps/mapEU/textures/windowsGlass_diffuse.png"/>
+    <File fileId="777" filename="$data/maps/mapEU/textures/windowsGlass_normal.png"/>
+    <File fileId="778" filename="$data/maps/mapEU/textures/windowsGlass_specular.png"/>
+    <File fileId="850" filename="$data/maps/mapUS/textures/buildings/bridgeRiver/bridgeRiver.i3d"/>
+    <File fileId="871" filename="$data/maps/mapUS/textures/buildings/drainageTunnel03/drainageTunnel03.i3d"/>
+    <File fileId="852" filename="$data/maps/mapUS/textures/buildings/grainBargeTerminal02/grainBargeTerminal02.i3d"/>
+    <File fileId="742" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_diffuse.png"/>
+    <File fileId="743" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_normal.png"/>
+    <File fileId="744" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorPropsTile_specular.png"/>
+    <File fileId="735" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_diffuse.png"/>
+    <File fileId="736" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_normal.png"/>
+    <File fileId="737" filename="$data/maps/mapUS/textures/buildings/grainElevator/grainElevatorProps_specular.png"/>
+    <File fileId="724" filename="$data/maps/mapUS/textures/buildings/warehouse02/warehouse02_mask.png"/>
+    <File fileId="860" filename="$data/maps/mapUS/textures/concreteDark_diffuse.png"/>
+    <File fileId="861" filename="$data/maps/mapUS/textures/concreteDark_normal.png"/>
+    <File fileId="862" filename="$data/maps/mapUS/textures/concreteDark_specular.png"/>
+    <File fileId="844" filename="$data/maps/mapUS/textures/props/accessPointFence_diffuse.png"/>
+    <File fileId="845" filename="$data/maps/mapUS/textures/props/accessPointFence_normal.png"/>
+    <File fileId="846" filename="$data/maps/mapUS/textures/props/accessPointFence_specular.png"/>
+    <File fileId="789" filename="$data/maps/mapUS/textures/props/connectedPylons_diffuse.png"/>
+    <File fileId="790" filename="$data/maps/mapUS/textures/props/connectedPylons_normal.png"/>
+    <File fileId="791" filename="$data/maps/mapUS/textures/props/connectedPylons_specular.png"/>
+    <File fileId="856" filename="$data/maps/mapUS/textures/props/electricConnetionDecals_diffuse.png"/>
+    <File fileId="847" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_diffuse.png"/>
+    <File fileId="848" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_normal.png"/>
+    <File fileId="849" filename="$data/maps/mapUS/textures/props/electricalBoxSetBarbedWire_specular.png"/>
+    <File fileId="841" filename="$data/maps/mapUS/textures/props/electricalBoxSet_diffuse.png"/>
+    <File fileId="842" filename="$data/maps/mapUS/textures/props/electricalBoxSet_normal.png"/>
+    <File fileId="843" filename="$data/maps/mapUS/textures/props/electricalBoxSet_specular.png"/>
+    <File fileId="851" filename="$data/maps/mapUS/textures/props/gameplay/vehicleBarge.i3d"/>
+    <File fileId="866" filename="$data/maps/mapUS/textures/props/propsSet01Decals_diffuse.png"/>
+    <File fileId="863" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_diffuse.png"/>
+    <File fileId="864" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_normal.png"/>
+    <File fileId="865" filename="$data/maps/mapUS/textures/props/signWarningRisingWaterlevel_specular.png"/>
+    <File fileId="815" filename="$data/maps/mapUS/textures/props/signs/farmHouse01Logo_diffuse.png"/>
+    <File fileId="868" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_diffuse.png"/>
+    <File fileId="869" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_normal.png"/>
+    <File fileId="870" filename="$data/maps/mapUS/textures/props/smallBridgesConcrete_specular.png"/>
     <File fileId="697" filename="$data/maps/mapUS/textures/props/trafficSignsDecals_diffuse.png"/>
     <File fileId="694" filename="$data/maps/mapUS/textures/props/trafficSigns_diffuse.png"/>
     <File fileId="695" filename="$data/maps/mapUS/textures/props/trafficSigns_normal.png"/>
     <File fileId="696" filename="$data/maps/mapUS/textures/props/trafficSigns_specular.png"/>
-    <File fileId="868" filename="$data/maps/mapUS/textures/props/utilityPoles_diffuse.png"/>
-    <File fileId="869" filename="$data/maps/mapUS/textures/props/utilityPoles_normal.png"/>
-    <File fileId="870" filename="$data/maps/mapUS/textures/props/utilityPoles_specular.png"/>
+    <File fileId="872" filename="$data/maps/mapUS/textures/props/utilityPoles_diffuse.png"/>
+    <File fileId="873" filename="$data/maps/mapUS/textures/props/utilityPoles_normal.png"/>
+    <File fileId="874" filename="$data/maps/mapUS/textures/props/utilityPoles_specular.png"/>
     <File fileId="5" filename="$data/maps/mapUS/textures/terrain/asphalt01_diffuse.png"/>
     <File fileId="8" filename="$data/maps/mapUS/textures/terrain/asphalt01_displacement.png"/>
     <File fileId="7" filename="$data/maps/mapUS/textures/terrain/asphalt01_height.png"/>
@@ -433,28 +433,28 @@
     <File fileId="221" filename="$data/maps/mapUS/textures/terrain/rockyForestGround02_normal.png"/>
     <File fileId="423" filename="$data/maps/mapUS/textures/terrain/sand01_diffuse.png"/>
     <File fileId="428" filename="$data/maps/mapUS/textures/terrain/sand02_diffuse.png"/>
-    <File fileId="748" filename="$data/maps/textures/shared/decalSet_diffuse.png"/>
-    <File fileId="749" filename="$data/maps/textures/shared/decalSet_normal.png"/>
-    <File fileId="750" filename="$data/maps/textures/shared/decalSet_specular.png"/>
-    <File fileId="812" filename="$data/maps/textures/shared/default_normal.png"/>
-    <File fileId="745" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
-    <File fileId="746" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
-    <File fileId="747" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
-    <File fileId="775" filename="$data/maps/textures/shared/props/industrialProps/container23.i3d"/>
-    <File fileId="751" filename="$data/maps/textures/shared/rustLeaksDecals_diffuse.png"/>
-    <File fileId="752" filename="$data/maps/textures/shared/rustLeaksDecals_normal.png"/>
-    <File fileId="753" filename="$data/maps/textures/shared/rustLeaksDecals_specular.png"/>
-    <File fileId="754" filename="$data/maps/textures/shared/signageUSDecals_diffuse.png"/>
-    <File fileId="755" filename="$data/maps/textures/shared/signageUSDecals_specular.png"/>
-    <File fileId="741" filename="$data/maps/textures/shared/snow_diffuse.png"/>
-    <File fileId="742" filename="$data/maps/textures/shared/snow_normal.png"/>
-    <File fileId="723" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="752" filename="$data/maps/textures/shared/decalSet_diffuse.png"/>
+    <File fileId="753" filename="$data/maps/textures/shared/decalSet_normal.png"/>
+    <File fileId="754" filename="$data/maps/textures/shared/decalSet_specular.png"/>
+    <File fileId="816" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="749" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="750" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="751" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="779" filename="$data/maps/textures/shared/props/industrialProps/container23.i3d"/>
+    <File fileId="755" filename="$data/maps/textures/shared/rustLeaksDecals_diffuse.png"/>
+    <File fileId="756" filename="$data/maps/textures/shared/rustLeaksDecals_normal.png"/>
+    <File fileId="757" filename="$data/maps/textures/shared/rustLeaksDecals_specular.png"/>
+    <File fileId="758" filename="$data/maps/textures/shared/signageUSDecals_diffuse.png"/>
+    <File fileId="759" filename="$data/maps/textures/shared/signageUSDecals_specular.png"/>
+    <File fileId="745" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="746" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="727" filename="$data/maps/textures/shared/snow_specular.png"/>
     <File fileId="702" filename="$data/maps/textures/shared/water_normal.png"/>
-    <File fileId="759" filename="$data/maps/textures/shared/windowsIndustrial01_diffuse.png"/>
-    <File fileId="760" filename="$data/maps/textures/shared/windowsIndustrial01_normal.png"/>
-    <File fileId="761" filename="$data/maps/textures/shared/windowsIndustrial01_specular.png"/>
-    <File fileId="758" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialDay_diffuse.png"/>
-    <File fileId="756" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialNight_diffuse.png"/>
+    <File fileId="763" filename="$data/maps/textures/shared/windowsIndustrial01_diffuse.png"/>
+    <File fileId="764" filename="$data/maps/textures/shared/windowsIndustrial01_normal.png"/>
+    <File fileId="765" filename="$data/maps/textures/shared/windowsIndustrial01_specular.png"/>
+    <File fileId="762" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialDay_diffuse.png"/>
+    <File fileId="760" filename="$data/maps/textures/shared/windowsRoomInteriorsIndustrialNight_diffuse.png"/>
     <File fileId="616" filename="$data/maps/textures/terrain/ground/distance/cultivated_distance_diffuse.png"/>
     <File fileId="630" filename="$data/maps/textures/terrain/ground/distance/directSownFertilized_distance_diffuse.png"/>
     <File fileId="618" filename="$data/maps/textures/terrain/ground/distance/directSown_distance_diffuse.png"/>
@@ -661,93 +661,97 @@
     <File fileId="688" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage02.i3d"/>
     <File fileId="692" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage03.i3d"/>
     <File fileId="676" filename="$data/maps/trees/tiliaAmurensis/tiliaAmurensis_stage04.i3d"/>
-    <File fileId="808" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_diffuse.png"/>
-    <File fileId="809" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_normal.png"/>
-    <File fileId="810" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_specular.png"/>
-    <File fileId="782" filename="$data/objects/pallets/pioneer/pioneerPallet_diffuse.png"/>
-    <File fileId="783" filename="$data/objects/pallets/pioneer/pioneerPallet_normal.png"/>
-    <File fileId="784" filename="$data/objects/pallets/pioneer/pioneerPallet_specular.png"/>
-    <File fileId="835" filename="$data/placeables/agi/commBin48/commBin48.i3d"/>
-    <File fileId="829" filename="$data/placeables/brandless/chargingStation/chargingStation.i3d"/>
-    <File fileId="819" filename="$data/placeables/brandless/decoration/benches/bench01.i3d"/>
-    <File fileId="820" filename="$data/placeables/brandless/decoration/benches/oldTable.i3d"/>
-    <File fileId="790" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot04.i3d"/>
-    <File fileId="821" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot05.i3d"/>
-    <File fileId="822" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot06.i3d"/>
-    <File fileId="792" filename="$data/placeables/brandless/decoration/flowerPots/flowerStand.i3d"/>
-    <File fileId="791" filename="$data/placeables/brandless/decoration/flowerPots/flowerpot01.i3d"/>
-    <File fileId="831" filename="$data/placeables/brandless/decoration/garbageContainers/garbageContainers.i3d"/>
-    <File fileId="781" filename="$data/placeables/brandless/decoration/palletTruck/palletTruck.i3d"/>
-    <File fileId="825" filename="$data/placeables/brandless/decoration/playGround/sunflowerBaleDecoration.i3d"/>
-    <File fileId="823" filename="$data/placeables/brandless/decoration/playGround/sunflowerEntrySign.i3d"/>
-    <File fileId="824" filename="$data/placeables/brandless/decoration/playGround/sunflowerPaintedSilo.i3d"/>
-    <File fileId="833" filename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02.i3d"/>
-    <File fileId="813" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_diffuse.png"/>
-    <File fileId="817" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_height.png"/>
-    <File fileId="816" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_mask.png"/>
-    <File fileId="814" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_normal.png"/>
-    <File fileId="815" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_specular.png"/>
-    <File fileId="794" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_diffuse.png"/>
-    <File fileId="798" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_height.png"/>
-    <File fileId="797" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_mask.png"/>
-    <File fileId="795" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_normal.png"/>
-    <File fileId="796" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_specular.png"/>
-    <File fileId="788" filename="$data/placeables/brandless/floodLights/level01/floodLight01.i3d"/>
-    <File fileId="805" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_alpha.png"/>
-    <File fileId="802" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_diffuse.png"/>
-    <File fileId="804" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_fmask.png"/>
-    <File fileId="803" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_normal.png"/>
-    <File fileId="849" filename="$data/placeables/brandless/limeStation/limeStation.i3d"/>
-    <File fileId="709" filename="$data/placeables/brandless/weighingStations/weighingStationLarge/weighingStationLarge.i3d"/>
-    <File fileId="851" filename="$data/placeables/brandless/weighingStations/weighingStationSmall/weighingStationSmall.i3d"/>
-    <File fileId="830" filename="$data/placeables/easySheds/easyShed01/easyShed01.i3d"/>
-    <File fileId="828" filename="$data/placeables/kaercher/hds9184M/hds9184M_placeable.i3d"/>
-    <File fileId="818" filename="$data/placeables/mapUS/decoration/farmShedSmallOld/farmShedSmallOld.i3d"/>
-    <File fileId="832" filename="$data/placeables/mapUS/farmHouse04/farmHouse04.i3d"/>
-    <File fileId="799" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_diffuse.png"/>
-    <File fileId="800" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_normal.png"/>
-    <File fileId="801" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_specular.png"/>
-    <File fileId="793" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketUS.i3d"/>
-    <File fileId="836" filename="$data/placeables/mapUS/garage01/garage01.i3d"/>
-    <File fileId="850" filename="$data/placeables/mapUS/sellingPoints/grainBargeTerminal02Triggers/grainBargeTerminal02Triggers.i3d"/>
-    <File fileId="726" filename="$data/placeables/mapUS/shared/detailSetUSDoors_diffuse.png"/>
-    <File fileId="730" filename="$data/placeables/mapUS/shared/detailSetUSDoors_mask.png"/>
-    <File fileId="727" filename="$data/placeables/mapUS/shared/detailSetUSDoors_normal.png"/>
-    <File fileId="728" filename="$data/placeables/mapUS/shared/detailSetUSDoors_specular.png"/>
-    <File fileId="735" filename="$data/placeables/mapUS/shared/detailSetUSFrames_diffuse.png"/>
-    <File fileId="736" filename="$data/placeables/mapUS/shared/detailSetUSFrames_normal.png"/>
-    <File fileId="737" filename="$data/placeables/mapUS/shared/detailSetUSFrames_specular.png"/>
-    <File fileId="716" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_diffuse.png"/>
-    <File fileId="725" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_height.png"/>
-    <File fileId="717" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_normal.png"/>
-    <File fileId="718" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_specular.png"/>
-    <File fileId="712" filename="$data/placeables/meridian/liquidFlatBottomTank1630/liquidFlatBottomTank1630.i3d"/>
-    <File fileId="806" filename="$data/placeables/shared/farmersMarketFillplane_diffuse.png"/>
-    <File fileId="807" filename="$data/placeables/shared/farmersMarketFillplane_normal.png"/>
-    <File fileId="719" filename="$data/shaders/buildingShader.xml"/>
-    <File fileId="872" filename="$data/shaders/clothesWindShader.xml"/>
-    <File fileId="729" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="812" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_diffuse.png"/>
+    <File fileId="813" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_normal.png"/>
+    <File fileId="814" filename="$data/objects/pallets/enokiBoxPallet/enokiBox_specular.png"/>
+    <File fileId="786" filename="$data/objects/pallets/pioneer/pioneerPallet_diffuse.png"/>
+    <File fileId="787" filename="$data/objects/pallets/pioneer/pioneerPallet_normal.png"/>
+    <File fileId="788" filename="$data/objects/pallets/pioneer/pioneerPallet_specular.png"/>
+    <File fileId="839" filename="$data/placeables/agi/commBin48/commBin48.i3d"/>
+    <File fileId="833" filename="$data/placeables/brandless/chargingStation/chargingStation.i3d"/>
+    <File fileId="823" filename="$data/placeables/brandless/decoration/benches/bench01.i3d"/>
+    <File fileId="824" filename="$data/placeables/brandless/decoration/benches/oldTable.i3d"/>
+    <File fileId="794" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot04.i3d"/>
+    <File fileId="825" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot05.i3d"/>
+    <File fileId="826" filename="$data/placeables/brandless/decoration/flowerPots/flowerPot06.i3d"/>
+    <File fileId="796" filename="$data/placeables/brandless/decoration/flowerPots/flowerStand.i3d"/>
+    <File fileId="795" filename="$data/placeables/brandless/decoration/flowerPots/flowerpot01.i3d"/>
+    <File fileId="835" filename="$data/placeables/brandless/decoration/garbageContainers/garbageContainers.i3d"/>
+    <File fileId="785" filename="$data/placeables/brandless/decoration/palletTruck/palletTruck.i3d"/>
+    <File fileId="829" filename="$data/placeables/brandless/decoration/playGround/sunflowerBaleDecoration.i3d"/>
+    <File fileId="827" filename="$data/placeables/brandless/decoration/playGround/sunflowerEntrySign.i3d"/>
+    <File fileId="828" filename="$data/placeables/brandless/decoration/playGround/sunflowerPaintedSilo.i3d"/>
+    <File fileId="837" filename="$data/placeables/brandless/dieselTanks/level02/dieselTanksLevel02.i3d"/>
+    <File fileId="817" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_diffuse.png"/>
+    <File fileId="821" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_height.png"/>
+    <File fileId="820" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_mask.png"/>
+    <File fileId="818" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_normal.png"/>
+    <File fileId="819" filename="$data/placeables/brandless/farmerKioskBig/farmerKioskBig_specular.png"/>
+    <File fileId="798" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_diffuse.png"/>
+    <File fileId="802" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_height.png"/>
+    <File fileId="801" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_mask.png"/>
+    <File fileId="799" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_normal.png"/>
+    <File fileId="800" filename="$data/placeables/brandless/farmerKioskSmall/farmerKioskSmall_specular.png"/>
+    <File fileId="792" filename="$data/placeables/brandless/floodLights/level01/floodLight01.i3d"/>
+    <File fileId="809" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_alpha.png"/>
+    <File fileId="806" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_diffuse.png"/>
+    <File fileId="808" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_fmask.png"/>
+    <File fileId="807" filename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springonionStage02_normal.png"/>
+    <File fileId="853" filename="$data/placeables/brandless/limeStation/limeStation.i3d"/>
+    <File fileId="712" filename="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.i3d"/>
+    <File fileId="713" filename="$data/placeables/brandless/weighingStations/weighingStationLarge/weighingStationLarge.i3d"/>
+    <File fileId="855" filename="$data/placeables/brandless/weighingStations/weighingStationSmall/weighingStationSmall.i3d"/>
+    <File fileId="834" filename="$data/placeables/easySheds/easyShed01/easyShed01.i3d"/>
+    <File fileId="832" filename="$data/placeables/kaercher/hds9184M/hds9184M_placeable.i3d"/>
+    <File fileId="822" filename="$data/placeables/mapUS/decoration/farmShedSmallOld/farmShedSmallOld.i3d"/>
+    <File fileId="836" filename="$data/placeables/mapUS/farmHouse04/farmHouse04.i3d"/>
+    <File fileId="803" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_diffuse.png"/>
+    <File fileId="804" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_normal.png"/>
+    <File fileId="805" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketPropsUS_specular.png"/>
+    <File fileId="797" filename="$data/placeables/mapUS/farmersMarketUS/farmersMarketUS.i3d"/>
+    <File fileId="840" filename="$data/placeables/mapUS/garage01/garage01.i3d"/>
+    <File fileId="854" filename="$data/placeables/mapUS/sellingPoints/grainBargeTerminal02Triggers/grainBargeTerminal02Triggers.i3d"/>
+    <File fileId="730" filename="$data/placeables/mapUS/shared/detailSetUSDoors_diffuse.png"/>
+    <File fileId="734" filename="$data/placeables/mapUS/shared/detailSetUSDoors_mask.png"/>
+    <File fileId="731" filename="$data/placeables/mapUS/shared/detailSetUSDoors_normal.png"/>
+    <File fileId="732" filename="$data/placeables/mapUS/shared/detailSetUSDoors_specular.png"/>
+    <File fileId="739" filename="$data/placeables/mapUS/shared/detailSetUSFrames_diffuse.png"/>
+    <File fileId="740" filename="$data/placeables/mapUS/shared/detailSetUSFrames_normal.png"/>
+    <File fileId="741" filename="$data/placeables/mapUS/shared/detailSetUSFrames_specular.png"/>
+    <File fileId="720" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_diffuse.png"/>
+    <File fileId="729" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_height.png"/>
+    <File fileId="721" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_normal.png"/>
+    <File fileId="722" filename="$data/placeables/mapUS/warehouseLogisticUS/warehouseLogisticUS_specular.png"/>
+    <File fileId="716" filename="$data/placeables/meridian/liquidFlatBottomTank1630/liquidFlatBottomTank1630.i3d"/>
+    <File fileId="711" filename="$data/placeables/planET/bga250kw/bga250kw.i3d"/>
+    <File fileId="710" filename="$data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.i3d"/>
+    <File fileId="709" filename="$data/placeables/planET/bgaHall/bgaHall.i3d"/>
+    <File fileId="810" filename="$data/placeables/shared/farmersMarketFillplane_diffuse.png"/>
+    <File fileId="811" filename="$data/placeables/shared/farmersMarketFillplane_normal.png"/>
+    <File fileId="723" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="876" filename="$data/shaders/clothesWindShader.xml"/>
+    <File fileId="733" filename="$data/shaders/colorShader.xml"/>
     <File fileId="700" filename="$data/shaders/decalShader.xml"/>
-    <File fileId="757" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="761" filename="$data/shaders/glowShader.xml"/>
     <File fileId="637" filename="$data/shaders/groundHeightShader.xml"/>
     <File fileId="704" filename="$data/shaders/oceanShader.xml"/>
-    <File fileId="765" filename="$data/shaders/placeableShader.xml"/>
-    <File fileId="743" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="769" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="747" filename="$data/shaders/snowHeapShader.xml"/>
     <File fileId="2" filename="$data/shaders/terrainShader.xml"/>
     <File fileId="644" filename="$data/shared/assets/marker/markerIconShopping.i3d"/>
     <File fileId="698" filename="$data/shared/default_normal.png"/>
     <File fileId="699" filename="$data/shared/default_specular.dds"/>
     <File fileId="638" filename="$data/shared/groundHeightNoise.dds"/>
-    <File fileId="854" filename="$data/shared/window_diffuse.dds"/>
-    <File fileId="715" filename="../../FS25_GrainSiloSystem/grainSilo.i3d"/>
-    <File fileId="711" filename="../../FS25_Liquid_Lime/placeables/LiquidLimeSilo/liquidLimeSilo.i3d"/>
-    <File fileId="710" filename="../../FS25_Liquidstorage/Herbizid.i3d"/>
+    <File fileId="858" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="719" filename="../../FS25_GrainSiloSystem/grainSilo.i3d"/>
+    <File fileId="715" filename="../../FS25_Liquid_Lime/placeables/LiquidLimeSilo/liquidLimeSilo.i3d"/>
+    <File fileId="714" filename="../../FS25_Liquidstorage/Herbizid.i3d"/>
     <File fileId="645" filename="../assets/background_terrain/background_terrain.i3d"/>
-    <File fileId="789" filename="../assets/manvelCoop/buyPointTrigger.i3d"/>
-    <File fileId="713" filename="../assets/manvelCoop/dieselBuyPoint.i3d"/>
+    <File fileId="793" filename="../assets/manvelCoop/buyPointTrigger.i3d"/>
+    <File fileId="717" filename="../assets/manvelCoop/dieselBuyPoint.i3d"/>
     <File fileId="646" filename="../assets/map_bounds/map_bounds.i3d"/>
-    <File fileId="826" filename="../assets/vehicleDealer/vehicleTrader.i3d"/>
-    <File fileId="827" filename="../assets/vehicleDealer/workshopTrigger.i3d"/>
+    <File fileId="830" filename="../assets/vehicleDealer/vehicleTrader.i3d"/>
+    <File fileId="831" filename="../assets/vehicleDealer/workshopTrigger.i3d"/>
     <File fileId="4" filename="data/asphalt01_weight.png"/>
     <File fileId="9" filename="data/asphalt02_weight.png"/>
     <File fileId="34" filename="data/asphaltCracks01_weight.png"/>
@@ -820,9 +824,9 @@
     <File fileId="579" filename="data/infoLayer_placementCollisionGenerated.png"/>
     <File fileId="576" filename="data/infoLayer_tipCollision.png"/>
     <File fileId="577" filename="data/infoLayer_tipCollisionGenerated.png"/>
-    <File fileId="873" filename="data/masks/PG_forest.png"/>
-    <File fileId="874" filename="data/masks/PG_river.png"/>
-    <File fileId="875" filename="data/masks/blockMask.png"/>
+    <File fileId="877" filename="data/masks/PG_forest.png"/>
+    <File fileId="878" filename="data/masks/PG_river.png"/>
+    <File fileId="879" filename="data/masks/blockMask.png"/>
     <File fileId="284" filename="data/mudDark01_weight.png"/>
     <File fileId="289" filename="data/mudDark02_weight.png"/>
     <File fileId="334" filename="data/mudDarkGrassPatchy01_weight.png"/>
@@ -861,146 +865,146 @@
     <File fileId="593" filename="foliage/sugarbeet/sugarbeet.xml"/>
     <File fileId="594" filename="foliage/sunflower/sunflower.xml"/>
     <File fileId="588" filename="foliage/wheat/wheat.xml"/>
-    <File fileId="834" filename="../../FS25_US_Mailboxes/MailboxSmallFour.i3d"/>
-    <File fileId="714" filename="../../FS25_WesteelSiloSystem/propaneBuyPoint.i3d"/>
+    <File fileId="838" filename="../../FS25_US_Mailboxes/MailboxSmallFour.i3d"/>
+    <File fileId="718" filename="../../FS25_WesteelSiloSystem/propaneBuyPoint.i3d"/>
   </Files>
 
 
   <Materials>
     <Material name="accessPointFence_mat" materialId="5">
-      <Texture fileId="766"/>
-      <Normalmap fileId="767"/>
-      <Glossmap fileId="768"/>
+      <Texture fileId="770"/>
+      <Normalmap fileId="771"/>
+      <Glossmap fileId="772"/>
     </Material>
     <Material name="accessPointFence_mat" materialId="6">
-      <Texture fileId="840"/>
-      <Normalmap fileId="841"/>
-      <Glossmap fileId="842"/>
+      <Texture fileId="844"/>
+      <Normalmap fileId="845"/>
+      <Glossmap fileId="846"/>
     </Material>
-    <Material name="barrels_mat" materialId="7" customShaderId="765">
-      <Texture fileId="778"/>
-      <Normalmap fileId="779"/>
-      <Glossmap fileId="780"/>
+    <Material name="barrels_mat" materialId="7" customShaderId="769">
+      <Texture fileId="782"/>
+      <Normalmap fileId="783"/>
+      <Glossmap fileId="784"/>
     </Material>
-    <Material name="concreteDark_mat" materialId="8" customShaderId="765">
-      <Texture fileId="856"/>
-      <Normalmap fileId="857"/>
-      <Glossmap fileId="858"/>
+    <Material name="concreteDark_mat" materialId="8" customShaderId="769">
+      <Texture fileId="860"/>
+      <Normalmap fileId="861"/>
+      <Glossmap fileId="862"/>
     </Material>
-    <Material name="connectedPylons_mat" materialId="9" customShaderId="765">
-      <Texture fileId="785"/>
-      <Normalmap fileId="786"/>
-      <Glossmap fileId="787"/>
+    <Material name="connectedPylons_mat" materialId="9" customShaderId="769">
+      <Texture fileId="789"/>
+      <Normalmap fileId="790"/>
+      <Glossmap fileId="791"/>
     </Material>
     <Material name="decalSet_mat" materialId="10" alphaBlending="true" customShaderId="700">
-      <Texture fileId="748"/>
-      <Normalmap fileId="749"/>
-      <Glossmap fileId="750"/>
+      <Texture fileId="752"/>
+      <Normalmap fileId="753"/>
+      <Glossmap fileId="754"/>
     </Material>
-    <Material name="detailSetUSDoors_mat" materialId="11" customShaderId="729" customShaderVariation="colorScale_customMask">
-      <Texture fileId="726"/>
-      <Normalmap fileId="727"/>
-      <Glossmap fileId="728"/>
-      <Custommap name="mCustomMask" fileId="730"/>
+    <Material name="detailSetUSDoors_mat" materialId="11" customShaderId="733" customShaderVariation="colorScale_customMask">
+      <Texture fileId="730"/>
+      <Normalmap fileId="731"/>
+      <Glossmap fileId="732"/>
+      <Custommap name="mCustomMask" fileId="734"/>
       <CustomParameter name="contrastLuminiosity" value="1 0.12"/>
       <CustomParameter name="colorScale0" value="0.003 0.003 0.003 0.28"/>
     </Material>
-    <Material name="detailSetUSFrames_mat" materialId="12" customShaderId="729" customShaderVariation="colorScale_customMask">
-      <Texture fileId="735"/>
-      <Normalmap fileId="736"/>
-      <Glossmap fileId="737"/>
-      <Custommap name="mCustomMask" fileId="730"/>
+    <Material name="detailSetUSFrames_mat" materialId="12" customShaderId="733" customShaderVariation="colorScale_customMask">
+      <Texture fileId="739"/>
+      <Normalmap fileId="740"/>
+      <Glossmap fileId="741"/>
+      <Custommap name="mCustomMask" fileId="734"/>
       <CustomParameter name="contrastLuminiosity" value="1 0.16"/>
       <CustomParameter name="colorScale0" value="0.003 0.003 0.003 0.28"/>
     </Material>
-    <Material name="electricalBoxSet_mat" materialId="13" customShaderId="765">
-      <Texture fileId="837"/>
-      <Normalmap fileId="838"/>
-      <Glossmap fileId="839"/>
+    <Material name="electricalBoxSet_mat" materialId="13" customShaderId="769">
+      <Texture fileId="841"/>
+      <Normalmap fileId="842"/>
+      <Glossmap fileId="843"/>
     </Material>
     <Material name="electricalBoxSetBarbedWire_mat" materialId="14">
-      <Texture fileId="843"/>
-      <Normalmap fileId="844"/>
-      <Glossmap fileId="845"/>
+      <Texture fileId="847"/>
+      <Normalmap fileId="848"/>
+      <Glossmap fileId="849"/>
     </Material>
     <Material name="electricConnetionDecals_mat" materialId="15" specularColor="0.8 1 0">
-      <Texture fileId="852"/>
+      <Texture fileId="856"/>
       <Normalmap fileId="698"/>
     </Material>
     <Material name="enokiBox_02_mat" materialId="16">
-      <Texture fileId="808"/>
-      <Normalmap fileId="809"/>
-      <Glossmap fileId="810"/>
+      <Texture fileId="812"/>
+      <Normalmap fileId="813"/>
+      <Glossmap fileId="814"/>
     </Material>
-    <Material name="farmerKioskBig_mat" materialId="17" customShaderId="719" customShaderVariation="customParallax">
-      <Texture fileId="813"/>
-      <Normalmap fileId="814"/>
-      <Glossmap fileId="815"/>
-      <Custommap name="mMaskMap" fileId="816"/>
-      <Custommap name="mParallaxMap" fileId="817"/>
+    <Material name="farmerKioskBig_mat" materialId="17" customShaderId="723" customShaderVariation="customParallax">
+      <Texture fileId="817"/>
+      <Normalmap fileId="818"/>
+      <Glossmap fileId="819"/>
+      <Custommap name="mMaskMap" fileId="820"/>
+      <Custommap name="mParallaxMap" fileId="821"/>
     </Material>
-    <Material name="farmerKioskSmall_mat" materialId="18" customShaderId="719" customShaderVariation="customParallax">
-      <Texture fileId="794"/>
-      <Normalmap fileId="795"/>
-      <Glossmap fileId="796"/>
-      <Custommap name="mMaskMap" fileId="797"/>
-      <Custommap name="mParallaxMap" fileId="798"/>
+    <Material name="farmerKioskSmall_mat" materialId="18" customShaderId="723" customShaderVariation="customParallax">
+      <Texture fileId="798"/>
+      <Normalmap fileId="799"/>
+      <Glossmap fileId="800"/>
+      <Custommap name="mMaskMap" fileId="801"/>
+      <Custommap name="mParallaxMap" fileId="802"/>
     </Material>
     <Material name="farmersMarketFillplane_mat" materialId="19">
-      <Texture fileId="806"/>
-      <Normalmap fileId="807"/>
+      <Texture fileId="810"/>
+      <Normalmap fileId="811"/>
     </Material>
     <Material name="farmersMarketPropsUS_mat" materialId="20">
-      <Texture fileId="799"/>
-      <Normalmap fileId="800"/>
-      <Glossmap fileId="801"/>
+      <Texture fileId="803"/>
+      <Normalmap fileId="804"/>
+      <Glossmap fileId="805"/>
     </Material>
     <Material name="farmHouse01Logo_mat" materialId="21" alphaBlending="true">
-      <Texture fileId="811"/>
-      <Normalmap fileId="812"/>
+      <Texture fileId="815"/>
+      <Normalmap fileId="816"/>
     </Material>
-    <Material name="grainElevatorProps_mat" materialId="22" customShaderId="729" customShaderVariation="colorScale_customMask">
-      <Texture fileId="731"/>
-      <Normalmap fileId="732"/>
-      <Glossmap fileId="733"/>
+    <Material name="grainElevatorProps_mat" materialId="22" customShaderId="733" customShaderVariation="colorScale_customMask">
+      <Texture fileId="735"/>
+      <Normalmap fileId="736"/>
+      <Glossmap fileId="737"/>
       <CustomParameter name="contrastLuminiosity" value="1 0.16"/>
       <CustomParameter name="colorScale0" value="0.003 0.003 0.003 0.8"/>
     </Material>
-    <Material name="grainElevatorPropsTile_mat" materialId="23" customShaderId="729" customShaderVariation="colorScale_customMask">
-      <Texture fileId="738"/>
-      <Normalmap fileId="739"/>
-      <Glossmap fileId="740"/>
+    <Material name="grainElevatorPropsTile_mat" materialId="23" customShaderId="733" customShaderVariation="colorScale_customMask">
+      <Texture fileId="742"/>
+      <Normalmap fileId="743"/>
+      <Glossmap fileId="744"/>
       <CustomParameter name="contrastLuminiosity" value="1 0.16"/>
       <CustomParameter name="colorScale0" value="0.003 0.003 0.003 0.8"/>
     </Material>
     <Material name="groundDetailHeight_mat" materialId="24" diffuseColor="0 0 0 0" customShaderId="637">
       <Custommap name="heightNoiseMap" fileId="638"/>
     </Material>
-    <Material name="icicles_mat" materialId="25" alphaBlending="true" customShaderId="743" customShaderVariation="icicle">
-      <Texture fileId="745"/>
-      <Normalmap fileId="746"/>
-      <Glossmap fileId="747"/>
+    <Material name="icicles_mat" materialId="25" alphaBlending="true" customShaderId="747" customShaderVariation="icicle">
+      <Texture fileId="749"/>
+      <Normalmap fileId="750"/>
+      <Glossmap fileId="751"/>
     </Material>
-    <Material name="icicles_mat" materialId="26" alphaBlending="true" customShaderId="743" customShaderVariation="icicle">
-      <Texture fileId="745"/>
-      <Normalmap fileId="746"/>
-      <Glossmap fileId="747"/>
+    <Material name="icicles_mat" materialId="26" alphaBlending="true" customShaderId="747" customShaderVariation="icicle">
+      <Texture fileId="749"/>
+      <Normalmap fileId="750"/>
+      <Glossmap fileId="751"/>
       <Refractionmap coeff="1" bumpScale="0.1" withSSRData="false"/>
     </Material>
-    <Material name="industrialBuildingAttachments_mat" materialId="27" customShaderId="765">
-      <Texture fileId="762"/>
-      <Normalmap fileId="763"/>
-      <Glossmap fileId="764"/>
+    <Material name="industrialBuildingAttachments_mat" materialId="27" customShaderId="769">
+      <Texture fileId="766"/>
+      <Normalmap fileId="767"/>
+      <Glossmap fileId="768"/>
     </Material>
     <Material name="industrialLight03_mat" materialId="28">
-      <Texture fileId="769"/>
-      <Normalmap fileId="770"/>
-      <Glossmap fileId="771"/>
+      <Texture fileId="773"/>
+      <Normalmap fileId="774"/>
+      <Glossmap fileId="775"/>
     </Material>
-    <Material name="industrialLight03_mat1" materialId="29" customShaderId="757">
-      <Texture fileId="769"/>
-      <Normalmap fileId="770"/>
-      <Glossmap fileId="771"/>
+    <Material name="industrialLight03_mat1" materialId="29" customShaderId="761">
+      <Texture fileId="773"/>
+      <Normalmap fileId="774"/>
+      <Glossmap fileId="775"/>
       <CustomParameter name="lightControl" value="2"/>
     </Material>
     <Material name="lambert1" materialId="30" diffuseColor="0.494118 0.494118 0.494118 1">
@@ -1014,52 +1018,52 @@
       <CustomParameter name="underwaterFogDepth" value="2.4 2.5 1.3 1"/>
       <CustomParameter name="depthScale" value="0.4"/>
     </Material>
-    <Material name="pioneerPallet_mat" materialId="33" customShaderId="765" customShaderVariation="mergeChildren_hideByIndex">
-      <Texture fileId="782"/>
-      <Normalmap fileId="783"/>
-      <Glossmap fileId="784"/>
+    <Material name="pioneerPallet_mat" materialId="33" customShaderId="769" customShaderVariation="mergeChildren_hideByIndex">
+      <Texture fileId="786"/>
+      <Normalmap fileId="787"/>
+      <Glossmap fileId="788"/>
       <CustomParameter name="snowScale" value="0"/>
       <CustomParameter name="wetnessScale" value="0"/>
       <CustomParameter name="hideByIndex" value="-1 0"/>
     </Material>
-    <Material name="powerLineMat" materialId="34" customShaderId="872" customShaderVariation="powerLines">
-      <Texture fileId="871"/>
+    <Material name="powerLineMat" materialId="34" customShaderId="876" customShaderVariation="powerLines">
+      <Texture fileId="875"/>
       <Normalmap fileId="698"/>
       <Glossmap fileId="699"/>
     </Material>
-    <Material name="propsSet01Decals_mat" materialId="35" specularColor="0.65098 1 0" customShaderId="765">
-      <Texture fileId="862"/>
+    <Material name="propsSet01Decals_mat" materialId="35" specularColor="0.65098 1 0" customShaderId="769">
+      <Texture fileId="866"/>
       <Normalmap fileId="698"/>
     </Material>
     <Material name="rustLeaksDecals_mat" materialId="36" alphaBlending="true">
-      <Texture fileId="751"/>
-      <Normalmap fileId="752"/>
-      <Glossmap fileId="753"/>
+      <Texture fileId="755"/>
+      <Normalmap fileId="756"/>
+      <Glossmap fileId="757"/>
     </Material>
     <Material name="signageUSDecals_mat" materialId="37" alphaBlending="true" customShaderId="700">
-      <Texture fileId="754"/>
-      <Glossmap fileId="755"/>
+      <Texture fileId="758"/>
+      <Glossmap fileId="759"/>
     </Material>
-    <Material name="signWarningRisingWaterlevel_mat" materialId="38" customShaderId="765">
-      <Texture fileId="859"/>
-      <Normalmap fileId="860"/>
-      <Glossmap fileId="861"/>
+    <Material name="signWarningRisingWaterlevel_mat" materialId="38" customShaderId="769">
+      <Texture fileId="863"/>
+      <Normalmap fileId="864"/>
+      <Glossmap fileId="865"/>
     </Material>
-    <Material name="smallBridgesConcrete_mat" materialId="39" customShaderId="765">
-      <Texture fileId="864"/>
-      <Normalmap fileId="865"/>
-      <Glossmap fileId="866"/>
+    <Material name="smallBridgesConcrete_mat" materialId="39" customShaderId="769">
+      <Texture fileId="868"/>
+      <Normalmap fileId="869"/>
+      <Glossmap fileId="870"/>
     </Material>
-    <Material name="snow_mat" materialId="40" customShaderId="743">
-      <Texture fileId="741"/>
-      <Normalmap fileId="742" bumpDepth="0.5"/>
-      <Glossmap fileId="723"/>
+    <Material name="snow_mat" materialId="40" customShaderId="747">
+      <Texture fileId="745"/>
+      <Normalmap fileId="746" bumpDepth="0.5"/>
+      <Glossmap fileId="727"/>
     </Material>
-    <Material name="springonionStage02_mat" materialId="41" customShaderId="765" customShaderVariation="alphaMap">
-      <Texture fileId="802"/>
-      <Normalmap fileId="803"/>
-      <Glossmap fileId="804"/>
-      <Custommap name="alphaMap" fileId="805"/>
+    <Material name="springonionStage02_mat" materialId="41" customShaderId="769" customShaderVariation="alphaMap">
+      <Texture fileId="806"/>
+      <Normalmap fileId="807"/>
+      <Glossmap fileId="808"/>
+      <Custommap name="alphaMap" fileId="809"/>
       <CustomParameter name="snowScale" value="0"/>
     </Material>
     <Material name="terrainMaterial_mat" materialId="42" customShaderId="2">
@@ -1074,37 +1078,37 @@
       <Normalmap fileId="698"/>
       <Glossmap fileId="699"/>
     </Material>
-    <Material name="utilityPoles_mat" materialId="45" customShaderId="765">
-      <Texture fileId="868"/>
-      <Normalmap fileId="869"/>
-      <Glossmap fileId="870"/>
+    <Material name="utilityPoles_mat" materialId="45" customShaderId="769">
+      <Texture fileId="872"/>
+      <Normalmap fileId="873"/>
+      <Glossmap fileId="874"/>
     </Material>
-    <Material name="warehouseLogisticUS_mat" materialId="46" customShaderId="719" customShaderVariation="customParallax">
-      <Texture fileId="716"/>
-      <Normalmap fileId="717"/>
-      <Glossmap fileId="718"/>
-      <Custommap name="mMaskMap" fileId="720"/>
-      <Custommap name="mParallaxMap" fileId="725"/>
+    <Material name="warehouseLogisticUS_mat" materialId="46" customShaderId="723" customShaderVariation="customParallax">
+      <Texture fileId="720"/>
+      <Normalmap fileId="721"/>
+      <Glossmap fileId="722"/>
+      <Custommap name="mMaskMap" fileId="724"/>
+      <Custommap name="mParallaxMap" fileId="729"/>
     </Material>
     <Material name="window_mat" materialId="47" specularColor="0.94902 1 1" alphaBlending="true">
-      <Texture fileId="854"/>
+      <Texture fileId="858"/>
       <Normalmap fileId="698"/>
     </Material>
     <Material name="windowsGlass_mat" materialId="48" alphaBlending="true">
-      <Texture fileId="772"/>
-      <Normalmap fileId="773"/>
-      <Glossmap fileId="774"/>
+      <Texture fileId="776"/>
+      <Normalmap fileId="777"/>
+      <Glossmap fileId="778"/>
     </Material>
     <Material name="windowsIndustrial01_mat" materialId="49" alphaBlending="true">
-      <Texture fileId="759"/>
-      <Normalmap fileId="760"/>
-      <Glossmap fileId="761"/>
+      <Texture fileId="763"/>
+      <Normalmap fileId="764"/>
+      <Glossmap fileId="765"/>
     </Material>
-    <Material name="windowsRoomInteriorsIndustrialNight_mat" materialId="50" customShaderId="757" customShaderVariation="alphaTestDisable_extraBaseMap">
-      <Texture fileId="756"/>
+    <Material name="windowsRoomInteriorsIndustrialNight_mat" materialId="50" customShaderId="761" customShaderVariation="alphaTestDisable_extraBaseMap">
+      <Texture fileId="760"/>
       <Normalmap fileId="698"/>
       <Glossmap fileId="699"/>
-      <Custommap name="mExtraBaseMap" fileId="758"/>
+      <Custommap name="mExtraBaseMap" fileId="762"/>
     </Material>
   </Materials>
 
@@ -1114,7 +1118,7 @@
 
   <Scene>
     <Light name="sun" translation="0 400 0" rotation="-39.5664 39.1063 0" objectMask="0x83ff0000" nodeId="407" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="1000" shadowExtrusionDistance="200" softShadowsLightSize="0.5" softShadowsLightDistance="15" softShadowsDepthBiasFactor="1" softShadowsMaxPenumbraSize="0.5" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" lastShadowMapSplitBboxMin="-2048,-128,-2048" lastShadowMapSplitBboxMax="2048,148,2048" range="10000" scattering="true"/>
-    <Camera name="persp" translation="1728.71 69.9813 -1683.27" rotation="156.506 87.2957 180" visibility="false" nodeId="408" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
+    <Camera name="persp" translation="1665.38 57.4289 -1572.32" rotation="-31.289 27.4359 3.96812e-06" visibility="false" nodeId="408" fov="60" nearClip="0.01" farClip="6000" orthographicHeight="1500"/>
     <TerrainTransformGroup name="terrain" static="true" collisionFilterGroup="0x100" collisionFilterMask="0xfffff9c3" nodeId="410" heightMapId="1" patchSize="65" maxLODDistance="750" heightScale="255" unitsPerPixel="1" lodBlendStart="200" lodBlendEnd="300" lodTextureSize="4096" lodBlendStartDynamic="50" lodBlendEndDynamic="65" detailLodBlendDelta="5" materialId="42" castShadowMap="true" occNumLODs="1" occMaxLODDistance="300" occPatchSize="65" occLevel="2" occDistanceWeight="1" occMaxAdjacentFaces="10">
       <OccluderLods>
         <OccluderLod occLodLevel="0" occFaceCount="100" occMaxHausdorffDistance="7" occMaxHausdorffDistanceExtra="9" occMinHorizontalDistance="1" />
@@ -1606,9 +1610,9 @@
           </FoliageMultiLayer>
         </FoliageSystem>
       </Layers>
-      <ProceduralPlacementMasks blockMaskFileId="875">
-        <Mask name="PG_forest" fileId="873" />
-        <Mask name="PG_river" fileId="874" />
+      <ProceduralPlacementMasks blockMaskFileId="879">
+        <Mask name="PG_forest" fileId="877" />
+        <Mask name="PG_river" fileId="878" />
       </ProceduralPlacementMasks>
     </TerrainTransformGroup>
     <TransformGroup name="gameplay" nodeId="429">
@@ -13143,16 +13147,16 @@
       <ReferenceNode name="americanElm_stage04" translation="1610.05 11.9805 -1599.37" rotation="0 103.269 0" scale="0.9001 0.9001 0.9001" referenceId="668" nodeId="36049"/>
       <ReferenceNode name="americanElm_stage05" translation="1609.55 11.9844 -1611.5" rotation="0 258.841 0" scale="0.9102 0.9102 0.9102" referenceId="669" nodeId="36053"/>
       <ReferenceNode name="americanElm_stage02" translation="1608.63 12.0623 -1624.23" rotation="0 286.849 0" scale="0.9509 0.9509 0.9509" referenceId="685" nodeId="36057"/>
-      <ReferenceNode name="americanElm_stage01" translation="1618.33 11.8405 -1635.82" rotation="0 152.661 0" scale="0.9355 0.9355 0.9355" referenceId="678" nodeId="36061"/>
-      <ReferenceNode name="tiliaAmurensis_stage03" translation="1620.94 11.8054 -1619.36" rotation="0 253.645 0" scale="1.0688 1.0688 1.0688" referenceId="692" nodeId="36065"/>
-      <ReferenceNode name="aspen_stage02" translation="1619.36 11.8132 -1602.59" rotation="0 1.9743 0" scale="1.0688 1.0688 1.0688" referenceId="679" nodeId="36069"/>
+      <ReferenceNode name="americanElm_stage01" translation="1609.09 12.1518 -1630.25" rotation="180 27.339 -180" scale="0.9355 0.9355 0.9355" referenceId="678" nodeId="36061"/>
+      <ReferenceNode name="tiliaAmurensis_stage03" translation="1612.36 12.1518 -1618.27" rotation="180 -73.645 180" scale="1.0688 1.0688 1.0688" referenceId="692" nodeId="36065"/>
+      <ReferenceNode name="aspen_stage02" translation="1612.36 12.1542 -1604.05" rotation="0 1.9743 0" scale="1.0688 1.0688 1.0688" referenceId="679" nodeId="36069"/>
       <ReferenceNode name="aspen_stage06_var02" translation="1623.36 11.8132 -1610.45" rotation="0 103.75 0" scale="0.9819 0.9819 0.9819" referenceId="683" nodeId="36073"/>
-      <ReferenceNode name="boxelder_stage01" translation="1622.97 12.0272 -1650.28" rotation="0 190.486 0" scale="0.9281 0.9281 0.9281" referenceId="691" nodeId="36077"/>
+      <ReferenceNode name="boxelder_stage01" translation="1624.08 15.1041 -1648.05" rotation="180 -10.486 180" scale="0.9281 0.9281 0.9281" referenceId="691" nodeId="36077"/>
       <ReferenceNode name="oak_stage01" translation="1614.49 11.7743 -1645.69" rotation="0 98.5205 0" scale="0.9198 0.9198 0.9198" referenceId="663" nodeId="36081"/>
-      <ReferenceNode name="oak_stage03" translation="1611.64 11.821 -1655.77" rotation="0 326.859 0" scale="0.9797 0.9797 0.9797" referenceId="662" nodeId="36085"/>
-      <ReferenceNode name="aspen_stage04" translation="1622.23 11.8016 -1663.8" rotation="0 165.63 0" scale="0.9055 0.9055 0.9055" referenceId="681" nodeId="36091"/>
+      <ReferenceNode name="oak_stage03" translation="1602.23 12.1876 -1645.57" rotation="0 -33.141 0" scale="0.9797 0.9797 0.9797" referenceId="662" nodeId="36085"/>
+      <ReferenceNode name="aspen_stage04" translation="1618.93 12.1518 -1660.55" rotation="180 14.37 -180" scale="0.9055 0.9055 0.9055" referenceId="681" nodeId="36091"/>
       <ReferenceNode name="americanElm_stage02" translation="1615.33 11.7704 -1660.05" rotation="0 305.123 0" scale="1.0602 1.0602 1.0602" referenceId="685" nodeId="36095"/>
-      <ReferenceNode name="oak_stage05" translation="1623.8 11.8794 -1657.07" rotation="0 129.996 0" scale="1.0757 1.0757 1.0757" referenceId="650" nodeId="36099"/>
+      <ReferenceNode name="oak_stage05" translation="1607.48 12.1634 -1648.72" rotation="180 50.004 -180" scale="1.0757 1.0757 1.0757" referenceId="650" nodeId="36099"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="1605.66 12.393 -1655.23" rotation="0 163.338 0" scale="0.883 0.883 0.883" referenceId="648" nodeId="36105"/>
       <ReferenceNode name="aspen_stage02" translation="-1277.57 10.8093 -2142.02" rotation="0 57.4495 0" scale="1.0268 1.0268 1.0268" referenceId="679" nodeId="36109"/>
       <ReferenceNode name="tiliaAmurensis_stage03" translation="-1267.59 10.8444 -2142.01" rotation="0 171.581 0" scale="1.0369 1.0369 1.0369" referenceId="692" nodeId="36113"/>
@@ -13852,7 +13856,7 @@
       <ReferenceNode name="aspen_stage05" translation="-672.463 10.6148 -2057.82" rotation="0 175.327 0" scale="1.1196 1.1196 1.1196" referenceId="680" nodeId="39091"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="-677.928 10.7393 -2027.47" rotation="0 95.8509 0" scale="0.9529 0.9529 0.9529" referenceId="674" nodeId="39095"/>
       <ReferenceNode name="aspen_stage03" translation="-677.559 10.7198 -2022.82" rotation="0 127.063 0" scale="1.088 1.088 1.088" referenceId="682" nodeId="39099"/>
-      <ReferenceNode name="americanElm_stage03" translation="1697.65 11.8171 -1612.33" rotation="0 267.848 0" scale="1.0931 1.0931 1.0931" referenceId="670" nodeId="39103"/>
+      <ReferenceNode name="americanElm_stage03" translation="1700.88 13.5451 -1606.46" rotation="180 -87.848 180" scale="1.0931 1.0931 1.0931" referenceId="670" nodeId="39103"/>
       <ReferenceNode name="aspen_stage03" translation="1697.69 11.856 -1607.64" rotation="0 193.531 0" scale="0.9483 0.9483 0.9483" referenceId="682" nodeId="39107"/>
       <ReferenceNode name="aspen_stage03" translation="322.289 10.9767 2097.65" rotation="0 64.2687 0" scale="1.0751 1.0751 1.0751" referenceId="682" nodeId="39111"/>
       <ReferenceNode name="americanElm_stage02" translation="327.211 10.8872 2097.51" rotation="0 4.5859 0" scale="0.9134 0.9134 0.9134" referenceId="685" nodeId="39115"/>
@@ -22532,7 +22536,7 @@
       <ReferenceNode name="boxelder_stage01" translation="1622 12.0623 -1725" rotation="180 29.6721 -180" referenceId="691" nodeId="76181"/>
       <ReferenceNode name="aspen_stage03" translation="-874 11.1245 -1094" rotation="0 70.7228 0" referenceId="682" nodeId="76185"/>
       <ReferenceNode name="aspen_stage04" translation="1629 12.0389 -1714" rotation="180 -57.7659 180" referenceId="681" nodeId="76189"/>
-      <ReferenceNode name="shagbarkHickory_stage04" translation="1632 11.8988 -1702" rotation="180 16.3355 -180" referenceId="661" nodeId="76193"/>
+      <ReferenceNode name="shagbarkHickory_stage04" translation="1628.94 12.1518 -1706.71" rotation="-180 16.3355 180" referenceId="661" nodeId="76193"/>
       <ReferenceNode name="aspen_stage03" translation="-950 11.323 -1180" rotation="0 -11.3699 0" referenceId="682" nodeId="76197"/>
       <ReferenceNode name="americanElm_stage03" translation="-942 11.4047 -1170" rotation="180 36.7728 -180" referenceId="670" nodeId="76201"/>
       <ReferenceNode name="oak_stage04" translation="-951 11.2685 -1170" rotation="0 58.6544 0" referenceId="689" nodeId="76205"/>
@@ -22584,7 +22588,7 @@
       <ReferenceNode name="boxelder_stage03" translation="145 7.81323 -605" rotation="0 -80.596 0" referenceId="656" nodeId="76401"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="136 9.3891 -608" rotation="0 22.9441 0" referenceId="674" nodeId="76405"/>
       <ReferenceNode name="tiliaAmurensis_stage03" translation="155 4.3035 -602" rotation="180 -1.88628 180" referenceId="692" nodeId="76409"/>
-      <ReferenceNode name="americanElm_stage02" translation="1619 11.856 -1687" rotation="180 -3.444 180" referenceId="685" nodeId="76413"/>
+      <ReferenceNode name="americanElm_stage02" translation="1612.84 12.1518 -1689.82" rotation="-180 -3.444 -180" referenceId="685" nodeId="76413"/>
       <ReferenceNode name="americanElm_stage05" translation="1608 11.8911 -1683" rotation="180 -15.1155 180" referenceId="669" nodeId="76417"/>
       <ReferenceNode name="boxelder_stage01" translation="88 10.0895 -636" rotation="180 -68.3449 180" referenceId="691" nodeId="76421"/>
       <ReferenceNode name="boxelder_stage02" translation="-1137 11.2023 -1320" rotation="0 2.02957 0" referenceId="657" nodeId="76425"/>
@@ -22944,7 +22948,7 @@
       <ReferenceNode name="aspen_stage06_var02" translation="238 9.38132 -494" rotation="0 -38.8319 0" referenceId="683" nodeId="77933"/>
       <ReferenceNode name="aspen_stage06_var01" translation="243 9.56809 -484" rotation="0 77.1066 0" referenceId="690" nodeId="77937"/>
       <ReferenceNode name="oak_stage05" translation="255 8.85992 -496" rotation="180 -68.4174 180" referenceId="650" nodeId="77941"/>
-      <ReferenceNode name="americanElm_stage02" translation="1697 11.8872 -1607" rotation="0 -66.3985 0" referenceId="685" nodeId="77947"/>
+      <ReferenceNode name="americanElm_stage02" translation="1702.19 12.1518 -1603.46" rotation="0 -66.3985 0" referenceId="685" nodeId="77947"/>
       <ReferenceNode name="oak_stage03" translation="310 9.40856 -453" rotation="180 -85.2697 180" referenceId="662" nodeId="77951"/>
       <ReferenceNode name="oak_stage03" translation="316 9.3035 -444" rotation="0 -61.6782 0" referenceId="662" nodeId="77957"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="265 7.68482 -492" rotation="180 -27.805 180" referenceId="661" nodeId="77963"/>
@@ -22956,7 +22960,7 @@
       <ReferenceNode name="shagbarkHickory_stage04" translation="-1107 11.572 -1157" rotation="180 -54.2138 180" referenceId="661" nodeId="77989"/>
       <ReferenceNode name="americanElm_stage02" translation="-1122 11.2218 -1172" rotation="180 -57.9607 180" referenceId="685" nodeId="77993"/>
       <ReferenceNode name="aspen_stage05" translation="-1150 11.2957 -1207" rotation="0 64.3018 0" referenceId="680" nodeId="77997"/>
-      <ReferenceNode name="americanElm_stage05" translation="1701 11.8054 -1615" rotation="180 -15.9351 180" referenceId="669" nodeId="78001"/>
+      <ReferenceNode name="americanElm_stage05" translation="1701.04 13.911 -1610.67" rotation="-180 -15.9351 -180" referenceId="669" nodeId="78001"/>
       <ReferenceNode name="oak_stage05" translation="1701 12.0039 -1593" rotation="180 12.2873 -180" referenceId="650" nodeId="78005"/>
       <ReferenceNode name="boxelder_stage01" translation="587 9.1751 -520" rotation="180 35.1753 -180" referenceId="691" nodeId="78011"/>
       <ReferenceNode name="shagbarkHickory_stage03" translation="598 10.3307 -521" rotation="180 83.7462 -180" referenceId="674" nodeId="78015"/>
@@ -30221,52 +30225,82 @@
       <Shape name="pond" translation="0 26.1179 0" shapeId="230" static="true" collisionFilterGroup="0x80000000" collisionFilterMask="0x1" clipDistance="8500" nodeId="108050" castsShadows="false" receiveShadows="true" materialIds="32"/>
     </TransformGroup>
     <TransformGroup name="placeables" nodeId="108051">
+      <TransformGroup name="biogas" translation="1643.74 32.2716 -1614.83" rotation="-0 90 0" nodeId="133884">
+        <TransformGroup name="preplaced_planET_bgaHall" lockedgroup="true" translation="47.5301 -0.119884 49.3022" rotation="5.00896e-06 90 0" nodeId="133998">
+          <TransformGroup name="placeable" nodeId="133999">
+            <ReferenceNode name="planET_bgaHall" referenceId="709" nodeId="133959"/>
+          </TransformGroup>
+          <TransformGroup name="props" nodeId="134000"/>
+          <TransformGroup name="aiSplines" nodeId="134001"/>
+        </TransformGroup>
+        <TransformGroup name="preplaced_bgaBunkerSilo" lockedgroup="true" translation="67.0942 -0.108212 -11.6643" nodeId="133940">
+          <TransformGroup name="placeable" nodeId="133941">
+            <ReferenceNode name="bgaBunkerSilo" referenceId="710" nodeId="133901"/>
+          </TransformGroup>
+          <TransformGroup name="props" nodeId="133942"/>
+          <TransformGroup name="aiSplines" nodeId="133943"/>
+        </TransformGroup>
+        <TransformGroup name="preplaced_planET_bga250kw" lockedgroup="true" translation="14.7955 -0.113468 -4.68834" nodeId="133832">
+          <TransformGroup name="placeable" nodeId="133833">
+            <ReferenceNode name="planET_bga250kw" referenceId="711" nodeId="133735"/>
+          </TransformGroup>
+          <TransformGroup name="props" nodeId="133834"/>
+          <TransformGroup name="aiSplines" nodeId="133835"/>
+        </TransformGroup>
+        <TransformGroup name="preplaced_liquidManureTank" lockedgroup="true" translation="-0.484523 -0.112103 46.7512" rotation="180 2.36783e-05 180" nodeId="135571">
+          <TransformGroup name="placeable" nodeId="135572">
+            <ReferenceNode name="liquidManureTank" referenceId="712" nodeId="135507"/>
+          </TransformGroup>
+          <TransformGroup name="props" nodeId="135573"/>
+          <TransformGroup name="aiSplines" nodeId="135574"/>
+        </TransformGroup>
+      </TransformGroup>
       <TransformGroup name="grainSilo" translation="-1198.1 32.3175 1817.21" nodeId="108052">
         <TransformGroup name="preplaced_weighingStationLarge" lockedgroup="true" translation="10.9398 -0.523846 29.3382" rotation="-1.06941e-07 0 -6.51086e-10" nodeId="108053">
           <TransformGroup name="placeable" nodeId="108054">
-            <ReferenceNode name="weighingStationLarge" referenceId="709" nodeId="108073"/>
+            <ReferenceNode name="weighingStationLarge" referenceId="713" nodeId="108073"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108143"/>
           <TransformGroup name="aiSplines" nodeId="108144"/>
         </TransformGroup>
         <TransformGroup name="preplaced_Herbizid" lockedgroup="true" translation="34.7722 0.0594905 -133.56" nodeId="108145">
           <TransformGroup name="placeable" nodeId="108146">
-            <ReferenceNode name="Herbizid" rotation="3.20834e-16 0 -1.19531e-10" referenceId="710" nodeId="108174"/>
+            <ReferenceNode name="Herbizid" rotation="3.20834e-16 0 -1.19531e-10" referenceId="714" nodeId="108174"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108317"/>
           <TransformGroup name="aiSplines" nodeId="108318"/>
         </TransformGroup>
         <TransformGroup name="preplaced_liquidFlatBottomTank1630" lockedgroup="true" translation="28.0055 0.0594826 -133.56" nodeId="108319">
           <TransformGroup name="placeable" nodeId="108320">
-            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="711" nodeId="108335"/>
+            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="715" nodeId="108335"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108381"/>
           <TransformGroup name="aiSplines" nodeId="108382"/>
         </TransformGroup>
         <TransformGroup name="preplaced_liquidFlatBottomTank1630" lockedgroup="true" translation="21.478 0.0594826 -133.56" nodeId="108383">
           <TransformGroup name="placeable" nodeId="108384">
-            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="712" nodeId="108398"/>
+            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="716" nodeId="108398"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108439"/>
           <TransformGroup name="aiSplines" nodeId="108440"/>
         </TransformGroup>
         <TransformGroup name="preplaced_fuelTank25000" lockedgroup="true" translation="42.4425 -0.317516 -93.6297" rotation="-0 -90 0" nodeId="108441">
           <TransformGroup name="placeable" nodeId="108442">
-            <ReferenceNode name="fuelTank25000" referenceId="713" nodeId="108458"/>
+            <ReferenceNode name="fuelTank25000" referenceId="717" nodeId="108458"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108497"/>
           <TransformGroup name="aiSplines" nodeId="108498"/>
         </TransformGroup>
         <TransformGroup name="preplaced_propaneStation" lockedgroup="true" translation="38.8353 0.0674779 -78.6591" rotation="-180 -89.7888 -180" nodeId="108499">
           <TransformGroup name="placeable" nodeId="108500">
-            <ReferenceNode name="propaneStation" referenceId="714" nodeId="108513"/>
+            <ReferenceNode name="propaneStation" referenceId="718" nodeId="108513"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="108685"/>
           <TransformGroup name="aiSplines" nodeId="108686"/>
         </TransformGroup>
         <TransformGroup name="preplaced_grainSilo" lockedgroup="true" translation="2.90731 0.0715994 -15.9765" rotation="-180 90 -180" nodeId="108687">
           <TransformGroup name="placeable" nodeId="108688">
-            <ReferenceNode name="grainSilo" referenceId="715" nodeId="108772"/>
+            <ReferenceNode name="grainSilo" referenceId="719" nodeId="108772"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109007"/>
           <TransformGroup name="aiSplines" nodeId="109008"/>
@@ -30429,16 +30463,16 @@
                 <Light name="pointLight1" translation="0 -0.125593 0.116548" nodeId="109121" type="point" color="0.055 0.06 0.06" emitDiffuse="true" emitSpecular="true" range="1"/>
               </TransformGroup>
             </TransformGroup>
-            <ReferenceNode name="container03" translation="-10.8308 2.24312 -5.99844" rotation="180 -1.86693e-05 180" referenceId="775" nodeId="109125"/>
-            <ReferenceNode name="container03" translation="-10.8308 2.24312 -5.99844" rotation="-180 -1.86693e-05 -180" referenceId="775" nodeId="109129"/>
-            <ReferenceNode name="container03" translation="14.5 3.6592 0.353209" rotation="-0 90 0" referenceId="775" nodeId="109133"/>
+            <ReferenceNode name="container03" translation="-10.8308 2.24312 -5.99844" rotation="180 -1.86693e-05 180" referenceId="779" nodeId="109125"/>
+            <ReferenceNode name="container03" translation="-10.8308 2.24312 -5.99844" rotation="-180 -1.86693e-05 -180" referenceId="779" nodeId="109129"/>
+            <ReferenceNode name="container03" translation="14.5 3.6592 0.353209" rotation="-0 90 0" referenceId="779" nodeId="109133"/>
             <Shape name="ac" lockedgroup="true" translation="10.9903 3.03787 -5.99952" rotation="-0 90 0" shapeId="247" clipDistance="60" nodeId="109137" castsShadows="true" receiveShadows="true" materialIds="27">
               <Shape name="net" translation="0 -0.18045 0" shapeId="248" nodeId="109138" castsShadows="true" receiveShadows="true" materialIds="5"/>
             </Shape>
-            <ReferenceNode name="pipesF" translation="6.617 -6.95283 -6.44192" rotation="180 -1.86693e-05 180" referenceId="776" nodeId="109144"/>
-            <ReferenceNode name="pipesG" translation="6.61741 1.01918 -6.44192" rotation="180 -1.86693e-05 180" referenceId="777" nodeId="109153"/>
-            <ReferenceNode name="pipesF" translation="6.30301 -6.95283 -6.44192" rotation="180 -1.86693e-05 180" referenceId="776" nodeId="109158"/>
-            <ReferenceNode name="pipesG" translation="6.30342 1.01918 -6.44192" rotation="180 -1.86693e-05 180" referenceId="777" nodeId="109163"/>
+            <ReferenceNode name="pipesF" translation="6.617 -6.95283 -6.44192" rotation="180 -1.86693e-05 180" referenceId="780" nodeId="109144"/>
+            <ReferenceNode name="pipesG" translation="6.61741 1.01918 -6.44192" rotation="180 -1.86693e-05 180" referenceId="781" nodeId="109153"/>
+            <ReferenceNode name="pipesF" translation="6.30301 -6.95283 -6.44192" rotation="180 -1.86693e-05 180" referenceId="780" nodeId="109158"/>
+            <ReferenceNode name="pipesG" translation="6.30342 1.01918 -6.44192" rotation="180 -1.86693e-05 180" referenceId="781" nodeId="109163"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="barrel04" lockedgroup="true" translation="30.9696 0.063428 -131.262" nodeId="109168">
@@ -30477,7 +30511,7 @@
         </TransformGroup>
         <TransformGroup name="preplaced_palletTruck" lockedgroup="true" translation="-6.37418 0.0668231 -92.8317" nodeId="109190">
           <TransformGroup name="placeable" nodeId="109191">
-            <ReferenceNode name="palletTruck" referenceId="781" nodeId="109196"/>
+            <ReferenceNode name="palletTruck" referenceId="785" nodeId="109196"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109206"/>
           <TransformGroup name="aiSplines" nodeId="109207"/>
@@ -30556,61 +30590,61 @@
         </Shape>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="19.9773 0.0677147 41.2263" rotation="-180 -90 -180" nodeId="109259">
           <TransformGroup name="placeable" nodeId="109260">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109270"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109270"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109286"/>
           <TransformGroup name="aiSplines" nodeId="109287"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="20.4473 0.0677148 13.4479" rotation="-180 -90 -180" nodeId="109288">
           <TransformGroup name="placeable" nodeId="109289">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109290"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109290"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109306"/>
           <TransformGroup name="aiSplines" nodeId="109307"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="40.7335 0.0677209 -91.7006" rotation="-180 -90 -180" nodeId="109308">
           <TransformGroup name="placeable" nodeId="109309">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109310"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109310"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109326"/>
           <TransformGroup name="aiSplines" nodeId="109327"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="-9.6569 0.0677057 -110.284" rotation="-180 90 -180" nodeId="109328">
           <TransformGroup name="placeable" nodeId="109329">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109330"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109330"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109346"/>
           <TransformGroup name="aiSplines" nodeId="109347"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="18.0542 0.0677058 -44.7547" rotation="-180 -90 -180" nodeId="109348">
           <TransformGroup name="placeable" nodeId="109349">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109350"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109350"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109366"/>
           <TransformGroup name="aiSplines" nodeId="109367"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="45.8768 0.0677224 -132.027" rotation="-180 180 -180" nodeId="109368">
           <TransformGroup name="placeable" nodeId="109369">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="109370"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="109370"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109386"/>
           <TransformGroup name="aiSplines" nodeId="109387"/>
         </TransformGroup>
         <TransformGroup name="preplaced_warehouseSeedBuyPoint" lockedgroup="true" translation="5.88431 0.0677185 -72.5" nodeId="109388">
           <TransformGroup name="placeable" nodeId="109389">
-            <ReferenceNode name="buyPointTrigger" referenceId="789" nodeId="109403"/>
+            <ReferenceNode name="buyPointTrigger" referenceId="793" nodeId="109403"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="109409"/>
           <TransformGroup name="aiSplines" nodeId="109410"/>
         </TransformGroup>
       </TransformGroup>
       <TransformGroup name="farmersMarket" translation="-1320.67 32.5507 333.832" nodeId="109411">
-        <ReferenceNode name="flowerPot04" translation="26.9991 -0.344475 -16.4658" referenceId="790" nodeId="109417"/>
-        <ReferenceNode name="flowerpot01" translation="22.0555 -0.344475 30.8729" rotation="0 66.6311 0" referenceId="791" nodeId="109433"/>
-        <ReferenceNode name="flowerStand" translation="9.2699 -0.352257 0.909698" rotation="0 53.9218 0" referenceId="792" nodeId="109454"/>
+        <ReferenceNode name="flowerPot04" translation="26.9991 -0.344475 -16.4658" referenceId="794" nodeId="109417"/>
+        <ReferenceNode name="flowerpot01" translation="22.0555 -0.344475 30.8729" rotation="0 66.6311 0" referenceId="795" nodeId="109433"/>
+        <ReferenceNode name="flowerStand" translation="9.2699 -0.352257 0.909698" rotation="0 53.9218 0" referenceId="796" nodeId="109454"/>
         <TransformGroup name="preplaced_farmersMarketUS" lockedgroup="true" translation="-5.30386 -0.344463 7.98164" rotation="-0 90 0" nodeId="109468">
           <TransformGroup name="placeable" nodeId="109469">
-            <ReferenceNode name="farmersMarketUS" referenceId="793" nodeId="109549"/>
+            <ReferenceNode name="farmersMarketUS" referenceId="797" nodeId="109549"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="110106"/>
           <TransformGroup name="aiSplines" nodeId="110107"/>
@@ -30993,36 +31027,36 @@
             <Shape name="collisionProps" shapeId="321" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="110377" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="31"/>
           </TransformGroup>
         </TransformGroup>
-        <ReferenceNode name="farmShedSmallOld" translation="-33.0739 -0.344475 29.9485" rotation="180 -1.86693e-05 180" referenceId="818" nodeId="110389"/>
+        <ReferenceNode name="farmShedSmallOld" translation="-33.0739 -0.344475 29.9485" rotation="180 -1.86693e-05 180" referenceId="822" nodeId="110389"/>
         <TransformGroup name="picnic" translation="33.1408 -0.352253 31.4463" nodeId="110422">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110428"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110444"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110455"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110428"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110444"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110455"/>
         </TransformGroup>
         <TransformGroup name="picnic" translation="29.8317 -0.352253 31.4463" nodeId="110466">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110467"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110478"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110489"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110467"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110478"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110489"/>
         </TransformGroup>
         <TransformGroup name="picnic" translation="26.6105 -0.352253 31.4463" nodeId="110500">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110501"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110512"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110523"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110501"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110512"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110523"/>
         </TransformGroup>
         <TransformGroup name="picnic" translation="33.1408 -0.352253 27.547" nodeId="110534">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110535"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110546"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110557"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110535"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110546"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110557"/>
         </TransformGroup>
         <TransformGroup name="picnic" translation="29.8317 -0.352253 27.547" nodeId="110568">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110569"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110580"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110591"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110569"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110580"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110591"/>
         </TransformGroup>
         <TransformGroup name="picnic" translation="26.6105 -0.352253 27.547" nodeId="110602">
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="819" nodeId="110603"/>
-          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="820" nodeId="110614"/>
-          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="819" nodeId="110625"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 -1.13013" referenceId="823" nodeId="110603"/>
+          <ReferenceNode name="oldTable" translation="0.0247803 -3.8147e-06 0.0197754" referenceId="824" nodeId="110614"/>
+          <ReferenceNode name="bench01" translation="-0.0123291 -3.8147e-06 1.11032" rotation="180 -1.86693e-05 180" referenceId="823" nodeId="110625"/>
         </TransformGroup>
         <Shape name="trafficCone" lockedgroup="true" translation="16.4207 -0.352253 25.7979" shapeId="269" dynamic="true" compound="true" collisionFilterGroup="0x4003c" collisionFilterMask="0xfffffbff" density="0.5" nodeId="110636" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="31">
           <TransformGroup name="visual_lod" lodDistance="0 20" lodBlending="false" clipDistance="80" nodeId="110637">
@@ -31054,67 +31088,67 @@
             <Shape name="LOD1" shapeId="271" nodeId="110655" castsShadows="true" receiveShadows="true" materialIds="9"/>
           </TransformGroup>
         </Shape>
-        <ReferenceNode name="flowerPot05" translation="7.68542 -0.344475 6.6832" referenceId="821" nodeId="110661"/>
-        <ReferenceNode name="flowerPot06" translation="7.89136 -0.344479 2.25812" rotation="0 -1.62844e-12 -4.03429e-13" referenceId="822" nodeId="110677"/>
-        <ReferenceNode name="palletTruck" translation="8.83301 -0.344475 15.4679" rotation="-180 35.6531 -180" referenceId="781" nodeId="110688"/>
-        <ReferenceNode name="sunflowerEntrySign" translation="45.106 -0.360039 16.0767" rotation="6.00565e-06 12.5931 -9.78579e-07" referenceId="823" nodeId="110707"/>
-        <ReferenceNode name="sunflowerPaintedSilo" translation="44.7251 -0.346958 28.9037" rotation="180 25.6065 180" referenceId="824" nodeId="110730"/>
-        <ReferenceNode name="sunflowerBaleDecoration" translation="34.3734 -0.283924 -35.1614" rotation="-180 46.2863 -180" referenceId="825" nodeId="110751"/>
+        <ReferenceNode name="flowerPot05" translation="7.68542 -0.344475 6.6832" referenceId="825" nodeId="110661"/>
+        <ReferenceNode name="flowerPot06" translation="7.89136 -0.344479 2.25812" rotation="0 -1.62844e-12 -4.03429e-13" referenceId="826" nodeId="110677"/>
+        <ReferenceNode name="palletTruck" translation="8.83301 -0.344475 15.4679" rotation="-180 35.6531 -180" referenceId="785" nodeId="110688"/>
+        <ReferenceNode name="sunflowerEntrySign" translation="45.106 -0.360039 16.0767" rotation="6.00565e-06 12.5931 -9.78579e-07" referenceId="827" nodeId="110707"/>
+        <ReferenceNode name="sunflowerPaintedSilo" translation="44.7251 -0.346958 28.9037" rotation="180 25.6065 180" referenceId="828" nodeId="110730"/>
+        <ReferenceNode name="sunflowerBaleDecoration" translation="34.3734 -0.283924 -35.1614" rotation="-180 46.2863 -180" referenceId="829" nodeId="110751"/>
       </TransformGroup>
       <TransformGroup name="vehicleDealer" translation="-933.189 32.3674 214.108" rotation="-1.17454e-05 87.8977 -2.53953e-05" nodeId="110762">
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="-46.2988 0.00614166 45.6026" rotation="-180 0 -180" nodeId="110763">
           <TransformGroup name="placeable" nodeId="110764">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="110765"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="110765"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="110781"/>
           <TransformGroup name="aiSplines" nodeId="110782"/>
         </TransformGroup>
-        <ReferenceNode name="vehicleDealer" rotation="-3.73715e-13 -0 0" referenceId="826" nodeId="110859"/>
+        <ReferenceNode name="vehicleDealer" rotation="-3.73715e-13 -0 0" referenceId="830" nodeId="110859"/>
         <TransformGroup name="preplaced_vehicleDealerWorkshop" lockedgroup="true" translation="48.7018 7.62939e-06 28.9219" rotation="-0.000371632 -87.8978 0.000372314" nodeId="111052">
           <TransformGroup name="placeable" nodeId="111053">
-            <ReferenceNode name="sellingStationVehicles" referenceId="827" nodeId="111059"/>
+            <ReferenceNode name="sellingStationVehicles" referenceId="831" nodeId="111059"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111072"/>
           <TransformGroup name="aiSplines" nodeId="111073"/>
         </TransformGroup>
         <TransformGroup name="preplaced_hds9184M_placeable" lockedgroup="true" translation="80.3044 -0.002 -4.82228" rotation="0 2.102 0" nodeId="111074">
           <TransformGroup name="placeable" nodeId="111075">
-            <ReferenceNode name="hds9184M_placeable" referenceId="828" nodeId="111077"/>
+            <ReferenceNode name="hds9184M_placeable" referenceId="832" nodeId="111077"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111081"/>
           <TransformGroup name="aiSplines" nodeId="111082"/>
         </TransformGroup>
         <TransformGroup name="preplaced_chargingStation" lockedgroup="true" translation="-19.9025 0.00614166 25.748" rotation="-0.000371632 -87.8978 0.000372314" nodeId="111083">
           <TransformGroup name="placeable" nodeId="111084">
-            <ReferenceNode name="chargingStation" referenceId="829" nodeId="111095"/>
+            <ReferenceNode name="chargingStation" referenceId="833" nodeId="111095"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111122"/>
           <TransformGroup name="aiSplines" nodeId="111123"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="26.185 0.00615374 48.5035" rotation="-180 0 -180" nodeId="111124">
           <TransformGroup name="placeable" nodeId="111125">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="111126"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="111126"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111142"/>
           <TransformGroup name="aiSplines" nodeId="111143"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="85.9357 -0.00164192 3.63746" rotation="-180 -90 -180" nodeId="111144">
           <TransformGroup name="placeable" nodeId="111145">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="111146"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="111146"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111162"/>
           <TransformGroup name="aiSplines" nodeId="111163"/>
         </TransformGroup>
         <TransformGroup name="preplaced_easyShed01" lockedgroup="true" translation="74.8383 -0.00164795 -17.1589" rotation="-0.000371632 -87.8978 0.000372314" nodeId="111164">
           <TransformGroup name="placeable" nodeId="111165">
-            <ReferenceNode name="easyShed01" referenceId="830" nodeId="111180"/>
+            <ReferenceNode name="easyShed01" referenceId="834" nodeId="111180"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111215"/>
           <TransformGroup name="aiSplines" nodeId="111216"/>
         </TransformGroup>
         <TransformGroup name="preplaced_garbageContainer01" lockedgroup="true" translation="70.0993 0.00614929 48.1407" rotation="-1.36354e-05 -1.12656 1.19969e-06" nodeId="111217">
           <TransformGroup name="placeable" nodeId="111218">
-            <ReferenceNode name="garbageContainer01" referenceId="831" nodeId="111224"/>
+            <ReferenceNode name="garbageContainer01" referenceId="835" nodeId="111224"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111235"/>
           <TransformGroup name="aiSplines" nodeId="111236"/>
@@ -31123,77 +31157,77 @@
       <TransformGroup name="mainFarm" translation="-91.9828 32.5727 400.242" nodeId="111237">
         <TransformGroup name="preplaced_farmHouse04" lockedgroup="true" translation="4.78101 0.688 -73.4269" nodeId="111238">
           <TransformGroup name="placeable" nodeId="111239">
-            <ReferenceNode name="farmHouse04" referenceId="832" nodeId="111263"/>
+            <ReferenceNode name="farmHouse04" referenceId="836" nodeId="111263"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111326"/>
           <TransformGroup name="aiSplines" nodeId="111327"/>
         </TransformGroup>
         <TransformGroup name="preplaced_dieselTanks02" lockedgroup="true" translation="10.4862 0.481773 -29.1995" nodeId="111328">
           <TransformGroup name="placeable" nodeId="111329">
-            <ReferenceNode name="dieselTanks02" referenceId="833" nodeId="111343"/>
+            <ReferenceNode name="dieselTanks02" referenceId="837" nodeId="111343"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111377"/>
           <TransformGroup name="aiSplines" nodeId="111378"/>
         </TransformGroup>
         <TransformGroup name="preplaced_liquidFlatBottomTank1630" lockedgroup="true" translation="34.9828 0.427292 -30.2416" nodeId="111379">
           <TransformGroup name="placeable" nodeId="111380">
-            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="712" nodeId="111381"/>
+            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="716" nodeId="111381"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111422"/>
           <TransformGroup name="aiSplines" nodeId="111423"/>
         </TransformGroup>
         <TransformGroup name="preplaced_liquidFlatBottomTank1630" lockedgroup="true" translation="28.9828 0.427292 -30.2416" nodeId="111424">
           <TransformGroup name="placeable" nodeId="111425">
-            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="712" nodeId="111426"/>
+            <ReferenceNode name="liquidFlatBottomTank1630" referenceId="716" nodeId="111426"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111467"/>
           <TransformGroup name="aiSplines" nodeId="111468"/>
         </TransformGroup>
         <TransformGroup name="preplaced_mailbox_four" lockedgroup="true" translation="42.4497 0.32019 -121.149" rotation="180 -0 180" nodeId="111469">
           <TransformGroup name="placeable" nodeId="111470">
-            <ReferenceNode name="mailbox_four" referenceId="834" nodeId="111477"/>
+            <ReferenceNode name="mailbox_four" referenceId="838" nodeId="111477"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111497"/>
           <TransformGroup name="aiSplines" nodeId="111498"/>
         </TransformGroup>
         <TransformGroup name="preplaced_commBin48" lockedgroup="true" translation="-43.1839 -0.19986 57.2598" nodeId="111499">
           <TransformGroup name="placeable" nodeId="111500">
-            <ReferenceNode name="commBin48" referenceId="835" nodeId="111557"/>
+            <ReferenceNode name="commBin48" referenceId="839" nodeId="111557"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111678"/>
           <TransformGroup name="aiSplines" visibility="false" nodeId="111679" renderInvisible="true"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="39.6952 0.481773 -29.5882" rotation="1.64275e-12 0 1.00179e-05" nodeId="111680">
           <TransformGroup name="placeable" nodeId="111681">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="111682"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="111682"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111698"/>
           <TransformGroup name="aiSplines" nodeId="111699"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="58.8019 0.393342 24.3936" rotation="180 -43.2727 -180" nodeId="111700">
           <TransformGroup name="placeable" nodeId="111701">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="111702"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="111702"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="111718"/>
           <TransformGroup name="aiSplines" nodeId="111719"/>
         </TransformGroup>
         <TransformGroup name="preplaced_garage01" lockedgroup="true" translation="20.837 0.481773 1.99219" rotation="-0 90 0" nodeId="111720">
           <TransformGroup name="placeable" nodeId="111721">
-            <ReferenceNode name="garage01" referenceId="836" nodeId="111839"/>
+            <ReferenceNode name="garage01" referenceId="840" nodeId="111839"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112033"/>
           <TransformGroup name="aiSplines" nodeId="112034"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="8.29463 0.481767 -28.7827" rotation="1.64275e-12 0 1.00179e-05" nodeId="112035">
           <TransformGroup name="placeable" nodeId="112036">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112037"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112037"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112053"/>
           <TransformGroup name="aiSplines" nodeId="112054"/>
         </TransformGroup>
         <TransformGroup name="preplaced_sellingStationVehicles" lockedgroup="true" translation="30.7233 0.4818 2.38098" nodeId="112055">
           <TransformGroup name="placeable" nodeId="112056">
-            <ReferenceNode name="sellingStationVehicles" referenceId="827" nodeId="112057"/>
+            <ReferenceNode name="sellingStationVehicles" referenceId="831" nodeId="112057"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112070"/>
           <TransformGroup name="aiSplines" nodeId="112071"/>
@@ -31218,36 +31252,36 @@
           <Shape name="barbedWire" shapeId="325" clipDistance="65" nodeId="112085" castsShadows="true" receiveShadows="true" materialIds="14"/>
           <Shape name="col" shapeId="326" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="112086" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="31"/>
         </TransformGroup>
-        <ReferenceNode name="bridgeRiver_lod" translation="291.947 7.4 571.955" rotation="0.0197823 58.0396 0" referenceId="846" nodeId="112101"/>
-        <ReferenceNode name="vehicleBarge" translation="435.032 -4.1633 685.43" rotation="-180 -36.5048 -180" referenceId="847" nodeId="112145"/>
-        <ReferenceNode name="grainBargeTerminal02" translation="427.904 1.2503 620.204" rotation="180 53.2292 180" referenceId="848" nodeId="112210"/>
+        <ReferenceNode name="bridgeRiver_lod" translation="291.947 7.4 571.955" rotation="0.0197823 58.0396 0" referenceId="850" nodeId="112101"/>
+        <ReferenceNode name="vehicleBarge" translation="435.032 -4.1633 685.43" rotation="-180 -36.5048 -180" referenceId="851" nodeId="112145"/>
+        <ReferenceNode name="grainBargeTerminal02" translation="427.904 1.2503 620.204" rotation="180 53.2292 180" referenceId="852" nodeId="112210"/>
         <Shape name="ShipMover_bargeRiverManvel" translation="-1154.88 -4.5666 -1877.59" shapeId="327" nodeId="112242" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" renderedInViewports="false">
-          <ReferenceNode name="ShipStatic_vehicleBargeManvel" translation="23.6913 0.100819 -47.4309" rotation="0 -27.5461 0" referenceId="847" nodeId="112243"/>
+          <ReferenceNode name="ShipStatic_vehicleBargeManvel" translation="23.6913 0.100819 -47.4309" rotation="0 -27.5461 0" referenceId="851" nodeId="112243"/>
         </Shape>
         <TransformGroup name="preplaced_limeStation" lockedgroup="true" translation="414.901 0.2526 614.99" nodeId="112280">
           <TransformGroup name="placeable" nodeId="112281">
-            <ReferenceNode name="limeStation" referenceId="849" nodeId="112294"/>
+            <ReferenceNode name="limeStation" referenceId="853" nodeId="112294"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112338"/>
           <TransformGroup name="aiSplines" nodeId="112339"/>
         </TransformGroup>
         <TransformGroup name="preplaced_grainBargeTerminal02Triggers" lockedgroup="true" translation="467.039 1.6164 634.56" rotation="0 -52.2238 0" nodeId="112340">
           <TransformGroup name="placeable" nodeId="112341">
-            <ReferenceNode name="grainBargeTerminal02Triggers" referenceId="850" nodeId="112346"/>
+            <ReferenceNode name="grainBargeTerminal02Triggers" referenceId="854" nodeId="112346"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112354"/>
           <TransformGroup name="aiSplines" nodeId="112355"/>
         </TransformGroup>
         <TransformGroup name="preplaced_weighingStationSmall" lockedgroup="true" translation="595.346 7.58438 520.09" rotation="180 86.8443 180" nodeId="112356">
           <TransformGroup name="placeable" nodeId="112357">
-            <ReferenceNode name="weighingStationSmall" referenceId="851" nodeId="112369"/>
+            <ReferenceNode name="weighingStationSmall" referenceId="855" nodeId="112369"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112431"/>
           <TransformGroup name="aiSplines" nodeId="112432"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="606.386 7.57312 511.946" rotation="1.0782e-06 -1.35131 -9.28556e-08" nodeId="112433">
           <TransformGroup name="placeable" nodeId="112434">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112435"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112435"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112451"/>
           <TransformGroup name="aiSplines" nodeId="112452"/>
@@ -31300,42 +31334,42 @@
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="393.631 2.08988 582.748" rotation="180 62.7362 180" nodeId="112487">
           <TransformGroup name="placeable" nodeId="112488">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112489"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112489"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112505"/>
           <TransformGroup name="aiSplines" nodeId="112506"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="398.588 2.08988 592.366" rotation="180 58.9027 180" nodeId="112507">
           <TransformGroup name="placeable" nodeId="112508">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112509"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112509"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112525"/>
           <TransformGroup name="aiSplines" nodeId="112526"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="404.688 2.08988 602.485" rotation="180 49.8444 180" nodeId="112527">
           <TransformGroup name="placeable" nodeId="112528">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112529"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112529"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112545"/>
           <TransformGroup name="aiSplines" nodeId="112546"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="464.275 2.08988 628.669" rotation="2.40559e-12 -47.2754 1.00179e-05" nodeId="112547">
           <TransformGroup name="placeable" nodeId="112548">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112549"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112549"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112565"/>
           <TransformGroup name="aiSplines" nodeId="112566"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="317.165 7.4324 518.015" rotation="3.21271e-12 59.4678 1.00179e-05" nodeId="112567">
           <TransformGroup name="placeable" nodeId="112568">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112569"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112569"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112585"/>
           <TransformGroup name="aiSplines" nodeId="112586"/>
         </TransformGroup>
         <TransformGroup name="preplaced_floodLight1" lockedgroup="true" translation="266.888 7.3262 625.857" rotation="-180 -58.545 -180" nodeId="112587">
           <TransformGroup name="placeable" nodeId="112588">
-            <ReferenceNode name="floodLight1" referenceId="788" nodeId="112589"/>
+            <ReferenceNode name="floodLight1" referenceId="792" nodeId="112589"/>
           </TransformGroup>
           <TransformGroup name="props" nodeId="112605"/>
           <TransformGroup name="aiSplines" nodeId="112606"/>
@@ -31349,10 +31383,10 @@
           </TransformGroup>
           <Shape name="col" shapeId="345" static="true" collisionFilterGroup="0x207c" collisionFilterMask="0xfffffbff" nodeId="112612" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="31"/>
         </TransformGroup>
-        <ReferenceNode name="drainageTunnel03" translation="379.017 -0.0652752 313.539" rotation="-0 -90 0" referenceId="867" nodeId="112633"/>
-        <ReferenceNode name="drainageTunnel03" translation="391.625 -0.0652752 313.539" rotation="-0 -90 0" referenceId="867" nodeId="112650"/>
-        <ReferenceNode name="drainageTunnel03" translation="-550.579 -0.876917 348.784" rotation="-0 -90 0" referenceId="867" nodeId="112667"/>
-        <ReferenceNode name="drainageTunnel03" translation="-542.547 -0.876917 346.823" rotation="-0 -90 0" referenceId="867" nodeId="112684"/>
+        <ReferenceNode name="drainageTunnel03" translation="379.017 -0.0652752 313.539" rotation="-0 -90 0" referenceId="871" nodeId="112633"/>
+        <ReferenceNode name="drainageTunnel03" translation="391.625 -0.0652752 313.539" rotation="-0 -90 0" referenceId="871" nodeId="112650"/>
+        <ReferenceNode name="drainageTunnel03" translation="-550.579 -0.876917 348.784" rotation="-0 -90 0" referenceId="871" nodeId="112667"/>
+        <ReferenceNode name="drainageTunnel03" translation="-542.547 -0.876917 346.823" rotation="-0 -90 0" referenceId="871" nodeId="112684"/>
       </TransformGroup>
     </TransformGroup>
     <TransformGroup name="electricity" nodeId="112701">
@@ -33743,6 +33777,34 @@
     </UserAttribute>
     <UserAttribute nodeId="108050">
       <Attribute name="onCreate" type="scriptCallback" value="Environment.onCreateWater"/>
+    </UserAttribute>
+    <UserAttribute nodeId="133998">
+      <Attribute name="aiSplines" type="string" value="2"/>
+      <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
+      <Attribute name="uniqueId" type="string" value="preplaced_planET_bgaHall_343e003f8e64fe21445326262eed1d5e1"/>
+      <Attribute name="xmlFilename" type="string" value="$data/placeables/planET/bgaHall/bgaHall.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="133940">
+      <Attribute name="aiSplines" type="string" value="2"/>
+      <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
+      <Attribute name="uniqueId" type="string" value="preplaced_bgaBunkerSilo_2dd40518e817b20fd6f793259f2702f81"/>
+      <Attribute name="xmlFilename" type="string" value="$data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="133832">
+      <Attribute name="aiSplines" type="string" value="2"/>
+      <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
+      <Attribute name="uniqueId" type="string" value="preplaced_planET_bga250kw_16181bfac9324dbdbc76936c2ce2b4099"/>
+      <Attribute name="xmlFilename" type="string" value="$data/placeables/planET/bga250kw/bga250kw.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="135571">
+      <Attribute name="aiSplines" type="string" value="2"/>
+      <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
+      <Attribute name="uniqueId" type="string" value="preplaced_liquidManureTank_09172fa3820eb8b6b9299c5d68033e6a3"/>
+      <Attribute name="xmlFilename" type="string" value="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml"/>
     </UserAttribute>
     <UserAttribute nodeId="108053">
       <Attribute name="aiSplines" type="string" value="2"/>

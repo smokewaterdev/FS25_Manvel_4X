@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<AutoDriveUsersData>
+    <users>
+        <user uniqueId="SinglePlayer" hudX="0.852083" hudY="0.358148" showNextPath="2" lineHeight="1" iconSetToUse="1" switchToMarkersOnMap="1" showMarkersOnMap="2" playSounds="2" colorAssignmentMode="1" showHUD="2" showHelp="1" scaleLines="2" showTooltips="2" wideHUD="1" guiScale="1" EditorMode="3" notifications="3" addSettingsToHUD="1" scaleMarkerText="2"/>
+    </users>
+</AutoDriveUsersData>
