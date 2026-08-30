@@ -16,7 +16,7 @@ Shopkategorie: Maps
 ]]></de>
     </description>
 
-    <iconFilename>preview.png</iconFilename>
+    <iconFilename>icon.dds</iconFilename>
 
     <multiplayer supported="true" />
 
@@ -42,7 +42,7 @@ Shopkategorie: Maps
             <description>
                 <en>Website: manvel.github.io</en>
             </description>
-            <iconFilename>preview.png</iconFilename>
+            <iconFilename>preview.dds</iconFilename>
         </map>
     </maps>
 

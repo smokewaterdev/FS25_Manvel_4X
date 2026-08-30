@@ -33797,7 +33797,7 @@
       <Attribute name="boughtWithFarmlandOverwrite" type="boolean" value="false"/>
       <Attribute name="onCreate" type="scriptCallback" value="Placeable.onCreate"/>
       <Attribute name="uniqueId" type="string" value="preplaced_planET_bga250kw_16181bfac9324dbdbc76936c2ce2b4099"/>
-      <Attribute name="xmlFilename" type="string" value="$data/placeables/planET/bga250kw/bga250kw.xml"/>
+      <Attribute name="xmlFilename" type="string" value="assets/bga250kwStandalone/bga250kw.xml"/>
     </UserAttribute>
     <UserAttribute nodeId="135571">
       <Attribute name="aiSplines" type="string" value="2"/>

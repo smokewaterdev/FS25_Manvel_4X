@@ -82,4 +82,10 @@
 
 <!-- DECORATION -->
     <storeItem xmlFilename="$data/placeables/mapUS/stable02/stable02.xml" /> <!-- showInStore false -->
+
+<!-- BIOGAS FACILITY (farmland 52) -->
+    <storeItem xmlFilename="assets/bga250kwStandalone/bga250kw.xml"/>
+    <storeItem xmlFilename="$data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml"/>
+    <storeItem xmlFilename="$data/placeables/planET/bgaHall/bgaHall.xml"/>
+    <storeItem xmlFilename="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml"/>
 </storeItems>

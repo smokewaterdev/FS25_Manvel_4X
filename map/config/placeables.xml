@@ -55,4 +55,8 @@
     <placeable isPreplaced="true" uniqueId="preplaced_sellingStationVehicles_089bd9cf9e4987062d6d929a1facbfcbc"/>
     <placeable isPreplaced="true" uniqueId="preplaced_vehicleDealerWorkshop_8c9e4d2f1a6b47c093e5d8a2f4b7610c"/>
     <placeable isPreplaced="true" uniqueId="preplaced_hds9184M_placeable_ac403edfc9054c8a9374d6f793e67545" farmId="0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_planET_bga250kw_16181bfac9324dbdbc76936c2ce2b4099"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_bgaBunkerSilo_2dd40518e817b20fd6f793259f2702f81"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_planET_bgaHall_343e003f8e64fe21445326262eed1d5e1"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_liquidManureTank_09172fa3820eb8b6b9299c5d68033e6a3"/>
 </placeables>
