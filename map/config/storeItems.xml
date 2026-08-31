@@ -11,6 +11,7 @@
     <storeItem xmlFilename="assets/manvelCoop/liquidFertilizerBuyPoint.xml"/>
     <storeItem xmlFilename="assets/manvelCoop/dieselBuyPoint.xml"/>
     <storeItem xmlFilename="assets/manvelCoop/propaneBuyPoint.xml"/>
+    <storeItem xmlFilename="assets/manvelCoop/warehouseSeedBuyPoint.xml"/>
     <storeItem xmlFilename="assets/limeStationTrigger/limeStationTrigger.xml"/>
 
     <storeItem xmlFilename="assets/mainFarm/mailboxWrapper.xml"/>
@@ -88,4 +89,10 @@
     <storeItem xmlFilename="$data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml"/>
     <storeItem xmlFilename="$data/placeables/planET/bgaHall/bgaHall.xml"/>
     <storeItem xmlFilename="$data/placeables/brandless/liquidManureTanks/baseTank/baseTank.xml"/>
+
+<!-- INDIVIDUAL BIG BAGS (shop-menu, buy 1-8 at once; separate from the Coop warehouse pallet trigger) -->
+    <storeItem xmlFilename="$data/objects/bigBag/seeds/multiPurchaseBigBag_seeds.xml"/>
+    <storeItem xmlFilename="$data/objects/bigBag/fertilizer/multiPurchaseBigBagHelm_fertilizer.xml"/>
+    <storeItem xmlFilename="$data/objects/bigBag/lime/multiPurchaseBigBag_lime.xml"/>
+    <storeItem xmlFilename="$data/objects/bigBag/roadSalt/multiPurchaseBigBag_roadSalt.xml"/>
 </storeItems>

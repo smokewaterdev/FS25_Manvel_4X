@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$data/shared/xml/schema/placeable.xsd">
+<placeable type="warehouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$data/shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>Manvel Cooperative - Seed Warehouse</name>
+        <name>Manvel Cooperative - Seed &amp; Input Warehouse</name>
         <image>$data/objects/pallets/pioneer/store_pioneerPallet.png</image>
         <price>0</price>
         <canBeSold>false</canBeSold>
@@ -15,23 +15,39 @@
     <base>
         <filename>assets/manvelCoop/buyPointTrigger.i3d</filename>
         <boughtWithFarmland>false</boughtWithFarmland>
+        <canBeDeleted>false</canBeDeleted>
         <canBeRenamed>false</canBeRenamed>
     </base>
-    <buyingStation node="buyingStation" supportsExtension="false">
-        <loadTrigger triggerNode="loadingTrigger" aiNode="loadingTriggerAINode" fillTypes="SEEDS" fillLitersPerSecond="500" infiniteCapacity="true"/>
-        <fillType name="SEEDS" priceScale="1"/>
-    </buyingStation>
+
     <hotspots>
-        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="markerLoading"/>
+        <hotspot type="SHOP" linkNode="palletBuyingActivationTriggerMarker" teleportNode="palletBuyingActivationTriggerMarker" />
     </hotspots>
+
     <triggerMarkers>
-        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIconLoad.i3d"/>
+        <triggerMarker node="palletBuyingActivationTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconShopping.i3d"/>
     </triggerMarkers>
+
+    <palletBuyingStation triggerNode="palletBuyingActivationTrigger">
+        <fillType name="SEEDS"          priceScale="1.15" />
+        <fillType name="FERTILIZER"     priceScale="1.15" />
+        <fillType name="LIME"           priceScale="1.15" />
+        <fillType name="SILAGE_ADDITIVE" priceScale="1.15" />
+        <fillType name="MINERAL_FEED"   priceScale="1.15" />
+        <fillType name="ROADSALT"       priceScale="1.15" />
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" palletRotationOffset="90"/>
+            </spawnPlaces>
+        </palletSpawner>
+    </palletBuyingStation>
+
     <i3dMappings>
-        <i3dMapping id="buyingStation" node="0>0"/>
-        <i3dMapping id="loadingTrigger" node="0>0|0"/>
-        <i3dMapping id="loadingTriggerAINode" node="0>0|1"/>
         <i3dMapping id="mapPosition" node="0>1"/>
         <i3dMapping id="markerLoading" node="0>2"/>
+        <i3dMapping id="palletBuyingActivationTriggerMarker" node="0>3"/>
+        <i3dMapping id="palletBuyingActivationTrigger" node="0>4"/>
+        <i3dMapping id="palletAreaStart01" node="0>5"/>
+        <i3dMapping id="palletAreaEnd01" node="0>5|0"/>
     </i3dMappings>
 </placeable>

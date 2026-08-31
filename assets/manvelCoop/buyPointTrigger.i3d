@@ -16,6 +16,11 @@
       </TransformGroup>
       <TransformGroup name="mapPosition" nodeId="5"/>
       <TransformGroup name="markerLoading" nodeId="6"/>
+      <TransformGroup name="palletBuyingActivationTriggerMarker" translation="0 0 2" nodeId="7"/>
+      <Shape name="palletBuyingActivationTrigger" translation="0 1 2" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="1" nodeId="8"/>
+      <TransformGroup name="palletAreaStart01" translation="-2.5 0.05 4" rotation="0 -90 0" nodeId="9">
+        <TransformGroup name="palletAreaEnd01" translation="0 0 5" nodeId="10"/>
+      </TransformGroup>
     </TransformGroup>
   </Scene>
 </i3D>
