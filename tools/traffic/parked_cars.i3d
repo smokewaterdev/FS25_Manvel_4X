@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="manvel_parked_cars" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Files/>
+    <Materials/>
+    <Shapes/>
+    <Scene>
+        <TransformGroup name="parkedCars" nodeId="1">
+            <TransformGroup name="parkedCar" translation="-1335.000 32.206 363.000" rotation="0 0 0" nodeId="2"/>
+            <TransformGroup name="parkedCar" translation="-1331.500 32.206 363.000" rotation="0 0 0" nodeId="3"/>
+            <TransformGroup name="parkedCar" translation="-1328.000 32.206 363.000" rotation="0 0 0" nodeId="4"/>
+            <TransformGroup name="parkedCar" translation="-1324.500 32.206 363.000" rotation="0 0 0" nodeId="5"/>
+            <TransformGroup name="parkedCar" translation="-1321.000 32.206 363.000" rotation="0 0 0" nodeId="6"/>
+            <TransformGroup name="parkedCar" translation="-1317.500 32.206 363.000" rotation="0 0 0" nodeId="7"/>
+            <TransformGroup name="parkedCar" translation="-1314.000 32.206 363.000" rotation="0 0 0" nodeId="8"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

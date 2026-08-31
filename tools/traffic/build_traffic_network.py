@@ -22,20 +22,28 @@ Pipeline:
          not just an arbitrary offset side.
   4. At every junction, connect each incoming lane (arrives there) to every
      outgoing lane from a DIFFERENT sub-segment (skips the same sub-segment's
-     paired lane, which would be a same-spot U-turn) with a tangent-matched
-     quadratic Bezier fillet. This covers through movements and turns
-     without needing to classify turn legality -- N legs -> N(N-1) movements.
+     paired lane, which would be a same-spot U-turn) with a cubic Bezier
+     fillet whose control points are built directly from the arrival/
+     departure tangent directions (p0 + tin*h, p2 - tout*h). This covers
+     through movements and turns without needing to classify turn legality
+     -- N legs -> N(N-1) movements.
   5. Assembles everything into one `trafficSystem` TransformGroup with a
      UserAttribute wiring it to map/config/trafficSystem.xml, plus per-curve
-     speedLimit/maxSpeedScale/vehicleTypes UserAttributes (50 primary / 35
-     secondary through-lanes, 12 at junction connectors -- matching the old
-     MapToPlay data's convention).
+     speedLimit/maxSpeedScale/vehicleTypes UserAttributes -- see the SPEED_*
+     constants for the values and the real-world reasoning behind them.
 
-Curve fidelity: control points come from Ramer-Douglas-Peucker simplification
-of the dense (up to 800-point) real centerlines at RDP_TOL=0.3m, not a coarse
-approximation -- tight enough to preserve gentle/subtle road curvature, not
-just corners. (An earlier pass used 2.0m tolerance, which was flattening long
-roads to 2-3 points and losing real curves -- fixed.)
+Curve fidelity: every point of each sub-segment's real centerline is kept,
+point for point -- no simplification. Two earlier passes got this wrong in
+different directions: the first used a coarse 2.0m RDP tolerance, flattening
+long roads to 2-3 points and losing real curvature; the second tightened RDP
+to 0.3m, which preserved the XZ shape but still measures only sideways
+deviation from a straight line, blind to terrain height in between two kept
+points -- on hilly ground a simplified straight segment could cut across a
+hill/valley while its two endpoints still sampled correctly on the surface,
+so the curve visibly dipped below ground between control points (same bug,
+same fix, as snap_csvsplines_to_terrain.py). Keeping every point sidesteps
+this entirely, at the cost of more control points (a few hundred per road
+instead of a few dozen) -- GE handles that fine.
 
 Elevation: each control point's Y is sampled directly from the terrain
 heightmap (map/data/dem.png, bilinear-interpolated) using the map's real
@@ -82,13 +90,65 @@ HEIGHT_SCALE = 255.0  # from map.i3d TerrainTransformGroup heightScale attribute
 SPLINE_CLEARANCE_M = 0.2  # small lift above bare terrain height to avoid z-fighting
 RDP_TOL = 0.3
 CLOSE_TOL = 10.0
-MAX_HANDLE_DIST = 200.0
 MAP_EDGE = 2040.0  # world coords beyond this are the playable-area boundary
+# Speed limits in km/h, tuned for this map's setting: gravel section-line
+# township roads on the one-mile grid northeast of Manvel, ND (Grand Forks
+# County, Red River Valley). North Dakota's statutory limit is 55 mph on
+# gravel/dirt roads and on unposted paved two-lane county/township roads, but
+# 45/35 mph is what traffic actually moves at on loaded gravel -- and it plays
+# better around farm equipment than a true 88 km/h would.
+SPEED_PRIMARY = 72    # ~45 mph, the main gravel county roads
+SPEED_SECONDARY = 56  # ~35 mph, the lighter secondary road
+SPEED_BRIDGE = 72     # a bridge carries through traffic at road speed; these
+                      # were previously stamped at the junction-turn speed,
+                      # which had vehicles crawling across both river spans
+SPEED_TURN = 25       # junction fillets -- slowing for a gravel corner
+SPEED_UTURN = 15      # tight 180-degree map-edge turnarounds
+VEHICLE_TYPES = 3  # bitmask of trafficSystem.xml typeFlag values a curve
+                   # accepts: 1 = cars, 2 = large vehicles (trucks, buses).
+                   # 3 = both. Every curve was previously stamped with 1, so
+                   # the six typeFlag="2" vehicles in map/config/
+                   # trafficSystem.xml (cementTruck, dumpTruck, both school
+                   # buses, postalServiceTruck, tipperTruck) had nowhere to
+                   # spawn and the log reported "No roads assigned for traffic
+                   # vehicle ..." for each of them.
 BRIDGE_SPAN_M = 25.0  # any connector longer than this is treated as a bridge
                        # deck: straight line + height interpolated between its
                        # two true endpoints, not sampled from the terrain
                        # underneath (real junction fillets are all <6m in this
                        # network, so this cleanly separates the two cases)
+CONNECTOR_SAMPLES = 16  # points per junction-turn Bezier fillet.
+HANDLE_FRACTION = 0.5  # cubic Bezier control-point handle length, as a
+                       # fraction of the straight-line p0->p2 distance. See
+                       # connector_pts() for why this replaced a line-
+                       # intersection-based quadratic fillet.
+LANE_SPACING_M = LANE_OFFSET_M * 2  # centre-to-centre distance between the
+                       # two opposing lanes of a road. Derived, not a separate
+                       # constant: both lanes are offset LANE_OFFSET_M from
+                       # the same roadSystem centerline, on opposite sides.
+                       # (6m road width -> 1.5m offset -> 3m lane spacing.)
+TURN_SETBACK_M = LANE_OFFSET_M + LANE_SPACING_M  # = 4.5m. How far back up
+                       # the incoming lane (and forward down the outgoing
+                       # lane) a RIGHT-turn connector attaches, instead of at
+                       # the lane curve's literal junction endpoint.
+                       #
+                       # Derived, not hand-picked. At a perpendicular
+                       # junction a corner-cutting right turn of radius R is
+                       # tangent to the incoming lane at LANE_OFFSET_M + R
+                       # from the crossing point, so setback = offset + R.
+                       # Setting R = LANE_SPACING_M (the turn is as wide as
+                       # the road's two lanes are apart) gives the value
+                       # above and makes the whole turn geometry scale with
+                       # the road instead of being an unrelated constant.
+                       # Setback = LANE_SPACING_M alone was tried and is too
+                       # tight: it leaves R = 1.5m, a turn radius narrower
+                       # than a single lane, which no vehicle can track.
+                       # Left turns do NOT use this -- see the connector
+                       # section for why.
+TURN_SETBACK_MAX_FRAC = 0.4  # never eat more than this much of a short lane
+THROUGH_DOT = 0.87     # cos(~30 deg): incoming/outgoing tangents at least
+                       # this aligned count as a straight-through movement,
+                       # which attaches endpoint-to-endpoint with no setback
 
 # Manually-confirmed links between road endpoints that the automatic proximity
 # pass (CLOSE_TOL=10m) can't find because there's real distance between them
@@ -210,22 +270,13 @@ def norm(v):
     return (0.0, 0.0) if L == 0 else (v[0] / L, v[1] / L)
 
 
-def line_intersect_point(p0, d0, p2, d2):
-    x1, z1 = p0; x2, z2 = (p0[0] + d0[0], p0[1] + d0[1])
-    x3, z3 = p2; x4, z4 = (p2[0] - d2[0], p2[1] - d2[1])
-    denom = (x1 - x2) * (z3 - z4) - (z1 - z2) * (x3 - x4)
-    if abs(denom) < 1e-9:
-        return None
-    t = ((x1 - x3) * (z3 - z4) - (z1 - z3) * (x3 - x4)) / denom
-    return (x1 + t * (x2 - x1), z1 + t * (z2 - z1))
-
-
-def bezier_sample(p0, p1, p2, n=5):
+def cubic_bezier_sample(p0, c1, c2, p2, n=5):
     out = []
     for i in range(n):
         t = i / (n - 1)
-        x = (1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * p1[0] + t ** 2 * p2[0]
-        z = (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * p1[1] + t ** 2 * p2[1]
+        mt = 1 - t
+        x = mt ** 3 * p0[0] + 3 * mt ** 2 * t * c1[0] + 3 * mt * t ** 2 * c2[0] + t ** 3 * p2[0]
+        z = mt ** 3 * p0[1] + 3 * mt ** 2 * t * c1[1] + 3 * mt * t ** 2 * c2[1] + t ** 3 * p2[1]
         out.append((x, z))
     return out
 
@@ -334,14 +385,17 @@ def main():
                 matched.add((r, "end"))
     for roadA, endA, roadB, endB in MANUAL_BRIDGE_LINKS:
         matched.add((roadA, endA)); matched.add((roadB, endB))
+    free_terminals = []
     print("\nfree road endpoints (not auto-connected):")
     for n in names:
         poly = roads[n]
         for label, pt in (("start", poly[0]), ("end", poly[-1])):
             if (n, label) not in matched:
                 edge = abs(pt[0]) > MAP_EDGE or abs(pt[1]) > MAP_EDGE
-                tag = "map edge, expected" if edge else "** NOT near map edge -- needs manual check **"
+                tag = "map edge, closed with U-turn" if edge else "** NOT near map edge -- needs manual check **"
                 print(f"  {n} {label} @ ({pt[0]:.1f},{pt[1]:.1f})  [{tag}]")
+                if edge:
+                    free_terminals.append((n, label))
 
     # ---- 2. split into sub-segments ----
     road_junction_params = {n: [] for n in names}
@@ -380,9 +434,16 @@ def main():
             seg_idx += 1
 
     # ---- 3. lane curves per sub-segment ----
+    # NOTE: every point of each sub-segment's real centerline is kept here,
+    # point for point -- no RDP simplification. RDP only measures how far a
+    # point deviates sideways from a straight line; it has no idea about
+    # terrain height in between two kept points, so on hilly ground a
+    # simplified straight segment could cut across a hill/valley while its
+    # two endpoints still sampled correctly on the surface -- the same bug
+    # found and fixed in snap_csvsplines_to_terrain.py applies here too.
     lane_curves = {}
     for s in subsegments:
-        simplified = rdp(s["pts"], RDP_TOL)
+        simplified = s["pts"]
         if len(simplified) < 4:
             simplified = pad_to_min_points(simplified, 4)
         # +LANE_OFFSET_M for laneB (not -) is not a typo: offset_points()'s
@@ -420,6 +481,48 @@ def main():
     def departure_tangent(pts):
         return norm((pts[1][0] - pts[0][0], pts[1][1] - pts[0][1]))
 
+    def polyline_length(pts):
+        return sum(dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+
+    def setback_for(pts):
+        return min(TURN_SETBACK_M, polyline_length(pts) * TURN_SETBACK_MAX_FRAC)
+
+    def branch_from_end(pts, back):
+        # walk backwards along the lane from its junction end; return the
+        # point `back` metres up-road, the direction of travel there, and the
+        # index of the first point PAST it (so the lane can be trimmed to
+        # pts[:idx] + [p] if this branch is its only continuation)
+        acc = 0.0
+        for i in range(len(pts) - 1, 0, -1):
+            seg = dist(pts[i], pts[i - 1])
+            if seg <= 0:
+                continue
+            if acc + seg >= back:
+                t = (back - acc) / seg
+                p = (pts[i][0] + (pts[i - 1][0] - pts[i][0]) * t,
+                     pts[i][1] + (pts[i - 1][1] - pts[i][1]) * t)
+                return p, norm((pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1])), i
+            acc += seg
+        return pts[0], departure_tangent(pts), 1
+
+    def merge_from_start(pts, fwd):
+        # walk forwards along the lane from its junction end; return the point
+        # `fwd` metres down-road, the direction of travel there, and the index
+        # of the first point PAST it (so the lane can be trimmed to
+        # [p] + pts[idx:] if this merge is its only origin)
+        acc = 0.0
+        for i in range(len(pts) - 1):
+            seg = dist(pts[i], pts[i + 1])
+            if seg <= 0:
+                continue
+            if acc + seg >= fwd:
+                t = (fwd - acc) / seg
+                p = (pts[i][0] + (pts[i + 1][0] - pts[i][0]) * t,
+                     pts[i][1] + (pts[i + 1][1] - pts[i][1]) * t)
+                return p, norm((pts[i + 1][0] - pts[i][0], pts[i + 1][1] - pts[i][1])), i + 1
+            acc += seg
+        return pts[-1], arrival_tangent(pts), len(pts) - 1
+
     def connector_pts(p0, tin, p2, tout):
         if dist(p0, p2) > BRIDGE_SPAN_M:
             # bridge deck: a straight line between banks, not a fillet curve
@@ -432,23 +535,116 @@ def main():
             n = 5
             return [(p0[0] + (p2[0] - p0[0]) * i / (n - 1),
                      p0[1] + (p2[1] - p0[1]) * i / (n - 1)) for i in range(n)]
-        p1 = line_intersect_point(p0, tin, p2, tout)
-        handle_ok = p1 is not None and dist(p1, p0) <= MAX_HANDLE_DIST
-        if not handle_ok:
-            p1 = ((p0[0] + p2[0]) / 2, (p0[1] + p2[1]) / 2)
-        return bezier_sample(p0, p1, p2, n=5)
+        # Cubic Bezier with tangent-scaled handles -- guarantees the curve
+        # LEAVES p0 heading in the tin direction and ARRIVES at p2 heading in
+        # the tout direction, for any relative angle between the two roads.
+        #
+        # The previous approach found the single quadratic-Bezier control
+        # point as the intersection of the two full tangent LINES (not rays).
+        # That's fine when the intersection happens to land in front of both
+        # p0 and p2, but for plenty of real junction geometries here (e.g.
+        # j8_secondaryRoad010laneA_to_primaryRoad022laneB, a ~90 degree turn
+        # with a short lane-offset span) the lines only cross BEHIND p0
+        # relative to tin -- confirmed numerically for that exact curve, the
+        # control point sat back in the direction the vehicle had *come*
+        # from, so the fillet's initial tangent pointed 180 degrees opposite
+        # the arrival direction. The curve still math-out to a simple
+        # (non-looping) parabola, but visually it left the junction backward
+        # before turning, which read as a curve "rotated 180 degrees" /
+        # rendered as a loop when overlaid with the junction's other, correct
+        # connectors. Building the handles directly from tin/tout instead of
+        # an unconstrained line intersection can't produce that reversal.
+        handle_len = dist(p0, p2) * HANDLE_FRACTION
+        c1 = (p0[0] + tin[0] * handle_len, p0[1] + tin[1] * handle_len)
+        c2 = (p2[0] - tout[0] * handle_len, p2[1] - tout[1] * handle_len)
+        return cubic_bezier_sample(p0, c1, c2, p2, n=CONNECTOR_SAMPLES)
+
+    # Where a connector ATTACHES depends on which way the movement turns,
+    # because right and left turns are geometrically different manoeuvres in
+    # right-hand traffic:
+    #
+    #   RIGHT turns cut the near corner. They branch off the approach lane
+    #   BEFORE the intersection and merge into the target lane AFTER it, so
+    #   they attach TURN_SETBACK_M back up the incoming lane and the same
+    #   distance forward down the outgoing lane, with tangents taken at those
+    #   branch/merge points. This is also what fixes the dome/loop shapes:
+    #   both lane endpoints sit within ~LANE_OFFSET_M of the centerline
+    #   crossing, so at a 90-degree junction they're ~2m apart AND the
+    #   outgoing lane's start lies *behind* the incoming lane's arrival
+    #   direction (it's offset to the far side of the crossing). A curve
+    #   forced to leave p0 along tin, travel 2m, and arrive at a p2 that's
+    #   backwards of tin has to double back on itself -- no Bezier
+    #   reformulation fixes that, because the endpoints themselves are wrong
+    #   for the manoeuvre. Setting back gives the turn a real radius and puts
+    #   p2 genuinely ahead of p0. The connector overlaps the through lane for
+    #   that stretch, which is correct: the through movement and the right
+    #   turn share the approach.
+    #
+    #   LEFT turns cross the intersection box instead. They run from the
+    #   approach lane's stop line -- its literal junction endpoint -- through
+    #   the middle of the junction to the target lane's literal start point.
+    #   Setting these back is wrong: it pushes both ends out into the
+    #   approach lanes and produces a much-too-wide arc that starts short of
+    #   the line it should be leaving from (and lands short of the lane it
+    #   should be joining). Their endpoints don't suffer the reversal problem
+    #   above, because a left target sits ahead of the arrival direction, not
+    #   behind it.
+    #
+    # Straight-through movements (tangents within ~30 degrees) also attach
+    # endpoint-to-endpoint -- they have no radius to give, and setting them
+    # back would just lay a redundant 12m spline on top of two lanes that
+    # already meet.
+    def turn_sign(tin, tout):
+        # +x is east and +z is SOUTH here (map image row 0 is z=-2048), so
+        # this (x,z) frame is screen-handed: a positive cross product is a
+        # clockwise = RIGHT turn.
+        return tin[0] * tout[1] - tin[1] * tout[0]
 
     connectors = {}
+    skipped_zero_gap = 0
+    right_count = left_count = through_count = 0
+    # per-lane movement bookkeeping, used afterwards to decide whether a lane
+    # should be TRIMMED back to its right turn's branch/merge point
+    out_moves = {}  # incoming lane key -> [(is_right, branch_point, idx), ...]
+    in_moves = {}   # outgoing lane key -> [(is_right, merge_point, idx), ...]
     for jid in junction_incoming:
         for (ri, si, li) in junction_incoming[jid]:
             pts_in = lane_curves[(ri, si, li)]
-            p0 = pts_in[-1]; tin = arrival_tangent(pts_in)
+            tin_end = arrival_tangent(pts_in)
             for (ro, so, lo) in junction_outgoing[jid]:
                 if (ri, si) == (ro, so):
                     continue
                 pts_out = lane_curves[(ro, so, lo)]
-                p2 = pts_out[0]; tout = departure_tangent(pts_out)
+                tout_start = departure_tangent(pts_out)
+                is_through = (tin_end[0] * tout_start[0] + tin_end[1] * tout_start[1]) > THROUGH_DOT
+                is_right = (not is_through) and turn_sign(tin_end, tout_start) > 0
+                if is_right:
+                    p0, tin, i_in = branch_from_end(pts_in, setback_for(pts_in))
+                    p2, tout, i_out = merge_from_start(pts_out, setback_for(pts_out))
+                    out_moves.setdefault((ri, si, li), []).append((True, p0, i_in))
+                    in_moves.setdefault((ro, so, lo), []).append((True, p2, i_out))
+                    right_count += 1
+                else:
+                    p0, tin = pts_in[-1], tin_end
+                    p2, tout = pts_out[0], tout_start
+                    if dist(p0, p2) < 0.05:
+                        # the two lane curves already meet at (essentially)
+                        # the exact same point. A "connector" here would be a
+                        # zero-length curve with all control points identical,
+                        # which GE renders as a degenerate loop, not a point.
+                        skipped_zero_gap += 1
+                        continue
+                    out_moves.setdefault((ri, si, li), []).append((False, p0, None))
+                    in_moves.setdefault((ro, so, lo), []).append((False, p2, None))
+                    if is_through:
+                        through_count += 1
+                    else:
+                        left_count += 1
                 connectors[(jid, (ri, si, li), (ro, so, lo))] = connector_pts(p0, tin, p2, tout)
+    if skipped_zero_gap:
+        print(f"skipped {skipped_zero_gap} zero-gap connector(s) (lane curves already meet exactly)")
+    print(f"{right_count} right turn(s) branched {TURN_SETBACK_M}m back from the junction, "
+          f"{left_count} left turn(s) + {through_count} through movement(s) endpoint-to-endpoint")
 
     # ---- 4b. manual bridge links: exactly 2 direct connectors each, never
     # merged into an existing junction's turn combinatorics (see docstring).
@@ -483,7 +679,7 @@ def main():
         for pt in center[1:]:
             if dist(pt, cleaned[-1]) > 0.5:
                 cleaned.append(pt)
-        simplified = rdp(cleaned, RDP_TOL)
+        simplified = cleaned  # point for point -- no RDP simplification, see step 3's note
         if len(simplified) < 4:
             simplified = pad_to_min_points(simplified, 4)
         laneB = offset_points(simplified, +LANE_OFFSET_M)
@@ -521,6 +717,140 @@ def main():
         name2 = f"br{k}_{roadB}{segB['seg_idx']}{inB}_to_{roadA}{segA['seg_idx']}{outA}"
         bridge_connectors[name2] = connA_pts
 
+    # ---- 4b2. close map-edge terminals with U-turns ----
+    # FS25's traffic AI requires every spline to form a closed loop. A lane
+    # that simply stops -- which is what every road running off the edge of the
+    # playable area did -- is reported as
+    #   "Error: Traffic system road spline '<name>' dead-end found at <x> <z>"
+    # and the spline is then silently ignored, so no vehicles ever spawn on it.
+    # With 11 such terminals on this map, covering most of the main through
+    # routes, that alone was enough to leave the whole network carless even
+    # though it loaded without complaint otherwise.
+    #
+    # Each terminal has two lanes: one arriving there (its END) and one
+    # departing from there (its START). Joining them with a tight 180-degree
+    # bend turns the pair into a closed circuit -- traffic reaching the map
+    # boundary turns around and comes back. The bend sits at/just past the
+    # boundary, outside the playable area, so it isn't visible in normal play.
+    uturn_connectors = {}
+    for road, end in free_terminals:
+        seg, lin, lout = lane_for_end(road, end)
+        pts_in = lane_curves[(road, seg["seg_idx"], lin)]
+        pts_out = lane_curves[(road, seg["seg_idx"], lout)]
+        p0, tin = pts_in[-1], arrival_tangent(pts_in)
+        p2, tout = pts_out[0], departure_tangent(pts_out)
+        # handles along each lane's own direction of travel; a U-turn's two
+        # tangents are near-opposite, so line-intersection handles are
+        # degenerate here and the cubic form is required
+        h = LANE_SPACING_M
+        c1 = (p0[0] + tin[0] * h, p0[1] + tin[1] * h)
+        c2 = (p2[0] - tout[0] * h, p2[1] - tout[1] * h)
+        uturn_connectors[f"edge_{road}_{end}_uturn"] = cubic_bezier_sample(
+            p0, c1, c2, p2, n=CONNECTOR_SAMPLES)
+    if uturn_connectors:
+        print(f"closed {len(uturn_connectors)} map-edge terminal(s) with U-turn connectors")
+
+    # ---- 4c. trim lanes whose ONLY continuation is a right turn ----
+    # A right turn's setback deliberately overlaps the approach lane, because
+    # normally the through movement uses that same stretch -- the turn branches
+    # off a lane that keeps going. But at a 2-leg corner join (e.g. J7, where
+    # primaryRoad06 simply becomes primaryRoad07) there IS no through movement:
+    # the turn is the lane's only continuation, so the lane has nothing to do
+    # past the branch point and visibly overshoots the corner. Same on the far
+    # side -- the outgoing lane starts before the connector reaches it. Where a
+    # lane has exactly one movement and it's a setback right turn, trim it to
+    # meet the connector exactly.
+    #
+    # Lane ends pinned by MANUAL_BRIDGE_LINKS are never trimmed: bridge
+    # connectors are built from those exact points (above), so trimming one
+    # would open a gap at the bridge. This is per-SIDE, not per-lane -- a lane
+    # can be pinned by a bridge at one end and still be trimmable at the
+    # other. primaryRoad06_seg0_laneB is exactly that case: the bridge from
+    # primaryRoad05 pins its START, while the corner join at J7 trims its END.
+    bridge_pinned_ends, bridge_pinned_starts = set(), set()
+    for roadA, endA, roadB, endB in MANUAL_BRIDGE_LINKS:
+        for road, end in ((roadA, endA), (roadB, endB)):
+            seg, lin, lout = lane_for_end(road, end)
+            bridge_pinned_ends.add((road, seg["seg_idx"], lin))     # pts_in[-1]
+            bridge_pinned_starts.add((road, seg["seg_idx"], lout))  # pts_out[0]
+
+    # FS25 joins traffic splines ONLY at their endpoints. A right turn's
+    # setback attaches part-way along the approach lane, and the engine
+    # reports that as
+    #   "Error: Traffic system road spline '<name>' dead-end found at <x> <z>"
+    # then drops the spline -- which is why the setback turns loaded fine in GE
+    # but produced no traffic. So the lane has to be genuinely CUT at each
+    # branch/merge point, not overlapped:
+    #
+    #   [ start .. merge ]  exit stub   - junction -> where right turns rejoin
+    #   [ merge .. branch ]  main body  - the long run between junctions
+    #   [ branch .. end   ]  approach   - where right turns leave -> junction
+    #
+    # Every connector then meets a real endpoint, and the pieces meet each
+    # other at the cut points. The one exception is a lane whose ONLY
+    # continuation is that right turn (a 2-leg corner join like J7): there's no
+    # through movement to use the stub, so keeping it would just create a new
+    # dead end. Those get trimmed instead, as before.
+    def right_cut(moves):
+        for is_right, p, idx in moves or []:
+            if is_right:
+                return p, idx
+        return None, None
+
+    lane_output = {}
+    split_count = trimmed_count = 0
+    for key, pts in lane_curves.items():
+        road, seg_idx, lane = key
+        base = f"{road}_seg{seg_idx}_{lane}"
+        pm, im = right_cut(in_moves.get(key))
+        pb, ib = right_cut(out_moves.get(key))
+        # a cut only makes sense if it leaves a real body behind it
+        if pm is not None and pb is not None and im >= ib:
+            pm = pb = None
+        # Cutting is always safe for a bridge-pinned lane -- the stub piece
+        # keeps the lane's original endpoint as its own, so the bridge
+        # connector still meets a real endpoint. What is NOT safe is DROPPING
+        # that stub: at J3, primaryRoad09's end is both a junction leg and a
+        # bridge endpoint, and dropping the stub there deleted the very point
+        # the bridge attaches to. So a bridge-pinned end never counts as a
+        # sole continuation, and its stub is always kept.
+        sole_out = len(out_moves.get(key, [])) == 1 and key not in bridge_pinned_ends
+        sole_in = len(in_moves.get(key, [])) == 1 and key not in bridge_pinned_starts
+
+        # Build all three pieces from the ORIGINAL point array using the
+        # original cut indices. An earlier version re-indexed the branch cut
+        # against the already-shortened body (off = ib - im), which was off by
+        # one and made the approach stub pick up points from BEFORE the branch
+        # point -- so the stub ran backwards and the engine reported
+        # "Warning: abrupt change of traffic spline direction" at a 180-degree
+        # reversal. merge_from_start returns the index of the first point past
+        # pm; branch_from_end returns the index of the first point past pb.
+        head = pts[:im] + [pm] if pm is not None else pts[0:0]
+        tail = [pb] + pts[ib:] if pb is not None else pts[0:0]
+        lo = im if pm is not None else 0
+        hi = ib if pb is not None else len(pts)
+        body = ([pm] if pm is not None else []) + pts[lo:hi] + ([pb] if pb is not None else [])
+
+        def emit(name, p):
+            if len(p) < 2:
+                return False
+            lane_output[name] = pad_to_min_points(p, 4) if len(p) < 4 else p
+            return True
+
+        if pm is not None and not sole_in:
+            if emit(f"{base}_exit", head):
+                split_count += 1
+        elif pm is not None:
+            trimmed_count += 1
+        if pb is not None and not sole_out:
+            if emit(f"{base}_appr", tail):
+                split_count += 1
+        elif pb is not None:
+            trimmed_count += 1
+        emit(base, body)
+    print(f"split {split_count} lane stub(s) off at right-turn branch/merge points, "
+          f"dropped {trimmed_count} stub(s) with no through movement to serve")
+
     print(f"\n{len(subsegments)} sub-segments, {len(lane_curves)} lane curves, "
           f"{len(connectors)} junction connector curves, {len(bridge_connectors)} manual bridge connector curves")
 
@@ -544,12 +874,14 @@ def main():
             f'    <UserAttribute nodeId="{nid}">\n'
             f'        <Attribute name="maxSpeedScale" type="float" value="1"/>\n'
             f'        <Attribute name="speedLimit" type="float" value="{speed_limit}"/>\n'
-            f'        <Attribute name="vehicleTypes" type="integer" value="1"/>\n'
+            f'        <Attribute name="vehicleTypes" type="integer" value="{VEHICLE_TYPES}"/>\n'
             f'    </UserAttribute>'
         )
 
-    for (road, seg, lane), pts in sorted(lane_curves.items()):
-        add_curve(f"{road}_seg{seg}_{lane}", pts, 50 if road.startswith("primary") else 35)
+    for name, pts in sorted(lane_output.items()):
+        add_curve(name, pts, SPEED_PRIMARY if name.startswith("primary") else SPEED_SECONDARY)
+    for name, pts in sorted(uturn_connectors.items()):
+        add_curve(name, pts, SPEED_UTURN)
     def bridge_heights_if_needed(pts):
         if dist(pts[0], pts[-1]) > BRIDGE_SPAN_M:
             # bridge deck: interpolate between the two bank heights, don't
@@ -562,9 +894,9 @@ def main():
 
     for (jid, kin, kout), pts in sorted(connectors.items(), key=lambda kv: kv[0][0]):
         ri, si, li = kin; ro, so, lo = kout
-        add_curve(f"j{jid}_{ri}{si}{li}_to_{ro}{so}{lo}", pts, 12, heights=bridge_heights_if_needed(pts))
+        add_curve(f"j{jid}_{ri}{si}{li}_to_{ro}{so}{lo}", pts, SPEED_TURN, heights=bridge_heights_if_needed(pts))
     for name, pts in sorted(bridge_connectors.items()):
-        add_curve(name, pts, 12, heights=bridge_heights_if_needed(pts))
+        add_curve(name, pts, SPEED_BRIDGE, heights=bridge_heights_if_needed(pts))
 
     attrs_xml.insert(0,
         '    <UserAttribute nodeId="1">\n'

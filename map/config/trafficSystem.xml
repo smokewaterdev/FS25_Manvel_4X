@@ -1,25 +1,63 @@
 <?xml version='1.0' encoding='utf-8'?>
-<trafficSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" licensePlates="$data/maps/mapUS/licensePlates/aiLicensePlatesUS.i3d" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/trafficSystem.xsd" maxNumVehicles="15">
+<trafficSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" licensePlates="$data/maps/mapUS/licensePlates/aiLicensePlatesUS.i3d" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/trafficSystem.xsd" maxNumVehicles="10">
+    <!--
+      Fleet for gravel section-line township roads northeast of Manvel, ND
+      (Grand Forks County, Red River Valley). 'probability' and
+      'probabilityParked' are relative weights, not percentages; the base
+      game's own maps use 1 and 2 the same way.
+
+      DRIVING MIX (probability), total weight 52:
+        ~38%  US-exclusive cars   vehicle01/03/11/19, weighted 5 each. These
+                                  are the models GIANTS ships on mapUS only,
+                                  so they carry the American look.
+        ~31%  shared cars         vehicle07/09/10/12/14/20/21/21RS, weighted
+                                  2 each. GIANTS uses these on both mapUS and
+                                  mapEU, so they read as generic rather than
+                                  distinctly American; kept at a lower weight
+                                  for variety without diluting the US feel.
+         ~6%  postal van          one rural carrier, daily route.
+        ~12%  tipperTruck         grain hauling; the most common heavy
+                                  vehicle in farm country year-round.
+         ~6%  dumpTruck           county gravel-road maintenance.
+         ~4%  schoolBus           real weekday routes, twice a day.
+         ~2%  postalServiceTruck  second mail vehicle, deliberately rare.
+         ~2%  cementTruck         needs active construction to make sense.
+
+      PARKED MIX (probabilityParked) for the Farmers Market lot:
+        NOTE: probabilityParked is NOT a relative weight the way probability
+        is. Every base game map uses only 0 or 1 for it, and never 2 or a
+        fraction, while probability does use 2, so treat it as eligibility
+        (0 = never parks, 1 = parks). Setting it to 1.5 here stopped ALL
+        parked cars from spawning, with nothing logged; the value is out of
+        range and evidently poisons the parked selection rather than being
+        clamped. Keep it 0 or 1.
+
+        So: all 12 passenger cars plus tipperTruck are eligible, 13 in all,
+        giving a grain truck roughly a 1-in-13 chance per slot, about 0.5
+        trucks across the lot's 7 slots. The parkedCar nodes are spaced 3.5m
+        apart with 8m of depth precisely so that truck fits whatever slot it
+        randomly lands in without clipping its neighbours. The other heavies
+        stay at 0: a cement truck or school bus in a farmers market lot reads
+        wrong, and both are longer than the lot.
+    -->
     <vehicles>
-        <vehicle filename="$data/trafficVehicles/vehicle01/vehicle01.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle03/vehicle03.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle07/vehicle07.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle09/vehicle09.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle10/vehicle10.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle11/vehicle11.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle12/vehicle12.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle14/vehicle14.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle15/vehicle15_iceCream.xml" probability="1" probabilityParked="0" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle15/vehicle15_post02.xml" probability="1" probabilityParked="0" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle19/vehicle19.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle20/vehicle20.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/cementTruck/cementTruck.xml" probability="1" probabilityParked="0" typeFlag="2" />
-        <vehicle filename="$data/trafficVehicles/dumpTruck/dumpTruck.xml" probability="1" probabilityParked="0" typeFlag="2" />
-        <vehicle filename="$data/trafficVehicles/internationalSchoolBus/internationalSchoolBus.xml" probability="1" probabilityParked="0" typeFlag="2" />
-        <vehicle filename="$data/trafficVehicles/schoolBus/schoolBus.xml" probability="1" probabilityParked="0" typeFlag="2" />
+        <vehicle filename="$data/trafficVehicles/vehicle01/vehicle01.xml" probability="5" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle03/vehicle03.xml" probability="5" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle11/vehicle11.xml" probability="5" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle19/vehicle19.xml" probability="5" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle07/vehicle07.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle09/vehicle09.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle10/vehicle10.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle12/vehicle12.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle14/vehicle14.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle20/vehicle20.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle21/vehicle21.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle21/vehicle21RS.xml" probability="2" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/vehicle15/vehicle15_post02.xml" probability="3" probabilityParked="0" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/tipperTruck/tipperTruck.xml" probability="6" probabilityParked="1" typeFlag="2" />
+        <vehicle filename="$data/trafficVehicles/dumpTruck/dumpTruck.xml" probability="3" probabilityParked="0" typeFlag="2" />
+        <vehicle filename="$data/trafficVehicles/schoolBus/schoolBus.xml" probability="2" probabilityParked="0" typeFlag="2" />
         <vehicle filename="$data/trafficVehicles/postalServiceTruck/postalServiceTruck.xml" probability="1" probabilityParked="0" typeFlag="2" />
-        <vehicle filename="$data/trafficVehicles/tipperTruck/tipperTruck.xml" probability="1" probabilityParked="0" typeFlag="2" />
-        <vehicle filename="$data/trafficVehicles/vehicle21/vehicle21.xml" probability="1" probabilityParked="1" typeFlag="1" />
-        <vehicle filename="$data/trafficVehicles/vehicle21/vehicle21RS.xml" probability="1" probabilityParked="1" typeFlag="1" />
+        <vehicle filename="$data/trafficVehicles/cementTruck/cementTruck.xml" probability="1" probabilityParked="0" typeFlag="2" />
     </vehicles>
 </trafficSystem>
