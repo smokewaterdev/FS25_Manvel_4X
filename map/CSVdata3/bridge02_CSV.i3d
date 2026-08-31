@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="bridge02" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+       <Asset>
+         <Export program="Spline and CSV creator by ezaitsev,TracMax,W_R" version="2.0 (08/06/2025)"/>
+       </Asset>
+    <Shapes>
+         <NurbsCurve name="bridge02_CSV" shapeId="11" degree="3" form="open">
+              <cv c="4.155884, 31.891050, 0.182983" />
+              <cv c="-0.840332, 31.891050, 0.052856" />
+              <cv c="-5.841675, 30.912434, 0.001465" />
+              <cv c="-10.839600, 29.402416, -0.031860" />
+              <cv c="-15.839600, 28.405195, -0.058838" />
+              <cv c="-20.839966, 28.427797, -0.082397" />
+              <cv c="-25.840698, 29.408123, -0.104248" />
+              <cv c="-30.841309, 31.891050, -0.125000" />
+         </NurbsCurve>
+    </Shapes>
+    <Scene>
+         <Shape name="bridge02_CSV" translation="1905.748169 0.000000 -1522.771362" nodeId="11" shapeId="11"/>
+    </Scene>  
+</i3D>

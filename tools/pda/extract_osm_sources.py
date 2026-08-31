@@ -5,7 +5,7 @@ every relevant feature (roads, forest, tree rows, water, waterways) into the
 map's local meter coordinates, caching the result as sources/osm_features.json.
 
 Run this ONCE, or again only if manvel.osm changes (e.g. you re-trace or add
-features in JOSM). compose_pda.py reads the cached JSON and never re-parses
+features in JOSM). build_pda_v2.py reads the cached JSON and never re-parses
 the raw .osm file, which is what keeps regeneration fast.
 
 Calibration: manvel.osm's <bounds> covers the full 8192m MapToPlay DTM export
@@ -25,7 +25,7 @@ import json
 
 import os
 HERE = os.path.dirname(os.path.abspath(__file__))
-OSM_PATH = os.path.join(HERE, '..', 'manvel.osm')
+OSM_PATH = os.path.join(HERE, '..', '..', 'manvel.osm')
 tree = ET.parse(OSM_PATH)
 root = tree.getroot()
 b = root.find('bounds').attrib
@@ -80,7 +80,14 @@ def classify(tags):
         return ('building', None)
     return (None, None)
 
-MARGIN = 300  # keep features that dip slightly outside -2048..2048 too, so lines don't get cut short at the edge
+# Keep everything within the full 8192m DTM export box (-4096..4096), not just
+# a small margin around the 4096m playable square. Originally this only kept
+# a 300m margin beyond the playable box, on the assumption the render only
+# ever needed to cover the playable area -- but overview.dds actually needs
+# the full 8192m context (see build_pda_v2.py's CONTEXT_* constants/notes),
+# so anything trimmed here would leave a blank ring around the real map.
+CONTEXT_HALF = 4096
+MARGIN = 100  # small slop so lines don't get cut short right at the DTM box edge
 features = {'road':[], 'forest':[], 'tree_row':[], 'water':[], 'waterway':[], 'farmland_ref':[], 'farmyard_ref':[], 'power':[], 'building':[]}
 for w in ways:
     kind, sub = classify(w['tags'])
@@ -90,12 +97,41 @@ for w in ways:
         continue
     pts = [proj(lat,lon) for lat,lon in w['coords']]
     xs = [p[0] for p in pts]; zs=[p[1] for p in pts]
-    if max(xs) < -2048-MARGIN or min(xs) > 2048+MARGIN or max(zs) < -2048-MARGIN or min(zs) > 2048+MARGIN:
+    if max(xs) < -CONTEXT_HALF-MARGIN or min(xs) > CONTEXT_HALF+MARGIN or max(zs) < -CONTEXT_HALF-MARGIN or min(zs) > CONTEXT_HALF+MARGIN:
         continue
     features[kind].append({'sub': sub, 'pts': pts})
 
 for k,v in features.items():
     print(k, len(v))
+
+# --- manual calibration correction -----------------------------------
+# The tributary "stream" running in from the east (near x=[-67,3144],
+# z=[-1500,-1366]) is not carved into the live terrain at all (checked
+# directly against map/data/dem.png -- no depression there), so unlike
+# the main river/pond it isn't validated against live map geometry, just
+# placed from the raw OSM->world projection above. The user visually
+# confirmed on 2026-08-23 that it needs a small rotation to track the
+# road it runs alongside: 1.5 degrees counter-clockwise (as seen on the
+# rendered map), pivoting on its west end (index -1, where it runs into
+# the river/forest corridor) so that end -- which already lines up --
+# stays put while the rest of the line swings into place.
+import math
+def _rotate_ccw_about(pts, pivot, degrees):
+    theta = math.radians(degrees)
+    cos_t, sin_t = math.cos(theta), math.sin(theta)
+    px, pz = pivot
+    out = []
+    for x, z in pts:
+        dx, dz = x - px, z - pz
+        # CCW-as-rendered rotation (world x/z share pixel orientation via
+        # pixel = world + 2048, no axis flip -- see calibration.json)
+        out.append((px + dx * cos_t + dz * sin_t, pz - dx * sin_t + dz * cos_t))
+    return out
+
+for w in features['waterway']:
+    if w.get('sub') == 'stream':
+        w['pts'] = _rotate_ccw_about(w['pts'], pivot=w['pts'][-1], degrees=1.5)
+# --- end manual calibration correction ---------------------------------
 
 os.makedirs(os.path.join(HERE, 'sources'), exist_ok=True)
 with open(os.path.join(HERE, 'sources', 'calibration.json'),'w') as f:

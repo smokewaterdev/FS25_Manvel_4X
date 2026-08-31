@@ -13,10 +13,16 @@ on top of the OSM one, not a replacement of anything.
 
 CSV line format (fixed by the exporter script): "zPos, xPos, height" per
 line -- Z first, then X, then terrain height at that point. World meters,
-same -2048..2048 convention as everything else in this project.
+same -2048..2048 convention as everything else in this project. The height
+column is only used for terrain cross-checks -- this script discards it and
+downstream consumers re-sample the real heightmap themselves. That matters
+for bridge*_CSVdata.txt entries especially: their "height" column is the
+riverbed/ground directly under the bridge, not the deck height, since the
+exporter samples terrain at each XZ point rather than reading the curve's
+own placed Y.
 
 Run this again whenever you re-export the road CSVs from GE (new/changed
-splines). compose_pda.py reads the cached JSON and never touches the raw
+splines). build_pda_v2.py reads the cached JSON and never touches the raw
 CSVs directly.
 
 Usage:
@@ -33,6 +39,8 @@ def classify(filename):
         return "primary"
     if base.startswith("secondaryRoad"):
         return "secondary"
+    if base.startswith("bridge"):
+        return "bridge"
     return None
 
 
@@ -52,10 +60,10 @@ def parse_csv(path):
 
 
 def main():
-    mod_root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..")
+    mod_root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "..")
     csv_dir = os.path.join(mod_root, "map", "CSVdata3")
 
-    roads = {"primary": [], "secondary": []}
+    roads = {"primary": [], "secondary": [], "bridge": []}
     files = sorted(glob.glob(os.path.join(csv_dir, "*_CSVdata.txt")))
     if not files:
         print(f"no CSV files found in {csv_dir}")
@@ -77,7 +85,8 @@ def main():
     out_path = os.path.join(HERE, "sources", "ingame_roads.json")
     with open(out_path, "w") as f:
         json.dump(roads, f)
-    print(f"\nsaved {out_path}  (primary: {len(roads['primary'])} segments, secondary: {len(roads['secondary'])} segments)")
+    print(f"\nsaved {out_path}  (primary: {len(roads['primary'])} segments, "
+          f"secondary: {len(roads['secondary'])} segments, bridge: {len(roads['bridge'])} segments)")
 
 
 if __name__ == "__main__":
