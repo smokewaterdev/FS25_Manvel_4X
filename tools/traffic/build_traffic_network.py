@@ -385,8 +385,15 @@ def main():
         simplified = rdp(s["pts"], RDP_TOL)
         if len(simplified) < 4:
             simplified = pad_to_min_points(simplified, 4)
-        laneB = offset_points(simplified, -LANE_OFFSET_M)
-        laneA = list(reversed(offset_points(simplified, +LANE_OFFSET_M)))
+        # +LANE_OFFSET_M for laneB (not -) is not a typo: offset_points()'s
+        # normal is the forward tangent rotated +90 degrees in (x,z), which
+        # in this map's actual XZ orientation lands on the LEFT of the
+        # direction of travel, not the right. +LANE_OFFSET_M is what puts
+        # laneB on the right-hand side in-game -- confirmed empirically
+        # in-game after the network read as mirrored (right-hand traffic on
+        # the left) with the mathematically-"expected" sign.
+        laneB = offset_points(simplified, +LANE_OFFSET_M)
+        laneA = list(reversed(offset_points(simplified, -LANE_OFFSET_M)))
         lane_curves[(s["road"], s["seg_idx"], "laneB")] = laneB
         lane_curves[(s["road"], s["seg_idx"], "laneA")] = laneA
 
@@ -479,8 +486,8 @@ def main():
         simplified = rdp(cleaned, RDP_TOL)
         if len(simplified) < 4:
             simplified = pad_to_min_points(simplified, 4)
-        laneB = offset_points(simplified, -LANE_OFFSET_M)
-        laneA = list(reversed(offset_points(simplified, +LANE_OFFSET_M)))
+        laneB = offset_points(simplified, +LANE_OFFSET_M)
+        laneA = list(reversed(offset_points(simplified, -LANE_OFFSET_M)))
         # snap the true endpoints onto the adjoining lane curves exactly, so
         # there's no visible/traffic-breaking gap at the junction
         laneB[0], laneB[-1] = snap_A_laneB, snap_B_laneB
