@@ -15,7 +15,6 @@
     <storeItem xmlFilename="assets/limeStationTrigger/limeStationTrigger.xml"/>
 
     <storeItem xmlFilename="assets/mainFarm/mailboxWrapper.xml"/>
-    <storeItem xmlFilename="assets/mainFarm/usaFlagWrapper.xml"/>
     <storeItem xmlFilename="assets/mainFarm/homeWorkshopTrigger.xml"/>
 
     <storeItem xmlFilename="assets/vehicleDealer/workshopTrigger.xml"/>

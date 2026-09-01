@@ -26,8 +26,6 @@ Shopkategorie: Maps
         <dependency>FS25_WesteelSiloSystem</dependency>
         <dependency>FS25_Liquid_Lime</dependency>
         <dependency>FS25_Liquidstorage</dependency>
-        <dependency>FS25_MixShed</dependency>
-        <dependency>FS25_USAFlag</dependency>
     </dependencies>
 
     <maps>

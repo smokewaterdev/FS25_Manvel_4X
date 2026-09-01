@@ -19,7 +19,7 @@
     </storeData>
 
     <base>
-        <filename>../FS25_GrainSiloSystem/grainSilo.i3d</filename>
+        <filename>$moddir$FS25_GrainSiloSystem/grainSilo.i3d</filename>
         <canBeDeleted>false</canBeDeleted>
     </base>
 
