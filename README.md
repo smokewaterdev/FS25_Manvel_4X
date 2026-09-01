@@ -41,8 +41,8 @@ Manvel leans on seven other mods to fill out the co-op, town, and Precision Farm
 - [Liquid Lime](https://www.farming-simulator.com/mod.php?mod_id=304579&title=fs2025) (ModHub)
 - [Liquidstorage](https://www.farming-simulator.com/mod.php?mod_id=324253&title=fs2025) (ModHub)
 - [Precision Farming](https://www.farming-simulator.com/mod.php?mod_id=318936&title=fs2025) (ModHub, free, by GIANTS Software)
-- [TR] Precision Farming Configurator (by ThundR, via [Patreon](https://www.patreon.com/ThundRFS) or itch.io — check both, see note below) - required for the map's soil map/RCS setup to work
-- [TH] Row Crop System (by ThundR, same Patreon/itch.io channels) - required for row-crop planting to actually behave like row-crop planting; without it the map's row-crop foliage data just sits there unused
+- [TR] Precision Farming Configurator (by ThundR, via his [FS25 Downloads collection](https://www.patreon.com/collection/1845723?view=condensed) on Patreon — requires a free Patreon account to view/download) - required for the map's soil map/RCS setup to work
+- [TH] Row Crop System (by ThundR, same [FS25 Downloads collection](https://www.patreon.com/collection/1845723?view=condensed)) - required for row-crop planting to actually behave like row-crop planting; without it the map's row-crop foliage data just sits there unused
 
 Enable all seven alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing. Precision Farming, its Configurator, and Row Crop System only get read once at game launch, so if you add them to an already-running game, exit fully to desktop and relaunch before your save will pick them up.
 
