@@ -9,11 +9,18 @@
 
     <description>
         <en><![CDATA[
-Category: Maps
+Manvel, ND - a Red River Valley farm map modeled on real ground northeast of the actual town of Manvel, in Grand Forks County. The Precision Farming soil map is built from real USDA soil survey data, farmland prices come from real 2026 Grand Forks County auction results, every tree species stands in for one that actually grows here, and the crop lineup is a real Red River Valley rotation: wheat, barley, oats, canola, corn, sunflowers, soybeans, potatoes and sugar beets. Built on the Row Crop System.
+
+REQUIRED MODS - enable all five below before starting a new save, or the game will refuse to load the map:
+- US Mailboxes
+- Grain Silo System (by celobuki)
+- AGI Westeel Silo System (by Schult Modding)
+- Liquid Lime (by FearlessStudios)
+- Liquidstorage (by Holden / HB Modding)
+All five are free on the official ModHub - search the exact name above.
+
+Found a bug? Report it: github.com/smokewaterdev/FS25_Manvel_4X
 ]]></en>
-        <de><![CDATA[
-Shopkategorie: Maps
-]]></de>
     </description>
 
     <iconFilename>icon.dds</iconFilename>

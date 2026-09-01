@@ -30,22 +30,18 @@ You'll start with a modest home quarter and a starter fleet — nothing extravag
 
 ## You'll also need
 
-Manvel leans on a handful of other mods to fill out the farmyard and town. Grab these before you load up:
+Manvel leans on five other mods to fill out the co-op and town. All five are free on the official ModHub - grab them before you load up:
 
-- US Mailboxes
-- 66x96 Shop
-- Small Barndominium
-- Grain Silo System
-- Westeel Silo System
-- Liquid Lime
-- Liquid Storage
-- Mix Shed
-- USA Flag
+- [US Mailboxes](https://www.farming-simulator.com/mod.php?mod_id=304942&title=fs2025)
+- [Grain Silo System](https://www.farming-simulator.com/mod.php?mod_id=335921&title=fs2025)
+- [AGI Westeel Silo System](https://www.farming-simulator.com/mod.php?mod_id=355998&title=fs2025)
+- [Liquid Lime](https://www.farming-simulator.com/mod.php?mod_id=304579&title=fs2025)
+- [Liquidstorage](https://www.farming-simulator.com/mod.php?mod_id=324253&title=fs2025)
 
-Enable all of them alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing.
+Enable all five alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing.
 
 ## A friendly heads-up
 
-This map is a living thing — we're still out here mending fence, so to speak. If you hit something odd (a field that plows funny, a pole standing where it shouldn't), we want to know about it. Report issues over on [GitHub](https://github.com/kalebheitzman/FS25_Manvel_4X), and thanks for farming with us.
+This map is a living thing — we're still out here mending fence, so to speak. If you hit something odd (a field that plows funny, a pole standing where it shouldn't), we want to know about it. Report issues over on [GitHub](https://github.com/smokewaterdev/FS25_Manvel_4X), and thanks for farming with us.
 
 Welcome to Manvel. Try not to get stuck.
