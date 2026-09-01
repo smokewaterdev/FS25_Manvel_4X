@@ -28,6 +28,10 @@ We didn't just eyeball this stuff:
 
 You'll start with a modest home quarter and a starter fleet — nothing extravagant, just enough to get seed in the ground and start building equity, the way most real operations actually start. The Manvel Cooperative buys grain in town and the Farmers Market will take your specialty crops off your hands — neither one is a real business, we built them from scratch to give the map a proper small-town economy to sell into. Same story with the grain barge down at the river: nobody's shipping wheat by barge out of this stretch of the Red River in real life, we just thought it was a fun way to give your harvest logistics a little extra flair.
 
+## Getting it onto your farm
+
+Grab the zip from the [Releases page](https://github.com/smokewaterdev/FS25_Manvel_4X/releases) — don't clone the repo, that's the messy back-shed version with all the tools and false starts still lying around. Drop the zip straight into your `mods` folder (`Documents/My Games/FarmingSimulator2025/mods`) exactly as downloaded, no unzipping — FS25 wants it zipped up, same as every other mod on your shelf.
+
 ## You'll also need
 
 Manvel leans on five other mods to fill out the co-op and town. All five are free on the official ModHub - grab them before you load up:
@@ -42,7 +46,7 @@ Enable all five alongside Manvel before starting a new save, or the game will po
 
 ## A note on AI
 
-Claude (Anthropic) was used throughout Manvel's development — drafting and debugging XML/Lua, working through GIANTS Editor problems, building the traffic and precision farming systems, and yes, writing parts of this README. Every change was reviewed, tested in-game, and signed off on by a human before it shipped. We're not hiding it.
+We had some help. Claude (Anthropic) rode along for a good chunk of Manvel's build — drafting and debugging XML/Lua, wrestling GIANTS Editor into behaving, standing up the traffic network and the precision farming system, and yes, taking a pass at parts of this README. Think of it as hiring extra hands for planting season: does the work, doesn't know the ground the way you do, so nothing left the shop without a human walking it first. Every change got reviewed, tested in-game, and signed off on before it shipped. We're not hiding it — we just also wouldn't trust it to find the gumbo mud on its own.
 
 ## A friendly heads-up
 
