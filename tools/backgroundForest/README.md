@@ -99,3 +99,19 @@ photo, so only a thin sliver actually reads as green in-game. Fixed by
 holding full opacity for `--plateau` meters before the `--fade` taper
 starts, so there's a real, clearly-visible solid band before it blends
 out. `--fade` was widened from an initial 600m to 1500m by request.
+
+The script's actual output that `background_terrain.i3d` references is
+`background_terrain_mask.dds`, not the `.png` -- as of 2026-09-01 it
+packs the PNG into an uncompressed DDS with a full 12-level mip chain
+(matching `background_terrain.dds`, its sibling in the same material) as
+its last step. Without pre-baked mips, the engine has to generate them on
+the CPU at load time for this texture specifically, because
+`background_terrain` is a single always-loaded, never-streamed mesh
+covering the whole map -- confirmed as the cause of a load hang reported
+on a second, weaker (Apple M3 Pro) machine: its log showed three
+"raw format" / "CPU mip generation" warnings for this exact file
+immediately before the log went silent. Uncompressed rather than DXT1 on
+purpose -- this mask is a smooth gradient, and DXT1's block compression
+visibly bands/blotches soft fades. The `.png` is still written first and
+kept around as the human-editable/diffable source; only the `.dds` is
+consumed by the game.

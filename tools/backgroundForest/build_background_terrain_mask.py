@@ -44,6 +44,7 @@ Usage:
 import argparse
 import json
 import os
+import subprocess
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -53,6 +54,29 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 EXTENT = 8192.0  # world meters covered by background_terrain.dds, and this mask
 HALF = EXTENT / 2.0
 PLAYABLE_HALF = 2048.0
+MIP_LEVELS = 12  # 2048 -> 1
+
+
+def convert_to_dds(src_png, out_dds):
+    """Pack the mask into a DDS with a baked mip chain, matching
+    background_terrain.dds (its sibling in the same material). Uncompressed
+    (not DXT1) on purpose: this is a smooth gradient blend mask, not a
+    photo, and DXT1's 4x4 block compression visibly bands/blotches soft
+    fades. Without this step the engine loads the raw PNG and generates
+    mips on the CPU at map-load time -- confirmed in a player's log as a
+    multi-second-plus stall (3x "Texture ... raw format" warnings right
+    before the load hung on weaker hardware), since this mesh is always
+    loaded whole, never streamed/LOD'd.
+    """
+    subprocess.run(
+        [
+            "convert", src_png,
+            "-define", "dds:compression=none",
+            "-define", "dds:mipmaps=" + str(MIP_LEVELS),
+            out_dds,
+        ],
+        check=True,
+    )
 
 
 def world_to_px(x, z, res):
@@ -104,6 +128,10 @@ def main():
     Image.fromarray(mask_rgb, mode="RGB").save(out_path)
     print(f"saved {out_path} ({res}x{res})")
     print(f"grass coverage: {(grass>0).mean()*100:.2f}%  forest coverage: {(forest_arr>0).mean()*100:.2f}%")
+
+    dds_path = os.path.splitext(out_path)[0] + ".dds"
+    convert_to_dds(out_path, dds_path)
+    print(f"saved {dds_path} ({MIP_LEVELS} mips) -- this is the file background_terrain.i3d actually references")
 
 
 if __name__ == "__main__":

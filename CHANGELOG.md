@@ -33,6 +33,24 @@ Changes since `0.8.0.2` that haven't shipped in a tagged release yet. Move
 this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
 
+### Fixed
+- `background_terrain.i3d`'s blend mask now loads as a pre-mipped DDS
+  (`background_terrain_mask.dds`) instead of a raw PNG. The PNG had no
+  baked mip chain, forcing the engine to generate mips on the CPU at load
+  time for this texture specifically — and since `background_terrain` is
+  a single always-loaded, never-streamed mesh covering the whole map,
+  that cost lands right in the middle of the load sequence. Identified as
+  the likely cause of a load hang reported on a weaker (Apple M3 Pro)
+  machine: its log showed three "raw format" / "CPU mip generation"
+  warnings for this exact file immediately before the log went silent.
+  `tools/backgroundForest/build_background_terrain_mask.py` now packs the
+  DDS automatically as its last step (uncompressed, not DXT1, to avoid
+  block-compression banding on this gradient mask); see that tool's
+  README for detail. Not yet confirmed fixed on the affected machine.
+
+**Save compatibility:** safe — texture/mipmap change only, no scene graph
+or config changes.
+
 ## [0.8.0.2] - 2026-09-01
 
 ### Fixed
