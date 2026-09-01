@@ -9,3 +9,14 @@
 # OS junk
 Thumbs.db
 desktop.ini
+
+# Python build junk
+__pycache__/
+*.pyc
+
+# Traffic pipeline staging output — regenerated from map/CSVdata3 by
+# tools/traffic/*.py, already merged into map/map.i3d. Not source, not shipped.
+tools/traffic/manvel_traffic_import.i3d
+tools/traffic/csvsplines_terrain_snap.i3d
+tools/traffic/parked_cars.i3d
+AutoDrive*.xml
