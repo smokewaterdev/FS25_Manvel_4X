@@ -29573,6 +29573,8 @@
       <ReferenceNode name="aspen_stage05" translation="-2047 10.8482 1830" rotation="180 71.2708 -180" referenceId="680" nodeId="270658"/>
       <ReferenceNode name="americanElm_stage03" translation="-2015 11.463 1801" rotation="180 -79.6211 180" referenceId="670" nodeId="270662"/>
     </TransformGroup>
+    <!-- DISABLED for load time testing on 2026-09-01, see tools/backgroundForest/README.md -->
+    <!--
     <TransformGroup name="backgroundForestFill" translation="0 20 0" nodeId="270666">
       <ReferenceNode name="aspen_stage01" translation="-1478.6 11.21 -2176.15" rotation="0 230.194 0" scale="0.886 0.886 0.886" referenceId="687" nodeId="270667"/>
       <ReferenceNode name="shagbarkHickory_stage02" translation="-1433.82 11.222 -2176.43" rotation="0 99.011 0" scale="0.9336 0.9336 0.9336" referenceId="648" nodeId="270671"/>
@@ -36718,6 +36720,7 @@
       <ReferenceNode name="aspen_stage06_var01" translation="623.764 10.395 -2838.5" rotation="0 75.963 0" scale="1.0401 1.0401 1.0401" referenceId="690" nodeId="301153"/>
       <ReferenceNode name="shagbarkHickory_stage04" translation="635.687 10.395 -2839.05" rotation="0 69.29 0" scale="1.0067 1.0067 1.0067" referenceId="661" nodeId="301157"/>
     </TransformGroup>
+    -->
     <TransformGroup name="roadSystem" translation="274.869 32.16 -177.953" nodeId="301161">
       <TransformGroup name="stop" lockedgroup="true" translation="-1485 -0.371738 -1151.95" rotation="0 -90 0" nodeId="301162">
         <TransformGroup name="joint" joint="true" breakableJoint="true" jointBreakForce="25" jointBreakTorque="25" rotMinX="0" rotMaxX="0" transMinX="0" transMaxX="0" rotMinY="0" rotMaxY="0" transMinY="0" transMaxY="0" rotMinZ="0" rotMaxZ="0" transMinZ="0" transMaxZ="0" clipDistance="88" nodeId="301163">
@@ -40096,10 +40099,12 @@
       <Attribute name="saggingMin" type="integer" value="5"/>
       <Attribute name="useCustomValues" type="boolean" value="false"/>
     </UserAttribute>
+    <!-- DISABLED for load time testing on 2026-09-01: TrafficSystem.onCreate skipped, road/parkedCar geometry left intact
     <UserAttribute nodeId="307230">
       <Attribute name="onCreate" type="scriptCallback" value="TrafficSystem.onCreate"/>
       <Attribute name="xmlFile" type="string" value="map/config/trafficSystem.xml"/>
     </UserAttribute>
+    -->
     <UserAttribute nodeId="307231">
       <Attribute name="maxSpeedScale" type="float" value="1"/>
       <Attribute name="speedLimit" type="float" value="72"/>
