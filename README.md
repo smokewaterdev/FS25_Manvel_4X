@@ -40,6 +40,10 @@ Manvel leans on five other mods to fill out the co-op and town. All five are fre
 
 Enable all five alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing.
 
+## A note on AI
+
+Claude (Anthropic) was used throughout Manvel's development — drafting and debugging XML/Lua, working through GIANTS Editor problems, building the traffic and precision farming systems, and yes, writing parts of this README. Every change was reviewed, tested in-game, and signed off on by a human before it shipped. We're not hiding it.
+
 ## A friendly heads-up
 
 This map is a living thing — we're still out here mending fence, so to speak. If you hit something odd (a field that plows funny, a pole standing where it shouldn't), we want to know about it. Report issues over on [GitHub](https://github.com/smokewaterdev/FS25_Manvel_4X/issues), and thanks for farming with us.
