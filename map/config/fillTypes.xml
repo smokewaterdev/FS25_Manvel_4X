@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--
+    Manvel-owned custom fill types. Currently just PROPANE, for the
+    Manvel Cooperative propane buy point (assets/manvelCoop/propaneBuyPoint.i3d).
+
+    Previously PROPANE was supplied by the FS25_WesteelSiloSystem dependency
+    mod's own filltypes.xml. That mod works, but its ModHub listing is
+    currently unreachable, which would block new players entirely. Defining
+    PROPANE here instead removes that dependency: none of Manvel's other
+    four required mods (US Mailboxes, Grain Silo System, Liquid Lime,
+    Liquidstorage) define it either, so the map now owns it outright.
+    See CHANGELOG.md and BUILD.md.
+-->
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/fillTypes.xsd">
+
+    <fillTypes>
+        <fillType name="PROPANE" title="$l10n_fillType_propane" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.90" maxPhysicalSurfaceAngle="0"/>
+            <economy pricePerLiter="1"/>
+        </fillType>
+    </fillTypes>
+
+    <fillTypeCategories>
+        <fillTypeCategory name="LIQUID">PROPANE</fillTypeCategory>
+    </fillTypeCategories>
+
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="PROPANE">
+            <sound template="methaneFill"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+
+</map>

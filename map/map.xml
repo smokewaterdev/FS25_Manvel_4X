@@ -13,6 +13,7 @@
     <navigationCollision revision="1"/>
     <shop filename="$data/store/ui/shop.xml"/>
     <storeItems filename="map/config/storeItems.xml"/>
+    <fillTypes filename="map/config/fillTypes.xml"/>
     <guidedTours>
         <!--guidedTour
         name="intro" filename="$data/maps/mapUS/guidedTour/guidedTour_intro.xml" /-->

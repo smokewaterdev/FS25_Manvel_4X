@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
-    <storeData><name>Manvel Cooperative - Propane</name><image>$moddir$FS25_WesteelSiloSystem/store_propaneBuyPoint.png</image><price>0</price><canBeSold>false</canBeSold><showInStore>false</showInStore><lifetime>1000</lifetime><rotation>0</rotation><brand>NONE</brand><species>PLACEABLE</species><category>placeableMisc</category></storeData>
-    <base><filename>$moddir$FS25_WesteelSiloSystem/propaneBuyPoint.i3d</filename><boughtWithFarmland>false</boughtWithFarmland><canBeRenamed>false</canBeRenamed></base>
+    <storeData><name>Manvel Cooperative - Propane</name><image>$data/placeables/meridian/fuelTank25000L/store_fuelTank25000L.png</image><price>0</price><canBeSold>false</canBeSold><showInStore>false</showInStore><lifetime>1000</lifetime><rotation>0</rotation><brand>NONE</brand><species>PLACEABLE</species><category>placeableMisc</category></storeData>
+    <base><filename>assets/manvelCoop/propaneBuyPoint.i3d</filename><boughtWithFarmland>false</boughtWithFarmland><canBeRenamed>false</canBeRenamed></base>
     <buyingStation node="buyingStation" supportsExtension="false"><loadTrigger triggerNode="gasStationTrigger" fillTypes="PROPANE" fillLitersPerSecond="1500" autoStart="true" infiniteCapacity="true" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/><fillType name="PROPANE" priceScale="1"/></buyingStation>
     <hotspots><hotspot type="FUEL" linkNode="mapPosition" teleportNode="mapPosition"/></hotspots>
     <triggerMarkers><triggerMarker node="gasStationTrigger" filename="$data/shared/assets/marker/markerIconLoad.i3d"/></triggerMarkers>
-    <i3dMappings><i3dMapping id="buyingStation" node="0>5"/><i3dMapping id="gasStationTrigger" node="0>5|0"/><i3dMapping id="mapPosition" node="0>5|1"/></i3dMappings>
+    <i3dMappings><i3dMapping id="buyingStation" node="0>0"/><i3dMapping id="gasStationTrigger" node="0>0|0"/><i3dMapping id="mapPosition" node="0>0|1"/></i3dMappings>
 </placeable>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="propaneBuyPoint.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.13"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/maps/mapUS/textures/props/gasTankSet.i3d"/>
+    <File fileId="3" filename="$data/placeables/brandless/fences/US/fence10/fence10.i3d"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="propaneBuyPoint.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="propaneStation" nodeId="8">
+      <TransformGroup name="gasStation" nodeId="9">
+        <Shape name="gasStationTrigger" translation="0 0.62549 -9.7691" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="10" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="5"/>
+        <TransformGroup name="mapPosition" translation="0 1 -4.5" nodeId="11"/>
+      </TransformGroup>
+      <TransformGroup name="tanks" scale="1.5 1.5 1.5" nodeId="12">
+        <ReferenceNode name="propaneTank1" translation="0 0 0.0641822" scale="1.2 1.2 1.2" referenceId="2" nodeId="40" referenceChildPath="0"/>
+        <ReferenceNode name="propaneTank2" translation="0 0 -3.55715" scale="1.2 1.2 1.2" referenceId="2" nodeId="76" referenceChildPath="0"/>
+      </TransformGroup>
+      <TransformGroup name="poles" nodeId="82">
+        <ReferenceNode name="post" translation="-10 0 3" scale="5 2 5" referenceId="3" nodeId="237" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="-3.25 0 3" scale="5 2 5" referenceId="3" nodeId="249" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="3.25 0 3" scale="5 2 5" referenceId="3" nodeId="255" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="10 0 3" scale="5 2 5" referenceId="3" nodeId="261" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="-10 0 -8" scale="5 2 5" referenceId="3" nodeId="267" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="-3.25 0 -8" scale="5 2 5" referenceId="3" nodeId="273" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="3.25 0 -8" scale="5 2 5" referenceId="3" nodeId="279" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="10 0 -8" scale="5 2 5" referenceId="3" nodeId="285" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="-10 0 -2.5" scale="5 2 5" referenceId="3" nodeId="291" referenceChildPath="1"/>
+        <ReferenceNode name="post" translation="10 0 -2.5" scale="5 2 5" referenceId="3" nodeId="297" referenceChildPath="1"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="8">
+      <Attribute name="mapPositionIndex" type="string" value="1"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

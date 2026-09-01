@@ -34,15 +34,16 @@ Grab the zip from the [Releases page](https://github.com/smokewaterdev/FS25_Manv
 
 ## You'll also need
 
-Manvel leans on five other mods to fill out the co-op and town. All five are free on the official ModHub - grab them before you load up:
+Manvel leans on six other mods to fill out the co-op, town, and Precision Farming/RCS. Grab them all before you load up:
 
-- [US Mailboxes](https://www.farming-simulator.com/mod.php?mod_id=304942&title=fs2025)
-- [Grain Silo System](https://www.farming-simulator.com/mod.php?mod_id=335921&title=fs2025)
-- [AGI Westeel Silo System](https://www.farming-simulator.com/mod.php?mod_id=355998&title=fs2025)
-- [Liquid Lime](https://www.farming-simulator.com/mod.php?mod_id=304579&title=fs2025)
-- [Liquidstorage](https://www.farming-simulator.com/mod.php?mod_id=324253&title=fs2025)
+- [US Mailboxes](https://www.farming-simulator.com/mod.php?mod_id=304942&title=fs2025) (ModHub)
+- [Grain Silo System](https://www.farming-simulator.com/mod.php?mod_id=335921&title=fs2025) (ModHub)
+- [Liquid Lime](https://www.farming-simulator.com/mod.php?mod_id=304579&title=fs2025) (ModHub)
+- [Liquidstorage](https://www.farming-simulator.com/mod.php?mod_id=324253&title=fs2025) (ModHub)
+- [Precision Farming](https://www.farming-simulator.com/mod.php?mod_id=318936&title=fs2025) (ModHub, free, by GIANTS Software)
+- [Precision Farming Configurator](https://thundrfs.itch.io/fs25-precision-farming-configurator) (itch.io, pay-what-you-want, by ThundR) - required for the map's soil map/RCS setup to work
 
-Enable all five alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing.
+Enable all six alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing. Precision Farming and its Configurator only get read once at game launch, so if you add them to an already-running game, exit fully to desktop and relaunch before your save will pick them up.
 
 ## A note on AI
 
