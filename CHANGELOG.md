@@ -33,6 +33,44 @@ Changes since `0.8.0.1` that haven't shipped in a tagged release yet. Move
 this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
 
+### Fixed
+- Added the missing `FS25_0_THRowCropSystem` ("[TH] Row Crop System")
+  dependency to `modDesc.xml`. Manvel is built on and advertises the Row
+  Crop System, but the mod itself was never declared as a dependency — it
+  overwrites core sowing/harvest functions (`FSDensityMapUtil.updateSowingArea`,
+  `getFruitArea`, `SowMission.getPartitionCompletion`, etc., confirmed by
+  reading its actual source) to make row-crop planting behave like row-crop
+  planting at all. Without it, the map's row-crop foliage/density-map data
+  just sits there unused and planting behaves like a normal, non-row-crop
+  map — silently, with no error, same failure mode as the earlier missing
+  Precision Farming dependency.
+- `modDesc.xml`'s dependency on `FS25_0_THPFConfigurator` updated to
+  `FS25_0_TRPFConfigurator`. ThundR renamed the mod itself (now
+  "[TR] Precision Farming Configurator") in v1.2.0.5 (August 2026) — the
+  filename changed, XML config syntax didn't. Confirmed via a player's own
+  `log.txt`: their mods folder had `FS25_0_TRPFConfigurator` (the current
+  official download) available, but our old dependency string still
+  demanded the retired `FS25_0_THPFConfigurator` name, so the game reported
+  it missing even though the correct mod was installed. This was the real
+  cause behind the "requires FS25_0_THPFConfigurator.zip" reports — not a
+  filename mismatch on the player's end.
+
+### Changed
+- `README.md`'s "You'll also need" section and `modDesc.xml`'s in-game
+  description both updated: now list seven required mods instead of six
+  (adding Row Crop System), with a prominent callout explaining the
+  THPFConfigurator→TRPFConfigurator rename so anyone still holding an
+  older download knows to delete it and grab the current
+  `FS25_0_TRPFConfigurator.zip` instead, plus a note that the same
+  exact-filename care applies to `FS25_0_THRowCropSystem.zip`.
+
+**Save compatibility:** safe for existing saves once the correct mod files
+are installed — these changes only affect which filenames `modDesc.xml`
+looks for, nothing in the map itself. Players need
+`FS25_0_TRPFConfigurator.zip` (not the old `THPFConfigurator` name) and
+`FS25_0_THRowCropSystem.zip` both present in their mods folder before
+loading.
+
 ## [0.8.0.1] - 2026-09-01
 
 ### Added

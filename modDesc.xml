@@ -11,14 +11,15 @@
         <en><![CDATA[
 Manvel, ND - a Red River Valley farm map modeled on real ground northeast of the actual town of Manvel, in Grand Forks County. The Precision Farming soil map is built from real USDA soil survey data, farmland prices come from real 2026 Grand Forks County auction results, every tree species stands in for one that actually grows here, and the crop lineup is a real Red River Valley rotation: wheat, barley, oats, canola, corn, sunflowers, soybeans, potatoes and sugar beets. Built on the Row Crop System.
 
-REQUIRED MODS - enable all six below before starting a new save, or the game will refuse to load the map (and Precision Farming/RCS will silently not work if the last two are missing):
+REQUIRED MODS - enable all seven below before starting a new save, or the game will refuse to load the map (and Precision Farming/RCS row-crop planting will silently not work if the last two are missing):
 - US Mailboxes
 - Grain Silo System (by celobuki)
 - Liquid Lime (by FearlessStudios)
 - Liquidstorage (by Holden / HB Modding)
 - Precision Farming (by GIANTS Software)
-- THPFConfigurator (by ThundR)
-All six are free on the official ModHub - search the exact name above.
+- [TR] Precision Farming Configurator, formerly "THPFConfigurator" (by ThundR)
+- [TH] Row Crop System (by ThundR)
+The first five are free on the official ModHub. The last two are NOT on the ModHub - get them from ThundR's own Patreon/itch.io channels, and make sure the files are named FS25_0_TRPFConfigurator.zip and FS25_0_THRowCropSystem.zip exactly.
 
 Found a bug? Report it: github.com/smokewaterdev/FS25_Manvel_4X/issues
 ]]></en>
@@ -34,7 +35,8 @@ Found a bug? Report it: github.com/smokewaterdev/FS25_Manvel_4X/issues
         <dependency>FS25_Liquid_Lime</dependency>
         <dependency>FS25_Liquidstorage</dependency>
         <dependency>FS25_precisionFarming</dependency>
-        <dependency>FS25_0_THPFConfigurator</dependency>
+        <dependency>FS25_0_TRPFConfigurator</dependency>
+        <dependency>FS25_0_THRowCropSystem</dependency>
     </dependencies>
 
     <maps>

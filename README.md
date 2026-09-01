@@ -34,16 +34,23 @@ Grab the zip from the [Releases page](https://github.com/smokewaterdev/FS25_Manv
 
 ## You'll also need
 
-Manvel leans on six other mods to fill out the co-op, town, and Precision Farming/RCS. Grab them all before you load up:
+Manvel leans on seven other mods to fill out the co-op, town, and Precision Farming/RCS. Grab them all before you load up:
 
 - [US Mailboxes](https://www.farming-simulator.com/mod.php?mod_id=304942&title=fs2025) (ModHub)
 - [Grain Silo System](https://www.farming-simulator.com/mod.php?mod_id=335921&title=fs2025) (ModHub)
 - [Liquid Lime](https://www.farming-simulator.com/mod.php?mod_id=304579&title=fs2025) (ModHub)
 - [Liquidstorage](https://www.farming-simulator.com/mod.php?mod_id=324253&title=fs2025) (ModHub)
 - [Precision Farming](https://www.farming-simulator.com/mod.php?mod_id=318936&title=fs2025) (ModHub, free, by GIANTS Software)
-- [Precision Farming Configurator](https://thundrfs.itch.io/fs25-precision-farming-configurator) (itch.io, pay-what-you-want, by ThundR) - required for the map's soil map/RCS setup to work
+- [TR] Precision Farming Configurator (by ThundR, via [Patreon](https://www.patreon.com/ThundRFS) or itch.io — check both, see note below) - required for the map's soil map/RCS setup to work
+- [TH] Row Crop System (by ThundR, same Patreon/itch.io channels) - required for row-crop planting to actually behave like row-crop planting; without it the map's row-crop foliage data just sits there unused
 
-Enable all six alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing. Precision Farming and its Configurator only get read once at game launch, so if you add them to an already-running game, exit fully to desktop and relaunch before your save will pick them up.
+Enable all seven alongside Manvel before starting a new save, or the game will politely (or not so politely) let you know something's missing. Precision Farming, its Configurator, and Row Crop System only get read once at game launch, so if you add them to an already-running game, exit fully to desktop and relaunch before your save will pick them up.
+
+> **Getting a "requires FS25_0_TRPFConfigurator.zip" (or the older `THPFConfigurator`) error even after downloading it?** This is one of the two dependencies above that *aren't* on the official ModHub, so they're the most likely to trip you up:
+> - ThundR renamed this mod in v1.2.0.5 (August 2026) from `THPFConfigurator` to **`[TR] Precision Farming Configurator`** — the file itself is now `FS25_0_TRPFConfigurator.zip`. If you have an older download, or grabbed it from a page that hasn't caught up to the rename, you may end up with the wrong filename (`FS25_0_THPFConfigurator.zip`) — that no longer matches what Manvel expects and the game will report it missing even though "something PF-Configurator-shaped" is sitting right there. Delete any old copy and make sure the current one is named **exactly** `FS25_0_TRPFConfigurator.zip`.
+> - Make sure it's a `.zip` sitting directly in `Documents/My Games/FarmingSimulator2025/mods` — not unzipped, and not a folder containing another zip.
+> - Restart the game fully to the desktop after adding or renaming it — an in-game "continue" or reload doesn't pick up mod changes.
+> - Same exact-filename rule applies to `FS25_0_THRowCropSystem.zip` (Row Crop System) — it's from the same author and channels, so it's easy to grab the wrong version or naming there too.
 
 ## A note on AI
 
