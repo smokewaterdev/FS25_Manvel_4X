@@ -42,6 +42,6 @@ Enable all five alongside Manvel before starting a new save, or the game will po
 
 ## A friendly heads-up
 
-This map is a living thing — we're still out here mending fence, so to speak. If you hit something odd (a field that plows funny, a pole standing where it shouldn't), we want to know about it. Report issues over on [GitHub](https://github.com/smokewaterdev/FS25_Manvel_4X), and thanks for farming with us.
+This map is a living thing — we're still out here mending fence, so to speak. If you hit something odd (a field that plows funny, a pole standing where it shouldn't), we want to know about it. Report issues over on [GitHub](https://github.com/smokewaterdev/FS25_Manvel_4X/issues), and thanks for farming with us.
 
 Welcome to Manvel. Try not to get stuck.
