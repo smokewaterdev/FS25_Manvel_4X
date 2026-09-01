@@ -43,7 +43,7 @@
     </triggerMarkers>
 
     <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="SELLINGSTATION_FIELDFRUITS" priceScale="1" aiNode="aiUnloadingNode"/>
+        <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="SELLINGSTATION_FIELDFRUITS" fillTypesExclude="WOODCHIPS SUGARBEET_CUT" priceScale="1" aiNode="aiUnloadingNode"/>
     </sellingStation>
 
     <i3dMappings>
