@@ -14,13 +14,15 @@
 # inconsistent and outside our control.
 * -text
 
-# Real binaries: never convert, never attempt to diff or merge.
-# ('binary' is shorthand for '-text -diff'.)
-*.dds    binary
-*.png    binary
-*.grle   binary
-*.gdm    binary
-*.shapes binary
+# Real binaries: never convert, never diff/merge as text. The five large,
+# frequently-resaved asset types are routed through Git LFS instead of being
+# stored inline, so history holds LFS pointers (~130 bytes each) rather than
+# a new full binary blob on every GE resave.
+*.dds    filter=lfs diff=lfs merge=lfs -text
+*.png    filter=lfs diff=lfs merge=lfs -text
+*.grle   filter=lfs diff=lfs merge=lfs -text
+*.gdm    filter=lfs diff=lfs merge=lfs -text
+*.shapes filter=lfs diff=lfs merge=lfs -text
 *.zip    binary
 *.pyc    binary
 # GIANTS Editor terrain caches are gitignored, but mark them anyway in case one
@@ -34,4 +36,3 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.grle filter=lfs diff=lfs merge=lfs -text
 *.gdm filter=lfs diff=lfs merge=lfs -text
-*.shapes filter=lfs diff=lfs merge=lfs -text

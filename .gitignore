@@ -20,3 +20,11 @@ tools/traffic/manvel_traffic_import.i3d
 tools/traffic/csvsplines_terrain_snap.i3d
 tools/traffic/parked_cars.i3d
 AutoDrive*.xml
+
+# Release build output (tools/build_release.py)
+/releases/
+
+# Regenerable dev-tool preview images (see each tool's README for the
+# one-line command to rebuild). Not runtime assets, not worth tracking.
+tools/pda/pda_output.png
+tools/soilMap/soilMap_preview.png
