@@ -29,9 +29,11 @@ on the new version or needs a fresh start. Don't assume — call it out.
 
 ## [Unreleased]
 
-Changes since `0.8.0.1` that haven't shipped in a tagged release yet. Move
+Changes since `0.8.0.2` that haven't shipped in a tagged release yet. Move
 this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
+
+## [0.8.0.2] - 2026-09-01
 
 ### Fixed
 - Added the missing `FS25_0_THRowCropSystem` ("[TH] Row Crop System")
@@ -58,11 +60,11 @@ this section's contents under a new version heading (and bump
 ### Changed
 - `README.md`'s "You'll also need" section and `modDesc.xml`'s in-game
   description both updated: now list seven required mods instead of six
-  (adding Row Crop System), with a prominent callout explaining the
+  (adding Row Crop System), both pointing at ThundR's actual FS25 Downloads
+  collection on Patreon, with a callout explaining the
   THPFConfigurator→TRPFConfigurator rename so anyone still holding an
   older download knows to delete it and grab the current
-  `FS25_0_TRPFConfigurator.zip` instead, plus a note that the same
-  exact-filename care applies to `FS25_0_THRowCropSystem.zip`.
+  `FS25_0_TRPFConfigurator.zip` instead.
 
 **Save compatibility:** safe for existing saves once the correct mod files
 are installed — these changes only affect which filenames `modDesc.xml`
