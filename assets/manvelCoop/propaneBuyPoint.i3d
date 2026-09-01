@@ -23,7 +23,7 @@
   <Scene>
     <TransformGroup name="propaneStation" nodeId="8">
       <TransformGroup name="gasStation" nodeId="9">
-        <Shape name="gasStationTrigger" translation="0 0.62549 -9.7691" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="10" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="5"/>
+        <Shape name="gasStationTrigger" translation="0 0.420843 -9.7691" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="10" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="5"/>
         <TransformGroup name="mapPosition" translation="0 1 -4.5" nodeId="11"/>
       </TransformGroup>
       <TransformGroup name="tanks" scale="1.5 1.5 1.5" nodeId="12">
