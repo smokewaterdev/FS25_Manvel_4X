@@ -71,3 +71,31 @@ Not yet covered: `osm_features.json`'s `tree_row` features (24 shelterbelt
 lines) weren't included in this pass — only `forest` polygons. Shelterbelts
 are a distinctive Red River Valley feature and would be a reasonable
 follow-up if more background detail is wanted.
+
+## Background terrain blend mask
+
+`build_background_terrain_mask.py` generates
+`assets/background_terrain/background_terrain_mask.png`, the blend mask
+used by `background_terrain.i3d`'s material (swapped 2026-08-31 from a flat
+single-texture material to the vanilla `backgroundTerrainShader`, the same
+shader mapUS/mapEU/mapAS use for their own background rings). It blends a
+grass texture in right at the `map_bounds` edge (fading out over 400m by
+default) and a forest-floor texture wherever real OSM forest polygons are,
+over the top of the existing satellite photo -- softens the "straight to a
+photo" look and gives the new background trees (above) real-looking ground
+to sit on, without touching the mesh geometry at all.
+
+```
+python3 build_background_terrain_mask.py .. --res 2048 --plateau 150 --fade 1500 --dilate 12
+```
+
+This assumes `background_terrain.dds` (8192x8192px) is a simple 1:1
+world-aligned drape over world X,Z in `[-4096, 4096]`. That assumption
+checked out 2026-08-31 -- a first pass confirmed the grass blend lands in
+the right place (visible hugging the real map edge in a GE top-down view),
+just too weak: a straight 400m linear fade from full strength at the
+boundary spends most of its range at low opacity against a busy satellite
+photo, so only a thin sliver actually reads as green in-game. Fixed by
+holding full opacity for `--plateau` meters before the `--fade` taper
+starts, so there's a real, clearly-visible solid band before it blends
+out. `--fade` was widened from an initial 600m to 1500m by request.
