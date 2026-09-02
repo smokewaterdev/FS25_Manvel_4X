@@ -29,9 +29,11 @@ on the new version or needs a fresh start. Don't assume — call it out.
 
 ## [Unreleased]
 
-Changes since `0.8.0.2` that haven't shipped in a tagged release yet. Move
+Changes since `0.8.0.3` that haven't shipped in a tagged release yet. Move
 this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
+
+## [0.8.0.3] - 2026-09-01
 
 ### Fixed
 - **The map now ships its three GIANTS Editor terrain caches**
