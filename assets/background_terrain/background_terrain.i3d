@@ -12,7 +12,7 @@
     <File fileId="5" filename="$data/maps/mapUS/textures/terrain/grass01_normal.png"/>
     <File fileId="2" filename="$data/shaders/backgroundTerrainShader.xml"/>
     <File fileId="1" filename="background_terrain.dds"/>
-    <File fileId="3" filename="background_terrain_mask.dds"/>
+    <File fileId="3" filename="background_terrain_mask.png"/>
   </Files>
 
 
