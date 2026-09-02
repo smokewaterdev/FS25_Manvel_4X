@@ -34,22 +34,82 @@ this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
 
 ### Fixed
-- `background_terrain.i3d`'s blend mask now loads as a pre-mipped DDS
-  (`background_terrain_mask.dds`) instead of a raw PNG. The PNG had no
-  baked mip chain, forcing the engine to generate mips on the CPU at load
-  time for this texture specifically — and since `background_terrain` is
-  a single always-loaded, never-streamed mesh covering the whole map,
-  that cost lands right in the middle of the load sequence. Identified as
-  the likely cause of a load hang reported on a weaker (Apple M3 Pro)
-  machine: its log showed three "raw format" / "CPU mip generation"
-  warnings for this exact file immediately before the log went silent.
-  `tools/backgroundForest/build_background_terrain_mask.py` now packs the
-  DDS automatically as its last step (uncompressed, not DXT1, to avoid
-  block-compression banding on this gradient mask); see that tool's
-  README for detail. Not yet confirmed fixed on the affected machine.
+- `background_terrain.i3d`'s blend mask now loads as a DXT1-compressed DDS
+  with a baked 12-level mip chain (`background_terrain_mask.dds`, 2.8MB)
+  instead of a raw PNG. This supersedes an earlier attempt in this same
+  unreleased window that produced an *uncompressed* DDS — that was wrong:
+  GIANTS' `Texture ... raw format.` performance warning fires on
+  uncompressed textures specifically, so the uncompressed version kept the
+  warning firing (confirmed three times in the GIANTS Editor console) while
+  inflating a 23KB PNG into a 16.8MB raw texture. DXT1 (RGB, no alpha) is
+  the correct variant here: the mask carries the two projected-grass blend
+  weights in R and G and leaves B unused.
+  `tools/backgroundForest/build_background_terrain_mask.py` packs it
+  automatically as its last step.
 
-**Save compatibility:** safe — texture/mipmap change only, no scene graph
-or config changes.
+  Note the earlier entry also credited this texture as the likely cause of
+  a multi-minute load hang on an Apple M3 Pro. That was wrong and is
+  retracted — see "Load time investigation" below.
+
+  **Save compatibility:** safe — texture format change only.
+
+- Procedural placement rule `gen_river_ground` had `frequency="0.000000"`
+  on its `scatterInPerlinNoise.lua` script. A Perlin scatter sampled at
+  `position * 0` returns one constant value for the whole map, so the noise
+  gate wasn't gating anything — the SAND scatter along `PG_river` was
+  uniform rather than varying. Now `0.400000`, matching the sibling
+  `gen_forest_foilage` rule.
+
+  **Save compatibility:** safe — no scene graph, farmland, field or
+  placeable changes. Riverbank sand distribution may look different.
+
+### Changed
+- Reverted the temporary diagnostic edits that were committed during the
+  load-time investigation (commits `b38d805`, `fc321d9`, `925caa1`): both
+  forest groups and the traffic system's `onCreate` UserAttribute are
+  active again, the two river procedural placement rules are re-enabled,
+  and `background_terrain` is back to its decimated mesh plus grass-blend
+  custom shader. Map content is functionally back to its `0.8.0.2` state.
+
+  **Save compatibility:** safe — restores previously shipped content.
+
+### Load time investigation
+
+A long load / apparent hang reproduced on an Apple M3 Pro (18GB unified
+memory) but never on a Ryzen 9800X3D / RTX 5070 Ti desktop. Recorded here
+because eliminating these cost a great deal of testing and none of them
+should be re-tested without new evidence.
+
+Ruled out, each by direct measurement:
+
+- **Trees.** The map's 31,353 trees are not the cause. A run with both
+  forest groups commented out (`NumTrees 0`) still took ~19 minutes, while
+  the base game's Riverbend Springs — 13,174 trees — loaded on the same
+  Mac, in the same process, ten minutes later, in 42 seconds.
+- **Traffic system, background terrain mesh, background terrain shader,
+  procedural placement.** Each disabled or reverted independently; no
+  effect. Procedural placement in particular runs *inside* the `map.i3d`
+  load, which completes in ~5s when the stall doesn't fire.
+- **Row Crop System.** RCS creates all five of its 16384x16384 info layers
+  in 14ms on the Mac — faster than the desktop's 77ms.
+- **Rolling back weeks of commits.** No effect, which is itself the
+  strongest evidence the cause was never in map content.
+- **Lowering the Mac's graphics settings** (`game.xml` quality preset and
+  view distance coefficients). No effect.
+
+What the evidence actually shows: one large, *non-deterministic* stall that
+lands at an arbitrary point in asset loading and moves between runs — 895s
+between two tree files in one run, 703s between two placeable files in
+another, and absent entirely in a third, all on identical content. Smaller
+stalls (284s, 124s, 28s) appear at varying points in the same runs. The
+`map.i3d` parse itself is 5,051ms on the Mac versus 5,157ms for the base
+game map, so the map is not intrinsically slow to load; it stalls.
+
+Still open. Next candidates are Mac-side and environmental rather than map
+content: free disk space, and whether the unzipped 490MB / 395-file mod
+folder is being read through a sync daemon (iCloud Desktop, external or
+network volume). The base game map reads from the sealed app bundle
+instead, which would explain why only Manvel is affected.
 
 ## [0.8.0.2] - 2026-09-01
 

@@ -58,20 +58,25 @@ MIP_LEVELS = 12  # 2048 -> 1
 
 
 def convert_to_dds(src_png, out_dds):
-    """Pack the mask into a DDS with a baked mip chain, matching
-    background_terrain.dds (its sibling in the same material). Uncompressed
-    (not DXT1) on purpose: this is a smooth gradient blend mask, not a
-    photo, and DXT1's 4x4 block compression visibly bands/blotches soft
-    fades. Without this step the engine loads the raw PNG and generates
-    mips on the CPU at map-load time -- confirmed in a player's log as a
-    multi-second-plus stall (3x "Texture ... raw format" warnings right
-    before the load hung on weaker hardware), since this mesh is always
-    loaded whole, never streamed/LOD'd.
+    """Pack the mask into a DXT1 (BC1) DDS with a baked mip chain, matching
+    background_terrain.dds (its sibling in the same material).
+
+    Must be block-compressed, not raw. GIANTS' "Texture ... raw format."
+    performance warning fires on *uncompressed* textures specifically, so an
+    uncompressed DDS does not silence it -- it just trades a 23KB PNG for a
+    16.8MB raw texture and keeps the warning. DXT1 at 2048 with a full mip
+    chain is ~2.8MB and the warning goes away.
+
+    DXT1 (RGB, no alpha) is the right variant here: the mask uses R and G as
+    the two projected-grass blend weights and leaves B unused. Block artifacts
+    on a smooth fade are acceptable and are what the engine expects for a mask;
+    they are not the photo-realistic case that needs careful UV handling (see
+    CLAUDE.md on background_terrain mesh decimation).
     """
     subprocess.run(
         [
             "convert", src_png,
-            "-define", "dds:compression=none",
+            "-define", "dds:compression=dxt1",
             "-define", "dds:mipmaps=" + str(MIP_LEVELS),
             out_dds,
         ],

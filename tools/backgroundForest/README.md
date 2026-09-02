@@ -101,17 +101,25 @@ starts, so there's a real, clearly-visible solid band before it blends
 out. `--fade` was widened from an initial 600m to 1500m by request.
 
 The script's actual output that `background_terrain.i3d` references is
-`background_terrain_mask.dds`, not the `.png` -- as of 2026-09-01 it
-packs the PNG into an uncompressed DDS with a full 12-level mip chain
-(matching `background_terrain.dds`, its sibling in the same material) as
-its last step. Without pre-baked mips, the engine has to generate them on
-the CPU at load time for this texture specifically, because
-`background_terrain` is a single always-loaded, never-streamed mesh
-covering the whole map -- confirmed as the cause of a load hang reported
-on a second, weaker (Apple M3 Pro) machine: its log showed three
-"raw format" / "CPU mip generation" warnings for this exact file
-immediately before the log went silent. Uncompressed rather than DXT1 on
-purpose -- this mask is a smooth gradient, and DXT1's block compression
-visibly bands/blotches soft fades. The `.png` is still written first and
-kept around as the human-editable/diffable source; only the `.dds` is
-consumed by the game.
+`background_terrain_mask.dds`, not the `.png` -- as of 2026-09-01 it packs
+the PNG into a **DXT1 (BC1)** DDS with a full 12-level mip chain (matching
+`background_terrain.dds`, its sibling in the same material) as its last
+step. The `.png` is still written first and kept as the
+human-editable/diffable source; only the `.dds` is consumed by the game.
+
+It must be block-compressed, not raw. GIANTS' `Texture ... raw format.`
+performance warning fires on *uncompressed* textures specifically. A first
+attempt at this packed the mask uncompressed on the theory that DXT1's 4x4
+blocks would band a smooth gradient; that was wrong on the trade -- it
+turned a 23KB PNG into a 16.8MB raw texture and the warning still fired
+three times in the GIANTS Editor console. DXT1 is ~2.8MB and silences it.
+DXT1 rather than a single-channel format because the mask is genuinely
+2-channel: R and G carry the two projected-grass blend weights
+(`projDiffuse1`/`projDiffuse2`), B is unused.
+
+An earlier version of this note claimed the un-mipped PNG caused a
+multi-minute load hang on an Apple M3 Pro. That was wrong and is retracted
+-- the hang reproduced with this texture in every state it has been in, and
+also with the whole background terrain reverted. See CHANGELOG.md's "Load
+time investigation" section for what was actually ruled out. This mip/format
+change stands on its own as correct texture packaging, not as a fix for that.
