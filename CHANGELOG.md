@@ -34,6 +34,28 @@ this section's contents under a new version heading (and bump
 `modDesc.xml`) when you cut the next release — see `BUILD.md`.
 
 ### Fixed
+- **The map now ships its three GIANTS Editor terrain caches**
+  (`map/map.i3d.terrain.lod.type.cache`, `.nmap.cache`, `.occluders.cache`,
+  ~71MB together). This is the fix for the "map takes forever to load" /
+  apparent-hang reports. GIANTS ships these caches with every base map;
+  Manvel's were gitignored and stripped from the release zip on the theory
+  that the engine regenerates them on load. It does — but for a 4096
+  terrain that means rebuilding a full-resolution normal map, LOD-type map
+  and occluder set from the heightmap on every single load, and on an Apple
+  M3 Pro that took 10–15 minutes. Confirmed by timestamp correlation: in
+  every logged stall the freeze began within 40ms of the
+  `Warning: Missing terrain occluder cache` line, and the base game's
+  Riverbend Springs — which found its shipped caches, no warning — loaded on
+  the same Mac, in the same process, in 42 seconds.
+  Every player downloading the release was paying this cost on every load,
+  not just the Mac; fast desktops just absorbed it in seconds.
+  `.gitignore`, `.gitattributes` (now LFS-tracked) and
+  `tools/build_release.py` all updated; `CLAUDE.md` documents the
+  edit-in-GE → save → commit-the-caches workflow.
+
+  **Save compatibility:** safe — no scene graph, config or terrain data
+  changes; the caches are derived from terrain that hasn't changed.
+
 - `background_terrain.i3d`'s blend mask now loads as a DXT1-compressed DDS
   with a baked 12-level mip chain (`background_terrain_mask.dds`, 2.8MB)
   instead of a raw PNG. This supersedes an earlier attempt in this same
@@ -97,19 +119,17 @@ Ruled out, each by direct measurement:
 - **Lowering the Mac's graphics settings** (`game.xml` quality preset and
   view distance coefficients). No effect.
 
-What the evidence actually shows: one large, *non-deterministic* stall that
-lands at an arbitrary point in asset loading and moves between runs — 895s
-between two tree files in one run, 703s between two placeable files in
-another, and absent entirely in a third, all on identical content. Smaller
-stalls (284s, 124s, 28s) appear at varying points in the same runs. The
-`map.i3d` parse itself is 5,051ms on the Mac versus 5,157ms for the base
-game map, so the map is not intrinsically slow to load; it stalls.
-
-Still open. Next candidates are Mac-side and environmental rather than map
-content: free disk space, and whether the unzipped 490MB / 395-file mod
-folder is being read through a sync daemon (iCloud Desktop, external or
-network volume). The base game map reads from the sealed app bundle
-instead, which would explain why only Manvel is affected.
+What the evidence showed: one large stall that landed at a *different*
+point in asset loading each run — 895s between two tree files in one run,
+703s between two placeable files in another — on identical content, with
+the `map.i3d` parse itself at 5,051ms on the Mac when it didn't fire,
+versus 5,157ms for the base game map. The stall location moved because it
+wasn't tied to the file being loaded; it was tied to the terrain cache
+regeneration running alongside the load. Resolution: the missing terrain
+caches, above. The lesson worth keeping is the diagnostic one — the base
+game map as a control on the same machine in the same process was what
+separated "this machine" from "this map" in one run, after a full day of
+content bisection couldn't.
 
 ## [0.8.0.2] - 2026-09-01
 

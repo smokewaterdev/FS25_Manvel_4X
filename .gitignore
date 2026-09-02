@@ -1,7 +1,11 @@
-# GIANTS Editor terrain caches (regenerate automatically on load/save)
-*.i3d.terrain.lod.type.cache
-*.i3d.terrain.nmap.cache
-*.i3d.terrain.occluders.cache
+# NOTE: the three *.i3d.terrain.*.cache files are deliberately NOT ignored.
+# They used to be, on the theory that the engine regenerates them on load.
+# It does -- but for this 4096 terrain that regeneration is ~71MB of derived
+# data and took 10-15 minutes per load on an Apple M3 Pro (measured 2026-09-01:
+# the stall began within 40ms of the "Missing terrain occluder cache" warning
+# in every run). GIANTS ships all three caches with every base map for exactly
+# this reason. They are tracked via LFS (see .gitattributes) and shipped in
+# the release zip. GE rewrites them on save whenever the terrain changes.
 
 # Manual backup copies made during editing (git history is the real backup)
 *_backup.*

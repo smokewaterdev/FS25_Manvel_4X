@@ -4,8 +4,8 @@ Build a clean, distributable FS25_Manvel_4X.zip for release.
 
 Packages the mod folder into a zip with modDesc.xml at the zip root (the
 format FS25 requires for a droppable mod zip), excluding dev-only content:
-git metadata, the tools/ pipeline, editor terrain caches, local AutoDrive
-test state, and other non-runtime files.
+git metadata, the tools/ pipeline, local AutoDrive test state, and other
+non-runtime files. The GE terrain caches are NOT excluded -- they ship.
 
 Usage (from anywhere, run with plain Python 3, no external deps):
     python tools/build_release.py
@@ -55,9 +55,11 @@ EXCLUDE_FILES = {
 
 # Filename glob patterns excluded wherever they appear.
 EXCLUDE_PATTERNS = [
-    "*.i3d.terrain.lod.type.cache",
-    "*.i3d.terrain.nmap.cache",
-    "*.i3d.terrain.occluders.cache",
+    # NOTE: *.i3d.terrain.*.cache are deliberately NOT excluded. They ship,
+    # exactly as GIANTS ships them with every base map. Excluding them made
+    # every player's machine regenerate ~71MB of terrain data on every load,
+    # which is a 10-15 minute stall on weaker hardware (CHANGELOG.md, "Load
+    # time investigation", 2026-09-01).
     "*_backup.*",
     "Thumbs.db",
     "desktop.ini",

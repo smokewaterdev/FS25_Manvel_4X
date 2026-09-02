@@ -27,9 +27,13 @@
 *.zip    binary
 *.pyc    binary
 
-# GIANTS Editor terrain caches are gitignored, but mark them anyway in case one
-# is ever force-added: they are large regenerated blobs, not reviewable content.
-*.cache  binary
+# GIANTS Editor terrain caches (*.i3d.terrain.{lod.type,nmap,occluders}.cache)
+# are tracked and shipped, same as every GIANTS base map does. Routed through
+# LFS: together they are ~71MB for this 4096 terrain and GE rewrites them on
+# every save that touches the terrain. Without them the engine regenerates
+# all three from the heightmap on every load, which took 10-15 minutes on an
+# Apple M3 Pro (see CHANGELOG.md, "Load time investigation").
+*.cache  filter=lfs diff=lfs merge=lfs -text
 
 # i3d files are XML, so they stay diffable, but they are machine-written by GE
 # and can be enormous (map.i3d is ~4.6MB). Left as text deliberately: diffing
